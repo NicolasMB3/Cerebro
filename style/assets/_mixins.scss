@@ -1,0 +1,70 @@
+// @paragraphe
+// $font-weight : int
+// $font-size : int
+// $line-height : int
+// $color : string
+@mixin cbro-paragraphe($font-weight, $font-size, $line-height, $color) {
+   font-family: 'Instrument Sans', sans-serif;
+   font-weight: $font-weight !important;
+   font-size: $font-size !important;
+   line-height: $line-height !important;
+   color: $color !important;
+}
+
+// @title
+// $font-weight : int
+// $font-size : int
+// $line-height : int
+// $color : string
+@mixin cbro-title($font-weight, $font-size, $line-height, $color) {
+   font-family: 'ITCSouvenir-md';
+   font-weight: $font-weight;
+   font-size: $font-size;
+   line-height: $line-height;
+   color: $color;
+}
+
+p {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+h1 {
+   @include cbro-title(300, 42px, 125%, $cbro-gray-900);
+   padding-bottom: 24px;
+   span {
+      font-style: italic;
+      color: $cbro-purple-800;
+   }
+}
+h2 {
+   @include cbro-title(300, 36px, 150%, $cbro-black);
+}
+h3 {
+   @include cbro-title(300, 28px, 150%, $cbro-purple-900);
+}
+
+// @button
+// $font-weight : int
+// $font-size : int
+// $color : string
+// $bg-color : string
+// $border-width : int
+// $border-color : string
+@mixin cbro-button($font-weight, $font-size, $color, $bg-color, $border-width , $border-color) {
+   font-family: 'Instrument Sans';
+   font-weight: $font-weight;
+   font-size: $font-size;
+   line-height: 150%;
+   color: $color;
+   background: $bg-color;
+   border-radius: 100px;
+   border: $border-width solid $border-color;
+   padding: 12px 22px;
+}
+
+.btn_green {
+   @include cbro-button(500, 16px, $cbro-green-50, $cbro-green-700, 1px , transparent);
+}
+.btn_transparent {
+   @include cbro-button(500, 16px, $cbro-gray-900, transparent, 1px , $cbro-gray-900);
+}

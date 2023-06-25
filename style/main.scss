@@ -1,0 +1,30 @@
+/* Assets */
+@import './assets/variables';
+@import './assets/mixins';
+@import './assets/fonts';
+
+/* Components */
+@import './components/breakpoint';
+@import './components/footer';
+@import './components/navigation';
+
+/* Pages */
+@import './pages/homepage/container';
+
+/* Infinity and beyond */
+header {
+   z-index: 99999;
+}
+p {
+   margin-bottom: 0 !important;
+   padding-bottom: 0 !important;
+}
+
+body {
+   background-color: $cbro-green-50;
+   background-image: url('./../img/bg.png');
+}
+
+.navbar-transition {
+   transition: margin 0.3s ease;
+}

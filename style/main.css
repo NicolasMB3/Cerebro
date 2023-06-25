@@ -1,0 +1,698 @@
+/* Assets */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 125%;
+  color: #191919;
+  padding-bottom: 24px;
+}
+h1 span {
+  font-style: italic;
+  color: #942C5E;
+}
+
+h2 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 150%;
+  color: #000;
+}
+
+h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 150%;
+  color: #88154C;
+}
+
+.btn_green {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #E9EEED;
+  background: #4F756C;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  padding: 12px 22px;
+}
+
+.btn_transparent {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191919;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid #191919;
+  padding: 12px 22px;
+}
+
+@font-face {
+  font-family: "ITCSouvenir-md";
+  src: url("../../font/ITCSouvenir-md.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+} /* Components */
+footer {
+  background-color: #191919;
+}
+footer h5 {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #CAC8C6 !important;
+  text-transform: uppercase;
+}
+footer a, footer p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #FCFAF7 !important;
+}
+footer hr {
+  color: #656463;
+}
+
+/* Bloque d'information */
+#header-info {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #fff !important;
+  background: #A04470;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#header-info .calendar {
+  width: 24px;
+}
+#header-info span {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #fff !important;
+}
+#header-info a {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #fff !important;
+}
+
+/* Barre de navigation (sans le block d'information) */
+header .navbar {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+  max-width: 1320px;
+  background: linear-gradient(0deg, rgba(227, 225, 222, 0.3), rgba(227, 225, 222, 0.3)), rgba(251, 248, 244, 0.6);
+  backdrop-filter: blur(6px);
+  padding: 12px 16px;
+  margin-top: 38px;
+  border-radius: 5000px;
+}
+@media (max-width: 991.98px) {
+  header .navbar {
+    padding: 16px 20px;
+  }
+}
+header .navbar #navbar-connect {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+}
+header .navbar a #navbar-logo {
+  width: 100%;
+  height: 25px;
+}
+header .navbar .navbar-link a {
+  padding: 0 1vw;
+}
+header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #fff !important;
+  background: #4F756C;
+  padding: 12px 22px;
+}
+
+/* Pages */
+/* First container */
+#homepage-plateforme {
+  padding: 15vh 0 8vh 0;
+}
+#homepage-plateforme h1 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 2.625rem;
+  line-height: 125%;
+  color: #191919;
+}
+#homepage-plateforme h1 + p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+  color: #4C4B4A !important;
+  padding-bottom: 40px;
+}
+#homepage-plateforme .btn_green {
+  margin-right: 16px;
+  margin-bottom: 52px;
+}
+#homepage-plateforme .column-gap-4 {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #656463 !important;
+}
+
+/* Fifth container */
+.homepage-ressources {
+  padding: 10vh 0 10vh 0;
+}
+.homepage-ressources p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #FCFAF7 !important;
+}
+.homepage-ressources h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 150%;
+  color: #191919;
+}
+.homepage-ressources .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #33788d !important;
+  text-transform: uppercase;
+}
+.homepage-ressources .col {
+  background: linear-gradient(129deg, rgba(227, 225, 222, 0.6) 0%, rgba(227, 225, 222, 0) 100%);
+  border-radius: 16px;
+}
+.homepage-ressources .col h5 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #191919;
+}
+.homepage-ressources .col p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+.homepage-ressources .image-box {
+  border-radius: 16px;
+  width: 58px;
+}
+.homepage-ressources .col:first-child .image-box {
+  background-color: #80abb8;
+}
+.homepage-ressources .col:nth-child(2) .image-box {
+  background-color: #C48AA6;
+}
+.homepage-ressources .col:nth-child(3) .image-box {
+  background-color: #91A9A3;
+}
+
+/* Third container */
+.homepage-tabs {
+  padding: 10vh 0 10vh 0;
+  /* Mettre en variable globale */
+  background-color: rgba(243, 232, 237, 0.5);
+}
+.homepage-tabs p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #323231 !important;
+}
+.homepage-tabs h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000;
+}
+.homepage-tabs .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #A04470 !important;
+  text-transform: uppercase;
+}
+.homepage-tabs .tab-1, .homepage-tabs .tab-2, .homepage-tabs .tab-3 {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+.homepage-tabs .tab-1 h4, .homepage-tabs .tab-2 h4, .homepage-tabs .tab-3 h4 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+  color: #323231;
+  margin-bottom: 0;
+}
+.homepage-tabs .active {
+  /* Mettre en variable globale */
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgba(231, 208, 219, 0.3);
+}
+.homepage-tabs .active h4 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+  color: #88154C;
+}
+
+/* Second container */
+.homepage-description {
+  padding: 10vh 0;
+}
+.homepage-description .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #33788d !important;
+  text-transform: uppercase;
+}
+.homepage-description h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 150%;
+  color: #000;
+}
+.homepage-description .sub-text {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 32px !important;
+  color: #323231 !important;
+}
+.homepage-description a {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+  color: #33788d !important;
+}
+
+/* Third container */
+.homepage-boost {
+  padding: 10vh 0 10vh 0;
+}
+.homepage-boost p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #323231 !important;
+}
+.homepage-boost h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000;
+}
+.homepage-boost .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #33788d !important;
+  text-transform: uppercase;
+}
+.homepage-boost a {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+  color: #33788d !important;
+}
+
+/* Third container */
+.homepage-licence {
+  padding: 10vh 0 10vh 0;
+  background-color: #E9EEED;
+}
+.homepage-licence p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #323231 !important;
+}
+.homepage-licence h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000;
+}
+.homepage-licence .sub-title {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 2.625rem;
+  line-height: 125%;
+  color: #4F756C;
+  font-style: italic;
+}
+
+/* Fourth container */
+.homepage-avantage {
+  padding: 10vh 0 10vh 0;
+  /* Mettre en variable globale */
+  background-color: #235247;
+}
+.homepage-avantage p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #FCFAF7 !important;
+}
+.homepage-avantage h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FCFAF7;
+}
+.homepage-avantage .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #FCFAF7 !important;
+  text-transform: uppercase;
+}
+.homepage-avantage .productivity {
+  background-color: #f3e8ed;
+  border-radius: 16px;
+}
+.homepage-avantage .productivity .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #A04470 !important;
+}
+.homepage-avantage .productivity h5 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #191919;
+}
+.homepage-avantage .productivity p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+.homepage-avantage .quality {
+  background-color: #DBEDF5;
+  border-radius: 16px;
+}
+.homepage-avantage .quality .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #19677f !important;
+}
+.homepage-avantage .quality h5 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #191919;
+}
+.homepage-avantage .quality p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+.homepage-avantage .patients {
+  background-color: #65867E;
+  border-radius: 16px;
+}
+.homepage-avantage .patients .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #D3DCDA !important;
+}
+.homepage-avantage .patients h5 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FCFAF7;
+}
+.homepage-avantage .patients p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #FCFAF7 !important;
+}
+.homepage-avantage .tools {
+  background-color: #D3DCDA;
+  border-radius: 16px;
+}
+.homepage-avantage .tools .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #4F756C !important;
+}
+.homepage-avantage .tools h5 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #191919;
+}
+.homepage-avantage .tools p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+
+/* Sixth container */
+.homepage-datas {
+  padding: 10vh 0 10vh 0;
+}
+.homepage-datas p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #FCFAF7 !important;
+}
+.homepage-datas h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 150%;
+  color: #191919;
+}
+.homepage-datas .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 1.25rem !important;
+  line-height: 2rem !important;
+  color: #323231 !important;
+}
+.homepage-datas .col {
+  border-right: 2px solid #CCDDE3;
+}
+.homepage-datas .col:last-child {
+  border-right: 0px;
+}
+.homepage-datas .col span {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 54px;
+  line-height: 48px;
+  color: #4d899c;
+}
+.homepage-datas .col .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  color: #323231 !important;
+}
+.homepage-datas .col p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #323231 !important;
+}
+
+/* Seventh container */
+.homepage-exps {
+  padding: 10vh 0 10vh 0;
+}
+.homepage-exps p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #323231 !important;
+}
+.homepage-exps h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000;
+}
+.homepage-exps .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #4F756C !important;
+  text-transform: uppercase;
+}
+.homepage-exps .col {
+  background-color: rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  border: 1px solid #CAC8C6;
+}
+.homepage-exps .col h5 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #191919;
+}
+.homepage-exps .col p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  color: #323231 !important;
+}
+.homepage-exps .col .author {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #191919 !important;
+}
+.homepage-exps .col .author-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #979694 !important;
+}
+.homepage-exps .active {
+  background: linear-gradient(129deg, rgba(227, 225, 222, 0.6) 0%, rgba(227, 225, 222, 0) 100%);
+  border-radius: 16px;
+  border: 1px solid #CAC8C6;
+}
+.homepage-exps .active p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  color: #191919 !important;
+}
+.homepage-exps .active .author {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #191919 !important;
+}
+.homepage-exps .active .author-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #CAC8C6 !important;
+}
+.homepage-exps .image-box {
+  width: 58px;
+}
+.homepage-exps #arrow_prev, .homepage-exps #arrow_next {
+  border-radius: 100px;
+  background: #396359;
+  width: 32px;
+  height: 32px;
+  padding: 0.5rem 0.5rem 0.5rem 0.65rem;
+  cursor: pointer;
+}
+.homepage-exps #arrow_prev {
+  transform: rotate(-180deg);
+}
+
+/* Infinity and beyond */
+header {
+  z-index: 99999;
+}
+
+p {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+body {
+  background-color: #E9EEED;
+  background-image: url("./../img/bg.png");
+}
+
+.navbar-transition {
+  transition: margin 0.3s ease;
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cérébro</title>
+   <link rel="stylesheet" href="style/main.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
+</head>
+<body>
+   <!-- Barre d'annonces -->
+   <div class="d-flex justify-content-center w-100 px-3 d-none d-lg-flex" id="header-info">
+      <img src="./img/icons/calendar_simple.svg" alt="Image d'un calendrier" class="calendar pe-2">
+      <p><span>Masterclass</span> “thématique” à la fac d’Amiens ce lundi 05/06/23 à 09h00</p>
+      <a class="nav-link ps-3 d-flex align-items-center" href="#">
+         Je participe
+         <img src="./img/icons/arrow_90.svg" class="ps-1" alt="En savoir plus">
+      </a>
+   </div>
+   <!-- Barre de navigation -->
+   <header class="d-flex justify-content-center px-lg-5 px-4 position-fixed w-100">
+      <nav class="d-flex justify-content-center navbar w-100">
+         <div class="container-fluid px-0">
+            <a class="py-0" href="#"><img id="navbar-logo" src="./img/logo/logo-cerebro.svg" alt="Logo de la société"></a>
+            <div class="d-flex navbar-link d-none d-lg-flex">
+               <a href="#" class="nav-link">
+                  <div class="d-flex flex-row align-items-center">
+                     <p>Application</p>
+                     <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
+                  </div>
+               </a>
+               <a href="#" class="nav-link">
+                  <div class="d-flex flex-row align-items-center">
+                     <p>Ressources</p>
+                     <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
+                  </div>
+               </a>
+               <a href="#" class="nav-link">
+                  <div class="d-flex flex-row align-items-center">
+                     <p>Tarifs</p>
+                  </div>
+               </a>
+               <a href="#" class="nav-link">
+                  <div class="d-flex flex-row align-items-center">
+                     <p>À propos</p>
+                     <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
+                  </div>
+               </a>
+            </div>
+            <div class="d-flex column-gap-3 align-items-center d-none d-lg-flex">
+               <a href="#" class="nav-link">
+                  <div id="navbar-connect" class="d-flex flex-row align-items-center">
+                     <p>Se connecter</p>
+                  </div>
+               </a>
+               <a href="#" class="nav-link rounded-5">
+                  <div class="d-flex flex-row align-items-center">
+                     <p>Tester gratuitement</p>
+                  </div>
+               </a>
+            </div>
+            <div class="hamburger-menu d-lg-none">
+               <img src="./img/icons/hamburger.svg" alt="Icône pour déployer un menu responsive">
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!-- Section principale -->
+   <section id="homepage-plateforme">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col">
+               <h1>La plateforme qui renforce votre efficacité et inspire <span class="d-flex">la sérénité</span></h1>
+               <p class="pb-5">Grâce à nos applications, ressources et formations, optimisez le temps consacré à la rééducation orthophonique.</p>
+               <div>
+                  <button class="btn_green">Démarrer mon essai gratuit</button>
+                  <button class="btn_transparent">Explorer la solution</button>
+               </div>
+               <div class="d-flex column-gap-4">
+                  <div class="d-flex">
+                     <img src="./img/icons/clock.svg" alt="Une horloge">
+                     <p class="ps-2">Inscription rapide</p>
+                  </div>
+                  <div class="d-flex">
+                     <img src="./img/icons/calendar_simple_purple.svg" alt="Un calendrier">
+                     <p class="ps-2">21 jours d'essai</p>
+                  </div>
+                  <div class="d-flex">
+                     <img src="./img/icons/check.svg" alt="Validé">
+                     <p class="ps-2">Simplicité assurée</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+               <img src="./img/illustrations/women-header.png" alt="Une image d'exemple">
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Section de la description principal -->
+   <section class="homepage-description d-flex align-items-center">
+      <div class="container">
+         <div class="row">
+            <div class="col pe-3">
+               <p class="sub-title pb-2">Notre mission</p>
+               <h3>Nous accompagnons les orthophonistes en proposant des outils thérapeutiques innovants issus de la littérature scientifique.</h3>
+            </div>
+            <div class="col ps-5 ms-5 d-flex justify-content-center flex-column">
+               <p class="sub-text">Camille et Vincent, deux orthophonistes engagés, ont créé Cérébro pour faciliter l'application d’une démarche Evidence-Based Practice (EBP) dans leur pratique clinique. Leur objectif est de mettre à disposition des outils afin d'améliorer la qualité des soins thérapeutiques et d'optimiser les résultats obtenus.</p>
+               <a class="nav-link d-flex pt-3 jy" href="#">
+                  Rencontrer l'équipe
+                  <img src="./img/icons/arrow_90_blue.svg" class="ps-1" alt="En savoir plus">
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Section des menus tabs -->
+   <section class="homepage-tabs">
+      <div class="container">
+         <div class="pb-5 text-center">
+            <p class="sub-title pb-2">Les applications</p>
+            <h3 class="py-2">Réinventez votre pratique avec les applications Cérébro </h3>
+            <p class="py-3 w-75 mx-auto text-center">Lorem ipsum dolor sit amet consectetur. Pulvinar ornare sed mauris condimentum tincidunt in. Pulvinar nisi sit eget turpis ultrices orci vel condimentum. Cursus eget mi vitae sed nibh volutpat enim purus. At nunc ante gravida neque non blandit.</p>
+         </div>
+         <div class="row d-flex d-flex align-items-center">
+            <div class="col d-flex flex-column gap-4">
+               <div class="p-4 tab-1 active" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                  <h4>CérébroLex</h4>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna. Mattis varius tincidunt arcu a consequat magna. Turpis justo suspendisse aliquet morbi. Vestibulum nisi diam vitae tellus. Vitae urna arcu ut est. Orci nisl id convallis nulla donec.</p>
+                  <button class="btn_transparent">Découvrir l'application</button>
+               </div>
+               <div class="p-4 tab-2" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                  <h4>CérébroVerbs</h4>
+               </div>
+               <div class="p-4 tab-3" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                  <h4>CérébroSyntax</h4>
+               </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+               <img src="./img/illustrations/image-template.svg" alt="Image exemple à remplacer">
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Section des ressources -->
+   <section class="homepage-ressources">
+      <div class="container">
+         <div class="pb-5 text-center">
+            <p class="sub-title pb-2">Les Ressources</p>
+            <h3 class="w-75 mx-auto">Formez-vous et multipliez votre éventail de ressources afin d’accompagner au mieux vos patients</h3>
+         </div>
+         <div class="container">
+            <div class="row gap-4">
+               <div class="col p-4">
+                  <div class="image-box p-3 d-flex justify-content-center mb-4">
+                     <img src="./img/icons/box_iso.svg" alt="Icône d'une boite">
+                  </div>
+                  <h5>Matériels</h5>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p>
+                  <button class="btn_transparent w-100">En savoir plus</button>
+               </div>
+               <div class="col p-4">
+                  <div class="image-box p-3 d-flex justify-content-center mb-4">
+                     <img src="./img/icons/box_iso.svg" alt="Icône d'une boite">
+                  </div>
+                  <h5>Revues de littératures</h5>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p>
+                  <button class="btn_transparent w-100">En savoir plus</button>
+               </div>
+               <div class="col p-4">
+                  <div class="image-box p-3 d-flex justify-content-center mb-4">
+                     <img src="./img/icons/box_iso.svg" alt="Icône d'une boite">
+                  </div>
+                  <h5>Formations</h5>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p>
+                  <button class="btn_transparent w-100">En savoir plus</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Section des chiffres clés -->
+   <section class="homepage-datas">
+      <div class="container">
+         <div class="pb-5">
+            <h3>Cérébro en quelques chiffres...</h3>
+         </div>
+         <div class="container">
+            <div class="row gap-4">
+               <div class="col">
+                  <span>+3 000</span>
+                  <p class="sub-title pb-2 pt-3">Pages d’exercices</p>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum</p>
+               </div>
+               <div class="col">
+                  <span>+1 000</span>
+                  <p class="sub-title pb-2 pt-3">Patients suivis</p>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum</p>
+               </div>
+               <div class="col">
+                  <span>+100</span>
+                  <p class="sub-title pb-2 pt-3">Orthophonistes abonnés</p>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum</p>
+               </div>
+               <div class="col">
+                  <span>+10</span>
+                  <p class="sub-title pb-2 pt-3">Masterclass</p>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Section des avantages -->
+   <section class="homepage-avantage">
+      <div class="pb-5 text-center">
+         <p class="sub-title pb-2">Pourquoi nous ?</p>
+         <h3>Découvrez les avantages d’opter pour Cérébro</h3>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-3 p-4 productivity">
+               <p class="sub-title pb-2">Boostez votre productivité</p>
+               <h5>Accélérez votre productivité et gagnez un temps précieux</h5>
+               <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p>
+            </div>
+            <div class="col-9 p-4 quality">
+               <div class="row">
+                  <div class="col-8">
+                     <p class="sub-title pb-2">Boostez votre productivité</p>
+                     <h5>Accélérez votre productivité et gagnez un temps précieux</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p>
+                  </div>
+                  <div class="col-4 align-items-center">
+                     <img src="./img/illustrations/avantages-quality.svg" class="img-fluid" alt="Image des EBP">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-7 p-4 patients">
+               <div class="row">
+                  <div class="col-4 align-items-center">
+                     <img src="./img/illustrations/avantages-patients.svg" alt="Image des EBP">
+                     </div>
+                  <div class="col-8">
+                     <p class="sub-title pb-2">Accompagnez facilement vos patients</p>
+                     <h5>Observez l’évolution des patients d’un simple coup d’oeil</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna. Mattis varius tincidunt arcu a consequat magna.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-5 p-4 tools">
+               <p class="sub-title pb-2">Profitez d’outils adaptés</p>
+               <h5>Plusieurs milliers de ressources à votre disposition</h5>
+               <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Section des expériences -->
+   <section class="homepage-exps">
+      <div class="container">
+         <div class="pb-5">
+            <p class="sub-title pb-2">Les témoignages</p>
+            <h3>Ils vous parlent de leur expérience</h3>
+         </div>
+         <div class="container">
+            <div class="row gap-4">
+               <div class="col p-4">
+                  <div class="image-box mb-4">
+                     <img src="./img/icons/left_quote.svg" alt="Icône d'une boite">
+                  </div>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p>
+                  <div class="d-flex align-items-center mt-4">
+                     <div class="me-3">
+                        <img src="./img/illustrations/picture_template_user_1.png" alt="Image d'une personne">
+                     </div>
+                     <div>
+                        <p class="author">Emmanuelle Francisco</p>
+                        <p class="author-title">UI Designer</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-6 p-4 active">
+                  <div class="image-box mb-4">
+                     <img src="./img/icons/left_quote.svg" alt="Icône d'une boite">
+                  </div>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Suspendisse turpis tincidunt fermentum mattis. Dui nunc feugiat at et est ut. Sed venenatis vulputate faucibus viverra et elit. Proin tellus risus laoreet libero ornare imperdiet. Non id lacus enim sed lorem malesuada aliquet nunc at.</p>
+                  <div class="d-flex align-items-center mt-4">
+                     <div class="me-3">
+                        <img src="./img/illustrations/picture_template_user_1.png" alt="Image d'une personne">
+                     </div>
+                     <div>
+                        <p class="author">Emmanuelle Francisco</p>
+                        <p class="author-title">UI Designer</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col p-4">
+                  <div class="image-box mb-4">
+                     <img src="./img/icons/left_quote.svg" alt="Icône d'une boite">
+                  </div>
+                  <p class="pb-4">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p>
+                  <div class="d-flex align-items-center mt-4">
+                     <div class="me-3">
+                        <img src="./img/illustrations/picture_template_user_1.png" alt="Image d'une personne">
+                     </div>
+                     <div>
+                        <p class="author">Emmanuelle Francisco</p>
+                        <p class="author-title">UI Designer</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="pt-4 d-flex justify-content-end">
+            <img id="arrow_prev" class="me-3" src="./img/icons/arrow_next.svg" alt="Commentaire précèdent">
+            <img id="arrow_next" src="./img/icons/arrow_next.svg" alt="Commentaire suivant">
+         </div>
+      </div>
+   </section>
+   <!-- Boostez votre expertise -->
+   <section class="homepage-boost">
+      <div class="container">
+         <div class="row">
+            <div class="col d-flex align-items-center">
+               <img src="./img/illustrations/image_a_remplacer.png" class="img-fluid" alt="Image à remplacer">
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-left">
+               <p class="sub-title pb-2">Formez-vous continuellement</p>
+               <h3 class="py-4">Boostez votre expertise grâce à nos formations spécialisées</h3>
+               <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna. Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p>
+               <a class="nav-link d-flex align-items-center pt-3" href="#">
+                  Voir les formations
+                  <img src="./img/icons/arrow_90_blue.svg" class="ps-1" alt="En savoir plus">
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Découvrir la licence -->
+   <section class="homepage-licence">
+      <div class="container">
+         <div class="row text-center">
+            <div class="col d-flex flex-column justify-content-center align-items-left">
+               <h3 class="py-2">Prêt-e à révolutionner votre pratique au quotidien ?</h3>
+               <h5 class="sub-title pb-2">Découvrez notre licence dès maintenant</h5>
+               <div class="mt-3">
+                  <button class="btn_green me-3">Tester gratuitement</button>
+                  <button class="btn_transparent">Explorer la licence</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Footer -->
+   <footer class="py-4">
+      <div class="container pt-5">
+         <div class="row">
+            <div class="col-4 mb-3">
+               <a href="#"><img id="navbar-logo" src="./img/logo/logo-cerebro_white.svg" alt="Logo de la société"></a>
+               <p class="mt-4">Lorem ipsum dolor sit amet consectetur. In cras pellentesque suspendisse.</p>
+            </div>
+            <div class="col mb-3px-0">
+               <h5>Applications</h5>
+               <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-decoration-none">CérébroLex</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">CérébroVerbs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">CérébroSyntax</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Tarifs</a></li>
+               </ul>
+            </div>
+            <div class="col mb-3 px-0">
+               <h5>Ressources</h5>
+               <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Matériels</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Résumés d’articles</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Tableurs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Formations</a></li>
+               </ul>
+            </div>
+            <div class="col mb-3 px-0">
+               <h5>À propos</h5>
+               <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">L’équipe</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQ</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Nous contacter</a></li>
+               </ul>
+            </div>
+            <div class="col mb-3 px-0">
+               <h5>Legal</h5>
+               <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Conditions générales</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Mentions légales</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Politique de confidentialité</a></li>
+               </ul>
+            </div>
+            <hr class="my-4">
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between pt-3 px-0">
+               <p>&copy; 2023 Cérébro. Tous droits reservés</p>
+               <ul class="list-unstyled d-flex gap-3">
+                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/instagram.svg" alt="Redirection vers Intagram"></a></li>
+                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/linkedin.svg" alt="Redirection vers Linkedin"></a></li>
+                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/facebook.svg" alt="Redirection vers Facebook"></a></li>
+                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/twitter.svg" alt="Redirection vers Twitter"></a></li>
+                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/youtube.svg" alt="Redirection vers Youtube"></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script src="./script/index.js"></script>
+</body>
+</html>

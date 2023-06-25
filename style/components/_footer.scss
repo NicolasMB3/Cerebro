@@ -1,0 +1,13 @@
+footer {
+   background-color: $cbro-gray-900;
+   h5 {
+      @include cbro-paragraphe(600, 14px, 150%, $cbro-gray-200);
+      text-transform: uppercase;
+   }
+   a, p {
+      @include cbro-paragraphe(500, 16px, 24px, $cbro-snow-50);
+   }
+   hr {
+      color: $cbro-gray-600;
+   }
+}
