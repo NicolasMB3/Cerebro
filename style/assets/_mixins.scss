@@ -18,10 +18,10 @@
 // $color : string
 @mixin cbro-title($font-weight, $font-size, $line-height, $color) {
    font-family: 'ITCSouvenir-md';
-   font-weight: $font-weight;
-   font-size: $font-size;
-   line-height: $line-height;
-   color: $color;
+   font-weight: $font-weight !important;
+   font-size: $font-size !important;
+   line-height: $line-height !important;
+   color: $color !important;
 }
 
 p {

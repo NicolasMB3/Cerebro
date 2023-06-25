@@ -6,10 +6,10 @@ p {
 
 h1 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 42px;
-  line-height: 125%;
-  color: #191919;
+  font-weight: 300 !important;
+  font-size: 42px !important;
+  line-height: 125% !important;
+  color: #191919 !important;
   padding-bottom: 24px;
 }
 h1 span {
@@ -19,18 +19,18 @@ h1 span {
 
 h2 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 150%;
-  color: #000;
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 150% !important;
+  color: #000 !important;
 }
 
 h3 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 150%;
-  color: #88154C;
+  font-weight: 300 !important;
+  font-size: 28px !important;
+  line-height: 150% !important;
+  color: #88154C !important;
 }
 
 .btn_green {
@@ -66,15 +66,56 @@ h3 {
 footer {
   background-color: #191919;
 }
-footer h5 {
+footer .newsletter h5 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 2rem !important;
+  line-height: 44px !important;
+  color: #FCFAF7 !important;
+}
+footer .newsletter p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+  color: #FCFAF7 !important;
+}
+footer .newsletter input {
+  height: 48px;
+  border-radius: 100px;
+  border: 1px solid #7E7D7C;
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+footer .newsletter input::placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #FCFAF7 !important;
+  padding-left: 10px;
+}
+footer .newsletter button {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #323231;
+  background: #fff;
+  border-radius: 100px;
+  border: 0px solid transparent;
+  padding: 12px 22px;
+  margin-left: 6px;
+  width: 58%;
+}
+footer .row:nth-child(2) h5 {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
   font-size: 14px !important;
   line-height: 150% !important;
   color: #CAC8C6 !important;
-  text-transform: uppercase;
 }
-footer a, footer p {
+footer .row:nth-child(2) a, footer .row:nth-child(2) p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500 !important;
   font-size: 16px !important;
@@ -164,10 +205,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 #homepage-plateforme h1 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 2.625rem;
-  line-height: 125%;
-  color: #191919;
+  font-weight: 300 !important;
+  font-size: 2.625rem !important;
+  line-height: 125% !important;
+  color: #191919 !important;
 }
 #homepage-plateforme h1 + p {
   font-family: "Instrument Sans", sans-serif;
@@ -202,10 +243,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-ressources h3 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 150%;
-  color: #191919;
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
 }
 .homepage-ressources .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -221,10 +262,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-ressources .col h5 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 36px;
-  color: #191919;
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  color: #191919 !important;
 }
 .homepage-ressources .col p {
   font-family: "Instrument Sans", sans-serif;
@@ -262,10 +303,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-tabs h3 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 42px;
-  color: #000;
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #000 !important;
 }
 .homepage-tabs .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -281,10 +322,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-tabs .tab-1 h4, .homepage-tabs .tab-2 h4, .homepage-tabs .tab-3 h4 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 42px;
-  color: #323231;
+  font-weight: 300 !important;
+  font-size: 28px !important;
+  line-height: 42px !important;
+  color: #323231 !important;
   margin-bottom: 0;
 }
 .homepage-tabs .active {
@@ -294,10 +335,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-tabs .active h4 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 42px;
-  color: #88154C;
+  font-weight: 300 !important;
+  font-size: 28px !important;
+  line-height: 42px !important;
+  color: #88154C !important;
 }
 
 /* Second container */
@@ -314,10 +355,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-description h3 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 150%;
-  color: #000;
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 150% !important;
+  color: #000 !important;
 }
 .homepage-description .sub-text {
   font-family: "Instrument Sans", sans-serif;
@@ -347,10 +388,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-boost h3 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 42px;
-  color: #000;
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #000 !important;
 }
 .homepage-boost .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -382,17 +423,17 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-licence h3 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 42px;
-  color: #000;
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #000 !important;
 }
 .homepage-licence .sub-title {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 2.625rem;
-  line-height: 125%;
-  color: #4F756C;
+  font-weight: 300 !important;
+  font-size: 2.625rem !important;
+  line-height: 125% !important;
+  color: #4F756C !important;
   font-style: italic;
 }
 
@@ -411,10 +452,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-avantage h3 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 42px;
-  color: #FCFAF7;
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #FCFAF7 !important;
 }
 .homepage-avantage .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -437,10 +478,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-avantage .productivity h5 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 36px;
-  color: #191919;
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  color: #191919 !important;
 }
 .homepage-avantage .productivity p {
   font-family: "Instrument Sans", sans-serif;
@@ -462,10 +503,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-avantage .quality h5 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 36px;
-  color: #191919;
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  color: #191919 !important;
 }
 .homepage-avantage .quality p {
   font-family: "Instrument Sans", sans-serif;
@@ -487,10 +528,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-avantage .patients h5 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 36px;
-  color: #FCFAF7;
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  color: #FCFAF7 !important;
 }
 .homepage-avantage .patients p {
   font-family: "Instrument Sans", sans-serif;
@@ -512,10 +553,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-avantage .tools h5 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 36px;
-  color: #191919;
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  color: #191919 !important;
 }
 .homepage-avantage .tools p {
   font-family: "Instrument Sans", sans-serif;
@@ -538,10 +579,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-datas h3 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 150%;
-  color: #191919;
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
 }
 .homepage-datas .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -558,10 +599,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-datas .col span {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 54px;
-  line-height: 48px;
-  color: #4d899c;
+  font-weight: 300 !important;
+  font-size: 54px !important;
+  line-height: 48px !important;
+  color: #4d899c !important;
 }
 .homepage-datas .col .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -591,10 +632,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-exps h3 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 42px;
-  color: #000;
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #000 !important;
 }
 .homepage-exps .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -611,10 +652,10 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 .homepage-exps .col h5 {
   font-family: "ITCSouvenir-md";
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 36px;
-  color: #191919;
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  color: #191919 !important;
 }
 .homepage-exps .col p {
   font-family: "Instrument Sans", sans-serif;
