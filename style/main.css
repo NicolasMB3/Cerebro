@@ -43,6 +43,10 @@ h3 {
   border-radius: 100px;
   border: 1px solid transparent;
   padding: 12px 22px;
+  transition: 0.25s all ease-in-out; /* Ajout de la transition */
+}
+.btn_green:hover {
+  filter: brightness(90%);
 }
 
 .btn_transparent {
@@ -55,6 +59,26 @@ h3 {
   border-radius: 100px;
   border: 1px solid #191919;
   padding: 12px 22px;
+  transition: 0.25s all ease-in-out; /* Ajout de la transition */
+}
+.btn_transparent:hover {
+  background: rgba(223, 222, 222, 0.2666666667);
+}
+
+.btn_full_transparent {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191919;
+  background: transparent;
+  border-radius: 100px;
+  border: 0px solid #191919;
+  padding: 12px 22px;
+  transition: 0.25s all ease-in-out; /* Ajout de la transition */
+}
+.btn_full_transparent:hover {
+  background-color: rgba(25, 25, 25, 0.08);
 }
 
 @font-face {
@@ -73,12 +97,30 @@ footer .newsletter h5 {
   line-height: 44px !important;
   color: #FCFAF7 !important;
 }
+@media (max-width: 767.98px) {
+  footer .newsletter h5 {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    color: #FCFAF7 !important;
+  }
+}
 footer .newsletter p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 300 !important;
   font-size: 18px !important;
   line-height: 28px !important;
   color: #FCFAF7 !important;
+}
+@media (max-width: 767.98px) {
+  footer .newsletter p {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: #FCFAF7 !important;
+  }
 }
 footer .newsletter input {
   height: 48px;
@@ -106,9 +148,9 @@ footer .newsletter button {
   border: 0px solid transparent;
   padding: 12px 22px;
   margin-left: 6px;
-  width: 58%;
+  width: 406px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   footer .newsletter button {
     margin-left: 0px;
   }
@@ -122,10 +164,19 @@ footer .row:nth-child(2) h5 {
 }
 footer .row:nth-child(2) a, footer .row:nth-child(2) p {
   font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 24px !important;
   color: #FCFAF7 !important;
+}
+@media (max-width: 767.98px) {
+  footer .row:nth-child(2) a, footer .row:nth-child(2) p {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: #FCFAF7 !important;
+  }
 }
 footer hr {
   color: #656463;
@@ -175,7 +226,9 @@ header .navbar {
   color: #191919 !important;
   max-width: 1320px;
   background: linear-gradient(0deg, rgba(227, 225, 222, 0.3), rgba(227, 225, 222, 0.3)), rgba(251, 248, 244, 0.6);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px); /* Standard syntax */
+  -webkit-backdrop-filter: blur(4px); /* Chrome, Safari, Opera */
+  backdrop-filter: blur(4px) brightness(90%); /* Firefox */
   padding: 12px 16px;
   margin-top: 22px;
   border-radius: 5000px;
@@ -226,7 +279,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     padding: 10vh 0 4vh 0;
   }
 }
-#homepage-plateforme .test {
+#homepage-plateforme .header-background {
   position: absolute;
   top: -250px;
   right: -6rem;
@@ -234,6 +287,11 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   border-radius: 0px 0px 0px 24px;
   background: url(./../img/bg.png), rgba(227, 225, 222, 0.2274509804);
   background-blend-mode: DIFFERENCE, NORMAL;
+}
+@media (max-width: 767.98px) {
+  #homepage-plateforme .header-background {
+    display: none;
+  }
 }
 #homepage-plateforme h1 {
   font-family: "ITCSouvenir-md";
@@ -290,34 +348,16 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   }
 }
 
-/* Fifth container */
-.homepage-ressources {
-  padding: 10vh 0 10vh 0;
-  overflow-x: auto;
+/* Second container */
+.homepage-description {
+  padding: 10vh 0;
 }
 @media (max-width: 767.98px) {
-  .homepage-ressources {
-    padding: 4rem 0 2rem 0;
+  .homepage-description {
+    padding: 4vh 0;
   }
 }
-.homepage-ressources h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 150% !important;
-  color: #191919 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-ressources h3 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #191919 !important;
-    width: 100% !important;
-  }
-}
-.homepage-ressources .sub-title {
+.homepage-description .sub-title {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -326,7 +366,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   text-transform: uppercase;
 }
 @media (max-width: 767.98px) {
-  .homepage-ressources .sub-title {
+  .homepage-description .sub-title {
     font-family: "Instrument Sans", sans-serif;
     font-weight: 600 !important;
     font-size: 14px !important;
@@ -334,64 +374,44 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     color: #33788d !important;
   }
 }
-.homepage-ressources .col {
-  background: linear-gradient(129deg, rgba(227, 225, 222, 0.6) 0%, rgba(227, 225, 222, 0) 100%);
-  border-radius: 16px;
-}
-.homepage-ressources .col h5 {
+.homepage-description h3 {
   font-family: "ITCSouvenir-md";
   font-weight: 300 !important;
-  font-size: 24px !important;
-  line-height: 36px !important;
-  color: #191919 !important;
+  font-size: 36px !important;
+  line-height: 150% !important;
+  color: #000 !important;
 }
 @media (max-width: 767.98px) {
-  .homepage-ressources .col h5 {
+  .homepage-description h3 {
     font-family: "ITCSouvenir-md";
     font-weight: 300 !important;
-    font-size: 22px !important;
+    font-size: 24px !important;
     line-height: 150% !important;
     color: #191919 !important;
   }
 }
-.homepage-ressources .col p {
+.homepage-description .sub-text {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
-  font-size: 16px !important;
-  line-height: 28px !important;
+  font-size: 18px !important;
+  line-height: 32px !important;
   color: #323231 !important;
 }
 @media (max-width: 767.98px) {
-  .homepage-ressources .col p {
+  .homepage-description .sub-text {
     font-family: "Instrument Sans", sans-serif;
     font-weight: 400 !important;
     font-size: 16px !important;
-    line-height: 160% !important;
+    line-height: 175% !important;
     color: #323231 !important;
   }
 }
-@media (max-width: 767.98px) {
-  .homepage-ressources .container {
-    overflow: auto;
-    padding-bottom: 32px;
-  }
-  .homepage-ressources .row {
-    width: 900px;
-    overflow-x: auto;
-  }
-}
-.homepage-ressources .image-box {
-  border-radius: 16px;
-  width: 58px;
-}
-.homepage-ressources .col:first-child .image-box {
-  background-color: #80abb8;
-}
-.homepage-ressources .col:nth-child(2) .image-box {
-  background-color: #C48AA6;
-}
-.homepage-ressources .col:nth-child(3) .image-box {
-  background-color: #91A9A3;
+.homepage-description a {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+  color: #33788d !important;
 }
 
 /* Third container */
@@ -497,105 +517,34 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   }
 }
 
-/* Second container */
-.homepage-description {
-  padding: 10vh 0;
+/* Fifth container */
+.homepage-ressources {
+  padding: 10vh 0 10vh 0;
+  overflow-x: auto;
 }
 @media (max-width: 767.98px) {
-  .homepage-description {
-    padding: 4vh 0;
+  .homepage-ressources {
+    padding: 4rem 0 2rem 0;
   }
 }
-.homepage-description .sub-title {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-  color: #33788d !important;
-  text-transform: uppercase;
-}
-@media (max-width: 767.98px) {
-  .homepage-description .sub-title {
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: 600 !important;
-    font-size: 14px !important;
-    line-height: 150% !important;
-    color: #33788d !important;
-  }
-}
-.homepage-description h3 {
+.homepage-ressources h3 {
   font-family: "ITCSouvenir-md";
   font-weight: 300 !important;
   font-size: 36px !important;
   line-height: 150% !important;
-  color: #000 !important;
+  color: #191919 !important;
 }
 @media (max-width: 767.98px) {
-  .homepage-description h3 {
+  .homepage-ressources h3 {
     font-family: "ITCSouvenir-md";
     font-weight: 300 !important;
     font-size: 24px !important;
     line-height: 150% !important;
     color: #191919 !important;
+    width: 100% !important;
   }
 }
-.homepage-description .sub-text {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 400 !important;
-  font-size: 18px !important;
-  line-height: 32px !important;
-  color: #323231 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-description .sub-text {
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 175% !important;
-    color: #323231 !important;
-  }
-}
-.homepage-description a {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  line-height: 28px !important;
-  color: #33788d !important;
-}
-
-/* Third container */
-.homepage-boost {
-  padding: 0 0 10vh 0;
-}
-@media (max-width: 767.98px) {
-  .homepage-boost {
-    padding: 0 0 7vh 0;
-  }
-}
-.homepage-boost p {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 400 !important;
-  font-size: 16px !important;
-  line-height: 28px !important;
-  color: #323231 !important;
-}
-.homepage-boost h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 42px !important;
-  color: #000 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-boost h3 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #000 !important;
-  }
-}
-.homepage-boost .sub-title {
+.homepage-ressources .sub-title {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -604,7 +553,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   text-transform: uppercase;
 }
 @media (max-width: 767.98px) {
-  .homepage-boost .sub-title {
+  .homepage-ressources .sub-title {
     font-family: "Instrument Sans", sans-serif;
     font-weight: 600 !important;
     font-size: 14px !important;
@@ -612,72 +561,68 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     color: #33788d !important;
   }
 }
-.homepage-boost a {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  line-height: 28px !important;
-  color: #33788d !important;
+.homepage-ressources .col {
+  background: linear-gradient(129deg, rgba(227, 225, 222, 0.6) 0%, rgba(227, 225, 222, 0) 100%);
+  border-radius: 16px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.homepage-boost .row .position-absolute {
-  width: 650px;
-  z-index: -1;
-  left: -200px;
-  top: -90px;
-}
-
-/* Third container */
-.homepage-licence {
-  padding: 10vh 0 10vh 0;
-  background-color: #E9EEED;
+.homepage-ressources .col h5 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  color: #191919 !important;
 }
 @media (max-width: 767.98px) {
-  .homepage-licence {
-    padding: 4vh 0 5vh 0;
-  }
-  .homepage-licence button {
-    width: 100%;
+  .homepage-ressources .col h5 {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 22px !important;
+    line-height: 150% !important;
+    color: #191919 !important;
   }
 }
-.homepage-licence p {
+.homepage-ressources .col p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 28px !important;
   color: #323231 !important;
 }
-.homepage-licence h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 42px !important;
-  color: #000 !important;
-}
 @media (max-width: 767.98px) {
-  .homepage-licence h3 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #000 !important;
+  .homepage-ressources .col p {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 160% !important;
+    color: #323231 !important;
   }
 }
-.homepage-licence .sub-title {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 125% !important;
-  color: #4F756C !important;
-  font-style: italic;
-}
 @media (max-width: 767.98px) {
-  .homepage-licence .sub-title {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #4F756C !important;
+  .homepage-ressources .container {
+    overflow: auto;
+    padding-bottom: 32px;
   }
+  .homepage-ressources .row {
+    width: 900px;
+    overflow-x: auto;
+  }
+}
+.homepage-ressources .image-box {
+  border-radius: 16px;
+  width: 58px;
+}
+.homepage-ressources .col:first-child .image-box {
+  background-color: #80abb8;
+}
+.homepage-ressources .col:nth-child(2) .image-box {
+  background-color: #C48AA6;
+}
+.homepage-ressources .col:nth-child(3) .image-box {
+  background-color: #91A9A3;
 }
 
 /* Fourth container */
@@ -748,7 +693,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   line-height: 24px !important;
   color: #A04470 !important;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .homepage-avantage .productivity .sub-title {
     font-family: "Instrument Sans", sans-serif;
     font-weight: 600 !important;
@@ -765,7 +710,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   line-height: 36px !important;
   color: #191919 !important;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .homepage-avantage .productivity h5 {
     font-family: "ITCSouvenir-md";
     font-weight: 300 !important;
@@ -793,7 +738,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   line-height: 24px !important;
   color: #19677f !important;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .homepage-avantage .quality .sub-title {
     font-family: "Instrument Sans", sans-serif;
     font-weight: 600 !important;
@@ -810,7 +755,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   line-height: 36px !important;
   color: #191919 !important;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .homepage-avantage .quality h5 {
     font-family: "ITCSouvenir-md";
     font-weight: 300 !important;
@@ -838,7 +783,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   line-height: 24px !important;
   color: #D3DCDA !important;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .homepage-avantage .patients .sub-title {
     font-family: "Instrument Sans", sans-serif;
     font-weight: 600 !important;
@@ -855,7 +800,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   line-height: 36px !important;
   color: #FCFAF7 !important;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .homepage-avantage .patients h5 {
     font-family: "ITCSouvenir-md";
     font-weight: 300 !important;
@@ -883,7 +828,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   line-height: 24px !important;
   color: #4F756C !important;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .homepage-avantage .tools .sub-title {
     font-family: "Instrument Sans", sans-serif;
     font-weight: 600 !important;
@@ -900,7 +845,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   line-height: 36px !important;
   color: #191919 !important;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .homepage-avantage .tools h5 {
     font-family: "ITCSouvenir-md";
     font-weight: 300 !important;
@@ -1039,6 +984,13 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   line-height: 32px !important;
   color: #323231 !important;
 }
+.homepage-exps .col .commentaire {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 160px;
+}
 .homepage-exps .col .author {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500 !important;
@@ -1121,6 +1073,125 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   transform: rotate(-180deg);
 }
 
+.homepage-boost {
+  padding: 0 0 10vh 0;
+}
+@media (max-width: 767.98px) {
+  .homepage-boost {
+    padding: 0 0 7vh 0;
+  }
+}
+.homepage-boost p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #323231 !important;
+}
+.homepage-boost h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #000 !important;
+}
+@media (max-width: 767.98px) {
+  .homepage-boost h3 {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 150% !important;
+    color: #000 !important;
+  }
+}
+.homepage-boost .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #33788d !important;
+  text-transform: uppercase;
+}
+@media (max-width: 767.98px) {
+  .homepage-boost .sub-title {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 150% !important;
+    color: #33788d !important;
+  }
+}
+.homepage-boost a {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+  color: #33788d !important;
+}
+.homepage-boost .row .position-absolute {
+  width: 650px;
+  z-index: -1;
+  left: -200px;
+  top: -90px;
+}
+
+/* Last container */
+.homepage-licence {
+  padding: 10vh 0 10vh 0;
+  background-color: #E9EEED;
+}
+@media (max-width: 767.98px) {
+  .homepage-licence {
+    padding: 4vh 0 5vh 0;
+  }
+  .homepage-licence button {
+    width: 100%;
+  }
+}
+.homepage-licence p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #323231 !important;
+}
+.homepage-licence h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #000 !important;
+}
+@media (max-width: 767.98px) {
+  .homepage-licence h3 {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 150% !important;
+    color: #000 !important;
+  }
+}
+.homepage-licence .sub-title {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 125% !important;
+  color: #4F756C !important;
+  font-style: italic;
+}
+@media (max-width: 767.98px) {
+  .homepage-licence .sub-title {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 150% !important;
+    color: #4F756C !important;
+  }
+}
+.homepage-licence button {
+  font-size: 18px;
+}
+
 /* Infinity and beyond */
 header {
   z-index: 99999;
@@ -1138,4 +1209,8 @@ body {
 
 .navbar-transition {
   transition: margin 0.3s ease;
+}
+
+.container {
+  padding: 0 20px !important;
 }

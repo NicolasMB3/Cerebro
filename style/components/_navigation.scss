@@ -21,7 +21,9 @@ header {
       @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-900);
       max-width: 1320px;
       background: linear-gradient(0deg, rgba(227, 225, 222, 0.3), rgba(227, 225, 222, 0.3)), rgba(251, 248, 244, 0.6);
-      backdrop-filter: blur(6px);
+      backdrop-filter: blur(4px); /* Standard syntax */
+      -webkit-backdrop-filter: blur(4px); /* Chrome, Safari, Opera */
+      backdrop-filter: blur(4px) brightness(90%); /* Firefox */
       @include media-breakpoint-down(lg){
          padding: 16px 20px;
       }

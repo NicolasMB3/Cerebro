@@ -64,7 +64,27 @@ h3 {
 
 .btn_green {
    @include cbro-button(500, 16px, $cbro-green-50, $cbro-green-700, 1px , transparent);
+   transition: 0.25s all ease-in-out; /* Ajout de la transition */
+   
+   &:hover {
+      filter: brightness(90%);
+   }
 }
+
 .btn_transparent {
    @include cbro-button(500, 16px, $cbro-gray-900, transparent, 1px , $cbro-gray-900);
+   transition: 0.25s all ease-in-out; /* Ajout de la transition */
+   
+   &:hover {
+      background: #dfdede44;
+   }
+}
+
+.btn_full_transparent {
+   @include cbro-button(500, 16px, $cbro-gray-900, transparent, 0px , $cbro-gray-900);
+   transition: 0.25s all ease-in-out; /* Ajout de la transition */
+   
+   &:hover {
+      background-color: rgba(25, 25, 25, 0.08);
+   }
 }

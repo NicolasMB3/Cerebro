@@ -6,9 +6,12 @@
    overflow-y: hidden;
    padding: 15vh 0 8vh 0;
    @include media-breakpoint-down(md){
-      padding: 10vh 0 4vh 0;
+      padding:$cbro-padding-10vh 0 4vh 0;
    }
-   .test {
+   .header-background {
+      @include media-breakpoint-down(md){
+         display: none;
+      }
       position: absolute;
       top: -250px;
       right: -6rem;
@@ -49,19 +52,11 @@
    }
 }
 
-/* Fifth container */
-.homepage-ressources {
-   padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
-   overflow-x: auto;
+/* Second container */
+.homepage-description {
+   padding:$cbro-padding-10vh 0;
    @include media-breakpoint-down(md){
-      padding: 4rem 0 2rem 0;
-   }
-   h3 {
-      @include cbro-title(300, 36px, 150%, $cbro-gray-900);
-      @include media-breakpoint-down(md){
-         @include cbro-title(300, 24px, 150%, $cbro-gray-900);
-         width: 100% !important;
-      }
+      padding: 4vh 0;
    }
    .sub-title {
       @include cbro-paragraphe(600, 16px, 24px, $cbro-blue-700);
@@ -70,50 +65,20 @@
       }
       text-transform: uppercase;
    }
-   .col {
-      background: linear-gradient(129deg, rgba(227, 225, 222, 0.60) 0%, rgba(227, 225, 222, 0.00) 100%);
-      border-radius: $cbro-border-radius-8;
-      h5 {
-         @include cbro-title(300, 24px, 36px, $cbro-gray-900);
-         @include media-breakpoint-down(md){
-            @include cbro-title(300, 22px, 150%, $cbro-gray-900);
-         }
-      }
-      p {
-         @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
-         @include media-breakpoint-down(md){
-            @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-800);
-         }
+   h3 {
+      @include cbro-title(300, 36px, 150%, $cbro-black);
+      @include media-breakpoint-down(md){
+         @include cbro-title(300, 24px, 150%, $cbro-gray-900);
       }
    }
-   @include media-breakpoint-down(md){
-      .container {
-         overflow: auto;
-         padding-bottom: 32px;
-      }
-      .row {
-         width: 900px;
-         overflow-x: auto;
+   .sub-text {
+      @include cbro-paragraphe(400, 18px, 32px, $cbro-gray-800);
+      @include media-breakpoint-down(md){
+         @include cbro-paragraphe(400, 16px, 175%, $cbro-gray-800);
       }
    }
-   .image-box {
-      border-radius: $cbro-border-radius-8;
-      width: 58px;
-   }
-   .col:first-child {
-      .image-box {
-         background-color: $cbro-blue-400;
-      }
-   }
-   .col:nth-child(2) {
-      .image-box {
-         background-color: $cbro-purple-400;
-      }
-   }
-   .col:nth-child(3) {
-      .image-box {
-         background-color: $cbro-green-400;
-      }
+   a {
+      @include cbro-paragraphe(500, 18px, 28px, $cbro-blue-700);
    }
 }
 
@@ -168,49 +133,18 @@
    }
 }
 
-/* Second container */
-.homepage-description {
-   padding: 10vh 0;
+/* Fifth container */
+.homepage-ressources {
+   padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
+   overflow-x: auto;
    @include media-breakpoint-down(md){
-      padding: 4vh 0;
-   }
-   .sub-title {
-      @include cbro-paragraphe(600, 16px, 24px, $cbro-blue-700);
-      @include media-breakpoint-down(md){
-         @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-700);
-      }
-      text-transform: uppercase;
+      padding: 4rem 0 2rem 0;
    }
    h3 {
-      @include cbro-title(300, 36px, 150%, $cbro-black);
+      @include cbro-title(300, 36px, 150%, $cbro-gray-900);
       @include media-breakpoint-down(md){
          @include cbro-title(300, 24px, 150%, $cbro-gray-900);
-      }
-   }
-   .sub-text {
-      @include cbro-paragraphe(400, 18px, 32px, $cbro-gray-800);
-      @include media-breakpoint-down(md){
-         @include cbro-paragraphe(400, 16px, 175%, $cbro-gray-800);
-      }
-   }
-   a {
-      @include cbro-paragraphe(500, 18px, 28px, $cbro-blue-700);
-   }
-}
-
-/* Third container */
-.homepage-boost {
-   padding: 0 0 $cbro-padding-10vh 0;
-   @include media-breakpoint-down(md){
-      padding: 0 0 7vh 0;
-   }
-   p {
-      @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
-   }
-   h3 {
-      @include cbro-title(300, 36px, 42px, $cbro-black);
-      @include media-breakpoint-down(md){
-         @include cbro-title(300, 24px, 150%, $cbro-black);
+         width: 100% !important;
       }
    }
    .sub-title {
@@ -220,44 +154,55 @@
       }
       text-transform: uppercase;
    }
-   a {
-      @include cbro-paragraphe(500, 18px, 28px, $cbro-blue-700);
+   .col {
+      background: linear-gradient(129deg, rgba(227, 225, 222, 0.60) 0%, rgba(227, 225, 222, 0.00) 100%);
+      border-radius: $cbro-border-radius-8;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h5 {
+         @include cbro-title(300, 24px, 36px, $cbro-gray-900);
+         @include media-breakpoint-down(md){
+            @include cbro-title(300, 22px, 150%, $cbro-gray-900);
+         }
+      }
+      p {
+         @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+         @include media-breakpoint-down(md){
+            @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-800);
+         }
+      }
    }
-   .row .position-absolute {
-      width: 650px;
-      z-index: -1;
-      left: -200px;
-      top: -90px;
-   }
-}
-
-/* Third container */
-.homepage-licence {
-   padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
    @include media-breakpoint-down(md){
-      padding: 4vh 0 5vh 0;
-      button {
-         width: 100%;
+      .container {
+         overflow: auto;
+         padding-bottom: 32px;
+      }
+      .row {
+         width: 900px;
+         overflow-x: auto;
       }
    }
-   background-color: $cbro-green-50;
-   p {
-      @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+   .image-box {
+      border-radius: $cbro-border-radius-8;
+      width: 58px;
    }
-   h3 {
-      @include cbro-title(300, 36px, 42px, $cbro-black);
-      @include media-breakpoint-down(md){
-         @include cbro-title(300, 24px, 150%, $cbro-black);
+   .col:first-child {
+      .image-box {
+         background-color: $cbro-blue-400;
       }
    }
-   .sub-title {
-      @include cbro-title(300, 36px, 125%, $cbro-green-700);
-      @include media-breakpoint-down(md){
-         @include cbro-title(300, 24px, 150%, $cbro-green-700);
+   .col:nth-child(2) {
+      .image-box {
+         background-color: $cbro-purple-400;
       }
-      font-style: italic;
    }
-
+   .col:nth-child(3) {
+      .image-box {
+         background-color: $cbro-green-400;
+      }
+   }
 }
 
 /* Fourth container */
@@ -295,14 +240,14 @@
       border-radius: $cbro-border-radius-16;
       .sub-title {
          @include cbro-paragraphe(600, 16px, 24px, $cbro-purple-700);
-         @include media-breakpoint-down(md){
+         @include media-breakpoint-down(lg){
             @include cbro-paragraphe(600, 14px, 150%, $cbro-purple-700);
             text-align: center
          }
       }
       h5 {
          @include cbro-title(300, 24px, 36px, $cbro-gray-900);
-         @include media-breakpoint-down(md){
+         @include media-breakpoint-down(lg){
             @include cbro-title(300, 22px, 150%, $cbro-gray-900);
             text-align: center
          }
@@ -316,14 +261,14 @@
       border-radius: $cbro-border-radius-16;
       .sub-title {
          @include cbro-paragraphe(600, 16px, 24px, $cbro-blue-800);
-         @include media-breakpoint-down(md){
+         @include media-breakpoint-down(lg){
             @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-800);
             text-align: center
          }
       }
       h5 {
          @include cbro-title(300, 24px, 36px, $cbro-gray-900);
-         @include media-breakpoint-down(md){
+         @include media-breakpoint-down(lg){
             @include cbro-title(300, 22px, 150%, $cbro-gray-900);
             text-align: center
          }
@@ -337,14 +282,14 @@
       border-radius: $cbro-border-radius-16;
       .sub-title {
          @include cbro-paragraphe(600, 16px, 24px, $cbro-green-100);
-         @include media-breakpoint-down(md){
+         @include media-breakpoint-down(lg){
             @include cbro-paragraphe(600, 14px, 150%, $cbro-green-100);
             text-align: center
          }
       }
       h5 {
          @include cbro-title(300, 24px, 36px, $cbro-snow-50);
-         @include media-breakpoint-down(md){
+         @include media-breakpoint-down(lg){
             @include cbro-title(300, 22px, 150%, $cbro-snow-50);
             text-align: center
          }
@@ -358,14 +303,14 @@
       border-radius: $cbro-border-radius-16;
       .sub-title {
          @include cbro-paragraphe(600, 16px, 24px, $cbro-green-700);
-         @include media-breakpoint-down(md){
+         @include media-breakpoint-down(lg){
             @include cbro-paragraphe(600, 14px, 150%, $cbro-green-700);
             text-align: center
          }
       }
       h5 {
          @include cbro-title(300, 24px, 36px, $cbro-gray-900);
-         @include media-breakpoint-down(md){
+         @include media-breakpoint-down(lg){
             @include cbro-title(300, 22px, 150%, $cbro-gray-900);
             text-align: center
          }
@@ -409,7 +354,7 @@
 .homepage-exps {
    padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
    @include media-breakpoint-down(md){
-      padding: 4vh 0 10vh 0;
+      padding: 4vh 0$cbro-padding-10vh 0;
    }
    p {
       @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
@@ -436,6 +381,13 @@
       }
       p {
          @include cbro-paragraphe(400, 20px, 32px, $cbro-gray-800);
+      }
+      .commentaire {
+         display: -webkit-box;
+         -webkit-line-clamp: 5;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         height: 160px;
       }
       .author {
          @include cbro-paragraphe(500, 16px, 24px, $cbro-gray-900);
@@ -480,5 +432,68 @@
    }
    #arrow_prev {
       transform: rotate(-180deg);
+   }
+}
+
+.homepage-boost {
+   padding: 0 0 $cbro-padding-10vh 0;
+   @include media-breakpoint-down(md){
+      padding: 0 0 7vh 0;
+   }
+   p {
+      @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+   }
+   h3 {
+      @include cbro-title(300, 36px, 42px, $cbro-black);
+      @include media-breakpoint-down(md){
+         @include cbro-title(300, 24px, 150%, $cbro-black);
+      }
+   }
+   .sub-title {
+      @include cbro-paragraphe(600, 16px, 24px, $cbro-blue-700);
+      @include media-breakpoint-down(md){
+         @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-700);
+      }
+      text-transform: uppercase;
+   }
+   a {
+      @include cbro-paragraphe(500, 18px, 28px, $cbro-blue-700);
+   }
+   .row .position-absolute {
+      width: 650px;
+      z-index: -1;
+      left: -200px;
+      top: -90px;
+   }
+}
+
+/* Last container */
+.homepage-licence {
+   padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
+   @include media-breakpoint-down(md){
+      padding: 4vh 0 5vh 0;
+      button {
+         width: 100%;
+      }
+   }
+   background-color: $cbro-green-50;
+   p {
+      @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+   }
+   h3 {
+      @include cbro-title(300, 36px, 42px, $cbro-black);
+      @include media-breakpoint-down(md){
+         @include cbro-title(300, 24px, 150%, $cbro-black);
+      }
+   }
+   .sub-title {
+      @include cbro-title(300, 36px, 125%, $cbro-green-700);
+      @include media-breakpoint-down(md){
+         @include cbro-title(300, 24px, 150%, $cbro-green-700);
+      }
+      font-style: italic;
+   }
+   button {
+      font-size: 18px;
    }
 }
