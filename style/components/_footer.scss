@@ -21,6 +21,9 @@ footer {
       button {
          @include cbro-button(500, 16px, $cbro-gray-800, $cbro-white, 0px , transparent);
          margin-left: 6px;
+         @include media-breakpoint-down(md) {
+            margin-left: 0px;
+         }
          width: 58%;
       }
    }
@@ -34,5 +37,13 @@ footer {
    }
    hr {
       color: $cbro-gray-600;
+   }
+   @include media-breakpoint-down(md){
+      form {
+         button {
+            margin-top: 14px;
+            width: 100% !important;
+         }
+      }
    }
 }
