@@ -372,22 +372,25 @@
       }
       text-transform: uppercase;
    }
+   .commentaire {
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      height: 195px;
+   }
    .col {
       background-color: rgba(255, 255, 255, 0.01);
       border-radius: $cbro-border-radius-8;
       border: 1px solid $cbro-gray-200;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
       h5 {
          @include cbro-title(300, 24px, 36px, $cbro-gray-900);
       }
       p {
          @include cbro-paragraphe(400, 20px, 32px, $cbro-gray-800);
-      }
-      .commentaire {
-         display: -webkit-box;
-         -webkit-line-clamp: 5;
-         -webkit-box-orient: vertical;
-         overflow: hidden;
-         height: 160px;
       }
       .author {
          @include cbro-paragraphe(500, 16px, 24px, $cbro-gray-900);

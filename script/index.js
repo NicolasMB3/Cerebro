@@ -1,3 +1,4 @@
+// Animation de la barre de navigation au scroll
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', function() {
    if (window.scrollY > 5) {
