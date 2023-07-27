@@ -22,48 +22,62 @@ window.addEventListener('scroll', function() {
    }
 });
 
-// Récupérer les éléments du DOM
-const commentaires = Array.from(document.querySelectorAll('[id^="commentaire_"]'));
 const arrowPrev = document.getElementById('arrow_prev');
 const arrowNext = document.getElementById('arrow_next');
 
-// Index du commentaire actuellement affiché
-let currentIndex = Math.floor(commentaires.length / 2);
+arrowNext.addEventListener('click', function() {
+  const commentaire1 = document.getElementById('commentaire_1');
+  const commentaire2 = document.getElementById('commentaire_2');
+  const commentaire3 = document.getElementById('commentaire_3');
 
-// Fonction pour mettre à jour l'affichage des commentaires
-function updateDisplay() {
-  commentaires.forEach((element, index) => {
-    if (index === currentIndex) {
-      element.classList.add('active', 'col-lg-6', 'col-12');
-    } else {
-      element.classList.remove('active', 'col-lg-6', 'col-12');
-      element.classList.add('col');
-    }
-  });
-}
+  // Échanger les commentaires
+  const temp = commentaire1.innerHTML;
+  commentaire1.innerHTML = commentaire2.innerHTML;
+  commentaire2.innerHTML = commentaire3.innerHTML;
+  commentaire3.innerHTML = temp;
 
-// Fonction pour afficher le commentaire précédent
-function showPreviousComment() {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateDisplay();
-  }
-}
+  // Réinitialiser les classes d'animation
+  commentaire1.classList.remove('fade-in');
+  commentaire2.classList.remove('fade-in');
+  commentaire3.classList.remove('fade-in');
 
-// Fonction pour afficher le commentaire suivant
-function showNextComment() {
-  if (currentIndex < commentaires.length - 1) {
-    currentIndex++;
-    updateDisplay();
-  }
-}
+  // Appliquer la classe active et l'animation au commentaire déplacé
+  commentaire2.classList.add('active');
+  commentaire1.classList.remove('active');
+  commentaire3.classList.remove('active');
 
-// Écouter les événements de clic sur les flèches
-arrowPrev.addEventListener('click', showPreviousComment);
-arrowNext.addEventListener('click', showNextComment);
+  // Déclencher la nouvelle animation avec un délai
+  setTimeout(function() {
+    commentaire2.classList.add('fade-in');
+  }, 10);
+});
 
-// Mettre à jour l'affichage initial
-updateDisplay();
+arrowPrev.addEventListener('click', function() {
+  const commentaire1 = document.getElementById('commentaire_1');
+  const commentaire2 = document.getElementById('commentaire_2');
+  const commentaire3 = document.getElementById('commentaire_3');
+
+  // Échanger les commentaires
+  const temp = commentaire3.innerHTML;
+  commentaire3.innerHTML = commentaire2.innerHTML;
+  commentaire2.innerHTML = commentaire1.innerHTML;
+  commentaire1.innerHTML = temp;
+
+  // Réinitialiser les classes d'animation
+  commentaire1.classList.remove('fade-in');
+  commentaire2.classList.remove('fade-in');
+  commentaire3.classList.remove('fade-in');
+
+  // Appliquer la classe active et l'animation au commentaire déplacé
+  commentaire2.classList.add('active');
+  commentaire1.classList.remove('active');
+  commentaire3.classList.remove('active');
+
+  // Déclencher la nouvelle animation avec un délai
+  setTimeout(function() {
+    commentaire2.classList.add('fade-in');
+  }, 10);
+});
 
 const collapseHeaders = document.querySelectorAll('[data-bs-toggle="collapse"]');
 const collapseTabs = document.querySelectorAll('.tab-1, .tab-2, .tab-3');
