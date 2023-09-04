@@ -35,6 +35,12 @@
          @include cbro-title(300, 24px, 130%, $cbro-snow-50);
       }
    }
+   &-green {
+      @include cbro-title(300, 32px, 130%, $cbro-green-700);
+      @include media-breakpoint-down(lg){
+         @include cbro-title(300, 24px, 130%, $cbro-green-700);
+      }
+   }
 }
 
 .h4 {

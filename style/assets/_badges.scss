@@ -10,12 +10,18 @@
 
 .cbro-badge {
    &-green {
-      @include cbro-badge($cbro-green-200);
+      @include cbro-badge($cbro-badge-green);
    }
    &-purple {
-      @include cbro-badge($cbro-purple-200);
+      @include cbro-badge($cbro-badge-purple);
    }
    &-blue {
-      @include cbro-badge($cbro-blue-200);
+      @include cbro-badge($cbro-badge-blue);
+   }
+   &-orange {
+      @include cbro-badge($cbro-badge-orange);
+   }
+   &-yellow {
+      @include cbro-badge($cbro-badge-yellow);
    }
 }

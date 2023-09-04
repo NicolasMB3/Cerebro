@@ -3,14 +3,14 @@
 @import './assets/mixins';
 @import './assets/fonts';
 
-/* Base */
-@import './base/base';
-@import './base/animations';
-
 /* Components */
 @import './components/breakpoint';
 @import './components/footer';
 @import './components/navigation';
+
+/* Base */
+@import './base/base';
+@import './base/animations';
 
 /* Stuffs */
 @import './assets/buttons';

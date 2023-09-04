@@ -124,6 +124,11 @@
    @include media-breakpoint-down(md){
       padding: 4rem 0 2rem 0;
    }
+   .w-75 {
+      @include media-breakpoint-down(lg){
+         width: 100% !important;
+      }
+   }
    h3 {
       @include media-breakpoint-down(md){
          width: 100% !important;
