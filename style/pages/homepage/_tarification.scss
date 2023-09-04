@@ -5,6 +5,7 @@
    overflow-x: hidden;
    overflow-y: hidden;
    padding: 10rem 0 0 0;
+   background: url(./../img/noise.svg), $cbro-snow-50;
    @include media-breakpoint-down(lg){
       padding: 7rem 0 0 0;
    }
@@ -21,21 +22,10 @@
          height: auto;
       }
    }
-   h1 {
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 28px, 130%, $cbro-gray-800);
-      }
-   }
    .cards-tarif {
       &_purple {
-         background: url(./../img/bg_colors.png), $cbro-purple-900;
+         background: url(./../img/noise.svg), $cbro-purple-900;
          border-radius: 20px;
-         h3 {
-            @include cbro-title(300, 32px, 130%, $cbro-snow-50);
-            @include media-breakpoint-down(lg){
-               @include cbro-title(300, 24px, 130%, $cbro-snow-50);
-            }
-         }
          p {
             @include cbro-paragraphe(400, 18px, 160%, $cbro-snow-50);
             @include media-breakpoint-down(lg){
@@ -55,7 +45,7 @@
             }
          }
          hr {
-            background: $cbro-purple-700;
+            border: 1px solid $cbro-gray-100;
          }
          .sub-text {
             @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-purple-200);
@@ -74,14 +64,9 @@
          }
       }
       &_white {
-         background: url(./../img/bg_colors.png), $cbro-snow-50;
+         background: $cbro-snow-50;
+         border: 1px solid $cbro-gray-200;
          border-radius: 20px;
-         h3 {
-            @include cbro-title(300, 32px, 130%, $cbro-black);
-            @include media-breakpoint-down(lg){
-               @include cbro-title(300, 24px, 130%, $cbro-gray-900);
-            }
-         }
          p {
             @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-900);
             @include media-breakpoint-down(lg){
@@ -101,7 +86,7 @@
             }
          }
          hr {
-            background: $cbro-purple-700;
+            border: 1px solid $cbro-gray-100;
          }
          .sub-text {
             @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-purple-200);
@@ -116,15 +101,27 @@
          }
       }
    }
+   .illus-absolute {
+      top: 615px;
+      z-index: 0;
+   }
+   .container {
+      position: relative;
+      z-index: 99999;
+   }
+   .btn_white {
+      border: 1px solid $cbro-gray-900;
+   }
 }
 
 /* Derrière Cérébro, des humains */
 #tarif {
-   margin-top: 200px;
-   margin-bottom: 200px;
+   background: url(./../img/noise.svg), $cbro-snow-50;
+   padding-top: 200px;
+   padding-bottom: 200px;
    @include media-breakpoint-down(lg){
-      margin-top: 40px;
-      margin-bottom: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
    }
    .sub-title {
       @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-blue-700);
@@ -132,12 +129,6 @@
          @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-700);
       }
       text-transform: uppercase;
-   }
-   h3 {
-      @include cbro-title(300, 32px, 130%, $cbro-black);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 24px, 130%, $cbro-gray-900);
-      }
    }
    ul {
       li {
@@ -170,6 +161,7 @@
 }
 
 .tarif-faq {
+   background: url(./../img/noise.svg), $cbro-snow-50;
    padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
    @include media-breakpoint-down(lg){
       padding: 4vh 0 6vh 0;
@@ -204,11 +196,7 @@
    .accordion-body {
       @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
    }
-   h3 {
-      @include cbro-title(300, 36px, 42px, $cbro-black);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 24px, 150%, $cbro-black);
-      }
+   h2 {
       span {
          @include cbro-title(300, 36px, 42px, $cbro-blue-700);
          @include media-breakpoint-down(lg){

@@ -17,6 +17,7 @@
 
 /* Barre de navigation (sans le block d'information) */
 header {
+   z-index: 99999999;
    .navbar {
       @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-900);
       max-width: 1320px;

@@ -18,10 +18,15 @@ footer {
          border-radius: 100px;
          border: 1px solid $cbro-gray-500;
          background-color: transparent;
-         padding-bottom: 10px;
+         padding-bottom: 8px;
+         padding-left: 22px;
          &::placeholder {
             @include cbro-paragraphe(300, 14px, 100%, $cbro-snow-50);
-            padding-left: 10px;
+         }
+         &:focus {
+            @include cbro-paragraphe(300, 14px, 100%, $cbro-snow-50);
+            background-color: transparent;
+            border: 1px solid $cbro-gray-500;
          }
       }
       button {

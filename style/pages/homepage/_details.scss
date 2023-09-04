@@ -1,0 +1,7 @@
+#details-hero {
+   padding: 10rem 0 0 0;
+   background: url(./../img/noise.svg), #E7DDF140;
+   @include media-breakpoint-down(lg){
+      padding: 7rem 0 0 0;
+   }
+}

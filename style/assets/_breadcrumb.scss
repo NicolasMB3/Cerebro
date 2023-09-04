@@ -1,0 +1,6 @@
+.breadcrumb {
+   @include cbro-paragraphe(400, 14px, 140%, $cbro-gray-600);
+   @include media-breakpoint-down(lg){
+      @include cbro-paragraphe(400, 14px, 140%, $cbro-gray-600);
+   }
+}

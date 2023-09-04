@@ -2,7 +2,6 @@
 @import './assets/variables';
 @import './assets/mixins';
 @import './assets/fonts';
-@import './assets/buttons';
 
 /* Base */
 @import './base/base';
@@ -13,6 +12,13 @@
 @import './components/footer';
 @import './components/navigation';
 
+/* Stuffs */
+@import './assets/buttons';
+@import './assets/titles';
+@import './assets/breadcrumb';
+@import './assets/badges';
+
 /* Pages */
 @import './pages/homepage/container';
 @import './pages/homepage/tarification';
+@import './pages/homepage/details';
