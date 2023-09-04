@@ -5,11 +5,11 @@
    overflow-x: hidden;
    overflow-y: hidden;
    padding: 15vh 0 8vh 0;
-   @include media-breakpoint-down(md){
-      padding:$cbro-padding-10vh 0 4vh 0;
+   @include media-breakpoint-down(lg){
+      padding: 12vh 0 4vh 0;
    }
    .header-background {
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(lg){
          display: none;
       }
       position: absolute;
@@ -55,7 +55,7 @@
 /* Second container */
 .homepage-description {
    padding:$cbro-padding-10vh 0;
-   @include media-breakpoint-down(md){
+   @include media-breakpoint-down(lg){
       padding: 4vh 0;
    }
    .sub-title {
@@ -85,11 +85,14 @@
 /* Third container */
 .homepage-tabs {
    padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
-   @include media-breakpoint-down(md){
+   @include media-breakpoint-down(lg){
       padding: 4rem 0;
+      .img-fluid {
+         width: 100%;
+      }
    }
    /* Mettre en variable globale */
-   background-color: rgba(243, 232, 237, 0.5);
+   background: rgba(243, 232, 237, 0.5);
    p {
       @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
       @include media-breakpoint-down(md){
@@ -212,7 +215,7 @@
       padding: 4rem 0;
    }
    /* Mettre en variable globale */
-   background-color: $cbro-green-900;
+   background: url(./../img/bg_colors.png), $cbro-green-900;
    p {
       @include cbro-paragraphe(400, 16px, 28px, $cbro-snow-50);
    }
@@ -323,7 +326,7 @@
 
 /* Sixth container */
 .homepage-datas {
-   padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
+   padding: 0 0 $cbro-padding-10vh 0;
    p {
       @include cbro-paragraphe(400, 16px, 28px, $cbro-snow-50);
    }
@@ -353,8 +356,8 @@
 /* Seventh container */
 .homepage-exps {
    padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
-   @include media-breakpoint-down(md){
-      padding: 4vh 0$cbro-padding-10vh 0;
+   @include media-breakpoint-down(lg){
+      padding: 4vh 0 6vh 0;
    }
    p {
       @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
@@ -439,9 +442,9 @@
 }
 
 .homepage-boost {
-   padding: 0 0 $cbro-padding-10vh 0;
-   @include media-breakpoint-down(md){
-      padding: 0 0 7vh 0;
+   padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
+   @include media-breakpoint-down(lg){
+      padding: 5vh 0 7vh 0;
    }
    p {
       @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
@@ -479,7 +482,7 @@
          width: 100%;
       }
    }
-   background-color: $cbro-green-50;
+   background: url(./../img/bg_colors.png), $cbro-green-50;
    p {
       @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
    }
