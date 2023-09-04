@@ -1,6 +1,11 @@
 @font-face {
    font-family: 'ITCSouvenir-md';
-   src: url('../font/ITCSouvenir-md.otf') format("opentype");
+   src: url('../font/SouvenirStd-Light.eot');
+   src: url('../font/SouvenirStd-Light.eot?#iefix') format('embedded-opentype'),
+       url('../font/SouvenirStd-Light.woff2') format('woff2'),
+       url('../font/SouvenirStd-Light.woff') format('woff'),
+       url('../font/SouvenirStd-Light.ttf') format('truetype'),
+       url('../font/SouvenirStd-Light.svg#SouvenirStd-Light') format('svg');
    font-weight: normal;
    font-style: normal;
 }

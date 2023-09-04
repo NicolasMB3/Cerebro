@@ -24,25 +24,6 @@
    color: $color !important;
 }
 
-p {
-   margin-top: 0;
-   margin-bottom: 0;
-}
-h1 {
-   @include cbro-title(300, 42px, 125%, $cbro-gray-900);
-   padding-bottom: 24px;
-   span {
-      font-style: italic;
-      color: $cbro-purple-800;
-   }
-}
-h2 {
-   @include cbro-title(300, 36px, 150%, $cbro-black);
-}
-h3 {
-   @include cbro-title(300, 28px, 150%, $cbro-purple-900);
-}
-
 // @button
 // $font-weight : int
 // $font-size : int
@@ -60,31 +41,4 @@ h3 {
    border-radius: 100px;
    border: $border-width solid $border-color;
    padding: 12px 22px;
-}
-
-.btn_green {
-   @include cbro-button(500, 16px, $cbro-green-50, $cbro-green-700, 1px , transparent);
-   transition: 0.25s all ease-in-out; /* Ajout de la transition */
-   
-   &:hover {
-      filter: brightness(90%);
-   }
-}
-
-.btn_transparent {
-   @include cbro-button(500, 16px, $cbro-gray-900, transparent, 1px , $cbro-gray-900);
-   transition: 0.25s all ease-in-out; /* Ajout de la transition */
-   
-   &:hover {
-      background: #dfdede44;
-   }
-}
-
-.btn_full_transparent {
-   @include cbro-button(500, 16px, $cbro-gray-900, transparent, 0px , $cbro-gray-900);
-   transition: 0.25s all ease-in-out; /* Ajout de la transition */
-   
-   &:hover {
-      background-color: rgba(25, 25, 25, 0.08);
-   }
 }

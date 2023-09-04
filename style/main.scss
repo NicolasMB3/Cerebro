@@ -2,6 +2,11 @@
 @import './assets/variables';
 @import './assets/mixins';
 @import './assets/fonts';
+@import './assets/buttons';
+
+/* Base */
+@import './base/base';
+@import './base/animations';
 
 /* Components */
 @import './components/breakpoint';
@@ -10,23 +15,4 @@
 
 /* Pages */
 @import './pages/homepage/container';
-
-/* Infinity and beyond */
-header {
-   z-index: 99999;
-}
-p {
-   margin-bottom: 0 !important;
-   padding-bottom: 0 !important;
-}
-body {
-   background-color: $cbro-green-50;
-   background-image: url('./../img/bg.png');
-}
-
-.navbar-transition {
-   transition: margin 0.3s ease;
-}
-.container {
-   padding: 0 20px !important;
-}
+@import './pages/homepage/tarification';

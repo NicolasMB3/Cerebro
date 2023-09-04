@@ -20,7 +20,7 @@ footer {
          background-color: transparent;
          padding-bottom: 10px;
          &::placeholder {
-            @include cbro-paragraphe(300, 14px, 20px, $cbro-snow-50);
+            @include cbro-paragraphe(300, 14px, 100%, $cbro-snow-50);
             padding-left: 10px;
          }
       }

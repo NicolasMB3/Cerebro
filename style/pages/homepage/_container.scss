@@ -4,12 +4,12 @@
 #homepage-plateforme {
    overflow-x: hidden;
    overflow-y: hidden;
-   padding: 15vh 0 8vh 0;
-   @include media-breakpoint-down(md){
-      padding:$cbro-padding-10vh 0 4vh 0;
+   padding: 7rem 0 8vh 0;
+   @include media-breakpoint-down(lg){
+      padding: 6rem 0 4vh 0;
    }
    .header-background {
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(lg){
          display: none;
       }
       position: absolute;
@@ -17,7 +17,7 @@
       right: -6rem;
       z-index: -1;
       border-radius: 0px 0px 0px 24px;
-      background: url(./../img/bg.png), #e3e1de3a;
+      background: url(./../img/bg.png), rgba(227, 225, 222, 0.205);
       background-blend-mode: DIFFERENCE, NORMAL;
    }
    h1 {
@@ -30,11 +30,11 @@
       @include cbro-paragraphe(400, 18px, 28px, $cbro-gray-700);
       padding-bottom: 40px;
       @include media-breakpoint-down(md){
-         @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-700);
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-700);
       }
    }
    .btn_green {
-      margin-right: 16px;
+      margin-right: $cbro-border-radius-16;
       margin-bottom: 52px;
       @include media-breakpoint-down(md){
          margin-bottom: 14px;
@@ -55,11 +55,11 @@
 /* Second container */
 .homepage-description {
    padding:$cbro-padding-10vh 0;
-   @include media-breakpoint-down(md){
+   @include media-breakpoint-down(lg){
       padding: 4vh 0;
    }
    .sub-title {
-      @include cbro-paragraphe(600, 16px, 24px, $cbro-blue-700);
+      @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-blue-700);
       @include media-breakpoint-down(md){
          @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-700);
       }
@@ -74,7 +74,7 @@
    .sub-text {
       @include cbro-paragraphe(400, 18px, 32px, $cbro-gray-800);
       @include media-breakpoint-down(md){
-         @include cbro-paragraphe(400, 16px, 175%, $cbro-gray-800);
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 175%, $cbro-gray-800);
       }
    }
    a {
@@ -85,15 +85,18 @@
 /* Third container */
 .homepage-tabs {
    padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
-   @include media-breakpoint-down(md){
+   @include media-breakpoint-down(lg){
       padding: 4rem 0;
+      .img-fluid {
+         width: 100%;
+      }
    }
    /* Mettre en variable globale */
-   background-color: rgba(243, 232, 237, 0.5);
+   background: rgba(243, 232, 237, 0.5);
    p {
-      @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+      @include cbro-paragraphe(400, $cbro-border-radius-16, 28px, $cbro-gray-800);
       @include media-breakpoint-down(md){
-         @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-800);
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
       }
    }
    h3 {
@@ -103,7 +106,7 @@
       }
    }
    .sub-title {
-      @include cbro-paragraphe(600, 16px, 24px, $cbro-purple-700);
+      @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-purple-700);
       @include media-breakpoint-down(md){
          @include cbro-paragraphe(600, 14px, 150%, $cbro-purple-700);
       }
@@ -148,7 +151,7 @@
       }
    }
    .sub-title {
-      @include cbro-paragraphe(600, 16px, 24px, $cbro-blue-700);
+      @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-blue-700);
       @include media-breakpoint-down(md){
          @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-700);
       }
@@ -168,9 +171,9 @@
          }
       }
       p {
-         @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 28px, $cbro-gray-800);
          @include media-breakpoint-down(md){
-            @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-800);
+            @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
          }
       }
    }
@@ -212,9 +215,9 @@
       padding: 4rem 0;
    }
    /* Mettre en variable globale */
-   background-color: $cbro-green-900;
+   background: url(./../img/bg_colors.png), $cbro-green-900;
    p {
-      @include cbro-paragraphe(400, 16px, 28px, $cbro-snow-50);
+      @include cbro-paragraphe(400, $cbro-border-radius-16, 28px, $cbro-snow-50);
    }
    h3 {
       @include cbro-title(300, 36px, 42px, $cbro-snow-50);
@@ -223,9 +226,9 @@
       }
    }
    .sub-title {
-      @include cbro-paragraphe(600, 16px, 24px, $cbro-snow-50);
+      @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-snow-50);
       @include media-breakpoint-down(md){
-         @include cbro-paragraphe(600, 16px, 150%, $cbro-snow-50);
+         @include cbro-paragraphe(600, $cbro-border-radius-16, 150%, $cbro-snow-50);
       }
       text-transform: uppercase;
    }
@@ -239,7 +242,7 @@
       background-color: $cbro-purple-50;
       border-radius: $cbro-border-radius-16;
       .sub-title {
-         @include cbro-paragraphe(600, 16px, 24px, $cbro-purple-700);
+         @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-purple-700);
          @include media-breakpoint-down(lg){
             @include cbro-paragraphe(600, 14px, 150%, $cbro-purple-700);
             text-align: center
@@ -253,14 +256,14 @@
          }
       }
       p {
-         @include cbro-paragraphe(400, 16px, 24px, $cbro-gray-800);
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 24px, $cbro-gray-800);
       }
    }
    .quality {
       background-color: $cbro-blue-100;
       border-radius: $cbro-border-radius-16;
       .sub-title {
-         @include cbro-paragraphe(600, 16px, 24px, $cbro-blue-800);
+         @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-blue-800);
          @include media-breakpoint-down(lg){
             @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-800);
             text-align: center
@@ -274,14 +277,14 @@
          }
       }
       p {
-         @include cbro-paragraphe(400, 16px, 24px, $cbro-gray-800);
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 24px, $cbro-gray-800);
       }
    }
    .patients {
       background-color: $cbro-green-600;
       border-radius: $cbro-border-radius-16;
       .sub-title {
-         @include cbro-paragraphe(600, 16px, 24px, $cbro-green-100);
+         @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-green-100);
          @include media-breakpoint-down(lg){
             @include cbro-paragraphe(600, 14px, 150%, $cbro-green-100);
             text-align: center
@@ -295,14 +298,14 @@
          }
       }
       p {
-         @include cbro-paragraphe(400, 16px, 24px, $cbro-snow-50);
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 24px, $cbro-snow-50);
       }
    }
    .tools {
       background-color: $cbro-green-100;
       border-radius: $cbro-border-radius-16;
       .sub-title {
-         @include cbro-paragraphe(600, 16px, 24px, $cbro-green-700);
+         @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-green-700);
          @include media-breakpoint-down(lg){
             @include cbro-paragraphe(600, 14px, 150%, $cbro-green-700);
             text-align: center
@@ -316,16 +319,16 @@
          }
       }
       p {
-         @include cbro-paragraphe(400, 16px, 24px, $cbro-gray-800);
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 24px, $cbro-gray-800);
       }
    }
 }
 
 /* Sixth container */
 .homepage-datas {
-   padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
+   padding: 0 0 $cbro-padding-10vh 0;
    p {
-      @include cbro-paragraphe(400, 16px, 28px, $cbro-snow-50);
+      @include cbro-paragraphe(400, $cbro-border-radius-16, 28px, $cbro-snow-50);
    }
    h3 {
       @include cbro-title(300, 36px, 150%, $cbro-gray-900);
@@ -345,7 +348,7 @@
          @include cbro-paragraphe(500, 20px, 32px, $cbro-gray-800);
       }
       p {
-         @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 28px, $cbro-gray-800);
       }
    }
 }
@@ -353,11 +356,11 @@
 /* Seventh container */
 .homepage-exps {
    padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
-   @include media-breakpoint-down(md){
-      padding: 4vh 0$cbro-padding-10vh 0;
+   @include media-breakpoint-down(lg){
+      padding: 4vh 0 6vh 0;
    }
    p {
-      @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+      @include cbro-paragraphe(400, $cbro-border-radius-16, 28px, $cbro-gray-800);
    }
    h3 {
       @include cbro-title(300, 36px, 42px, $cbro-black);
@@ -366,7 +369,7 @@
       }
    }
    .sub-title {
-      @include cbro-paragraphe(600, 16px, 24px, $cbro-green-700);
+      @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-green-700);
       @include media-breakpoint-down(md){
          @include cbro-paragraphe(600, 14px, 150%, $cbro-green-700);
       }
@@ -393,10 +396,10 @@
          @include cbro-paragraphe(400, 20px, 32px, $cbro-gray-800);
       }
       .author {
-         @include cbro-paragraphe(500, 16px, 24px, $cbro-gray-900);
+         @include cbro-paragraphe(500, $cbro-border-radius-16, 24px, $cbro-gray-900);
       }
       .author-title {
-         @include cbro-paragraphe(500, 16px, 24px, $cbro-gray-400);
+         @include cbro-paragraphe(500, $cbro-border-radius-16, 24px, $cbro-gray-400);
       }
    }
    .active {
@@ -406,17 +409,17 @@
       p {
          @include cbro-paragraphe(400, 20px, 32px, $cbro-gray-900);
          @include media-breakpoint-down(md){
-            @include cbro-paragraphe(400, 16px, 175%, $cbro-gray-900);
+            @include cbro-paragraphe(400, $cbro-border-radius-16, 175%, $cbro-gray-900);
          }
       }
       .author {
-         @include cbro-paragraphe(500, 16px, 24px, $cbro-gray-900);
+         @include cbro-paragraphe(500, $cbro-border-radius-16, 24px, $cbro-gray-900);
          @include media-breakpoint-down(md){
             @include cbro-paragraphe(400, 14px, 20px, $cbro-gray-900);
          }
       }
       .author-title {
-         @include cbro-paragraphe(500, 16px, 24px, $cbro-gray-300);
+         @include cbro-paragraphe(500, $cbro-border-radius-16, 24px, $cbro-gray-300);
          @include media-breakpoint-down(md){
             @include cbro-paragraphe(500, 14px, 20px, $cbro-gray-300);
          }
@@ -439,12 +442,12 @@
 }
 
 .homepage-boost {
-   padding: 0 0 $cbro-padding-10vh 0;
-   @include media-breakpoint-down(md){
-      padding: 0 0 7vh 0;
+   padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
+   @include media-breakpoint-down(lg){
+      padding: 5vh 0 7vh 0;
    }
    p {
-      @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+      @include cbro-paragraphe(400, $cbro-border-radius-16, 28px, $cbro-gray-800);
    }
    h3 {
       @include cbro-title(300, 36px, 42px, $cbro-black);
@@ -453,7 +456,7 @@
       }
    }
    .sub-title {
-      @include cbro-paragraphe(600, 16px, 24px, $cbro-blue-700);
+      @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-blue-700);
       @include media-breakpoint-down(md){
          @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-700);
       }
@@ -479,9 +482,9 @@
          width: 100%;
       }
    }
-   background-color: $cbro-green-50;
+   background: url(./../img/bg_colors.png), $cbro-green-50;
    p {
-      @include cbro-paragraphe(400, 16px, 28px, $cbro-gray-800);
+      @include cbro-paragraphe(400, $cbro-border-radius-16, 28px, $cbro-gray-800);
    }
    h3 {
       @include cbro-title(300, 36px, 42px, $cbro-black);

@@ -24,6 +24,7 @@ header {
       backdrop-filter: blur(4px); /* Standard syntax */
       -webkit-backdrop-filter: blur(4px); /* Chrome, Safari, Opera */
       backdrop-filter: blur(4px) brightness(90%); /* Firefox */
+      transition: transform 0.3s ease-in-out;
       @include media-breakpoint-down(lg){
          padding: 16px 20px;
       }
@@ -56,5 +57,8 @@ header {
             }
          }
       }
+   }
+   .navbar-hidden {
+      transform: translateY(-15vh);
    }
 }
