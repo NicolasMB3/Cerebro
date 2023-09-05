@@ -34,3 +34,48 @@
       }
    }
 }
+
+// Ces formations pourraient vous intéresser
+#cards-border {
+   background: url(./../img/noise.svg), $cbro-snow-50;
+   padding: 108px;
+
+   @include media-breakpoint-down(lg) {
+      padding: 48px 0 40px 0;
+
+      .container {
+         display: block !important;
+         
+         a {
+            margin: 32px 0;
+         }
+      }
+
+      .container {
+         .row {
+            margin-top: 16px;
+            display: block;
+         }
+      }
+   }
+
+   @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
+
+   a {
+      color: $cbro-gray-600;
+   }
+
+   .cards-details {
+      border: 1px solid $cbro-gray-200;
+      border-radius: $cbro-border-radius-16;
+      height: 100%;
+
+      ul {
+         font-family: 'ITCSouvenir-md';
+      }
+
+      &__price {
+         @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
+      }
+   }
+}
