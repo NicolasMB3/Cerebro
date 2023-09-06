@@ -190,3 +190,22 @@
       }
    }
 }
+
+#test {
+   position: relative;
+   width: fit-content;
+   :after {
+      content: attr(data-number);
+      background: red;
+      border-radius: 999px;
+      position: absolute;
+      top: 0;
+      width: 23px;
+      height: 19px;
+      right: -14px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
