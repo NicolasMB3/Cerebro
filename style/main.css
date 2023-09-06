@@ -287,6 +287,9 @@ h3 {
     opacity: 1;
     transform: translateY(0);
   }
+  .homepage-tabs .img-fluid {
+    width: 100%;
+  }
 }
 /* Stuffs */
 .btn_green {
@@ -1515,6 +1518,7 @@ h3 {
     width: 100%;
   }
 }
+
 #tarif-offre .illus-absolute {
   top: 615px;
   z-index: 0;
