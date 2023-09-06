@@ -1,0 +1,218 @@
+@use '../../assets/variables';
+
+/* First container */
+#tarif-offre {
+   overflow-x: hidden;
+   overflow-y: hidden;
+   padding: 10rem 0 0 0;
+   background: url(./../img/noise.svg), $cbro-snow-50;
+   @include media-breakpoint-down(lg){
+      padding: 7rem 0 0 0;
+   }
+   .break-text {
+      width: 55%;
+      @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
+      @include media-breakpoint-down(lg){
+         width: 100%;
+      }
+   }
+   ul {
+      height: 12rem;
+      @include media-breakpoint-down(lg){
+         height: auto;
+      }
+   }
+   .cards-tarif {
+      &_purple {
+         background: url(./../img/noise.svg), $cbro-purple-900;
+         border-radius: 20px;
+         p {
+            @include cbro-paragraphe(400, 18px, 160%, $cbro-snow-50);
+            @include media-breakpoint-down(lg){
+               @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-snow-50);
+            }
+         }
+         li {
+            @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-snow-50);
+            @include media-breakpoint-down(lg){
+               @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-snow-50);
+            }
+         }
+         span {
+            @include cbro-title(300, 32px, 125%, $cbro-snow-50);
+            &+ p {
+               @include cbro-paragraphe(500, 14px, 160%, $cbro-purple-200);
+            }
+         }
+         hr {
+            border: 1px solid $cbro-gray-100;
+         }
+         .sub-text {
+            @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-purple-200);
+         }
+         .btn_white {
+            height: 100%;
+            @include media-breakpoint-down(lg){
+               display: flex;
+               justify-content: center;
+               width: 100%;
+            }
+            img {
+               width: 22px;
+               height: 22px;
+            }
+         }
+      }
+      &_white {
+         background: $cbro-snow-50;
+         border: 1px solid $cbro-gray-200;
+         border-radius: 20px;
+         p {
+            @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-900);
+            @include media-breakpoint-down(lg){
+               @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-900);
+            }
+         }
+         li {
+            @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-900);
+            @include media-breakpoint-down(lg){
+               @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-900);
+            }
+         }
+         span {
+            @include cbro-title(300, 32px, 125%, $cbro-gray-900);
+            &+ p {
+               @include cbro-paragraphe(500, 14px, 160%, $cbro-purple-200);
+            }
+         }
+         hr {
+            border: 1px solid $cbro-gray-100;
+         }
+         .sub-text {
+            @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-purple-200);
+         }
+         .btn_white {
+            height: 100%;
+            @include media-breakpoint-down(lg){
+               display: flex;
+               justify-content: center;
+               width: 100%;
+            }
+         }
+      }
+   }
+   .illus-absolute {
+      top: 615px;
+      z-index: 0;
+   }
+   .container {
+      position: relative;
+      z-index: 99999;
+   }
+   .btn_white {
+      border: 1px solid $cbro-gray-900;
+   }
+}
+
+/* Derrière Cérébro, des humains */
+#tarif {
+   background: url(./../img/noise.svg), $cbro-snow-50;
+   padding-top: 200px;
+   padding-bottom: 200px;
+   @include media-breakpoint-down(lg){
+      padding-top: 40px;
+      padding-bottom: 40px;
+   }
+   .sub-title {
+      @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-blue-700);
+      @include media-breakpoint-down(md){
+         @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-700);
+      }
+      text-transform: uppercase;
+   }
+   ul {
+      li {
+         @include cbro-paragraphe(400, $cbro-border-radius-16, 24px, $cbro-gray-800);
+         img {
+            width: 20px;
+            height: 20px;
+         }
+      }
+   }
+   .paragraphe-mobile {
+      @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
+   }
+   .large-paragraphe {
+      @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
+   }
+   .row {
+      padding: 40px;
+      @include media-breakpoint-down(lg){
+         padding: 20px;
+         border-radius: 8px 64px;
+      }
+      border-radius: 64px 8px;
+      background: $cbro-blue-50;
+      .tarif-illustration {
+         width: auto;
+         height: 100%;
+      }
+   }
+}
+
+.tarif-faq {
+   background: url(./../img/noise.svg), $cbro-snow-50;
+   padding: $cbro-padding-10vh 0 $cbro-padding-10vh 0;
+   @include media-breakpoint-down(lg){
+      padding: 4vh 0 6vh 0;
+   }
+   .accordion-button:focus, .accordion-button:not(.collapsed), .accordion-button {
+      background-color: transparent;
+      &::after {
+         display: none;
+     }
+   }
+   .accordion-header {
+      img {
+         position: absolute;
+         right: -10px;
+         top: 18px;
+         width: 28px;
+         height: 28px;
+      }
+   }
+   button {
+      @include cbro-paragraphe(500, 20px, 32px, $cbro-gray-900);
+      @include media-breakpoint-down(lg){
+         @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
+      }
+   }
+   .accordion-items {
+      background-color: transparent;
+      border-radius: $cbro-border-radius-16;
+      border: 1px solid $cbro-gray-200;
+      padding-right: 32px;
+   }
+   .accordion-body {
+      @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
+   }
+   h2 {
+      span {
+         @include cbro-title(300, 36px, 42px, $cbro-blue-700);
+         @include media-breakpoint-down(lg){
+            @include cbro-title(300, 24px, 150%, $cbro-blue-700);
+         }
+         font-style: italic;
+      }
+   }
+   .sub-title {
+      @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-green-700);
+      @include media-breakpoint-down(lg){
+         @include cbro-paragraphe(600, 14px, 150%, $cbro-green-700);
+      }
+      text-transform: uppercase;
+   }
+   .accordion-items {
+      border-radius: $cbro-border-radius-16 !important;
+   }
+}

@@ -1,0 +1,27 @@
+// @badge
+// $color : string
+@mixin cbro-badge($color) {
+   @include cbro-paragraphe(500, 14px, 150%, $cbro-gray-900);
+   background: $color;
+   border-radius: 99px;
+   padding: 4px 12px;
+   width: fit-content;
+}
+
+.cbro-badge {
+   &-green {
+      @include cbro-badge($cbro-badge-green);
+   }
+   &-purple {
+      @include cbro-badge($cbro-badge-purple);
+   }
+   &-blue {
+      @include cbro-badge($cbro-badge-blue);
+   }
+   &-orange {
+      @include cbro-badge($cbro-badge-orange);
+   }
+   &-yellow {
+      @include cbro-badge($cbro-badge-yellow);
+   }
+}

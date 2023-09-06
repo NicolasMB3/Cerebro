@@ -8,46 +8,17 @@
 @import './components/footer';
 @import './components/navigation';
 
+/* Base */
+@import './base/base';
+@import './base/animations';
+
+/* Stuffs */
+@import './assets/buttons';
+@import './assets/titles';
+@import './assets/breadcrumb';
+@import './assets/badges';
+
 /* Pages */
 @import './pages/homepage/container';
-
-/* Infinity and beyond */
-* {
-   -webkit-font-smoothing: antialiased;
-}
-header {
-   z-index: 99999;
-}
-p {
-   margin-bottom: 0 !important;
-   padding-bottom: 0 !important
-}
-body {
-   background-color: $cbro-green-50;
-   background-image: url('./../img/bg.png');
-}
-
-.navbar-transition {
-   transition: margin 0.3s ease;
-}
-.container {
-   padding: 0 20px !important;
-}
-
-/* WIP */
-.commentaire {
-   transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.fade-in {
-   animation: fadeIn 1s;
-}
-@keyframes fadeIn {
-   from {
-      opacity: 0;
-      transform: translateY(20px);
-   }
-   to {
-      opacity: 1;
-      transform: translateY(0);
-   }
-}
+@import './pages/homepage/tarification';
+@import './pages/homepage/details';

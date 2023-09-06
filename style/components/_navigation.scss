@@ -17,6 +17,7 @@
 
 /* Barre de navigation (sans le block d'information) */
 header {
+   z-index: 99999999;
    .navbar {
       @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-900);
       max-width: 1320px;
@@ -24,6 +25,7 @@ header {
       backdrop-filter: blur(4px); /* Standard syntax */
       -webkit-backdrop-filter: blur(4px); /* Chrome, Safari, Opera */
       backdrop-filter: blur(4px) brightness(90%); /* Firefox */
+      transition: transform 0.3s ease-in-out;
       @include media-breakpoint-down(lg){
          padding: 16px 20px;
       }
@@ -56,5 +58,8 @@ header {
             }
          }
       }
+   }
+   .navbar-hidden {
+      transform: translateY(-15vh);
    }
 }

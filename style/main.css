@@ -1,86 +1,5 @@
+@charset "UTF-8";
 /* Assets */
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h1 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 42px !important;
-  line-height: 125% !important;
-  color: #191919 !important;
-  padding-bottom: 24px;
-}
-h1 span {
-  font-style: italic;
-  color: #942C5E;
-}
-
-h2 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 150% !important;
-  color: #000 !important;
-}
-
-h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 28px !important;
-  line-height: 150% !important;
-  color: #88154C !important;
-}
-
-.btn_green {
-  font-family: "Instrument Sans";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  color: #E9EEED;
-  background: #4F756C;
-  border-radius: 100px;
-  border: 1px solid transparent;
-  padding: 12px 22px;
-  transition: 0.25s all ease-in-out; /* Ajout de la transition */
-}
-.btn_green:hover {
-  filter: brightness(90%);
-}
-
-.btn_transparent {
-  font-family: "Instrument Sans";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  color: #191919;
-  background: transparent;
-  border-radius: 100px;
-  border: 1px solid #191919;
-  padding: 12px 22px;
-  transition: 0.25s all ease-in-out; /* Ajout de la transition */
-}
-.btn_transparent:hover {
-  background: rgba(223, 222, 222, 0.2666666667);
-}
-
-.btn_full_transparent {
-  font-family: "Instrument Sans";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  color: #191919;
-  background: transparent;
-  border-radius: 100px;
-  border: 0px solid #191919;
-  padding: 12px 22px;
-  transition: 0.25s all ease-in-out; /* Ajout de la transition */
-}
-.btn_full_transparent:hover {
-  background-color: rgba(25, 25, 25, 0.08);
-}
-
 @font-face {
   font-family: "ITCSouvenir-md";
   src: url("../font/SouvenirStd-Light.eot");
@@ -129,15 +48,31 @@ footer .newsletter input {
   border-radius: 100px;
   border: 1px solid #7E7D7C;
   background-color: transparent;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+  padding-left: 22px;
+}
+footer .newsletter input::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 100% !important;
+  color: #FCFAF7 !important;
 }
 footer .newsletter input::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 300 !important;
   font-size: 14px !important;
-  line-height: 20px !important;
+  line-height: 100% !important;
   color: #FCFAF7 !important;
-  padding-left: 10px;
+}
+footer .newsletter input:focus {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 100% !important;
+  color: #FCFAF7 !important;
+  background-color: transparent;
+  border: 1px solid #7E7D7C;
 }
 footer .newsletter button {
   font-family: "Instrument Sans";
@@ -220,6 +155,9 @@ footer hr {
 }
 
 /* Barre de navigation (sans le block d'information) */
+header {
+  z-index: 99999999;
+}
 header .navbar {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -231,6 +169,7 @@ header .navbar {
   backdrop-filter: blur(4px); /* Standard syntax */
   -webkit-backdrop-filter: blur(4px); /* Chrome, Safari, Opera */
   backdrop-filter: blur(4px) brightness(90%); /* Firefox */
+  transition: transform 0.3s ease-in-out;
   padding: 12px 16px;
   margin-top: 22px;
   border-radius: 5000px;
@@ -268,42 +207,161 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   background: #4F756C;
   padding: 12px 22px;
 }
+header .navbar-hidden {
+  transform: translateY(-15vh);
+}
 
-/* Pages */
-/* First container */
-#homepage-plateforme {
+/* Base */
+/* Infinity and beyond */
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  z-index: 99999;
+}
+
+body {
   overflow-x: hidden;
-  overflow-y: hidden;
-  padding: 15vh 0 8vh 0;
+  max-width: 100vw;
+  width: 100%;
 }
-@media (max-width: 991.98px) {
-  #homepage-plateforme {
-    padding: 12vh 0 4vh 0;
+
+p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+h1 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 42px !important;
+  line-height: 120% !important;
+  color: #191919 !important;
+  padding-bottom: 24px;
+}
+h1 span {
+  font-style: italic;
+  color: #942C5E;
+}
+
+h2 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 130% !important;
+  color: #000 !important;
+}
+
+h3 {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 28px !important;
+  line-height: 150% !important;
+  color: #88154C !important;
+}
+
+.navbar-transition {
+  transition: margin 0.3s ease;
+}
+
+.container {
+  padding: 0 20px !important;
+}
+
+/* WIP */
+.commentaire {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .homepage-tabs .img-fluid {
+    width: 100%;
   }
 }
-#homepage-plateforme .header-background {
-  position: absolute;
-  top: -250px;
-  right: -6rem;
-  z-index: -1;
-  border-radius: 0px 0px 0px 24px;
-  background: url(./../img/bg.png), rgba(227, 225, 222, 0.2274509804);
-  background-blend-mode: DIFFERENCE, NORMAL;
+/* Stuffs */
+.btn_green {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #E9EEED;
+  background: #4F756C;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  padding: 12px 22px;
+  transition: 0.25s all ease-in-out;
 }
-@media (max-width: 991.98px) {
-  #homepage-plateforme .header-background {
-    display: none;
-  }
+.btn_green:hover {
+  filter: brightness(90%);
 }
-#homepage-plateforme h1 {
+.btn_transparent {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191919;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid #191919;
+  padding: 12px 22px;
+  transition: 0.25s all ease-in-out;
+}
+.btn_transparent:hover {
+  background: rgba(223, 222, 222, 0.2666666667);
+}
+.btn_full_transparent {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191919;
+  background: transparent;
+  border-radius: 100px;
+  border: 0px solid #191919;
+  padding: 12px 22px;
+  transition: 0.25s all ease-in-out;
+}
+.btn_full_transparent:hover {
+  background-color: rgba(25, 25, 25, 0.08);
+}
+.btn_white {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191919;
+  background: #fff;
+  border-radius: 100px;
+  border: 0px solid #191919;
+  padding: 12px 22px;
+  transition: 0.25s all ease-in-out;
+}
+.btn_white:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.h1-dark {
   font-family: "ITCSouvenir-md";
   font-weight: 300 !important;
   font-size: 2.625rem !important;
   line-height: 125% !important;
   color: #191919 !important;
 }
-@media (max-width: 767.98px) {
-  #homepage-plateforme h1 {
+@media (max-width: 991.98px) {
+  .h1-dark {
     font-family: "ITCSouvenir-md";
     font-weight: 300 !important;
     font-size: 28px !important;
@@ -311,11 +369,300 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     color: #191919 !important;
   }
 }
+
+.h2-dark {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 130% !important;
+  color: #000 !important;
+}
+@media (max-width: 991.98px) {
+  .h2-dark {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 130% !important;
+    color: #191919 !important;
+  }
+}
+.h2-white {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 130% !important;
+  color: #FCFAF7 !important;
+}
+@media (max-width: 991.98px) {
+  .h2-white {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 130% !important;
+    color: #FCFAF7 !important;
+  }
+}
+
+.h3-dark {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 32px !important;
+  line-height: 130% !important;
+  color: #000 !important;
+}
+@media (max-width: 991.98px) {
+  .h3-dark {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 130% !important;
+    color: #191919 !important;
+  }
+}
+.h3-white {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 32px !important;
+  line-height: 130% !important;
+  color: #FCFAF7 !important;
+}
+@media (max-width: 991.98px) {
+  .h3-white {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 130% !important;
+    color: #FCFAF7 !important;
+  }
+}
+.h3-green {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 32px !important;
+  line-height: 130% !important;
+  color: #4F756C !important;
+}
+@media (max-width: 991.98px) {
+  .h3-green {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 130% !important;
+    color: #4F756C !important;
+  }
+}
+
+.h4-dark {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 28px !important;
+  line-height: 130% !important;
+  color: #000 !important;
+}
+@media (max-width: 991.98px) {
+  .h4-dark {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 22px !important;
+    line-height: 130% !important;
+    color: #191919 !important;
+  }
+}
+.h4-white {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 28px !important;
+  line-height: 130% !important;
+  color: #FCFAF7 !important;
+}
+@media (max-width: 991.98px) {
+  .h4-white {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 22px !important;
+    line-height: 130% !important;
+    color: #FCFAF7 !important;
+  }
+}
+.h4-purple {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 28px !important;
+  line-height: 130% !important;
+  color: #323231 !important;
+}
+@media (max-width: 991.98px) {
+  .h4-purple {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 22px !important;
+    line-height: 130% !important;
+    color: #323231 !important;
+  }
+}
+
+.h5-dark {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  color: #191919 !important;
+}
+@media (max-width: 991.98px) {
+  .h5-dark {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 22px !important;
+    line-height: 150% !important;
+    color: #191919 !important;
+  }
+}
+.h5-white {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  color: #FCFAF7 !important;
+}
+@media (max-width: 991.98px) {
+  .h5-white {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 22px !important;
+    line-height: 150% !important;
+    color: #FCFAF7 !important;
+  }
+}
+
+.p-dark {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+@media (max-width: 767.98px) {
+  .p-dark {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 160% !important;
+    color: #323231 !important;
+  }
+}
+
+.breadcrumb {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 140% !important;
+  color: #656463 !important;
+}
+@media (max-width: 991.98px) {
+  .breadcrumb {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 140% !important;
+    color: #656463 !important;
+  }
+}
+
+.cbro-badge-green {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+  background: #E3EBD5;
+  border-radius: 99px;
+  padding: 4px 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cbro-badge-purple {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+  background: #E7DDF1;
+  border-radius: 99px;
+  padding: 4px 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cbro-badge-blue {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+  background: #CEE3F6;
+  border-radius: 99px;
+  padding: 4px 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cbro-badge-orange {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+  background: #FDE4E0;
+  border-radius: 99px;
+  padding: 4px 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cbro-badge-yellow {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+  background: #FEEAD2;
+  border-radius: 99px;
+  padding: 4px 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* Pages */
+/* First container */
+#homepage-plateforme {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 7rem 0 8vh 0;
+  background: url(./../img/noise.svg), #FCFAF7;
+}
+@media (max-width: 991.98px) {
+  #homepage-plateforme {
+    padding: 6rem 0 4vh 0;
+  }
+}
+#homepage-plateforme .order-lg-2 {
+  z-index: 99;
+}
+#homepage-plateforme .header-background {
+  background: url(./../img/noise.svg), #E3E1DE;
+  position: absolute;
+  top: -250px;
+  right: -6rem;
+  z-index: 0;
+  border-radius: 0px 0px 0px 24px;
+}
+@media (max-width: 991.98px) {
+  #homepage-plateforme .header-background {
+    display: none;
+  }
+}
 #homepage-plateforme h1 + p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 18px !important;
-  line-height: 28px !important;
+  line-height: 170% !important;
   color: #4C4B4A !important;
   padding-bottom: 40px;
 }
@@ -353,6 +700,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 /* Second container */
 .homepage-description {
   padding: 10vh 0;
+  background: url(./../img/noise.svg), #FCFAF7;
 }
 @media (max-width: 991.98px) {
   .homepage-description {
@@ -374,22 +722,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     font-size: 14px !important;
     line-height: 150% !important;
     color: #33788d !important;
-  }
-}
-.homepage-description h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 150% !important;
-  color: #000 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-description h3 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #191919 !important;
   }
 }
 .homepage-description .sub-text {
@@ -446,22 +778,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     color: #323231 !important;
   }
 }
-.homepage-tabs h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 42px !important;
-  color: #000 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-tabs h3 {
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: 400 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #000 !important;
-  }
-}
 .homepage-tabs .sub-title {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
@@ -483,23 +799,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 16px;
 }
-.homepage-tabs .tab-1 h4, .homepage-tabs .tab-2 h4, .homepage-tabs .tab-3 h4 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 28px !important;
-  line-height: 42px !important;
-  color: #323231 !important;
-  margin-bottom: 0;
-}
-@media (max-width: 767.98px) {
-  .homepage-tabs .tab-1 h4, .homepage-tabs .tab-2 h4, .homepage-tabs .tab-3 h4 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 22px !important;
-    line-height: 150% !important;
-    color: #323231 !important;
-  }
-}
 .homepage-tabs .active {
   /* Mettre en variable globale */
   border: 1px solid rgba(0, 0, 0, 0);
@@ -511,6 +810,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-size: 28px !important;
   line-height: 42px !important;
   color: #88154C !important;
+  margin-bottom: 4px;
 }
 @media (max-width: 767.98px) {
   .homepage-tabs .active h4 {
@@ -524,6 +824,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 
 /* Fifth container */
 .homepage-ressources {
+  background: url(./../img/noise.svg), #FCFAF7;
   padding: 10vh 0 10vh 0;
   overflow-x: auto;
 }
@@ -532,20 +833,13 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     padding: 4rem 0 2rem 0;
   }
 }
-.homepage-ressources h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 150% !important;
-  color: #191919 !important;
+@media (max-width: 991.98px) {
+  .homepage-ressources .w-75 {
+    width: 100% !important;
+  }
 }
 @media (max-width: 767.98px) {
   .homepage-ressources h3 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #191919 !important;
     width: 100% !important;
   }
 }
@@ -573,22 +867,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.homepage-ressources .col h5 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 24px !important;
-  line-height: 36px !important;
-  color: #191919 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-ressources .col h5 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 22px !important;
-    line-height: 150% !important;
-    color: #191919 !important;
-  }
 }
 .homepage-ressources .col p {
   font-family: "Instrument Sans", sans-serif;
@@ -634,7 +912,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 .homepage-avantage {
   padding: 10vh 0 10vh 0;
   /* Mettre en variable globale */
-  background: url(./../img/bg_colors.png), #235247;
+  background: url(./../img/noise.svg), #235247;
 }
 @media (max-width: 767.98px) {
   .homepage-avantage {
@@ -647,22 +925,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-size: 16px !important;
   line-height: 28px !important;
   color: #FCFAF7 !important;
-}
-.homepage-avantage h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 42px !important;
-  color: #FCFAF7 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-avantage h3 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #FCFAF7 !important;
-  }
 }
 .homepage-avantage .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -687,6 +949,11 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 991.98px) {
+  .homepage-avantage h5 {
+    text-align: center;
+  }
+}
 .homepage-avantage .productivity {
   background-color: #f3e8ed;
   border-radius: 16px;
@@ -705,23 +972,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     font-size: 14px !important;
     line-height: 150% !important;
     color: #A04470 !important;
-    text-align: center;
-  }
-}
-.homepage-avantage .productivity h5 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 24px !important;
-  line-height: 36px !important;
-  color: #191919 !important;
-}
-@media (max-width: 991.98px) {
-  .homepage-avantage .productivity h5 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 22px !important;
-    line-height: 150% !important;
-    color: #191919 !important;
     text-align: center;
   }
 }
@@ -753,23 +1003,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     text-align: center;
   }
 }
-.homepage-avantage .quality h5 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 24px !important;
-  line-height: 36px !important;
-  color: #191919 !important;
-}
-@media (max-width: 991.98px) {
-  .homepage-avantage .quality h5 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 22px !important;
-    line-height: 150% !important;
-    color: #191919 !important;
-    text-align: center;
-  }
-}
 .homepage-avantage .quality p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -795,23 +1028,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     font-size: 14px !important;
     line-height: 150% !important;
     color: #D3DCDA !important;
-    text-align: center;
-  }
-}
-.homepage-avantage .patients h5 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 24px !important;
-  line-height: 36px !important;
-  color: #FCFAF7 !important;
-}
-@media (max-width: 991.98px) {
-  .homepage-avantage .patients h5 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 22px !important;
-    line-height: 150% !important;
-    color: #FCFAF7 !important;
     text-align: center;
   }
 }
@@ -843,23 +1059,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
     text-align: center;
   }
 }
-.homepage-avantage .tools h5 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 24px !important;
-  line-height: 36px !important;
-  color: #191919 !important;
-}
-@media (max-width: 991.98px) {
-  .homepage-avantage .tools h5 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 22px !important;
-    line-height: 150% !important;
-    color: #191919 !important;
-    text-align: center;
-  }
-}
 .homepage-avantage .tools p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -870,6 +1069,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 
 /* Sixth container */
 .homepage-datas {
+  background: url(./../img/noise.svg), #FCFAF7;
   padding: 0 0 10vh 0;
 }
 .homepage-datas p {
@@ -878,13 +1078,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-size: 16px !important;
   line-height: 28px !important;
   color: #FCFAF7 !important;
-}
-.homepage-datas h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 150% !important;
-  color: #191919 !important;
 }
 .homepage-datas .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -923,6 +1116,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 
 /* Seventh container */
 .homepage-exps {
+  background: url(./../img/noise.svg), #FCFAF7;
   padding: 10vh 0 10vh 0;
 }
 @media (max-width: 991.98px) {
@@ -936,22 +1130,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-size: 16px !important;
   line-height: 28px !important;
   color: #323231 !important;
-}
-.homepage-exps h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 42px !important;
-  color: #000 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-exps h3 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #000 !important;
-  }
 }
 .homepage-exps .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -984,13 +1162,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-}
-.homepage-exps .col h5 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 24px !important;
-  line-height: 36px !important;
-  color: #191919 !important;
 }
 .homepage-exps .col p {
   font-family: "Instrument Sans", sans-serif;
@@ -1082,6 +1253,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 }
 
 .homepage-boost {
+  background: url(./../img/noise.svg), #FCFAF7;
   padding: 10vh 0 10vh 0;
 }
 @media (max-width: 991.98px) {
@@ -1095,22 +1267,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-size: 16px !important;
   line-height: 28px !important;
   color: #323231 !important;
-}
-.homepage-boost h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 42px !important;
-  color: #000 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-boost h3 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #000 !important;
-  }
 }
 .homepage-boost .sub-title {
   font-family: "Instrument Sans", sans-serif;
@@ -1146,7 +1302,7 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 /* Last container */
 .homepage-licence {
   padding: 10vh 0 10vh 0;
-  background: url(./../img/bg_colors.png), #E9EEED;
+  background: url(./../img/noise.svg), #E9EEED;
 }
 @media (max-width: 767.98px) {
   .homepage-licence {
@@ -1162,22 +1318,6 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-size: 16px !important;
   line-height: 28px !important;
   color: #323231 !important;
-}
-.homepage-licence h3 {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 36px !important;
-  line-height: 42px !important;
-  color: #000 !important;
-}
-@media (max-width: 767.98px) {
-  .homepage-licence h3 {
-    font-family: "ITCSouvenir-md";
-    font-weight: 300 !important;
-    font-size: 24px !important;
-    line-height: 150% !important;
-    color: #000 !important;
-  }
 }
 .homepage-licence .sub-title {
   font-family: "ITCSouvenir-md";
@@ -1200,49 +1340,445 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-size: 18px;
 }
 
-/* Infinity and beyond */
-* {
-  -webkit-font-smoothing: antialiased;
+/* First container */
+#tarif-offre {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 10rem 0 0 0;
+  background: url(./../img/noise.svg), #FCFAF7;
+}
+@media (max-width: 991.98px) {
+  #tarif-offre {
+    padding: 7rem 0 0 0;
+  }
+}
+#tarif-offre .break-text {
+  width: 55%;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+@media (max-width: 991.98px) {
+  #tarif-offre .break-text {
+    width: 100%;
+  }
+}
+#tarif-offre ul {
+  height: 12rem;
+}
+@media (max-width: 991.98px) {
+  #tarif-offre ul {
+    height: auto;
+  }
+}
+#tarif-offre .cards-tarif_purple {
+  background: url(./../img/noise.svg), #88154C;
+  border-radius: 20px;
+}
+#tarif-offre .cards-tarif_purple p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #FCFAF7 !important;
+}
+@media (max-width: 991.98px) {
+  #tarif-offre .cards-tarif_purple p {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 160% !important;
+    color: #FCFAF7 !important;
+  }
+}
+#tarif-offre .cards-tarif_purple li {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #FCFAF7 !important;
+}
+@media (max-width: 991.98px) {
+  #tarif-offre .cards-tarif_purple li {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 160% !important;
+    color: #FCFAF7 !important;
+  }
+}
+#tarif-offre .cards-tarif_purple span {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 32px !important;
+  line-height: 125% !important;
+  color: #FCFAF7 !important;
+}
+#tarif-offre .cards-tarif_purple span + p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 160% !important;
+  color: #DBB9C9 !important;
+}
+#tarif-offre .cards-tarif_purple hr {
+  border: 1px solid #E3E1DE;
+}
+#tarif-offre .cards-tarif_purple .sub-text {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #DBB9C9 !important;
+}
+#tarif-offre .cards-tarif_purple .btn_white {
+  height: 100%;
+}
+@media (max-width: 991.98px) {
+  #tarif-offre .cards-tarif_purple .btn_white {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+#tarif-offre .cards-tarif_purple .btn_white img {
+  width: 22px;
+  height: 22px;
+}
+#tarif-offre .cards-tarif_white {
+  background: #FCFAF7;
+  border: 1px solid #CAC8C6;
+  border-radius: 20px;
+}
+#tarif-offre .cards-tarif_white p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #191919 !important;
+}
+@media (max-width: 991.98px) {
+  #tarif-offre .cards-tarif_white p {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 160% !important;
+    color: #191919 !important;
+  }
+}
+#tarif-offre .cards-tarif_white li {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #191919 !important;
+}
+@media (max-width: 991.98px) {
+  #tarif-offre .cards-tarif_white li {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 160% !important;
+    color: #191919 !important;
+  }
+}
+#tarif-offre .cards-tarif_white span {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 32px !important;
+  line-height: 125% !important;
+  color: #191919 !important;
+}
+#tarif-offre .cards-tarif_white span + p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 160% !important;
+  color: #DBB9C9 !important;
+}
+#tarif-offre .cards-tarif_white hr {
+  border: 1px solid #E3E1DE;
+}
+#tarif-offre .cards-tarif_white .sub-text {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #DBB9C9 !important;
+}
+#tarif-offre .cards-tarif_white .btn_white {
+  height: 100%;
+}
+@media (max-width: 991.98px) {
+  #tarif-offre .cards-tarif_white .btn_white {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
-header {
+#tarif-offre .illus-absolute {
+  top: 615px;
+  z-index: 0;
+}
+#tarif-offre .container {
+  position: relative;
   z-index: 99999;
 }
-
-p {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+#tarif-offre .btn_white {
+  border: 1px solid #191919;
 }
 
-body {
-  background-color: #E9EEED;
-  background-image: url("./../img/bg.png");
+/* Derrière Cérébro, des humains */
+#tarif {
+  background: url(./../img/noise.svg), #FCFAF7;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-
-.navbar-transition {
-  transition: margin 0.3s ease;
-}
-
-.container {
-  padding: 0 20px !important;
-}
-
-/* WIP */
-.commentaire {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.fade-in {
-  animation: fadeIn 1s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 991.98px) {
+  #tarif {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
+#tarif .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #33788d !important;
+  text-transform: uppercase;
+}
+@media (max-width: 767.98px) {
+  #tarif .sub-title {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 150% !important;
+    color: #33788d !important;
+  }
+}
+#tarif ul li {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+#tarif ul li img {
+  width: 20px;
+  height: 20px;
+}
+#tarif .paragraphe-mobile {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+#tarif .large-paragraphe {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+#tarif .row {
+  padding: 40px;
+  border-radius: 64px 8px;
+  background: #E6EEF1;
+}
+@media (max-width: 991.98px) {
+  #tarif .row {
+    padding: 20px;
+    border-radius: 8px 64px;
+  }
+}
+#tarif .row .tarif-illustration {
+  width: auto;
+  height: 100%;
+}
+
+.tarif-faq {
+  background: url(./../img/noise.svg), #FCFAF7;
+  padding: 10vh 0 10vh 0;
+}
+@media (max-width: 991.98px) {
+  .tarif-faq {
+    padding: 4vh 0 6vh 0;
+  }
+}
+.tarif-faq .accordion-button:focus, .tarif-faq .accordion-button:not(.collapsed), .tarif-faq .accordion-button {
+  background-color: transparent;
+}
+.tarif-faq .accordion-button:focus::after, .tarif-faq .accordion-button:not(.collapsed)::after, .tarif-faq .accordion-button::after {
+  display: none;
+}
+.tarif-faq .accordion-header img {
+  position: absolute;
+  right: -10px;
+  top: 18px;
+  width: 28px;
+  height: 28px;
+}
+.tarif-faq button {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  color: #191919 !important;
+}
+@media (max-width: 991.98px) {
+  .tarif-faq button {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 150% !important;
+    color: #191919 !important;
+  }
+}
+.tarif-faq .accordion-items {
+  background-color: transparent;
+  border-radius: 16px;
+  border: 1px solid #CAC8C6;
+  padding-right: 32px;
+}
+.tarif-faq .accordion-body {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+.tarif-faq h2 span {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  line-height: 42px !important;
+  color: #33788d !important;
+  font-style: italic;
+}
+@media (max-width: 991.98px) {
+  .tarif-faq h2 span {
+    font-family: "ITCSouvenir-md";
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 150% !important;
+    color: #33788d !important;
+  }
+}
+.tarif-faq .sub-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #4F756C !important;
+  text-transform: uppercase;
+}
+@media (max-width: 991.98px) {
+  .tarif-faq .sub-title {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 150% !important;
+    color: #4F756C !important;
+  }
+}
+.tarif-faq .accordion-items {
+  border-radius: 16px !important;
+}
+
+#details-hero {
+  padding: 10rem 0 0 0;
+  background: url(./../img/noise.svg), rgba(231, 221, 241, 0.45);
+}
+@media (max-width: 991.98px) {
+  #details-hero {
+    padding: 7rem 0 0 0;
+  }
+}
+#details-hero li {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #656463 !important;
+}
+#details-hero li:first-child {
+  list-style: none;
+}
+#details-hero .position-absolute {
+  bottom: -295px;
+  right: -31vw;
+  width: 80%;
+}
+
+#details-formation {
+  background: url(./../img/noise.svg), #FCFAF7;
+}
+#details-formation p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+#details-formation .objectif-details {
+  border-radius: 12px;
+  background: rgba(230, 228, 222, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  height: 100%;
+}
+#details-formation .objectif-details p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #323231 !important;
+}
+
+#cards-border {
+  background: url(./../img/noise.svg), #FCFAF7;
+  padding: 108px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #656463 !important;
+}
+@media (max-width: 991.98px) {
+  #cards-border {
+    padding: 48px 0 40px 0;
+  }
+  #cards-border .container {
+    display: block !important;
+  }
+  #cards-border .container a {
+    margin: 32px 0;
+  }
+  #cards-border .container .row {
+    margin-top: 16px;
+    display: block;
+  }
+}
+#cards-border a {
+  color: #656463;
+}
+#cards-border .cards-details {
+  border: 1px solid #CAC8C6;
+  border-radius: 16px;
+  height: 100%;
+}
+#cards-border .cards-details ul {
+  font-family: "ITCSouvenir-md";
+}
+#cards-border .cards-details__price {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+}/*# sourceMappingURL=main.css.map */
