@@ -62,4 +62,39 @@ header {
    .navbar-hidden {
       transform: translateY(-15vh);
    }
+
+   .panier {
+      width: 74px;
+      height: 74px;
+      border-radius: 100px;
+      background: linear-gradient(0deg, rgba(227, 225, 222, 0.3), rgba(227, 225, 222, 0.3)), rgba(251, 248, 244, 0.6);
+      backdrop-filter: blur(4px); /* Standard syntax */
+      -webkit-backdrop-filter: blur(4px); /* Chrome, Safari, Opera */
+      backdrop-filter: blur(4px) brightness(90%); /* Firefox */
+      position: relative;
+      border: none;
+      img {
+         display: inline-block;
+         height: 32px;
+         width: 32px;
+      }
+      &:after {
+            content: attr(data-number);
+            font-family: Instrument Sans;
+            box-sizing: content-box;
+            background-color: $cbro-purple-700;
+            border: 3px solid $cbro-gray-100;
+            border-radius: 999px;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 50%;
+            top: 20%;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+      }
+   }
 }
