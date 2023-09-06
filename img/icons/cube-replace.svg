@@ -1,0 +1,21 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cube-replace-face 1" clip-path="url(#clip0_450_4596)">
+<g id="Clip path group">
+<mask id="mask0_450_4596" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<g id="cube-replace-face_svg__clip0_3377_18972">
+<path id="Vector" d="M0 0H24V24H0V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_450_4596)">
+<g id="Group">
+<path id="Vector_2" d="M19 13.5V18.652C18.9999 18.7576 18.9719 18.8613 18.9188 18.9526C18.8658 19.0439 18.7896 19.1196 18.698 19.172L12.298 22.83C12.2073 22.8819 12.1045 22.9092 12 22.9092C11.8955 22.9092 11.7927 22.8819 11.702 22.83L5.302 19.173C5.21021 19.1205 5.13394 19.0446 5.0809 18.9531C5.02787 18.8616 4.99996 18.7578 5 18.652V13M12 22.5V17M23 8L11 1C8 6 4 3 1 8L13 15C16 10 20 13 23 8Z" stroke="#FCFAF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_450_4596">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

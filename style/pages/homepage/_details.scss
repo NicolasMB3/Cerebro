@@ -33,6 +33,26 @@
          @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-800);
       }
    }
+   .col {
+      margin-top: -280px;
+   }
+   .card-gradiant {
+      border-radius: 16px;
+      background: linear-gradient(148deg, rgba(227, 225, 222, 0.60) -16.18%, rgba(227, 225, 222, 0.00) 97.43%);
+   }
+   .scroll-card {
+      border-radius: 20px;
+      background: $cbro-snow-50;
+      box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+      position: sticky;
+      top: 135px;
+   }
+   ul {
+      padding-left: 22px;
+      li {
+         @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);
+      }
+   }
 }
 
 // Ces formations pourraient vous intéresser
@@ -45,7 +65,7 @@
 
       .container {
          display: block !important;
-         
+
          a {
             margin: 32px 0;
          }

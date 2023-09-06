@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cérébro / Tarification</title>
+   <title>Cérébro / Listing</title>
    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
@@ -82,129 +82,105 @@
       </nav>
    </header>
    <!-- Section principale -->
-   <section id="details-hero" class="pb-5 pb-5 overflow-hidden">
-      <div class="container position-relative">
-         <a href="index.html" class="breadcrumb d-none d-lg-flex align-items-center gap-2 text-decoration-none">
-            <img src="./img/icons/cheveron-down.svg" alt="Revenir en arrière">
-            Retour au formations
-         </a>
-         <div class="cbro-badge-purple mt-5">Lexique</div>
-         <h1 class="h1-dark mt-4 mb-0 pb-2">Les lignes de base en orthophonie</h1>
-         <p class="p-dark">De la théorie jusqu'à leur utilisation en pratique clinique, venez découvrir cette formation appliquée au lexique.</p>
-         <div class="d-flex align-items-center mt-4">
-            <ul class="ps-0 d-flex align-items-center gap-4">
-               <li class="me-1">5 modules</li>
-               <li>Débutant</li>
-            </ul>
-         </div>
-         <img class="position-absolute" src="./img/icons/abstrait_1.svg" alt="Image décorative">
-      </div>
-   </section> 
-   <!-- À l’issu de cette formation ... -->
-   <section id="details-formation" class="pt-5 pb-5 pb-5">
+   <section id="listing-hero">
       <div class="container">
-         <div class="row gx-4">
-            <div class="col-12 col-xl-9 pe-0 pe-lg-5">
-               <h2 class="h2-dark pb-2">À l’issu de cette formation, vous pourrez mettre en place vos premières lignes de base avec vos patients.</h2>
-               <p>Un format volontairement court est proposé de façon à vous présenter les informations les plus importantes tout en s’appuyant sur une bibliographie récente et spécifique.</p> 
-               <h2 class="h2-dark mt-5 pt-4 pb-2">Vos objectifs</h2>  
-               <div class="row g-4">
-                  <div class="col-sm">
-                     <div class="objectif-details p-4">
-                        <h3 class="h3-green">1.</h3>
-                        <p>Comprendre le concept méthodologique et leur utilité en orthophonie</p>
-                     </div>
-                  </div>
-                  <div class="col-sm">
-                     <div class="objectif-details p-4">
-                        <h3 class="h3-green">2.</h3>
-                        <p>Savoir à quel moment, comment et pourquoi les proposer</p>
-                     </div>
-                  </div>
-                  <div class="col-sm">
-                     <div class="objectif-details p-4">
-                        <h3 class="h3-green">3.</h3>
-                        <p>Savoir construire ses propres lignes de base</p>
-                     </div>
-                  </div>
+         <div class="container-hero position-relative p-4 p-lg-5">
+            <img src="./img/illustrations/abstrait_2.svg" class="position-absolute top-0 start-0 d-none d-lg-flex" alt="Image décorative">
+            <p class="sub-title pb-2 text-left text-lg-center">Les Formations</p>
+            <h1 class="h1-white mb-0 pb-2 text-lg-center">Développez vos compétences avec les formations Cérébro</h1>
+            <p class="pt-2 mx-auto text-lg-center">Nos formations ont pour objectif de vous aider à implémenter la démarche EBP dans vos prises en soins. Elles portent sur l'application en pratique de thérapies issues de la littérature ou bien sur des aspects méthodologiques.</p>
+            <img src="./img/illustrations/abstrait_3.svg" class="position-absolute bottom-0 end-0 d-none d-lg-flex" alt="Image décorative">
+         </div>
+      </div>
+   </section>
+   <!-- Trouver votre formation -->
+   <section id="listing-formation">
+      <div class="container position-relative">
+         <div class="d-flex align-items-center justify-content-between flex-wrap">
+            <h2 class="h2-dark">Trouver votre formation</h2>
+            <div class="d-flex align-items-center gap-2 flex-wrap" id="container-filter">
+               <div class="cbro-badge cbro-badge-green d-flex align-items-center gap-2" id="methodologie">
+                  Méthodologie
+                  <img src="./img/icons/close-tag.svg" class="d-none" alt="Fermer le tag">
                </div>
-               <h2 class="h2-dark mt-5 pt-4 pb-2">Contenu de la formation</h2> 
-               <div class="accordion px-0 d-flex flex-column gap-4" id="accordionExample">
-                  <div class="accordion-items pe-0">
-                     <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                           Module 1 <span class="mx-2">&bull;</span> Fondements théoriques et définitions
-                        </button>
-                     </h2>
-                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-                           Pourquoi avoir opté pour un abonnement plutôt que pour un achat à l’unité ?
-                        </div>
-                     </div>
-                  </div>
-                  <div class="accordion-items pe-0">
-                     <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                           Module 2 <span class="mx-2">&bull;</span> Mise en place des lignes de base
-                        </button>
-                     </h2>
-                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-                           Module 2 <span class="mx-2">&bull;</span> Mise en place des lignes de base
-                        </div>
-                     </div>
-                  </div>
-                  <div class="accordion-items pe-0">
-                     <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThrid" aria-expanded="false" aria-controls="collapseThrid">
-                           Module 3 <span class="mx-2">&bull;</span> Lignes de base et lexique en orthophonie
-                        </button>
-                     </h2>
-                     <div id="collapseThrid" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-                           En souscrivant à la licence, vous avez accès à l’application CérébroLex avec la possibilité de démarrer autant de prises en charge que vous le souhaitez. Vous avez également accès à l’ensemble du matériel disponible sur le site : fichiers pdf et tableurs de suivi, ainsi qu’aux revues de littérature, fiches synthèses et résumés d’articlecréer autant.
-                        </div>
-                     </div>
-                  </div>
-                  <div class="accordion-items pe-0">
-                     <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                           Module 4 <span class="mx-2">&bull;</span> Cas cliniques
-                        </button>
-                     </h2>
-                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-                           En souscrivant à la licence, vous avez accès à l’application CérébroLex avec la possibilité de démarrer autant de prises en charge que vous le souhaitez. Vous avez également accès à l’ensemble du matériel disponible sur le site : fichiers pdf et tableurs de suivi, ainsi qu’aux revues de littérature, fiches synthèses et résumés d’articlecréer autant.
-                        </div>
-                     </div>
-                  </div>
+               <div class="cbro-badge cbro-badge-purple d-flex align-items-center gap-2" id="lexique">
+                  Lexique
+                  <img src="./img/icons/close-tag.svg" class="d-none" alt="Fermer le tag">
                </div>
-               <div class="p-4 mt-5 card-gradiant">
-                  <h4 class="h4-dark">Les pré-requis pour un suivi optimal de la formation</h4>
-                  <ul class="mb-0">
-                     <li>Disposer d’un ordinateur d’une résolution minimale de 1280 x 720</li>
-                     <li>Être équipé de la suite Microsoft Office</li>
-                  </ul>
+               <div class="cbro-badge cbro-badge-blue d-flex align-items-center gap-2" id="vocabulaire">
+                  Vocabulaire
+                  <img src="./img/icons/close-tag.svg" class="d-none" alt="Fermer le tag">
                </div>
-            </div>
-            <div class="col d-none d-xl-block">
-               <div class="scroll-card p-3">
-                  <img src="./img/illustrations/frame_1.png" class="img-fluid w-100">
-                  <ul class="mt-3">
-                     <li>Un accès illimité à la formation</li>
-                     <li>Des ressources complémentaires</li>
-                     <li>Un matériel "Exos lexico" offert</li>
-                  </ul>
-                  <div class="d-flex align-items-center justify-content-between">
-                     <p>Tarif TTC</p>
-                     <p>90,00€</p>
-                  </div>
-                  <button class="btn_green me-md-3 me-0 w-100 mt-4">Tester gratuitement</button>
+               <div class="cbro-badge cbro-badge-yellow d-flex align-items-center gap-2" id="neurologie">
+                  Neurologie
+                  <img src="./img/icons/close-tag.svg" class="d-none" alt="Fermer le tag">
+               </div>
+               <div class="cbro-badge cbro-badge-orange d-flex align-items-center gap-2" id="developpement">
+                  Neurodéveloppement
+                  <img src="./img/icons/close-tag.svg" class="d-none" alt="Fermer le tag">
+               </div>
+               <div class="cbro-badge-grey d-flex align-items-center justify-content-center d-none" id="refresh">
+                  <img src="./img/icons/refresh.svg" alt="Actualiser les tags">
                </div>
             </div>
          </div>
       </div>
+   </section>
+   <!-- Présentation d'un évènement -->
+   <section id="listing-event">
+      <div class="container">
+         <div class="row d-flex flex-column flex-lg-row">
+            <div class="col-md-12 col-lg-5 d-none justify-content-start d-lg-flex ps-0">
+               <img src="./img/illustrations/camille_vincent.png" class="tarif-illustration img-fluid" alt="Image d'exemple">
+            </div>
+            <div class="col d-flex justify-content-center flex-column">
+               <p class="sub-title pb-2 d-flex align-items-center gap-2 mb-2"><img src="./img/icons/calendar_purple.svg" classa="pe-2" alt="Image de calendrier">Formation en distanciel</p>
+               <ul class="sub-title_time d-flex gap-0 ps-0 flex-wrap">
+                  <li class="">24 juillet 2023</li>
+                  <li class="">14H00 à 17H30</li>
+                  <li>FIAP Paris</li>
+               </ul>
+               <h3 class="py-0 pb-lg-0 h3-dark mb-0">Rééducation des troubles de la production lexicale avec les outils Cérébro</h3>
+               <p class="large-paragraphe mt-2 mb-3">Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna. </p>
+               <button class="btn_dark-purple mt-3">S'inscrire à la formation</button>
+            </div>
+         </div>
+      </div>
    </section> 
+   <!-- Nos formations vous permettent de pratiquer sereinement l'EBP au quotidien -->
+   <section class="listing-ebp">
+      <div class="container">
+         <div class="row text-center">
+            <div class="col d-flex flex-column justify-content-center align-items-left">
+               <h2 class="py-2 h2-dark mb-0 pb-0 pt-0">Nos formations vous permettent </h2>
+               <h5 class="sub-title pb-0 pb-lg-4 mb-0 mb-lg-4">de pratiquer sereinement l'EBP au quotidien</h5>
+               <div class="row mt-0 mt-lg-3 g-5">
+                  <div class="col-12 col-lg-4 text-start">
+                     <div class="img_1 d-flex align-items-center justify-content-center mb-4">
+                        <img src="./img/icons/cube-replace.svg" class="img-fluid mx-auto" alt="Elaborés par des orthophonistes">
+                     </div>
+                     <h5 class="h5-dark">Elaborés par des orthophonistes</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar.</p>
+                  </div>
+                  <div class="col-12 col-lg-4 text-start">
+                     <div class="img_2 d-flex align-items-center justify-content-center mb-4">
+                        <img src="./img/icons/cube-replace.svg" class="img-fluid mx-auto" alt="Elaborés par des orthophonistes">
+                     </div>
+                     <h5 class="h5-dark">Disponible en illimité</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar.</p>
+                  </div>
+                  <div class="col-12 col-lg-4 text-start">
+                     <div class="img_3 d-flex align-items-center justify-content-center mb-4">
+                        <img src="./img/icons/hourglass.svg" class="img-fluid mx-auto" alt="Elaborés par des orthophonistes">
+                     </div>
+                     <h5 class="h5-dark">Ressources complémentaires</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
    <!-- Ces formations pourraient vous intéresser -->
    <section id="cards-border">
       <div class="container d-flex justify-content-between mb-4">
@@ -356,6 +332,6 @@
          </div>
       </div>
    </footer>
-   <script src="./script/tarif.js"></script>
+   <script src="./script/listing.js"></script>
 </body>
 </html>
