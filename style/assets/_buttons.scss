@@ -37,7 +37,7 @@
    }
    // Full purple button
    &_purple {
-      @include cbro-button(500, 16px, $cbro-gray-900, $cbro-white, 0px , $cbro-purple-50);
+      @include cbro-button(500, 16px, $cbro-gray-900, $cbro-white, 0px , $cbro-purple-500);
       transition: 0.25s all ease-in-out;
       
       &:hover {
