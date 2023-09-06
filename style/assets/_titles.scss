@@ -5,6 +5,12 @@
          @include cbro-title(300, 28px, 130%, $cbro-gray-900);
       }
    }
+   &-white {
+      @include cbro-title(300, 2.625rem, 125%, $cbro-snow-50);
+      @include media-breakpoint-down(lg){
+         @include cbro-title(300, 28px, 130%, $cbro-snow-50);
+      }
+   }
 }
 
 .h2 {

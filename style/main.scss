@@ -7,18 +7,20 @@
 @import './components/breakpoint';
 @import './components/footer';
 @import './components/navigation';
+@import './assets/buttons';
+@import './assets/titles';
 
 /* Base */
 @import './base/base';
 @import './base/animations';
 
 /* Stuffs */
-@import './assets/buttons';
-@import './assets/titles';
 @import './assets/breadcrumb';
 @import './assets/badges';
+@import './assets/accordion';
 
 /* Pages */
 @import './pages/homepage/container';
 @import './pages/homepage/tarification';
 @import './pages/homepage/details';
+@import './pages/homepage/listing';

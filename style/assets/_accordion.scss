@@ -1,0 +1,39 @@
+.accordion-button:focus, .accordion-button:not(.collapsed), .accordion-button {
+   background-color: transparent !important;
+}
+
+.accordion-header {
+   img {
+      position: absolute;
+      right: -10px;
+      top: 18px;
+      width: 28px;
+      height: 28px;
+   }
+}
+
+.accordion-items {
+   background-color: transparent;
+   border-radius: $cbro-border-radius-16;
+   border: 1px solid $cbro-gray-200;
+   padding-right: 32px;
+   button {
+      @include cbro-paragraphe(500, 20px, 32px, $cbro-gray-900);
+      @include media-breakpoint-down(lg){
+         @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
+      }
+   }
+}
+
+.accordion-body {
+   @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
+}
+
+// Supprime l'icône de base sur la page tarification
+.tarif-faq {
+   .accordion-button:focus, .accordion-button:not(.collapsed), .accordion-button {
+      &::after {
+         display: none;
+     }
+   }
+}

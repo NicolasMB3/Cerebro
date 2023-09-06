@@ -35,4 +35,22 @@
          background-color: rgba(255, 255, 255, 0.7);
       }
    }
+   // Full purple button
+   &_purple {
+      @include cbro-button(500, 16px, $cbro-gray-900, $cbro-white, 0px , $cbro-purple-50);
+      transition: 0.25s all ease-in-out;
+      
+      &:hover {
+         background-color: rgba(255, 255, 255, 0.7);
+      }
+   }
+   // Full purple button
+   &_dark-purple {
+      @include cbro-button(500, 16px, $cbro-white, $cbro-purple-700, 0px , $cbro-purple-700);
+      transition: 0.25s all ease-in-out;
+      
+      &:hover {
+         opacity: 0.8;
+      }
+   }
 }

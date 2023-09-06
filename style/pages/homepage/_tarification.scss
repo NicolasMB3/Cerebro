@@ -125,7 +125,7 @@
    }
    .sub-title {
       @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-blue-700);
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(lg){
          @include cbro-paragraphe(600, 14px, 150%, $cbro-blue-700);
       }
       text-transform: uppercase;
@@ -166,35 +166,8 @@
    @include media-breakpoint-down(lg){
       padding: 4vh 0 6vh 0;
    }
-   .accordion-button:focus, .accordion-button:not(.collapsed), .accordion-button {
-      background-color: transparent;
-      &::after {
-         display: none;
-     }
-   }
-   .accordion-header {
-      img {
-         position: absolute;
-         right: -10px;
-         top: 18px;
-         width: 28px;
-         height: 28px;
-      }
-   }
-   button {
-      @include cbro-paragraphe(500, 20px, 32px, $cbro-gray-900);
-      @include media-breakpoint-down(lg){
-         @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
-      }
-   }
-   .accordion-items {
-      background-color: transparent;
-      border-radius: $cbro-border-radius-16;
-      border: 1px solid $cbro-gray-200;
-      padding-right: 32px;
-   }
-   .accordion-body {
-      @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
+   li {
+      @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-800);
    }
    h2 {
       span {
