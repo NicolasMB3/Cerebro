@@ -7,14 +7,45 @@
    }
    li {
       @include cbro-title(300, 18px, 150%, $cbro-gray-600);
-      &:first-child {
-         list-style: none;
+      list-style: none;
+
+      &:nth-child(2) {
+         color: #B5A5C5 !important;
       }
    }
    .position-absolute {
       bottom: -295px;
       right: -31vw;
       width: 80%;
+   }
+   .mobile {
+      &-info {
+         ul {
+            padding: 0;
+         }
+         
+         li {
+            font-family: Instrument Sans;
+            @include media-breakpoint-down(lg) {
+               @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);               }
+         }   
+            
+         span {
+            font-size: 24px;
+            color: $cbro-purple-700;
+         }
+      }
+
+      &-price {
+         p:last-child {
+            font-family: Instrument Sans;
+            @include cbro-paragraphe(500, 18px, 133%, #000);
+         }      
+      }
+
+      .btn_dark-purple {
+         width: 100%;
+      }
    }
 }
 
@@ -33,6 +64,7 @@
          @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-800);
       }
    }
+
    .col {
       margin-top: -280px;
    }

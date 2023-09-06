@@ -19,6 +19,19 @@
    padding-right: 32px;
    button {
       @include cbro-paragraphe(500, 20px, 32px, $cbro-gray-900);
+      position: relative;
+
+      span:first-child {
+         color: $cbro-green-700;
+      }
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: 20px;
+         right: 20px;
+      }
+
       @include media-breakpoint-down(lg){
          @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
       }
