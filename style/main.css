@@ -335,6 +335,12 @@ header .panier:after {
 .btn_dark-purple:hover {
   opacity: 0.8;
 }
+@media (max-width: 991.98px) {
+  .btn_dark-purple {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 
 .h1-dark {
   font-family: "ITCSouvenir-md";
@@ -1827,304 +1833,82 @@ h3 {
   border-radius: 16px !important;
 }
 
-#details-hero {
+#details-hero_a, #details-hero_b, #details-hero_c, #details-hero_d, #details-hero_e {
   padding: 10rem 0 0 0;
+}
+@media (max-width: 991.98px) {
+  #details-hero_a, #details-hero_b, #details-hero_c, #details-hero_d, #details-hero_e {
+    padding: 5rem 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  #details-hero_a .container .p-dark, #details-hero_b .container .p-dark, #details-hero_c .container .p-dark, #details-hero_d .container .p-dark, #details-hero_e .container .p-dark {
+    width: 60%;
+  }
+}
+#details-hero_a li, #details-hero_b li, #details-hero_c li, #details-hero_d li, #details-hero_e li {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #656463 !important;
+  list-style: none;
+}
+#details-hero_a .position-absolute, #details-hero_b .position-absolute, #details-hero_c .position-absolute, #details-hero_d .position-absolute, #details-hero_e .position-absolute {
+  bottom: -295px;
+  right: -31vw;
+  width: 80%;
+}
+#details-hero_a .mobile-info ul, #details-hero_b .mobile-info ul, #details-hero_c .mobile-info ul, #details-hero_d .mobile-info ul, #details-hero_e .mobile-info ul {
+  padding: 0;
+}
+#details-hero_a .mobile-info li, #details-hero_b .mobile-info li, #details-hero_c .mobile-info li, #details-hero_d .mobile-info li, #details-hero_e .mobile-info li {
+  font-family: Instrument Sans;
+}
+@media (max-width: 991.98px) {
+  #details-hero_a .mobile-info li, #details-hero_b .mobile-info li, #details-hero_c .mobile-info li, #details-hero_d .mobile-info li, #details-hero_e .mobile-info li {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+    color: #656463 !important;
+  }
+}
+#details-hero_a .mobile-info span, #details-hero_b .mobile-info span, #details-hero_c .mobile-info span, #details-hero_d .mobile-info span, #details-hero_e .mobile-info span {
+  font-size: 24px;
+  color: #A04470;
+}
+#details-hero_a .mobile-price p:last-child, #details-hero_b .mobile-price p:last-child, #details-hero_c .mobile-price p:last-child, #details-hero_d .mobile-price p:last-child, #details-hero_e .mobile-price p:last-child {
+  font-family: Instrument Sans;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 133% !important;
+  color: #000 !important;
+}
+#details-hero_a .mobile .btn_dark-purple, #details-hero_b .mobile .btn_dark-purple, #details-hero_c .mobile .btn_dark-purple, #details-hero_d .mobile .btn_dark-purple, #details-hero_e .mobile .btn_dark-purple {
+  position: relative;
+  z-index: 999;
+}
+@media (max-width: 575.98px) {
+  #details-hero_a .mobile .btn_dark-purple, #details-hero_b .mobile .btn_dark-purple, #details-hero_c .mobile .btn_dark-purple, #details-hero_d .mobile .btn_dark-purple, #details-hero_e .mobile .btn_dark-purple {
+    width: 100%;
+  }
+}
+#details-hero_a {
   background: url(./../img/noise.svg), rgba(231, 221, 241, 0.45);
 }
-@media (max-width: 991.98px) {
-  #details-hero {
-    padding: 5rem 0 0 0;
-  }
-}
-@media (min-width: 992px) {
-  #details-hero .container .p-dark {
-    width: 60%;
-  }
-}
-#details-hero li {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 18px !important;
-  line-height: 150% !important;
-  color: #656463 !important;
-  list-style: none;
-}
-#details-hero .position-absolute {
-  bottom: -295px;
-  right: -31vw;
-  width: 80%;
-}
-#details-hero .mobile-info ul {
-  padding: 0;
-}
-#details-hero .mobile-info li {
-  font-family: Instrument Sans;
-}
-@media (max-width: 991.98px) {
-  #details-hero .mobile-info li {
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 150% !important;
-    color: #656463 !important;
-  }
-}
-#details-hero .mobile-info span {
-  font-size: 24px;
-  color: #A04470;
-}
-#details-hero .mobile-price p:last-child {
-  font-family: Instrument Sans;
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  line-height: 133% !important;
-  color: #000 !important;
-}
-#details-hero .mobile .btn_dark-purple {
-  width: 100%;
-  position: relative;
-  z-index: 999;
-}
-
 #details-hero_b {
-  padding: 10rem 0 0 0;
   background: url(./../img/noise.svg), rgba(234, 239, 226, 0.65);
 }
-@media (max-width: 991.98px) {
-  #details-hero_b {
-    padding: 5rem 0 0 0;
-  }
-}
-@media (min-width: 992px) {
-  #details-hero_b .container .p-dark {
-    width: 60%;
-  }
-}
-#details-hero_b li {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 18px !important;
-  line-height: 150% !important;
-  color: #656463 !important;
-  list-style: none;
-}
-#details-hero_b .position-absolute {
-  bottom: -295px;
-  right: -31vw;
-  width: 80%;
-}
-#details-hero_b .mobile-info ul {
-  padding: 0;
-}
-#details-hero_b .mobile-info li {
-  font-family: Instrument Sans;
-}
-@media (max-width: 991.98px) {
-  #details-hero_b .mobile-info li {
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 150% !important;
-    color: #656463 !important;
-  }
-}
-#details-hero_b .mobile-info span {
-  font-size: 24px;
-  color: #A04470;
-}
-#details-hero_b .mobile-price p:last-child {
-  font-family: Instrument Sans;
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  line-height: 133% !important;
-  color: #000 !important;
-}
-#details-hero_b .mobile .btn_dark-purple {
-  width: 100%;
-  position: relative;
-  z-index: 999;
-}
-
 #details-hero_c {
-  padding: 10rem 0 0 0;
   background: url(./../img/noise.svg), rgba(254, 234, 210, 0.45);
 }
-@media (max-width: 991.98px) {
-  #details-hero_c {
-    padding: 5rem 0 0 0;
-  }
-}
-@media (min-width: 992px) {
-  #details-hero_c .container .p-dark {
-    width: 60%;
-  }
-}
-#details-hero_c li {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 18px !important;
-  line-height: 150% !important;
-  color: #656463 !important;
-  list-style: none;
-}
-#details-hero_c .position-absolute {
-  bottom: -295px;
-  right: -31vw;
-  width: 80%;
-}
-#details-hero_c .mobile-info ul {
-  padding: 0;
-}
-#details-hero_c .mobile-info li {
-  font-family: Instrument Sans;
-}
-@media (max-width: 991.98px) {
-  #details-hero_c .mobile-info li {
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 150% !important;
-    color: #656463 !important;
-  }
-}
-#details-hero_c .mobile-info span {
-  font-size: 24px;
-  color: #A04470;
-}
-#details-hero_c .mobile-price p:last-child {
-  font-family: Instrument Sans;
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  line-height: 133% !important;
-  color: #000 !important;
-}
-#details-hero_c .mobile .btn_dark-purple {
-  width: 100%;
-  position: relative;
-  z-index: 999;
-}
-
 #details-hero_d {
-  padding: 10rem 0 0 0;
   background: url(./../img/noise.svg), rgba(206, 227, 246, 0.45);
 }
-@media (max-width: 991.98px) {
-  #details-hero_d {
-    padding: 5rem 0 0 0;
-  }
-}
-@media (min-width: 992px) {
-  #details-hero_d .container .p-dark {
-    width: 60%;
-  }
-}
-#details-hero_d li {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 18px !important;
-  line-height: 150% !important;
-  color: #656463 !important;
-  list-style: none;
-}
-#details-hero_d .position-absolute {
-  bottom: -295px;
-  right: -31vw;
-  width: 80%;
-}
-#details-hero_d .mobile-info ul {
-  padding: 0;
-}
-#details-hero_d .mobile-info li {
-  font-family: Instrument Sans;
-}
-@media (max-width: 991.98px) {
-  #details-hero_d .mobile-info li {
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 150% !important;
-    color: #656463 !important;
-  }
-}
-#details-hero_d .mobile-info span {
-  font-size: 24px;
-  color: #A04470;
-}
-#details-hero_d .mobile-price p:last-child {
-  font-family: Instrument Sans;
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  line-height: 133% !important;
-  color: #000 !important;
-}
-#details-hero_d .mobile .btn_dark-purple {
-  width: 100%;
-  position: relative;
-  z-index: 999;
-}
-
 #details-hero_e {
-  padding: 10rem 0 0 0;
   background: url(./../img/noise.svg), rgba(253, 228, 224, 0.45);
-}
-@media (max-width: 991.98px) {
-  #details-hero_e {
-    padding: 5rem 0 0 0;
-  }
-}
-@media (min-width: 992px) {
-  #details-hero_e .container .p-dark {
-    width: 60%;
-  }
-}
-#details-hero_e li {
-  font-family: "ITCSouvenir-md";
-  font-weight: 300 !important;
-  font-size: 18px !important;
-  line-height: 150% !important;
-  color: #656463 !important;
-  list-style: none;
-}
-#details-hero_e .position-absolute {
-  bottom: -295px;
-  right: -31vw;
-  width: 80%;
-}
-#details-hero_e .mobile-info ul {
-  padding: 0;
-}
-#details-hero_e .mobile-info li {
-  font-family: Instrument Sans;
-}
-@media (max-width: 991.98px) {
-  #details-hero_e .mobile-info li {
-    font-family: "Instrument Sans", sans-serif;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 150% !important;
-    color: #656463 !important;
-  }
-}
-#details-hero_e .mobile-info span {
-  font-size: 24px;
-  color: #A04470;
-}
-#details-hero_e .mobile-price p:last-child {
-  font-family: Instrument Sans;
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  line-height: 133% !important;
-  color: #000 !important;
-}
-#details-hero_e .mobile .btn_dark-purple {
-  width: 100%;
-  position: relative;
-  z-index: 999;
 }
 
 #details-formation {

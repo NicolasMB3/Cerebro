@@ -52,5 +52,9 @@
       &:hover {
          opacity: 0.8;
       }
+
+      @include media-breakpoint-down(lg) {
+         width: fit-content;
+      }
    }
 }
