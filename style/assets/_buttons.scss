@@ -1,60 +1,132 @@
 .btn {
-   // Green button
-   &_green {
-      @include cbro-button(500, 16px, $cbro-green-50, $cbro-green-700, 1px , transparent);
-      transition: 0.25s all ease-in-out;
-      
-      &:hover {
-         filter: brightness(90%);
-      }
-   }
-   // Transparent button with border
-   &_transparent {
-      @include cbro-button(500, 16px, $cbro-gray-900, transparent, 1px , $cbro-gray-900);
-      transition: 0.25s all ease-in-out; 
-   
-      &:hover {
-         background: #dfdede44;
-      }
-   }
-   // Transparent button without border
-   &_full_transparent {
-      @include cbro-button(500, 16px, $cbro-gray-900, transparent, 0px , $cbro-gray-900);
-      transition: 0.25s all ease-in-out;
-      
-      &:hover {
-         background-color: rgba(25, 25, 25, 0.08);
-      }
-   }
-   // Full white button
-   &_white {
-      @include cbro-button(500, 16px, $cbro-gray-900, $cbro-white, 0px , $cbro-gray-900);
-      transition: 0.25s all ease-in-out;
-      
-      &:hover {
-         background-color: rgba(255, 255, 255, 0.7);
-      }
-   }
-   // Full purple button
-   &_purple {
-      @include cbro-button(500, 16px, $cbro-gray-900, $cbro-white, 0px , $cbro-purple-500);
-      transition: 0.25s all ease-in-out;
-      
-      &:hover {
-         background-color: rgba(255, 255, 255, 0.7);
-      }
-   }
-   // Full purple button
-   &_dark-purple {
-      @include cbro-button(500, 16px, $cbro-white, $cbro-purple-700, 0px , $cbro-purple-700);
-      transition: 0.25s all ease-in-out;
-      
-      &:hover {
-         opacity: 0.8;
-      }
+  // Green button
+  &_green {
+    @include cbro-button(
+      500,
+      16px,
+      $cbro-green-50,
+      $cbro-green-700,
+      1px,
+      transparent
+    );
+    transition: 0.25s all ease-in-out;
 
-      @include media-breakpoint-down(lg) {
-         width: fit-content;
-      }
-   }
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+  // Transparent button with border
+  &_transparent {
+    @include cbro-button(
+      500,
+      16px,
+      $cbro-gray-900,
+      transparent,
+      1px,
+      $cbro-gray-900
+    );
+    transition: 0.25s all ease-in-out;
+
+    &:hover {
+      background: #dfdede44;
+    }
+  }
+  // Transparent button without border
+  &_full_transparent {
+    @include cbro-button(
+      500,
+      16px,
+      $cbro-gray-900,
+      transparent,
+      0px,
+      $cbro-gray-900
+    );
+    transition: 0.25s all ease-in-out;
+
+    &:hover {
+      background-color: rgba(25, 25, 25, 0.08);
+    }
+  }
+  // Full white button
+  &_white {
+    @include cbro-button(
+      500,
+      16px,
+      $cbro-gray-900,
+      $cbro-white,
+      0px,
+      $cbro-gray-900
+    );
+    transition: 0.25s all ease-in-out;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  // Full purple button
+  &_purple {
+    @include cbro-button(
+      500,
+      16px,
+      $cbro-gray-900,
+      $cbro-white,
+      0px,
+      $cbro-purple-500
+    );
+    transition: 0.25s all ease-in-out;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  // Full purple button
+  &_dark-purple {
+    @include cbro-button(
+      500,
+      16px,
+      $cbro-white,
+      $cbro-purple-700,
+      0px,
+      $cbro-purple-700
+    );
+    transition: 0.25s all ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @include media-breakpoint-down(lg) {
+      width: fit-content;
+    }
+  }
+
+  // Bouton du mot de passe oublié
+  &_inline {
+    border: none;
+    @include cbro-button(400, 14px, $cbro-gray-400, none, none, none);
+    padding: 0;
+
+    &:hover {
+      border-bottom: 1px solid $cbro-gray-400 !important;
+      border-radius: 0px !important;
+    }
+  }
+}
+
+// Bouton Oeil ouvert / fermé pour l'input mot de passe
+.eye {
+  &_close,
+  &_open {
+    border: none;
+    background: none;
+    position: absolute;
+
+    top: 50;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.close {
+  display: none;
 }

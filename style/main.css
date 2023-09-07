@@ -51,6 +51,13 @@ footer .newsletter input {
   padding-bottom: 8px;
   padding-left: 22px;
 }
+footer .newsletter input::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 100% !important;
+  color: #FCFAF7 !important;
+}
 footer .newsletter input::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 300 !important;
@@ -331,8 +338,39 @@ header .panier:after {
 }
 @media (max-width: 991.98px) {
   .btn_dark-purple {
+    width: -moz-fit-content;
     width: fit-content;
   }
+}
+.btn_inline {
+  border: none;
+  font-family: "Instrument Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #979694;
+  background: none;
+  border-radius: 100px;
+  border: none solid none;
+  padding: 12px 22px;
+  padding: 0;
+}
+.btn_inline:hover {
+  border-bottom: 1px solid #979694 !important;
+  border-radius: 0px !important;
+}
+
+.eye_close, .eye_open {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  display: none;
 }
 
 .h1-dark {
@@ -549,6 +587,30 @@ header .panier:after {
   }
 }
 
+.form-control {
+  border-radius: 100px !important;
+  border: 1px solid #CAC8C6 !important;
+  background: #fff !important;
+  height: 48px;
+  width: 100%;
+  padding: 0 20px !important;
+  outline: none;
+}
+.form-control::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #B0AFAD !important;
+}
+.form-control::placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #B0AFAD !important;
+}
+
 /* Base */
 /* Infinity and beyond */
 * {
@@ -597,6 +659,10 @@ h3 {
   font-size: 28px !important;
   line-height: 150% !important;
   color: #88154C !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(176, 175, 173, 0.5) !important;
 }
 
 .navbar-transition {
@@ -653,6 +719,7 @@ h3 {
   background: #E3EBD5;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -668,6 +735,7 @@ h3 {
   background: #E7DDF1;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -683,6 +751,7 @@ h3 {
   background: #CEE3F6;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -698,6 +767,7 @@ h3 {
   background: #FDE4E0;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -713,6 +783,7 @@ h3 {
   background: #FEEAD2;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -728,6 +799,7 @@ h3 {
   background: rgba(227, 225, 222, 0.7);
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
   width: 29px;
@@ -1911,7 +1983,8 @@ h3 {
 #details-formation .objectif-details {
   border-radius: 12px;
   background: rgba(230, 228, 222, 0.5);
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   height: 100%;
 }
 #details-formation .objectif-details p {
@@ -2107,6 +2180,7 @@ h3 {
   }
 }
 #listing-event .btn_dark-purple {
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 991.98px) {
@@ -2191,3 +2265,37 @@ h3 {
   height: 24px;
   flex-shrink: 0;
 }
+
+#connexion_hero {
+  height: 1000px;
+  position: relative;
+}
+#connexion_hero .bg_img {
+  height: 60vh;
+  background: url(../../../img/noise.svg) repeat #396359;
+}
+#connexion_hero .container_content {
+  width: 100% !important;
+  margin: -12% 0;
+}
+#connexion_hero .connexion_container {
+  background-color: #FCFAF7;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+}
+#connexion_hero .connexion_container p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #4F756C !important;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+#connexion_hero .connexion_container form label {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #4C4B4A !important;
+}/*# sourceMappingURL=main.css.map */

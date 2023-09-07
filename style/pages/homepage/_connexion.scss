@@ -1,0 +1,32 @@
+#connexion_hero {
+  height: 1000px;
+  position: relative;
+
+  .bg_img {
+    height: 60vh;
+    background: url(../../../img/noise.svg) repeat $cbro-green-800;
+  }
+
+  .container_content {
+    width: 100% !important;
+    margin: -12% 0;
+  }
+
+  .connexion_container {
+    background-color: $cbro-snow-50;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+
+    p {
+      @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+    }
+
+    form {
+      label {
+        @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
+      }
+    }
+  }
+}
