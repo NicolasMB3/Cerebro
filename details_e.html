@@ -42,7 +42,7 @@
       </a>
    </div>
    <!-- Barre de navigation -->
-   <header class="d-flex align-items-center justify-content-center px-lg-5 px-3 position-fixed w-100">
+   <header class="d-flex gap-3 justify-content-center px-lg-5 px-3 position-fixed w-100 navbar_s">
       <nav class="d-flex justify-content-center navbar w-100">
          <div class="container-fluid px-0">
             <a class="py-0" href="index.html"><img id="navbar-logo" class="ms-2" src="./img/logo/logo-cerebro.svg" alt="Logo de la société"></a>
@@ -74,12 +74,15 @@
             <div class="d-flex column-gap-2 align-items-center d-none d-lg-flex">
                <button class="btn_full_transparent">Se connecter</button>
                <button class="btn_green">Tester gratuitement</button>
-            </div>        
+            </div>
             <div class="hamburger-menu d-lg-none">
                <img src="./img/icons/hamburger.svg" alt="Icône pour déployer un menu responsive">
             </div>
          </div>
-      </nav>  
+      </nav>
+      <button class="h2-dark d-none d-lg-flex panier d-flex justify-content-center align-items-center" data-number="1">
+         <img src="img/icons/shop_dark.svg" alt="Icon Panier">
+      </button>    
    </header>
    <!-- Section principale -->
    <section id="details-hero_e" class="pb-5 pb-5 overflow-hidden">
@@ -399,5 +402,6 @@
       </div>
    </footer>
    <script src="./script/tarif.js"></script>
+   <script src="./script/header.js"></script>
 </body>
 </html>
