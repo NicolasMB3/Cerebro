@@ -210,6 +210,40 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
 header .navbar-hidden {
   transform: translateY(-15vh);
 }
+header .panier {
+  width: 74px;
+  height: 74px;
+  border-radius: 100px;
+  background: linear-gradient(0deg, rgba(227, 225, 222, 0.3), rgba(227, 225, 222, 0.3)), rgba(251, 248, 244, 0.6);
+  backdrop-filter: blur(4px); /* Standard syntax */
+  -webkit-backdrop-filter: blur(4px); /* Chrome, Safari, Opera */
+  backdrop-filter: blur(4px) brightness(90%); /* Firefox */
+  position: relative;
+  border: none;
+}
+header .panier img {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+header .panier:after {
+  content: attr(data-number);
+  font-family: Instrument Sans;
+  box-sizing: content-box;
+  background-color: #A04470;
+  border: 3px solid #E3E1DE;
+  border-radius: 999px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: 20%;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
 
 .btn_green {
   font-family: "Instrument Sans";
@@ -1799,7 +1833,12 @@ h3 {
 }
 @media (max-width: 991.98px) {
   #details-hero {
-    padding: 7rem 0 0 0;
+    padding: 5rem 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  #details-hero .container .p-dark {
+    width: 60%;
   }
 }
 #details-hero li {
@@ -1809,9 +1848,6 @@ h3 {
   line-height: 150% !important;
   color: #656463 !important;
   list-style: none;
-}
-#details-hero li:nth-child(2) {
-  color: #B5A5C5 !important;
 }
 #details-hero .position-absolute {
   bottom: -295px;
@@ -1847,6 +1883,248 @@ h3 {
 }
 #details-hero .mobile .btn_dark-purple {
   width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+#details-hero_b {
+  padding: 10rem 0 0 0;
+  background: url(./../img/noise.svg), rgba(234, 239, 226, 0.65);
+}
+@media (max-width: 991.98px) {
+  #details-hero_b {
+    padding: 5rem 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  #details-hero_b .container .p-dark {
+    width: 60%;
+  }
+}
+#details-hero_b li {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #656463 !important;
+  list-style: none;
+}
+#details-hero_b .position-absolute {
+  bottom: -295px;
+  right: -31vw;
+  width: 80%;
+}
+#details-hero_b .mobile-info ul {
+  padding: 0;
+}
+#details-hero_b .mobile-info li {
+  font-family: Instrument Sans;
+}
+@media (max-width: 991.98px) {
+  #details-hero_b .mobile-info li {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+    color: #656463 !important;
+  }
+}
+#details-hero_b .mobile-info span {
+  font-size: 24px;
+  color: #A04470;
+}
+#details-hero_b .mobile-price p:last-child {
+  font-family: Instrument Sans;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 133% !important;
+  color: #000 !important;
+}
+#details-hero_b .mobile .btn_dark-purple {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+#details-hero_c {
+  padding: 10rem 0 0 0;
+  background: url(./../img/noise.svg), rgba(254, 234, 210, 0.45);
+}
+@media (max-width: 991.98px) {
+  #details-hero_c {
+    padding: 5rem 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  #details-hero_c .container .p-dark {
+    width: 60%;
+  }
+}
+#details-hero_c li {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #656463 !important;
+  list-style: none;
+}
+#details-hero_c .position-absolute {
+  bottom: -295px;
+  right: -31vw;
+  width: 80%;
+}
+#details-hero_c .mobile-info ul {
+  padding: 0;
+}
+#details-hero_c .mobile-info li {
+  font-family: Instrument Sans;
+}
+@media (max-width: 991.98px) {
+  #details-hero_c .mobile-info li {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+    color: #656463 !important;
+  }
+}
+#details-hero_c .mobile-info span {
+  font-size: 24px;
+  color: #A04470;
+}
+#details-hero_c .mobile-price p:last-child {
+  font-family: Instrument Sans;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 133% !important;
+  color: #000 !important;
+}
+#details-hero_c .mobile .btn_dark-purple {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+#details-hero_d {
+  padding: 10rem 0 0 0;
+  background: url(./../img/noise.svg), rgba(206, 227, 246, 0.45);
+}
+@media (max-width: 991.98px) {
+  #details-hero_d {
+    padding: 5rem 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  #details-hero_d .container .p-dark {
+    width: 60%;
+  }
+}
+#details-hero_d li {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #656463 !important;
+  list-style: none;
+}
+#details-hero_d .position-absolute {
+  bottom: -295px;
+  right: -31vw;
+  width: 80%;
+}
+#details-hero_d .mobile-info ul {
+  padding: 0;
+}
+#details-hero_d .mobile-info li {
+  font-family: Instrument Sans;
+}
+@media (max-width: 991.98px) {
+  #details-hero_d .mobile-info li {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+    color: #656463 !important;
+  }
+}
+#details-hero_d .mobile-info span {
+  font-size: 24px;
+  color: #A04470;
+}
+#details-hero_d .mobile-price p:last-child {
+  font-family: Instrument Sans;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 133% !important;
+  color: #000 !important;
+}
+#details-hero_d .mobile .btn_dark-purple {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+#details-hero_e {
+  padding: 10rem 0 0 0;
+  background: url(./../img/noise.svg), rgba(253, 228, 224, 0.45);
+}
+@media (max-width: 991.98px) {
+  #details-hero_e {
+    padding: 5rem 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  #details-hero_e .container .p-dark {
+    width: 60%;
+  }
+}
+#details-hero_e li {
+  font-family: "ITCSouvenir-md";
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #656463 !important;
+  list-style: none;
+}
+#details-hero_e .position-absolute {
+  bottom: -295px;
+  right: -31vw;
+  width: 80%;
+}
+#details-hero_e .mobile-info ul {
+  padding: 0;
+}
+#details-hero_e .mobile-info li {
+  font-family: Instrument Sans;
+}
+@media (max-width: 991.98px) {
+  #details-hero_e .mobile-info li {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+    color: #656463 !important;
+  }
+}
+#details-hero_e .mobile-info span {
+  font-size: 24px;
+  color: #A04470;
+}
+#details-hero_e .mobile-price p:last-child {
+  font-family: Instrument Sans;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 133% !important;
+  color: #000 !important;
+}
+#details-hero_e .mobile .btn_dark-purple {
+  width: 100%;
+  position: relative;
+  z-index: 999;
 }
 
 #details-formation {
