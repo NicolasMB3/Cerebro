@@ -373,6 +373,7 @@ header .panier:after {
   border-radius: 100px;
   border: none solid none;
   padding: 12px 22px;
+  border-bottom: 1px solid transparent !important;
   padding: 0;
 }
 .btn_inline:hover {
@@ -2430,4 +2431,33 @@ body {
   background-color: #fcfaf7;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+  position: absolute;
+  top: 81%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+}
+#reset_mdp .connexion-title_mdp p:first-child {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #4f756c !important;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+#reset_mdp .connexion-title_mdp p:last-child {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+  opacity: 0.8;
+}
+#reset_mdp form label {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #4c4b4a !important;
+  margin-bottom: 12px;
 }/*# sourceMappingURL=main.css.map */

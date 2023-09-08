@@ -12,6 +12,10 @@ function eye_off() {
 
 function display_none_connexion() {
   document.getElementById("connexion_hero").style.display = "none";
-  document.getElementById("reset_mdp").style.display = "block";
-  console.log("test");
+  document.getElementById("reset_mdp").style.display = "inline-block";
+}
+
+function display_none_reset() {
+  document.getElementById("connexion_hero").style.display = "inline-block";
+  document.getElementById("reset_mdp").style.display = "none";
 }

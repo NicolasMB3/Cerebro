@@ -122,6 +122,7 @@
   &_inline {
     border: none;
     @include cbro-button(400, 14px, $cbro-gray-400, none, none, none);
+    border-bottom: 1px solid transparent !important;
     padding: 0;
 
     &:hover {
