@@ -1,15 +1,19 @@
 #connexion_hero {
-  height: 1000px;
+  height: 80vh;
   position: relative;
 
   .bg_img {
-    height: 60vh;
+    height: 40vh;
     background: url(../../../img/noise.svg) repeat $cbro-green-800;
   }
 
   .container_content {
     width: 100% !important;
     margin: -12% 0;
+  }
+
+  .gap-5 {
+    gap: 15rem !important;
   }
 
   .connexion_container {

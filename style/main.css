@@ -867,6 +867,22 @@ h3 {
   display: none;
 }
 
+.cards-details {
+  border: 1px solid #CAC8C6;
+  border-radius: 16px;
+  height: 100%;
+}
+.cards-details ul {
+  font-family: "ITCSouvenir-md";
+}
+.cards-details__price {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+}
+
 /* Pages */
 /* First container */
 #homepage-plateforme {
@@ -2046,21 +2062,6 @@ h3 {
 #cards-border a {
   color: #656463;
 }
-#cards-border .cards-details {
-  border: 1px solid #CAC8C6;
-  border-radius: 16px;
-  height: 100%;
-}
-#cards-border .cards-details ul {
-  font-family: "ITCSouvenir-md";
-}
-#cards-border .cards-details__price {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  line-height: 150% !important;
-  color: #191919 !important;
-}
 
 #listing-hero {
   padding: 10rem 0 8rem 0;
@@ -2267,16 +2268,19 @@ h3 {
 }
 
 #connexion_hero {
-  height: 1000px;
+  height: 80vh;
   position: relative;
 }
 #connexion_hero .bg_img {
-  height: 60vh;
+  height: 40vh;
   background: url(../../../img/noise.svg) repeat #396359;
 }
 #connexion_hero .container_content {
   width: 100% !important;
   margin: -12% 0;
+}
+#connexion_hero .gap-5 {
+  gap: 15rem !important;
 }
 #connexion_hero .connexion_container {
   background-color: #FCFAF7;
