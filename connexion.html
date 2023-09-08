@@ -185,8 +185,11 @@
       <div class="bg_img">
         <img src="img/illustrations/form_bg.svg" alt="Illustration de fond" />
       </div>
-      <div class="d-flex justify-content-center gap-5 container_content">
-        <div class="connexion_container w-25 p-5">
+      <div
+        id="container_connexion"
+        class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5 container_content"
+      >
+        <div class="connexion_container w-lg-100 p-lg-5 p-3">
           <div class="connexion-title d-flex flex-column gap-3">
             <p>Se connecter</p>
             <h3 class="h3-dark mb-5">Heureux de vous revoir</h3>
@@ -229,7 +232,9 @@
             <button type="submit" class="btn_green mb-4">Connexion</button>
           </form>
           <div class="text-center m">
-            <button class="btn_inline">Mot de passe oublié ?</button>
+            <button class="btn_inline" onclick="display_none_connexion()">
+              Mot de passe oublié ?
+            </button>
           </div>
         </div>
         <div class="container_account">
@@ -445,6 +450,6 @@
     </footer>
     <script src="./script/tarif.js"></script>
     <script src="./script/header.js"></script>
-    <script src="./script/mdp_btn.js"></script>
+    <script src="./script/connexion.js"></script>
   </body>
 </html>

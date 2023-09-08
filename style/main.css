@@ -2312,17 +2312,48 @@ h3 {
   height: 525px;
   background: url(../../../img/noise.svg) repeat #396359;
 }
+@media (max-width: 991.98px) {
+  #connexion_hero .bg_img {
+    height: 100%;
+  }
+}
 #connexion_hero .container_content {
   width: 100% !important;
   margin: -375px 0;
 }
+@media (max-width: 991.98px) {
+  #connexion_hero .container_content {
+    margin: -650px 0;
+  }
+}
 #connexion_hero .gap-5 {
   gap: 15rem !important;
+}
+@media (max-width: 1399.98px) {
+  #connexion_hero .gap-5 {
+    gap: 10rem !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  #connexion_hero .gap-5 {
+    gap: 5rem !important;
+  }
+}
+@media (max-width: 991.98px) {
+  #connexion_hero .gap-5 {
+    gap: 0 !important;
+  }
 }
 #connexion_hero .connexion_container {
   background-color: #fcfaf7;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+}
+@media (max-width: 991.98px) {
+  #connexion_hero .connexion_container {
+    margin-bottom: 50px;
+    width: 75%;
+  }
 }
 #connexion_hero .connexion_container p {
   font-family: "Instrument Sans", sans-serif;
@@ -2344,6 +2375,12 @@ h3 {
   width: 21%;
   padding-top: 85px;
 }
+@media (max-width: 991.98px) {
+  #connexion_hero .container_account {
+    width: 75%;
+    padding-top: 0;
+  }
+}
 #connexion_hero .container_account p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -2354,8 +2391,18 @@ h3 {
 #connexion_hero .container_account .btn_green {
   border: 1px solid #fcfaf7;
 }
+@media (max-width: 991.98px) {
+  #connexion_hero .container_account .evenement {
+    display: none;
+  }
+}
 #connexion_hero .container_account .evenement .mt-5 {
   margin-top: 140px !important;
+}
+@media (max-width: 1399.98px) {
+  #connexion_hero .container_account .evenement .mt-5 {
+    margin-top: 50px !important;
+  }
 }
 #connexion_hero .container_account .evenement p {
   font-family: "Instrument Sans", sans-serif;
