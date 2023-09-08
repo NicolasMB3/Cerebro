@@ -182,44 +182,47 @@
     </header>
     <!-- Section connexion -->
     <section id="connexion_hero">
-      <div class="bg_img"></div>
+      <div class="bg_img">
+        <img src="img/illustrations/form_bg.svg" alt="Illustration de fond" />
+      </div>
       <div class="d-flex justify-content-center gap-5 container_content">
         <div class="connexion_container w-25 p-5">
           <div class="connexion-title d-flex flex-column gap-3">
             <p>Se connecter</p>
             <h3 class="h3-dark mb-5">Heureux de vous revoir</h3>
           </div>
-          <form action="#" class="d-flex flex-column gap-3">
+          <form action="#" class="form-connexion d-flex flex-column gap-3">
             <div class="d-flex flex-column gap-2">
               <label for="email">Adresse e-mail</label>
               <input
                 type="text"
                 id="email"
-                class="form-control shadow-none"
+                class="form-control white-focus shadow-none"
                 placeholder="camille@cerebro.fr"
                 aria-label="Recipient's username"
                 aria-describedby="button-addon2"
+                required
               />
             </div>
             <div class="d-flex flex-column gap-2 position-relative">
               <label for="password">Mot de passe</label>
               <div class="input-group d-flex align-items-center mb-4">
                 <input
-                  type="text"
-                  class="form-control shadow-none"
+                  type="password"
+                  id="password"
+                  class="form-control white-focus shadow-none"
                   placeholder="*************"
                   aria-label="Recipient's username"
                   aria-describedby="button-addon2"
+                  required
                 />
                 <div class="input-group-append">
-                  <button class="eye_close" type="button" id="button-addon2">
-                    <img src="img/icons/eye_close.svg" alt="Oeil fermé" />
-                    <img
-                      src="img/icons/eye_open.svg"
-                      alt="Oeil ouvert"
-                      class="close"
-                    />
-                  </button>
+                  <i id="eye_on" class="eye_on" onclick="eye_on()">
+                    <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                  /></i>
+                  <i id="eye_off" class="eye_off" onclick="eye_off()">
+                    <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                  /></i>
                 </div>
               </div>
             </div>
@@ -233,7 +236,19 @@
           <div class="account_create">
             <div class="account_title">
               <h3 class="h3-white">Nouveau sur Cérébro ?</h3>
+              <p class="mt-1 mb-5">
+                Créer votre compte en 2 minutes seulement pour activer votre
+                essai gratuit !
+              </p>
             </div>
+            <button class="btn_dark_green">Créer mon compte</button>
+          </div>
+          <div class="evenement">
+            <h5 class="h5-dark mt-5">Le prochain évènement à venir</h5>
+            <p class="cbro-badge-pink">
+              Masterclass "thématique" à la fac d'Amiens ce lundi 05/06/2023 à
+              09h00
+            </p>
           </div>
         </div>
       </div>
@@ -430,5 +445,6 @@
     </footer>
     <script src="./script/tarif.js"></script>
     <script src="./script/header.js"></script>
+    <script src="./script/mdp_btn.js"></script>
   </body>
 </html>

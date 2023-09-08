@@ -1,18 +1,18 @@
-$cbro-white:    #fff !default;
-$cbro-snow-50:  #FCFAF7 !default;
-$cbro-gray-100: #E3E1DE !default;
-$cbro-gray-200: #CAC8C6 !default;
-$cbro-gray-300: #B0AFAD !default;
+$cbro-white: #fff !default;
+$cbro-snow-50: #fcfaf7 !default;
+$cbro-gray-100: #e3e1de !default;
+$cbro-gray-200: #cac8c6 !default;
+$cbro-gray-300: #b0afad !default;
 $cbro-gray-400: #979694 !default;
-$cbro-gray-500: #7E7D7C !default;
+$cbro-gray-500: #7e7d7c !default;
 $cbro-gray-600: #656463 !default;
-$cbro-gray-700: #4C4B4A !default;
+$cbro-gray-700: #4c4b4a !default;
 $cbro-gray-800: #323231 !default;
 $cbro-gray-900: #191919 !default;
-$cbro-black:    #000 !default;
+$cbro-black: #000 !default;
 // scss-docs-end blue-color-variables
-$cbro-blue-50:  #E6EEF1 !default;
-$cbro-blue-100: #DBEDF5 !default;
+$cbro-blue-50: #e6eef1 !default;
+$cbro-blue-100: #dbedf5 !default;
 $cbro-blue-200: #b3ccd4 !default;
 $cbro-blue-300: #99bbc6 !default;
 $cbro-blue-400: #80abb8 !default;
@@ -22,27 +22,27 @@ $cbro-blue-700: #33788d !default;
 $cbro-blue-800: #19677f !default;
 $cbro-blue-900: #005671 !default;
 // scss-docs-end green-color-variables
-$cbro-green-50:  #E9EEED !default;
-$cbro-green-100: #D3DCDA !default;
-$cbro-green-200: #BDCBC8 !default;
-$cbro-green-300: #A7BAB5 !default;
-$cbro-green-400: #91A9A3 !default;
-$cbro-green-500: #7B9791 !default;
-$cbro-green-600: #65867E !default;
-$cbro-green-700: #4F756C !default;
+$cbro-green-50: #e9eeed !default;
+$cbro-green-100: #d3dcda !default;
+$cbro-green-200: #bdcbc8 !default;
+$cbro-green-300: #a7bab5 !default;
+$cbro-green-400: #91a9a3 !default;
+$cbro-green-500: #7b9791 !default;
+$cbro-green-600: #65867e !default;
+$cbro-green-700: #4f756c !default;
 $cbro-green-800: #396359 !default;
 $cbro-green-900: #235247 !default;
 // scss-docs-end purple-color-variables
-$cbro-purple-50:  #f3e8ed !default;
-$cbro-purple-100: #E7D0DB !default;
-$cbro-purple-200: #DBB9C9 !default;
-$cbro-purple-300: #CFA1B7 !default;
-$cbro-purple-400: #C48AA6 !default;
-$cbro-purple-500: #B87394 !default;
-$cbro-purple-600: #AC5B82 !default;
-$cbro-purple-700: #A04470 !default;
-$cbro-purple-800: #942C5E !default;
-$cbro-purple-900: #88154C !default;
+$cbro-purple-50: #f3e8ed !default;
+$cbro-purple-100: #e7d0db !default;
+$cbro-purple-200: #dbb9c9 !default;
+$cbro-purple-300: #cfa1b7 !default;
+$cbro-purple-400: #c48aa6 !default;
+$cbro-purple-500: #b87394 !default;
+$cbro-purple-600: #ac5b82 !default;
+$cbro-purple-700: #a04470 !default;
+$cbro-purple-800: #942c5e !default;
+$cbro-purple-900: #88154c !default;
 
 // Paramètres de valeurs générales
 // paddings
@@ -51,18 +51,19 @@ $cbro-padding-10vh: 10vh;
 $cbro-border-radius-8: 16px;
 $cbro-border-radius-16: 16px;
 // badges
-$cbro-badge-green: #E3EBD5;
-$cbro-badge-purple:#E7DDF1;
-$cbro-badge-blue:  #CEE3F6;
-$cbro-badge-yellow:#FEEAD2;
-$cbro-badge-orange:#FDE4E0;
+$cbro-badge-green: #e3ebd5;
+$cbro-badge-purple: #e7ddf1;
+$cbro-badge-blue: #cee3f6;
+$cbro-badge-yellow: #feead2;
+$cbro-badge-orange: #fde4e0;
+$cbro-badge-pink: #f3e8ed;
 // badges active
 $cbro-badge-green_active: #bdcea1;
-$cbro-badge-purple_active:#b5a8c3;
-$cbro-badge-blue_active:  #acc4da;
-$cbro-badge-yellow_active:#d4c1a8;
-$cbro-badge-orange_active:#d3b499;
+$cbro-badge-purple_active: #b5a8c3;
+$cbro-badge-blue_active: #acc4da;
+$cbro-badge-yellow_active: #d4c1a8;
+$cbro-badge-orange_active: #d3b499;
 
 //oppacity
-$cbro-opacity-0:   #CCDDE3;
-$cbro-opacity-50:  #E7E6E4;
+$cbro-opacity-0: #ccdde3;
+$cbro-opacity-50: #e7e6e4;

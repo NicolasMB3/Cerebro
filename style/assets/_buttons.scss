@@ -15,6 +15,24 @@
       filter: brightness(90%);
     }
   }
+  // Dark Green button / Bouton de création de compte
+  &_dark_green {
+    @include cbro-button(
+      500,
+      16px,
+      $cbro-green-50,
+      $cbro-green-800,
+      1px,
+      transparent
+    );
+    border: 1px solid $cbro-snow-50;
+    transition: 0.25s all ease-in-out;
+    width: 100%;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
   // Transparent button with border
   &_transparent {
     @include cbro-button(
@@ -113,20 +131,24 @@
   }
 }
 
-// Bouton Oeil ouvert / fermé pour l'input mot de passe
+// Bouton oeil ouvert / fermé pour l'input mot de passe
 .eye {
-  &_close,
-  &_open {
+  &_off,
+  &_on {
     border: none;
     background: none;
     position: absolute;
 
+    margin-right: 10px;
+
     top: 50;
     right: 0;
     transform: translate(-50%, -50%);
-  }
-}
 
-.close {
-  display: none;
+    cursor: pointer;
+  }
+
+  &_on {
+    display: none;
+  }
 }

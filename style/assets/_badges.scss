@@ -1,57 +1,64 @@
 // @badge
 // $color : string
 @mixin cbro-badge($color) {
-   @include cbro-paragraphe(500, 14px, 150%, $cbro-gray-900);
-   background: $color;
-   border-radius: 99px;
-   padding: 4px 12px;
-   width: fit-content;
+  @include cbro-paragraphe(500, 14px, 150%, $cbro-gray-900);
+  background: $color;
+  border-radius: 99px;
+  padding: 4px 12px;
+  width: fit-content;
 }
 
 .cbro-badge {
-   &-green {
-      @include cbro-badge($cbro-badge-green);
-      border: 1px solid transparent;
-      &_active {
-         border: 1px solid $cbro-badge-green_active;
-      }
-   }
-   &-purple {
-      @include cbro-badge($cbro-badge-purple);
-      border: 1px solid transparent;
-      &_active {
-         border: 1px solid $cbro-badge-purple_active;
-      }
-   }
-   &-blue {
-      @include cbro-badge($cbro-badge-blue);
-      border: 1px solid transparent;
-      &_active {
-         border: 1px solid $cbro-badge-blue_active;
-      }
-   }
-   &-orange {
-      @include cbro-badge($cbro-badge-orange);
-      border: 1px solid transparent;
-      &_active {
-         border: 1px solid $cbro-badge-orange_active;
-      }
-   }
-   &-yellow {
-      @include cbro-badge($cbro-badge-yellow);
-      border: 1px solid transparent;
-      &_active {
-         border: 1px solid $cbro-badge-yellow_active;
-      }
-   }
-   &-grey {
-      @include cbro-badge(rgba(227, 225, 222, 0.70));
-      border: 1px solid transparent;
-      width: 29px;
-      height: 29px;
-      img {
-         width: 14px;
-         height: 14px;
-      }
-   }
+  &-green {
+    @include cbro-badge($cbro-badge-green);
+    border: 1px solid transparent;
+    &_active {
+      border: 1px solid $cbro-badge-green_active;
+    }
+  }
+  &-purple {
+    @include cbro-badge($cbro-badge-purple);
+    border: 1px solid transparent;
+    &_active {
+      border: 1px solid $cbro-badge-purple_active;
+    }
+  }
+  &-pink {
+    @include cbro-badge($cbro-badge-pink);
+    border: 1px solid transparent;
+    &_active {
+      border: 1px solid $cbro-badge-pink;
+    }
+  }
+  &-blue {
+    @include cbro-badge($cbro-badge-blue);
+    border: 1px solid transparent;
+    &_active {
+      border: 1px solid $cbro-badge-blue_active;
+    }
+  }
+  &-orange {
+    @include cbro-badge($cbro-badge-orange);
+    border: 1px solid transparent;
+    &_active {
+      border: 1px solid $cbro-badge-orange_active;
+    }
+  }
+  &-yellow {
+    @include cbro-badge($cbro-badge-yellow);
+    border: 1px solid transparent;
+    &_active {
+      border: 1px solid $cbro-badge-yellow_active;
+    }
+  }
+  &-grey {
+    @include cbro-badge(rgba(227, 225, 222, 0.7));
+    border: 1px solid transparent;
+    width: 29px;
+    height: 29px;
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
 }
