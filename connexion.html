@@ -180,13 +180,12 @@
         </div>
       </nav>
     </header>
-    <!-- Section connexion -->
+    <!-- Section connexion -->    
+    <img class="position-absolute" src="img/illustrations/form_bg.svg" alt="Illustration de fond" />
+    <div class="bg_img"></div>
     <section id="connexion_hero">
-      <div class="bg_img">
-        <img src="img/illustrations/form_bg.svg" alt="Illustration de fond" />
-      </div>
       <div
-        id="container_connexion"
+        id="container_login"
         class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5 container_content"
       >
         <div class="connexion_container w-lg-100 p-lg-5 p-3">
@@ -258,8 +257,62 @@
         </div>
       </div>
     </section>
+    <section id="reset_mdp">
+      <div
+        id="container_login"
+        class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5 container_content"
+      >
+        <div class="connexion_container w-lg-100 p-lg-5 p-3">
+          <div class="connexion-title d-flex flex-column gap-3">
+            <p>Se connecter</p>
+            <h3 class="h3-dark mb-5">Heureux de vous revoir</h3>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-3">
+            <div class="d-flex flex-column gap-2">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="text"
+                id="email"
+                class="form-control white-focus shadow-none"
+                placeholder="camille@cerebro.fr"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <div class="d-flex flex-column gap-2 position-relative">
+              <label for="password">Mot de passe</label>
+              <div class="input-group d-flex align-items-center mb-4">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control white-focus shadow-none"
+                  placeholder="*************"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+                <div class="input-group-append">
+                  <i id="eye_on" class="eye_on" onclick="eye_on()">
+                    <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                  /></i>
+                  <i id="eye_off" class="eye_off" onclick="eye_off()">
+                    <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                  /></i>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn_green mb-4">Connexion</button>
+          </form>
+          <div class="text-center m">
+            <button class="btn_inline" onclick="display_none_connexion()">
+              Mot de passe oublié ?
+            </button>
+          </div>
+        </div>
+    </section>
     <!-- Footer -->
-    <footer class="py-md-4 py-2">
+    <footer class="py-md-4 py-2 margin-top">
       <div class="container pt-5">
         <div class="row newsletter mb-5">
           <div class="col-12 col-lg mb-4 mb-lg-0">

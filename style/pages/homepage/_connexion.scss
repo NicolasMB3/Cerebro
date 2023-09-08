@@ -1,24 +1,35 @@
 // Fond de la page connexion
-#connexion_hero {
-  height: 800px;
+body {
   position: relative;
+}
 
-  .bg_img {
-    height: 525px;
-    background: url(../../../img/noise.svg) repeat $cbro-green-800;
+.margin-top {
+  margin-top: 250px;
+}
 
-    @include media-breakpoint-down(lg) {
-      height: 100%;
-    }
+.bg_img {
+  height: 550px;
+  background: url(../../../img/noise.svg) repeat $cbro-green-800;
+
+  @include media-breakpoint-down(lg) {
+    height: 100%;
   }
+}
+
+#connexion_hero {
+  position: absolute;
+  top: 13%;
+  left: 18%;
+
+  height: 650px;
 
   //Contenu principal (formulaire, création..)
   .container_content {
     width: 100% !important;
-    margin: -375px 0;
+    //margin: -375px 0;
 
     @include media-breakpoint-down(lg) {
-      margin: -650px 0;
+      margin: -775px 0;
     }
   }
 
@@ -63,7 +74,7 @@
 
   //Conteneur pour la création du compte
   .container_account {
-    width: 21%;
+    width: 33%;
     padding-top: 85px;
 
     @include media-breakpoint-down(lg) {
@@ -99,4 +110,11 @@
       }
     }
   }
+}
+
+#reset_mdp {
+  display: none;
+  background-color: $cbro-snow-50;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
 }

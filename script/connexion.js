@@ -11,6 +11,7 @@ function eye_off() {
 }
 
 function display_none_connexion() {
-  document.getElementById("container_connexion").style.display = "none";
+  document.getElementById("connexion_hero").style.display = "none";
+  document.getElementById("reset_mdp").style.display = "block";
   console.log("test");
 }
