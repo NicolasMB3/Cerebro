@@ -296,18 +296,21 @@
     </section>
     <!-- Section email envoyé -->
     <section id="send_mail" class="d-none">
-      <div class="send_mail_container w-lg-100 p-lg-5 p-3">
-        <div class="connexion-title_mdp d-flex flex-column gap-3">
-          <p>Mot de passe oublié ?</p>
-          <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
-          <p>
-            Un lien pour changer votre mot de passe vous sera envoyé par mail.
+      <div class="send_mail_container w-lg-100 p-lg-5 p-3 text-center">
+        <img src="img/icons/Send_email.svg" alt="Email envoyé" />
+        <div class="connexion-title_mail d-flex flex-column gap-3">
+          <h3 class="h3-dark mb-1">
+            Le lien pour changer votre mot de passe vient de vous être envoyé.
+          </h3>
+          <p class="p-huge mb-4">
             Pensez à vérifier vos indésirables / spams !
           </p>
+          <p class="p-small">Vous n'avez toujours pas reçu de lien ?</p>
         </div>
-        <div class="text-center">
-          <button class="btn_green w-100 mt-4">Envoyer</button>
-        </div>
+        <button class="btn_green w-100 mt-4">
+          <span id="timer"></span>
+          Renvoyer un lien
+        </button>
       </div>
     </section>
     <!-- Footer -->

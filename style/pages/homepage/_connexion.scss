@@ -153,7 +153,17 @@ body {
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
 
   position: absolute;
-  top: 70%;
+  top: 86%;
   left: 50%;
   transform: translate(-50%, -200%);
+
+  .p-huge {
+    opacity: 0.8;
+    @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
+  }
+
+  .p-small {
+    opacity: 0.8;
+    @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-800);
+  }
 }

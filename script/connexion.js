@@ -41,6 +41,21 @@ BtnMdp.addEventListener("click", HideSectionConnexion);
 function HideSectionMdp1() {
   resetMdp.classList.add("d-none");
   sendMail.classList.remove("d-none");
+
+  // Fonction Timer pour la page d'email envoyé
+  const departHeures = 60;
+  let temps = departHeures * 60;
+  const timerElement = document.getElementById("timer");
+  setInterval(() => {
+    let heures = parseInt(temps / 3600, 10);
+    let minutes = parseInt((temps % 3600) / 60, 10);
+    let secondes = parseInt(temps % 60, 10);
+    heures = heures < 10 ? "0" + heures : heures;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    secondes = secondes < 10 ? "0" + secondes : secondes;
+    timerElement.innerText = `${heures}:${minutes}:${secondes}`;
+    temps = temps <= 0 ? 0 : temps - 1;
+  }, 1000);
 }
 
 BtnEmail.addEventListener("click", HideSectionMdp1);

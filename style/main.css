@@ -2465,7 +2465,23 @@ body {
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
   position: absolute;
-  top: 70%;
+  top: 86%;
   left: 50%;
   transform: translate(-50%, -200%);
+}
+#send_mail .p-huge {
+  opacity: 0.8;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+#send_mail .p-small {
+  opacity: 0.8;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
 }/*# sourceMappingURL=main.css.map */
