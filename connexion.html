@@ -182,22 +182,102 @@
     </header>
     <!-- Section connexion -->
     <img
-      class="position-absolute"
+      class="position-absolute d-none"
       src="img/illustrations/form_bg.svg"
       alt="Illustration de fond"
     />
-    <div class="bg_img"></div>
-    <section id="connexion_hero" class="">
-      <div
-        id="container_login"
-        class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5 container_content"
-      >
-        <div class="connexion_container w-lg-100 p-lg-5 p-3">
-          <div class="d-flex flex-column gap-3">
-            <p>Se connecter</p>
-            <h3 class="h3-dark mb-5">Heureux de vous revoir</h3>
+    <div class="bg_img d-flex align-items-center justify-content-center">
+      <section id="connexion_hero" class="w-100">
+        <div
+          id="container_login"
+          class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5"
+        >
+          <div class="connexion_container p-lg-5 p-3">
+            <div class="d-flex flex-column gap-3">
+              <p>Se connecter</p>
+              <h3 class="h3-dark mb-5">Heureux de vous revoir</h3>
+            </div>
+            <form action="#" class="form-connexion d-flex flex-column gap-3">
+              <div class="d-flex flex-column gap-2">
+                <label for="email">Adresse e-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control white-focus shadow-none"
+                  placeholder="camille@cerebro.fr"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+              </div>
+              <div class="d-flex flex-column gap-2 position-relative">
+                <label for="password">Mot de passe</label>
+                <div class="input-group d-flex align-items-center mb-4">
+                  <input
+                    type="password"
+                    id="password1"
+                    class="form-control white-focus shadow-none"
+                    placeholder="*************"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                    required
+                  />
+                  <div class="input-group-append">
+                    <i id="eye_on1" class="eye_on d-none">
+                      <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                    /></i>
+                    <i id="eye_off1" class="eye_off">
+                      <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                    /></i>
+                  </div>
+                </div>
+              </div>
+              <button id="btn_connexion" type="submit" class="btn_green mb-4">
+                Connexion
+              </button>
+            </form>
+            <div class="text-center m">
+              <button id="btn_forget_mdp" class="btn_inline">
+                Mot de passe oublié ?
+              </button>
+            </div>
           </div>
-          <form action="#" class="form-connexion d-flex flex-column gap-3">
+          <div class="container_account">
+            <div class="account_create">
+              <div class="account_title">
+                <h3 class="h3-white">Nouveau sur Cérébro ?</h3>
+                <p class="mt-1 mb-5">
+                  Créer votre compte en 2 minutes seulement pour activer votre
+                  essai gratuit !
+                </p>
+              </div>
+              <button class="btn_dark_green">Créer mon compte</button>
+            </div>
+            <div class="evenement">
+              <h5 class="h5-dark mt-5">Le prochain évènement à venir</h5>
+              <p class="cbro-badge-pink">
+                Masterclass "thématique" à la fac d'Amiens ce lundi 05/06/2023 à
+                09h00
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section mot de passe oublié -->
+      <section
+        id="forget_mdp"
+        class="d-flex justify-content-center align-items-center d-none w-25"
+      >
+        <div class="reset_mdp_container p-lg-5 p-3">
+          <div class="d-flex flex-column gap-3">
+            <p>Mot de passe oublié ?</p>
+            <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
+            <p>
+              Un lien pour changer votre mot de passe vous sera envoyé par mail.
+              Pensez à vérifier vos indésirables / spams !
+            </p>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-3 mt-5">
             <div class="d-flex flex-column gap-2">
               <label for="email">Adresse e-mail</label>
               <input
@@ -210,12 +290,47 @@
                 required
               />
             </div>
+          </form>
+          <div class="text-center">
+            <button id="btn_email" class="btn_green w-100 mt-4">Envoyer</button>
+            <button id="btn_return_connexion" class="btn_inline mt-4">
+              Revenir vers l'écran de connexion
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section email envoyé -->
+      <section id="send_mail" class="d-none">
+        <div class="send_mail_container w-lg-100 p-lg-5 p-3 text-center">
+          <img src="img/icons/Send_email.svg" alt="Email envoyé" />
+          <div class="d-flex flex-column gap-3">
+            <h3 class="h3-dark mb-1">
+              Le lien pour changer votre mot de passe vient de vous être envoyé.
+            </h3>
+            <p class="p-huge mb-4">
+              Pensez à vérifier vos indésirables / spams !
+            </p>
+            <p class="p-small">Vous n'avez toujours pas reçu de lien ?</p>
+          </div>
+          <button id="btn_resend_email" class="btn_green w-100 mt-4" disabled>
+            <span id="timer"></span>
+            Renvoyer un lien
+          </button>
+        </div>
+      </section>
+      <!-- Section Modifier Mot de passe -->
+      <section id="reset_mdp" class="d-none">
+        <div class="send_mail_container w-lg-100 p-lg-5 p-3">
+          <div class="d-flex flex-column gap-3 mb-4">
+            <h3 class="h3-dark mb-1">Modifiez votre mot de passe</h3>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-3">
             <div class="d-flex flex-column gap-2 position-relative">
-              <label for="password">Mot de passe</label>
-              <div class="input-group d-flex align-items-center mb-4">
+              <label for="password">Nouveau mot de passe</label>
+              <div class="input-group d-flex align-items-center">
                 <input
                   type="password"
-                  id="password"
+                  id="password2"
                   class="form-control white-focus shadow-none"
                   placeholder="*************"
                   aria-label="Recipient's username"
@@ -223,153 +338,44 @@
                   required
                 />
                 <div class="input-group-append">
-                  <i id="eye_on" class="eye_on d-none">
+                  <i id="eye_on2" class="eye_on d-none">
                     <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
                   /></i>
-                  <i id="eye_off" class="eye_off">
+                  <i id="eye_off2" class="eye_off">
                     <img src="img/icons/eye_close.svg" alt="Oeil fermé"
                   /></i>
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn_green mb-4">Connexion</button>
-          </form>
-          <div class="text-center m">
-            <button id="btn_forget_mdp" class="btn_inline">
-              Mot de passe oublié ?
-            </button>
-          </div>
-        </div>
-        <div class="container_account">
-          <div class="account_create">
-            <div class="account_title">
-              <h3 class="h3-white">Nouveau sur Cérébro ?</h3>
-              <p class="mt-1 mb-5">
-                Créer votre compte en 2 minutes seulement pour activer votre
-                essai gratuit !
-              </p>
+            <div class="d-flex flex-column gap-2 position-relative">
+              <label for="password">Confirmation du nouveau mot de passe</label>
+              <div class="input-group d-flex align-items-center mb-3">
+                <input
+                  type="password"
+                  id="password3"
+                  class="form-control white-focus shadow-none"
+                  placeholder="*************"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+                <div class="input-group-append">
+                  <i id="eye_on3" class="eye_on d-none">
+                    <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                  /></i>
+                  <i id="eye_off3" class="eye_off">
+                    <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                  /></i>
+                </div>
+              </div>
             </div>
-            <button class="btn_dark_green">Créer mon compte</button>
-          </div>
-          <div class="evenement">
-            <h5 class="h5-dark mt-5">Le prochain évènement à venir</h5>
-            <p class="cbro-badge-pink">
-              Masterclass "thématique" à la fac d'Amiens ce lundi 05/06/2023 à
-              09h00
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section mot de passe oublié -->
-    <section id="forget_mdp" class="d-none">
-      <div class="reset_mdp_container w-lg-100 p-lg-5 p-3">
-        <div class="d-flex flex-column gap-3">
-          <p>Mot de passe oublié ?</p>
-          <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
-          <p>
-            Un lien pour changer votre mot de passe vous sera envoyé par mail.
-            Pensez à vérifier vos indésirables / spams !
-          </p>
-        </div>
-        <form action="#" class="form-connexion d-flex flex-column gap-3 mt-5">
-          <div class="d-flex flex-column gap-2">
-            <label for="email">Adresse e-mail</label>
-            <input
-              type="text"
-              id="email"
-              class="form-control white-focus shadow-none"
-              placeholder="camille@cerebro.fr"
-              aria-label="Recipient's username"
-              aria-describedby="button-addon2"
-              required
-            />
-          </div>
-        </form>
-        <div class="text-center">
-          <button id="btn_email" class="btn_green w-100 mt-4">Envoyer</button>
-          <button id="btn_connexion" class="btn_inline mt-4">
-            Revenir vers l'écran de connexion
+          </form>
+          <button id="btn_reset_mdp" class="btn_green w-100 mt-4">
+            Changer de mot de passe
           </button>
         </div>
-      </div>
-    </section>
-    <!-- Section email envoyé -->
-    <section id="send_mail" class="d-none">
-      <div class="send_mail_container w-lg-100 p-lg-5 p-3 text-center">
-        <img src="img/icons/Send_email.svg" alt="Email envoyé" />
-        <div class="d-flex flex-column gap-3">
-          <h3 class="h3-dark mb-1">
-            Le lien pour changer votre mot de passe vient de vous être envoyé.
-          </h3>
-          <p class="p-huge mb-4">
-            Pensez à vérifier vos indésirables / spams !
-          </p>
-          <p class="p-small">Vous n'avez toujours pas reçu de lien ?</p>
-        </div>
-        <button class="btn_green w-100 mt-4">
-          <span id="timer"></span>
-          Renvoyer un lien
-        </button>
-      </div>
-    </section>
-    <!-- Section Modifier Mot de passe -->
-    <section id="reset_mdp" class="d-none">
-      <div class="send_mail_container w-lg-100 p-lg-5 p-3">
-        <div class="d-flex flex-column gap-3 mb-4">
-          <h3 class="h3-dark mb-1">Modifiez votre mot de passe</h3>
-        </div>
-        <form action="#" class="form-connexion d-flex flex-column gap-3">
-          <div class="d-flex flex-column gap-2 position-relative">
-            <label for="password">Nouveau mot de passe</label>
-            <div class="input-group d-flex align-items-center">
-              <input
-                type="password"
-                id="password"
-                class="form-control white-focus shadow-none"
-                placeholder="*************"
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
-                required
-              />
-              <div class="input-group-append">
-                <i id="eye_on" class="eye_on d-none">
-                  <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
-                /></i>
-                <i id="eye_off" class="eye_off">
-                  <img src="img/icons/eye_close.svg" alt="Oeil fermé"
-                /></i>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-column gap-2 position-relative">
-            <label for="password">Confirmation du nouveau mot de passe</label>
-            <div class="input-group d-flex align-items-center mb-3">
-              <input
-                type="password"
-                id="password"
-                class="form-control white-focus shadow-none"
-                placeholder="*************"
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
-                required
-              />
-              <div class="input-group-append">
-                <i id="eye_on" class="eye_on d-none">
-                  <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
-                /></i>
-                <i id="eye_off" class="eye_off">
-                  <img src="img/icons/eye_close.svg" alt="Oeil fermé"
-                /></i>
-              </div>
-            </div>
-          </div>
-        </form>
-        <button id="btn_reset_mdp" class="btn_green w-100 mt-4">
-          Changer de mot de passe
-        </button>
-      </div>
-    </section>
+      </section>
+    </div>
     <!-- Footer -->
     <footer class="py-md-4 py-2 margin-top">
       <div class="container pt-5">

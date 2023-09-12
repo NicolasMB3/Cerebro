@@ -1,6 +1,8 @@
 // Fond de la page connexion
 body {
+  height: 850px;
   position: relative;
+  background: url(../../../img/noise.svg) repeat $cbro-snow-50;
 }
 
 .margin-top {
@@ -9,27 +11,18 @@ body {
 
 .bg_img {
   height: 550px;
-  background: url(../../../img/noise.svg) $cbro-green-800;
-  background-repeat: no-repeat;
-  background-size: 100% 50%;
+  background: url(../../../img/noise.svg) repeat $cbro-green-800;
 
   @include media-breakpoint-down(lg) {
-    background-size: 100%;
+    height: 110%;
   }
 }
 
 #connexion_hero {
-  position: absolute;
-  top: 13%;
-  left: 18%;
-
-  height: 650px;
+  margin-top: 12%;
 
   //Contenu principal (formulaire, création..)
   .container_content {
-    width: 100% !important;
-    //margin: -375px 0;
-
     @include media-breakpoint-down(lg) {
       margin: -775px 0;
     }
@@ -55,10 +48,11 @@ body {
     background-color: $cbro-snow-50;
     border-radius: 20px;
     box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+    width: 25%;
 
     @include media-breakpoint-down(lg) {
-      margin-bottom: 50px;
       width: 75%;
+      margin-bottom: 50px;
     }
 
     p {
@@ -76,8 +70,12 @@ body {
 
   //Conteneur pour la création du compte
   .container_account {
-    width: 33%;
+    width: 20%;
     padding-top: 85px;
+
+    @include media-breakpoint-down(xxl) {
+      padding-top: 45px;
+    }
 
     @include media-breakpoint-down(lg) {
       width: 75%;
@@ -118,11 +116,7 @@ body {
   background-color: $cbro-snow-50;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-
-  position: absolute;
-  top: 83%;
-  left: 50%;
-  transform: translate(-50%, -200%);
+  margin-top: 11%;
 
   .connexion-title_mdp {
     p {
@@ -152,11 +146,6 @@ body {
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
 
-  position: absolute;
-  top: 86%;
-  left: 50%;
-  transform: translate(-50%, -200%);
-
   .p-huge {
     opacity: 0.8;
     @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
@@ -172,9 +161,10 @@ body {
   background-color: $cbro-snow-50;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+}
 
-  position: absolute;
-  top: 83%;
-  left: 50%;
-  transform: translate(-50%, -200%);
+footer {
+  @include media-breakpoint-down(lg) {
+    margin-top: 0 !important;
+  }
 }
