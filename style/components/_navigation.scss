@@ -11,13 +11,15 @@
       -webkit-backdrop-filter: blur($blur); /* Chrome, Safari, Opera */
       backdrop-filter: blur($blur) brightness(90%); /* Firefox */
       box-shadow: 0px 4px 10px 0px rgba(50, 50, 49, 0.06);
-      @include media-breakpoint-down(lg){
-         padding: 16px 20px;
+      @include media-breakpoint-down(xl){
+         padding: 20px 23px;
+         margin-top: 2px;
+      }
+      @include media-breakpoint-down(md){
+         padding: 14px 23px;
+         margin-top: 2px;
       }
       padding: 12px 16px;
-      @include media-breakpoint-down(lg){
-         margin-top: 20px;
-      }
       border-radius: 5000px;
       #navbar-connect {
          @include cbro-paragraphe(500, 16px, 150%, $cbro-gray-900);
