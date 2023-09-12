@@ -9,10 +9,12 @@ body {
 
 .bg_img {
   height: 550px;
-  background: url(../../../img/noise.svg) repeat $cbro-green-800;
+  background: url(../../../img/noise.svg) $cbro-green-800;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
 
   @include media-breakpoint-down(lg) {
-    height: 100%;
+    background-size: 100%;
   }
 }
 
@@ -113,7 +115,6 @@ body {
 }
 
 #reset_mdp {
-  display: none;
   background-color: $cbro-snow-50;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
@@ -144,4 +145,15 @@ body {
       margin-bottom: 12px;
     }
   }
+}
+
+#send_mail {
+  background-color: $cbro-snow-50;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -200%);
 }

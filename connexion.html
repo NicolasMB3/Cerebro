@@ -180,10 +180,14 @@
         </div>
       </nav>
     </header>
-    <!-- Section connexion -->    
-    <img class="position-absolute" src="img/illustrations/form_bg.svg" alt="Illustration de fond" />
+    <!-- Section connexion -->
+    <img
+      class="position-absolute"
+      src="img/illustrations/form_bg.svg"
+      alt="Illustration de fond"
+    />
     <div class="bg_img"></div>
-    <section id="connexion_hero">
+    <section id="connexion_hero" class="">
       <div
         id="container_login"
         class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5 container_content"
@@ -219,10 +223,10 @@
                   required
                 />
                 <div class="input-group-append">
-                  <i id="eye_on" class="eye_on" onclick="eye_on()">
+                  <i id="eye_on" class="eye_on d-none">
                     <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
                   /></i>
-                  <i id="eye_off" class="eye_off" onclick="eye_off()">
+                  <i id="eye_off" class="eye_off">
                     <img src="img/icons/eye_close.svg" alt="Oeil fermé"
                   /></i>
                 </div>
@@ -231,7 +235,7 @@
             <button type="submit" class="btn_green mb-4">Connexion</button>
           </form>
           <div class="text-center m">
-            <button class="btn_inline" onclick="display_none_connexion()">
+            <button id="btn_mdp" class="btn_inline">
               Mot de passe oublié ?
             </button>
           </div>
@@ -257,37 +261,54 @@
         </div>
       </div>
     </section>
-    <!-- Section mot de passe oublié -->    
-    <section id="reset_mdp">
-      <div
-        id="container_reset_mdp"
-        class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5 container_content"
-      >
-        <div class="connexion_container w-lg-100 p-lg-5 p-3">
-          <div class="connexion-title_mdp d-flex flex-column gap-3">
-            <p>Mot de passe oublié ?</p>
-            <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
-            <p>Un lien pour changer votre mot de passe vous sera envoyé par mail. Pensez à vérifier vos indésirables / spams !</p>
-          </div>
-          <form action="#" class="form-connexion d-flex flex-column gap-3 mt-5">
-            <div class="d-flex flex-column gap-2">
-              <label for="email">Adresse e-mail</label>
-              <input
-                type="text"
-                id="email"
-                class="form-control white-focus shadow-none"
-                placeholder="camille@cerebro.fr"
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
-                required
-              />
-            </div>
-          </form>
-          <div class="text-center">
-            <button class="btn_green w-100 mt-4">Envoyer</button>
-            <button class="btn_inline mt-4" onclick="display_none_reset()">Revenir vers l'écran de connexion</button>
-          </div>
+    <!-- Section mot de passe oublié -->
+    <section id="reset_mdp" class="d-none">
+      <div class="reset_mdp_container w-lg-100 p-lg-5 p-3">
+        <div class="connexion-title_mdp d-flex flex-column gap-3">
+          <p>Mot de passe oublié ?</p>
+          <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
+          <p>
+            Un lien pour changer votre mot de passe vous sera envoyé par mail.
+            Pensez à vérifier vos indésirables / spams !
+          </p>
         </div>
+        <form action="#" class="form-connexion d-flex flex-column gap-3 mt-5">
+          <div class="d-flex flex-column gap-2">
+            <label for="email">Adresse e-mail</label>
+            <input
+              type="text"
+              id="email"
+              class="form-control white-focus shadow-none"
+              placeholder="camille@cerebro.fr"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+              required
+            />
+          </div>
+        </form>
+        <div class="text-center">
+          <button id="btn_email" class="btn_green w-100 mt-4">Envoyer</button>
+          <button id="btn_connexion" class="btn_inline mt-4">
+            Revenir vers l'écran de connexion
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Section email envoyé -->
+    <section id="send_mail" class="d-none">
+      <div class="send_mail_container w-lg-100 p-lg-5 p-3">
+        <div class="connexion-title_mdp d-flex flex-column gap-3">
+          <p>Mot de passe oublié ?</p>
+          <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
+          <p>
+            Un lien pour changer votre mot de passe vous sera envoyé par mail.
+            Pensez à vérifier vos indésirables / spams !
+          </p>
+        </div>
+        <div class="text-center">
+          <button class="btn_green w-100 mt-4">Envoyer</button>
+        </div>
+      </div>
     </section>
     <!-- Footer -->
     <footer class="py-md-4 py-2 margin-top">

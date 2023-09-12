@@ -391,9 +391,6 @@ header .panier:after {
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
-.eye_on {
-  display: none;
-}
 
 .h1-dark {
   font-family: "ITCSouvenir-md";
@@ -2315,11 +2312,13 @@ body {
 
 .bg_img {
   height: 550px;
-  background: url(../../../img/noise.svg) repeat #396359;
+  background: url(../../../img/noise.svg) #396359;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
 }
 @media (max-width: 991.98px) {
   .bg_img {
-    height: 100%;
+    background-size: 100%;
   }
 }
 
@@ -2427,7 +2426,6 @@ body {
 }
 
 #reset_mdp {
-  display: none;
   background-color: #fcfaf7;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
@@ -2460,4 +2458,14 @@ body {
   line-height: 20px !important;
   color: #4c4b4a !important;
   margin-bottom: 12px;
+}
+
+#send_mail {
+  background-color: #fcfaf7;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -200%);
 }/*# sourceMappingURL=main.css.map */
