@@ -193,7 +193,7 @@
         class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5 container_content"
       >
         <div class="connexion_container w-lg-100 p-lg-5 p-3">
-          <div class="connexion-title d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3">
             <p>Se connecter</p>
             <h3 class="h3-dark mb-5">Heureux de vous revoir</h3>
           </div>
@@ -235,7 +235,7 @@
             <button type="submit" class="btn_green mb-4">Connexion</button>
           </form>
           <div class="text-center m">
-            <button id="btn_mdp" class="btn_inline">
+            <button id="btn_forget_mdp" class="btn_inline">
               Mot de passe oublié ?
             </button>
           </div>
@@ -262,9 +262,9 @@
       </div>
     </section>
     <!-- Section mot de passe oublié -->
-    <section id="reset_mdp" class="d-none">
+    <section id="forget_mdp" class="d-none">
       <div class="reset_mdp_container w-lg-100 p-lg-5 p-3">
-        <div class="connexion-title_mdp d-flex flex-column gap-3">
+        <div class="d-flex flex-column gap-3">
           <p>Mot de passe oublié ?</p>
           <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
           <p>
@@ -298,7 +298,7 @@
     <section id="send_mail" class="d-none">
       <div class="send_mail_container w-lg-100 p-lg-5 p-3 text-center">
         <img src="img/icons/Send_email.svg" alt="Email envoyé" />
-        <div class="connexion-title_mail d-flex flex-column gap-3">
+        <div class="d-flex flex-column gap-3">
           <h3 class="h3-dark mb-1">
             Le lien pour changer votre mot de passe vient de vous être envoyé.
           </h3>
@@ -310,6 +310,63 @@
         <button class="btn_green w-100 mt-4">
           <span id="timer"></span>
           Renvoyer un lien
+        </button>
+      </div>
+    </section>
+    <!-- Section Modifier Mot de passe -->
+    <section id="reset_mdp" class="d-none">
+      <div class="send_mail_container w-lg-100 p-lg-5 p-3">
+        <div class="d-flex flex-column gap-3 mb-4">
+          <h3 class="h3-dark mb-1">Modifiez votre mot de passe</h3>
+        </div>
+        <form action="#" class="form-connexion d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-2 position-relative">
+            <label for="password">Nouveau mot de passe</label>
+            <div class="input-group d-flex align-items-center">
+              <input
+                type="password"
+                id="password"
+                class="form-control white-focus shadow-none"
+                placeholder="*************"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+              <div class="input-group-append">
+                <i id="eye_on" class="eye_on d-none">
+                  <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                /></i>
+                <i id="eye_off" class="eye_off">
+                  <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                /></i>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-2 position-relative">
+            <label for="password">Confirmation du nouveau mot de passe</label>
+            <div class="input-group d-flex align-items-center mb-3">
+              <input
+                type="password"
+                id="password"
+                class="form-control white-focus shadow-none"
+                placeholder="*************"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+              <div class="input-group-append">
+                <i id="eye_on" class="eye_on d-none">
+                  <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                /></i>
+                <i id="eye_off" class="eye_off">
+                  <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                /></i>
+              </div>
+            </div>
+          </div>
+        </form>
+        <button id="btn_reset_mdp" class="btn_green w-100 mt-4">
+          Changer de mot de passe
         </button>
       </div>
     </section>

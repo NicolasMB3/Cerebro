@@ -5,13 +5,15 @@ const password = document.getElementById("password");
 
 // Section
 const connexionHero = document.getElementById("connexion_hero");
-const resetMdp = document.getElementById("reset_mdp");
+const forgetMdp = document.getElementById("forget_mdp");
 const sendMail = document.getElementById("send_mail");
+const resetMdp = document.getElementById("reset_mdp");
 
 // Bouton pour changer de section
-const BtnMdp = document.getElementById("btn_mdp");
+const BtnForgetMdp = document.getElementById("btn_forget_mdp");
 const BtnEmail = document.getElementById("btn_email");
 const BtnConnexion = document.getElementById("btn_connexion");
+const BtnResetMdp = document.getElementById("btn_reset_mdp");
 
 // Dsiplay none / inline-block et type password / text
 function HideOff() {
@@ -32,14 +34,14 @@ eyeOn.addEventListener("click", HideOn);
 // Fonction pour chacher la section Connexion et affiché la section Mot de passe oublié
 function HideSectionConnexion() {
   connexionHero.classList.add("d-none");
-  resetMdp.classList.remove("d-none");
+  forgetMdp.classList.remove("d-none");
 }
 
-BtnMdp.addEventListener("click", HideSectionConnexion);
+BtnForgetMdp.addEventListener("click", HideSectionConnexion);
 
 // Fonction pour cahcher la section Mot de passe oublié et afficher la section Email envoyé
 function HideSectionMdp1() {
-  resetMdp.classList.add("d-none");
+  forgetMdp.classList.add("d-none");
   sendMail.classList.remove("d-none");
 
   // Fonction Timer pour la page d'email envoyé
@@ -60,10 +62,18 @@ function HideSectionMdp1() {
 
 BtnEmail.addEventListener("click", HideSectionMdp1);
 
-// Fonction pour cahcher la section Mot de passe oublié et afficher la section Connexion
+// Fonction pour cacher la section Mot de passe oublié et afficher la section Connexion
 function HideSectionMdp2() {
-  resetMdp.classList.add("d-none");
+  forgetMdp.classList.add("d-none");
   connexionHero.classList.remove("d-none");
 }
 
 BtnConnexion.addEventListener("click", HideSectionMdp2);
+
+// Fonction pour cacher la seciton changement de mot passe et afficher la section Connexion
+function HideSectionResetMdp() {
+  resetMdp.classList.add("d-none");
+  connexionHero.classList.remove("d-none");
+}
+
+BtnResetMdp.addEventListener("click", HideSectionResetMdp);
