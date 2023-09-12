@@ -51,13 +51,6 @@ footer .newsletter input {
   padding-bottom: 8px;
   padding-left: 22px;
 }
-footer .newsletter input::-moz-placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 300 !important;
-  font-size: 14px !important;
-  line-height: 100% !important;
-  color: #fcfaf7 !important;
-}
 footer .newsletter input::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 300 !important;
@@ -128,6 +121,7 @@ footer hr {
   }
 }
 
+/* Barre de navigation (sans le block d'information) */
 /* Block d'information */
 #header-info {
   font-family: "Instrument Sans", sans-serif;
@@ -161,51 +155,52 @@ footer hr {
   transform: translateY(-15vh);
 }
 
-/* Barre de navigation (sans le block d'information) */
-header {
+#header_white {
   margin-top: 22px;
   transition: transform 0.32s ease-in-out;
 }
-header .navbar {
+#header_white .navbar {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 150% !important;
   color: #191919 !important;
   transition: transform 0.32s ease-in-out;
-  max-width: 1320px;
-  background: linear-gradient(0deg, rgba(227, 225, 222, 0.3), rgba(227, 225, 222, 0.3)), rgba(251, 248, 244, 0.6);
-  backdrop-filter: blur(4px); /* Standard syntax */
-  -webkit-backdrop-filter: blur(4px); /* Chrome, Safari, Opera */
-  backdrop-filter: blur(4px) brightness(90%); /* Firefox */
+  background: #FBF8F4;
+  backdrop-filter: blur(6px); /* Standard syntax */
+  -webkit-backdrop-filter: blur(6px); /* Chrome, Safari, Opera */
+  backdrop-filter: blur(6px) brightness(90%); /* Firefox */
+  box-shadow: 0px 4px 10px 0px rgba(50, 50, 49, 0.06);
   padding: 12px 16px;
   border-radius: 5000px;
 }
-@media (max-width: 991.98px) {
-  header .navbar {
-    padding: 16px 20px;
+@media (max-width: 1199.98px) {
+  #header_white .navbar {
+    padding: 20px 23px;
+    margin-top: 2px;
   }
 }
-@media (max-width: 991.98px) {
-  header .navbar {
-    margin-top: 20px;
+@media (max-width: 767.98px) {
+  #header_white .navbar {
+    padding: 14px 23px;
+    margin-top: 2px;
   }
 }
-header .navbar #navbar-connect {
+#header_white .navbar #navbar-connect {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500 !important;
   font-size: 16px !important;
   line-height: 150% !important;
   color: #191919 !important;
 }
-header .navbar a #navbar-logo {
-  width: 100%;
+#header_white .navbar a #navbar-logo {
+  width: auto;
   height: 25px;
 }
-header .navbar .navbar-link a {
+#header_white .navbar .navbar-link a {
   padding: 0 1vw;
 }
-header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
+#header_white .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 16px !important;
@@ -214,8 +209,97 @@ header .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   background: #4f756c;
   padding: 12px 22px;
 }
-header .panier {
-  width: 74px;
+#header_white .panier {
+  width: 79px;
+  height: 74px;
+  border-radius: 100px;
+  background: #FBF8F4;
+  backdrop-filter: blur(6px); /* Standard syntax */
+  -webkit-backdrop-filter: blur(6px); /* Chrome, Safari, Opera */
+  backdrop-filter: blur(6px) brightness(90%); /* Firefox */
+  position: relative;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(50, 50, 49, 0.06);
+}
+#header_white .panier img {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+#header_white .panier:after {
+  content: attr(data-number);
+  font-family: Instrument Sans;
+  box-sizing: content-box;
+  background-color: #a04470;
+  border: 3px solid #e3e1de;
+  border-radius: 999px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: 20%;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+#header_beige {
+  margin-top: 22px;
+  transition: transform 0.32s ease-in-out;
+}
+#header_beige .navbar {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+  transition: transform 0.32s ease-in-out;
+  background: linear-gradient(0deg, rgba(227, 225, 222, 0.3), rgba(227, 225, 222, 0.3)), rgba(251, 248, 244, 0.6);
+  backdrop-filter: blur(4px); /* Standard syntax */
+  -webkit-backdrop-filter: blur(4px); /* Chrome, Safari, Opera */
+  backdrop-filter: blur(4px) brightness(90%); /* Firefox */
+  box-shadow: 0px 4px 10px 0px rgba(50, 50, 49, 0.06);
+  padding: 12px 16px;
+  border-radius: 5000px;
+}
+@media (max-width: 1199.98px) {
+  #header_beige .navbar {
+    padding: 20px 23px;
+    margin-top: 2px;
+  }
+}
+@media (max-width: 767.98px) {
+  #header_beige .navbar {
+    padding: 14px 23px;
+    margin-top: 2px;
+  }
+}
+#header_beige .navbar #navbar-connect {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+}
+#header_beige .navbar a #navbar-logo {
+  width: auto;
+  height: 25px;
+}
+#header_beige .navbar .navbar-link a {
+  padding: 0 1vw;
+}
+#header_beige .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #fff !important;
+  background: #4f756c;
+  padding: 12px 22px;
+}
+#header_beige .panier {
+  width: 79px;
   height: 74px;
   border-radius: 100px;
   background: linear-gradient(0deg, rgba(227, 225, 222, 0.3), rgba(227, 225, 222, 0.3)), rgba(251, 248, 244, 0.6);
@@ -224,13 +308,14 @@ header .panier {
   backdrop-filter: blur(4px) brightness(90%); /* Firefox */
   position: relative;
   border: none;
+  box-shadow: 0px 4px 10px 0px rgba(50, 50, 49, 0.06);
 }
-header .panier img {
+#header_beige .panier img {
   display: inline-block;
   height: 32px;
   width: 32px;
 }
-header .panier:after {
+#header_beige .panier:after {
   content: attr(data-number);
   font-family: Instrument Sans;
   box-sizing: content-box;
@@ -358,7 +443,6 @@ header .panier:after {
 }
 @media (max-width: 991.98px) {
   .btn_dark-purple {
-    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -615,13 +699,6 @@ header .panier:after {
   padding: 0 20px !important;
   outline: none;
 }
-.form-connexion .form-control::-moz-placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: normal !important;
-  color: #b0afad !important;
-}
 .form-connexion .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -638,6 +715,8 @@ header .panier:after {
 
 header {
   z-index: 9999999999;
+  max-width: 100%;
+  margin-left: auto;
 }
 
 body {
@@ -738,7 +817,6 @@ h3 {
   background: #e3ebd5;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -754,7 +832,6 @@ h3 {
   background: #e7ddf1;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -770,7 +847,6 @@ h3 {
   background: #f3e8ed;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -786,7 +862,6 @@ h3 {
   background: #cee3f6;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -802,7 +877,6 @@ h3 {
   background: #fde4e0;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -818,7 +892,6 @@ h3 {
   background: #feead2;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -834,7 +907,6 @@ h3 {
   background: rgba(227, 225, 222, 0.7);
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
   width: 29px;
@@ -2034,8 +2106,7 @@ h3 {
 #details-formation .objectif-details {
   border-radius: 12px;
   background: rgba(230, 228, 222, 0.5);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   height: 100%;
 }
 #details-formation .objectif-details p {
@@ -2216,7 +2287,6 @@ h3 {
   }
 }
 #listing-event .btn_dark-purple {
-  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 991.98px) {
@@ -2421,11 +2491,10 @@ body {
   line-height: 20px !important;
   color: #a04470 !important;
   padding: 8px 16px;
-  width: -moz-max-content;
   width: max-content;
 }
 
-#reset_mdp {
+#forget_mdp {
   background-color: #fcfaf7;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
@@ -2434,7 +2503,7 @@ body {
   left: 50%;
   transform: translate(-50%, -200%);
 }
-#reset_mdp .connexion-title_mdp p:first-child {
+#forget_mdp .connexion-title_mdp p:first-child {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -2443,7 +2512,7 @@ body {
   letter-spacing: 0.32px;
   text-transform: uppercase;
 }
-#reset_mdp .connexion-title_mdp p:last-child {
+#forget_mdp .connexion-title_mdp p:last-child {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 16px !important;
@@ -2451,7 +2520,7 @@ body {
   color: #323231 !important;
   opacity: 0.8;
 }
-#reset_mdp form label {
+#forget_mdp form label {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500 !important;
   font-size: 16px !important;
@@ -2465,7 +2534,33 @@ body {
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
   position: absolute;
-  top: 70%;
+  top: 86%;
   left: 50%;
   transform: translate(-50%, -200%);
-}/*# sourceMappingURL=main.css.map */
+}
+#send_mail .p-huge {
+  opacity: 0.8;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+#send_mail .p-small {
+  opacity: 0.8;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+
+#reset_mdp {
+  background-color: #fcfaf7;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+}

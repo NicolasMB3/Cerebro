@@ -42,47 +42,49 @@
       </a>
    </div>
    <!-- Barre de navigation -->
-   <header class="d-flex gap-3 justify-content-center px-lg-5 px-3 position-fixed w-100 navbar_s">
-      <nav class="d-flex justify-content-center navbar w-100">
-         <div class="container-fluid px-0">
-            <a class="py-0" href="index.html"><img id="navbar-logo" class="ms-2" src="./img/logo/logo-cerebro.svg" alt="Logo de la société"></a>
-            <div class="d-flex navbar-link d-none d-lg-flex">
-               <a href="#" class="nav-link">
-                  <div class="d-flex flex-row align-items-center">
-                     <p>Application</p>
-                     <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
-                  </div>
-               </a>
-               <a href="#" class="nav-link">
-                  <div class="d-flex flex-row align-items-center">
-                     <p>Ressources</p>
-                     <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
-                  </div>
-               </a>
-               <a href="#" class="nav-link">
-                  <div class="d-flex flex-row align-items-center">
-                     <p>Tarifs</p>
-                  </div>
-               </a>
-               <a href="#" class="nav-link">
-                  <div class="d-flex flex-row align-items-center">
-                     <p>À propos</p>
-                     <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
-                  </div>
-               </a>
+   <header class="position-fixed w-100 navbar_s" id="header_white">
+      <div class="container justify-content-center d-flex gap-3">
+         <nav class="d-flex justify-content-center navbar w-100">
+            <div class="container-fluid px-0">
+               <a class="py-0" href="index.html"><img id="navbar-logo" class="ms-2" src="./img/logo/logo-cerebro.svg" alt="Logo de la société"></a>
+               <div class="d-flex navbar-link d-none d-xl-flex">
+                  <a href="#" class="nav-link">
+                     <div class="d-flex flex-row align-items-center">
+                        <p>Application</p>
+                        <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
+                     </div>
+                  </a>
+                  <a href="#" class="nav-link">
+                     <div class="d-flex flex-row align-items-center">
+                        <p>Ressources</p>
+                        <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
+                     </div>
+                  </a>
+                  <a href="#" class="nav-link">
+                     <div class="d-flex flex-row align-items-center">
+                        <p>Tarifs</p>
+                     </div>
+                  </a>
+                  <a href="#" class="nav-link">
+                     <div class="d-flex flex-row align-items-center">
+                        <p>À propos</p>
+                        <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
+                     </div>
+                  </a>
+               </div>
+               <div class="d-flex column-gap-2 align-items-center d-none d-xl-flex">
+                  <button class="btn_full_transparent">Se connecter</button>
+                  <button class="btn_green">Tester gratuitement</button>
+               </div>
+               <div class="hamburger-menu d-xl-none">
+                  <img src="./img/icons/hamburger.svg" alt="Icône pour déployer un menu responsive">
+               </div>
             </div>
-            <div class="d-flex column-gap-2 align-items-center d-none d-lg-flex">
-               <button class="btn_full_transparent">Se connecter</button>
-               <button class="btn_green">Tester gratuitement</button>
-            </div>
-            <div class="hamburger-menu d-lg-none">
-               <img src="./img/icons/hamburger.svg" alt="Icône pour déployer un menu responsive">
-            </div>
-         </div>
-      </nav>
-      <button class="h2-dark d-none d-lg-flex panier d-flex justify-content-center align-items-center" data-number="1">
-         <img src="img/icons/shop_dark.svg" alt="Icon Panier">
-      </button>    
+         </nav>
+         <button class="h2-dark d-none d-xl-flex panier d-flex justify-content-center align-items-center" data-number="1">
+            <img src="img/icons/shop_dark.svg" alt="Icon Panier">
+         </button>   
+      </div>
    </header>
    <!-- Section principale -->
    <section id="details-hero_a" class="pb-5 pb-5 overflow-hidden">
@@ -124,8 +126,8 @@
    <!-- À l’issu de cette formation ... -->
    <section id="details-formation" class="pt-5 pb-5 pb-5">
       <div class="container">
-         <div class="row gx-4">
-            <div class="col-12 col-xl-9 pe-0 pe-lg-5 ps-0">
+         <div class="row gx-5">
+            <div class="col-12 col-xl-9">
                <h2 class="h2-dark pb-2">À l’issu de cette formation, vous pourrez mettre en place vos premières lignes de base avec vos patients.</h2>
                <p>Un format volontairement court est proposé de façon à vous présenter les informations les plus importantes tout en s’appuyant sur une bibliographie récente et spécifique.</p> 
                <h2 class="h2-dark mt-5 pt-4 pb-2">Vos objectifs</h2>  
