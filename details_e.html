@@ -42,7 +42,7 @@
       </a>
    </div>
    <!-- Barre de navigation -->
-   <header class="d-flex align-items-center justify-content-center px-lg-5 px-3 position-fixed w-100">
+   <header class="d-flex gap-3 justify-content-center px-lg-5 px-3 position-fixed w-100 navbar_s">
       <nav class="d-flex justify-content-center navbar w-100">
          <div class="container-fluid px-0">
             <a class="py-0" href="index.html"><img id="navbar-logo" class="ms-2" src="./img/logo/logo-cerebro.svg" alt="Logo de la société"></a>
@@ -74,12 +74,15 @@
             <div class="d-flex column-gap-2 align-items-center d-none d-lg-flex">
                <button class="btn_full_transparent">Se connecter</button>
                <button class="btn_green">Tester gratuitement</button>
-            </div>        
+            </div>
             <div class="hamburger-menu d-lg-none">
                <img src="./img/icons/hamburger.svg" alt="Icône pour déployer un menu responsive">
             </div>
          </div>
-      </nav>  
+      </nav>
+      <button class="h2-dark d-none d-lg-flex panier d-flex justify-content-center align-items-center" data-number="1">
+         <img src="img/icons/shop_dark.svg" alt="Icon Panier">
+      </button>    
    </header>
    <!-- Section principale -->
    <section id="details-hero_e" class="pb-5 pb-5 overflow-hidden">
@@ -115,7 +118,7 @@
                Ajouter à mon panier
             </button>
          </div>
-         <img class="position-absolute" src="./img/icons/abstrait_1.svg" alt="Image décorative">
+         <img class="position-absolute d-none d-lg-flex" src="./img/icons/abstrait_1.svg" alt="Image décorative">
       </div>
    </section> 
    <!-- À l’issu de cette formation ... -->
@@ -127,31 +130,31 @@
                <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna. Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna.</p> 
                <h2 class="h2-dark mt-5 pt-4 pb-2">Vos objectifs</h2>  
                <div class="row g-4">
-                  <div class="col-4">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="objectif-details p-4">
                         <h3 class="h3-green">1.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum</p>
                      </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="objectif-details p-4">
                         <h3 class="h3-green">2.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum</p>
                      </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="objectif-details p-4">
                         <h3 class="h3-green">3.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum</p>
                      </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="objectif-details p-4">
                         <h3 class="h3-green">4.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum</p>
                      </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="objectif-details p-4">
                         <h3 class="h3-green">5.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum</p>
@@ -163,19 +166,19 @@
                   <div class="accordion-items pe-0">
                      <h2 class="accordion-header position-relative">
                         <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                           <span>Module 1</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Lorem ipsum dolor sit amet consectetur</span>
+                           <span>Module 1</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Fondements théoriques et définitions</span>
                         </button>
                      </h2>
-                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body pt-0">
-                           Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna. Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum commodo venenatis elit faucibus amet pulvinar magna. 
+                           Pourquoi avoir opté pour un abonnement plutôt que pour un achat à l’unité ?
                         </div>
                      </div>
                   </div>
                   <div class="accordion-items pe-0">
                      <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                           <span>Module 2</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Lorem ipsum dolor sit amet consectetur</span>
+                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           <span>Module 2</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Mise en place des lignes de base</span>
                         </button>
                      </h2>
                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -186,8 +189,8 @@
                   </div>
                   <div class="accordion-items pe-0">
                      <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThrid" aria-expanded="false" aria-controls="collapseThrid">
-                           <span>Module 3</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Lorem ipsum dolor sit amet consectetur</span>
+                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThrid" aria-expanded="false" aria-controls="collapseThrid">
+                           <span>Module 3</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Lignes de base et lexique en orthophonie</span>
                         </button>
                      </h2>
                      <div id="collapseThrid" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -198,20 +201,8 @@
                   </div>
                   <div class="accordion-items pe-0">
                      <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                           <span>Module 4</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Lorem ipsum dolor sit amet consectetur</span>
-                        </button>
-                     </h2>
-                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-                           En souscrivant à la licence, vous avez accès à l’application CérébroLex avec la possibilité de démarrer autant de prises en charge que vous le souhaitez. Vous avez également accès à l’ensemble du matériel disponible sur le site : fichiers pdf et tableurs de suivi, ainsi qu’aux revues de littérature, fiches synthèses et résumés d’articlecréer autant.
-                        </div>
-                     </div>
-                  </div>
-                  <div class="accordion-items pe-0">
-                     <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                           <span>Module 5</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Lorem ipsum dolor sit amet consectetur</span>
+                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                           <span>Module 4</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Cas cliniques</span>
                         </button>
                      </h2>
                      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -399,5 +390,6 @@
       </div>
    </footer>
    <script src="./script/tarif.js"></script>
+   <script src="./script/header.js"></script>
 </body>
 </html>

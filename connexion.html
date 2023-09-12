@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cérébro / Tarification</title>
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="./img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="./img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="./img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="./img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="./img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="./img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="./img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="./img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="Cérébro" />
+    <meta name="msapplication-TileColor" content="#4F756C" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://www.lecerebro.com/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="https://www.lecerebro.com/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="https://www.lecerebro.com/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="https://www.lecerebro.com/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="https://www.lecerebro.com/mstile-310x310.png"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <header
+      class="d-flex gap-3 justify-content-center px-lg-5 px-3 position-fixed w-100 navbar_s mt-3"
+    >
+      <nav class="d-flex justify-content-center navbar w-100">
+        <div class="container-fluid px-0">
+          <a class="py-0" href="index.html"
+            ><img
+              id="navbar-logo"
+              class="ms-2"
+              src="./img/logo/logo-cerebro.svg"
+              alt="Logo de la société"
+          /></a>
+          <div class="d-flex navbar-link d-none d-lg-flex">
+            <a href="#" class="nav-link">
+              <div class="d-flex flex-row align-items-center">
+                <p>Application</p>
+                <img
+                  src="./img/icons/arrow_down.svg"
+                  class="ps-2"
+                  alt="Flèche qui descend"
+                />
+              </div>
+            </a>
+            <a href="#" class="nav-link">
+              <div class="d-flex flex-row align-items-center">
+                <p>Ressources</p>
+                <img
+                  src="./img/icons/arrow_down.svg"
+                  class="ps-2"
+                  alt="Flèche qui descend"
+                />
+              </div>
+            </a>
+            <a href="#" class="nav-link">
+              <div class="d-flex flex-row align-items-center">
+                <p>Tarifs</p>
+              </div>
+            </a>
+            <a href="#" class="nav-link">
+              <div class="d-flex flex-row align-items-center">
+                <p>À propos</p>
+                <img
+                  src="./img/icons/arrow_down.svg"
+                  class="ps-2"
+                  alt="Flèche qui descend"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="d-flex column-gap-2 align-items-center d-none d-lg-flex">
+            <button class="btn_full_transparent">Se connecter</button>
+            <button class="btn_green">Tester gratuitement</button>
+          </div>
+          <div class="hamburger-menu d-lg-none">
+            <img
+              src="./img/icons/hamburger.svg"
+              alt="Icône pour déployer un menu responsive"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Section connexion -->
+    <img
+      class="position-absolute"
+      src="img/illustrations/form_bg.svg"
+      alt="Illustration de fond"
+    />
+    <div class="bg_img"></div>
+    <section id="connexion_hero" class="">
+      <div
+        id="container_login"
+        class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5 container_content"
+      >
+        <div class="connexion_container w-lg-100 p-lg-5 p-3">
+          <div class="connexion-title d-flex flex-column gap-3">
+            <p>Se connecter</p>
+            <h3 class="h3-dark mb-5">Heureux de vous revoir</h3>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-3">
+            <div class="d-flex flex-column gap-2">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="text"
+                id="email"
+                class="form-control white-focus shadow-none"
+                placeholder="camille@cerebro.fr"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <div class="d-flex flex-column gap-2 position-relative">
+              <label for="password">Mot de passe</label>
+              <div class="input-group d-flex align-items-center mb-4">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control white-focus shadow-none"
+                  placeholder="*************"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+                <div class="input-group-append">
+                  <i id="eye_on" class="eye_on d-none">
+                    <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                  /></i>
+                  <i id="eye_off" class="eye_off">
+                    <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                  /></i>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn_green mb-4">Connexion</button>
+          </form>
+          <div class="text-center m">
+            <button id="btn_mdp" class="btn_inline">
+              Mot de passe oublié ?
+            </button>
+          </div>
+        </div>
+        <div class="container_account">
+          <div class="account_create">
+            <div class="account_title">
+              <h3 class="h3-white">Nouveau sur Cérébro ?</h3>
+              <p class="mt-1 mb-5">
+                Créer votre compte en 2 minutes seulement pour activer votre
+                essai gratuit !
+              </p>
+            </div>
+            <button class="btn_dark_green">Créer mon compte</button>
+          </div>
+          <div class="evenement">
+            <h5 class="h5-dark mt-5">Le prochain évènement à venir</h5>
+            <p class="cbro-badge-pink">
+              Masterclass "thématique" à la fac d'Amiens ce lundi 05/06/2023 à
+              09h00
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section mot de passe oublié -->
+    <section id="reset_mdp" class="d-none">
+      <div class="reset_mdp_container w-lg-100 p-lg-5 p-3">
+        <div class="connexion-title_mdp d-flex flex-column gap-3">
+          <p>Mot de passe oublié ?</p>
+          <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
+          <p>
+            Un lien pour changer votre mot de passe vous sera envoyé par mail.
+            Pensez à vérifier vos indésirables / spams !
+          </p>
+        </div>
+        <form action="#" class="form-connexion d-flex flex-column gap-3 mt-5">
+          <div class="d-flex flex-column gap-2">
+            <label for="email">Adresse e-mail</label>
+            <input
+              type="text"
+              id="email"
+              class="form-control white-focus shadow-none"
+              placeholder="camille@cerebro.fr"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+              required
+            />
+          </div>
+        </form>
+        <div class="text-center">
+          <button id="btn_email" class="btn_green w-100 mt-4">Envoyer</button>
+          <button id="btn_connexion" class="btn_inline mt-4">
+            Revenir vers l'écran de connexion
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Section email envoyé -->
+    <section id="send_mail" class="d-none">
+      <div class="send_mail_container w-lg-100 p-lg-5 p-3">
+        <div class="connexion-title_mdp d-flex flex-column gap-3">
+          <p>Mot de passe oublié ?</p>
+          <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
+          <p>
+            Un lien pour changer votre mot de passe vous sera envoyé par mail.
+            Pensez à vérifier vos indésirables / spams !
+          </p>
+        </div>
+        <div class="text-center">
+          <button class="btn_green w-100 mt-4">Envoyer</button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-md-4 py-2 margin-top">
+      <div class="container pt-5">
+        <div class="row newsletter mb-5">
+          <div class="col-12 col-lg mb-4 mb-lg-0">
+            <h5>Restons en contact !</h5>
+            <p>Ne ratez rien des dernières actualités de Cérébro</p>
+          </div>
+          <div class="col">
+            <form>
+              <div class="d-flex flex-column flex-sm-row gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Votre e-mail</label
+                >
+                <input
+                  id="newsletter1"
+                  type="email"
+                  class="form-control shadow-none"
+                  placeholder="Votre e-mail"
+                />
+                <button class="btn_green mt-0">
+                  Souscrire à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-lg-4 col-12 mb-lg-3 pb-md-3 mb-3">
+            <a href="#"
+              ><img
+                src="./img/logo/logo-cerebro_white.svg"
+                alt="Logo de la société"
+            /></a>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur. In cras pellentesque
+              suspendisse.
+            </p>
+            <ul class="list-unstyled d-flex gap-3 d-md-none mt-4">
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/instagram.svg"
+                    alt="Redirection vers Intagram"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/linkedin.svg"
+                    alt="Redirection vers Linkedin"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/facebook.svg"
+                    alt="Redirection vers Facebook"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/twitter.svg"
+                    alt="Redirection vers Twitter"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/youtube.svg"
+                    alt="Redirection vers Youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">Applications</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0 text-decoration-none"
+                  >CérébroLex</a
+                >
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">CérébroVerbs</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">CérébroSyntax</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Tarifs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">Ressources</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Matériels</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Résumés d’articles</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Tableurs</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Formations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">À propos</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">L’équipe</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">FAQ</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Nous contacter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">Legal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Conditions générales</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Mentions légales</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr class="my-4" />
+          <div
+            class="d-flex flex-column flex-sm-row align-items-center justify-content-between pt-3 px-0"
+          >
+            <p class="mb-4 mb-md-0">
+              &copy; 2023 Cérébro. Tous droits reservés
+            </p>
+            <ul class="list-unstyled d-flex gap-3 d-none d-md-flex">
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/instagram.svg"
+                    alt="Redirection vers Intagram"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/linkedin.svg"
+                    alt="Redirection vers Linkedin"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/facebook.svg"
+                    alt="Redirection vers Facebook"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/twitter.svg"
+                    alt="Redirection vers Twitter"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/youtube.svg"
+                    alt="Redirection vers Youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script/tarif.js"></script>
+    <script src="./script/header.js"></script>
+    <script src="./script/connexion.js"></script>
+  </body>
+</html>

@@ -1,275 +1,79 @@
 // Les lignes de base en orthophonie
 #details-hero {
-   padding: 10rem 0 0 0;
-   background: url(./../img/noise.svg), rgba(231, 221, 241, 0.45);
-   @include media-breakpoint-down(lg){
-      padding: 5rem 0 0 0;
-   }
-   .container .p-dark {
-      @include media-breakpoint-up(lg) {
-         width: 60%;         
+   &_a, &_b, &_c, &_d, &_e {
+      padding: 10rem 0 0 0;
+      @include media-breakpoint-down(lg){
+         padding: 5rem 0 0 0;
       }
-   }
-   li {
-      @include cbro-title(300, 18px, 150%, $cbro-gray-600);
-      list-style: none;
-   }
-   .position-absolute {
-      bottom: -295px;
-      right: -31vw;
-      width: 80%;
-   }
-   .mobile {
-      &-info {
-         ul {
-            padding: 0;
+      .container .p-dark {
+         @include media-breakpoint-up(lg) {
+            width: 60%;         
          }
-         
-         li {
-            font-family: Instrument Sans;
-            @include media-breakpoint-down(lg) {
-               @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);               
+      }
+      li {
+         @include cbro-title(300, 18px, 150%, $cbro-gray-600);
+         list-style: none;
+      }
+      .position-absolute {
+         bottom: -295px;
+         right: -31vw;
+         width: 80%;
+      }
+      .mobile {
+         &-info {
+            ul {
+               padding: 0;
             }
-         }   
             
-         span {
-            font-size: 24px;
-            color: $cbro-purple-700;
-         }
-      }
-
-      &-price {
-         p:last-child {
-            font-family: Instrument Sans;
-            @include cbro-paragraphe(500, 18px, 133%, #000);
-         }      
-      }
-
-      .btn_dark-purple {
-         width: 100%;
-         position: relative;
-         z-index: 999;
-      }
-   }
-}
-
-// Méthodologie - Vert
-#details-hero_b {
-   padding: 10rem 0 0 0;
-   background: url(./../img/noise.svg), rgba(234, 239, 226, 0.65);
-   @include media-breakpoint-down(lg){
-      padding: 5rem 0 0 0;
-   }
-   .container .p-dark {
-      @include media-breakpoint-up(lg) {
-         width: 60%;         
-      }
-   }
-   li {
-      @include cbro-title(300, 18px, 150%, $cbro-gray-600);
-      list-style: none;
-   }
-   .position-absolute {
-      bottom: -295px;
-      right: -31vw;
-      width: 80%;
-   }
-   .mobile {
-      &-info {
-         ul {
-            padding: 0;
-         }
-         
-         li {
-            font-family: Instrument Sans;
-            @include media-breakpoint-down(lg) {
-               @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);               
+            li {
+               font-family: Instrument Sans;
+               @include media-breakpoint-down(lg) {
+                  @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);               
+               }
+            }   
+               
+            span {
+               font-size: 24px;
+               color: $cbro-purple-700;
             }
-         }   
-            
-         span {
-            font-size: 24px;
-            color: $cbro-purple-700;
          }
-      }
 
-      &-price {
-         p:last-child {
-            font-family: Instrument Sans;
-            @include cbro-paragraphe(500, 18px, 133%, #000);
-         }      
-      }
-
-      .btn_dark-purple {
-         width: 100%;
-         position: relative;
-         z-index: 999;
-      }
-   }
-}
-
-// Neurologie - Yellow
-#details-hero_c {
-   padding: 10rem 0 0 0;
-   background: url(./../img/noise.svg), rgba(254, 234, 210, 0.45);
-   @include media-breakpoint-down(lg){
-      padding: 5rem 0 0 0;
-   }
-   .container .p-dark {
-      @include media-breakpoint-up(lg) {
-         width: 60%;         
-      }
-   }
-   li {
-      @include cbro-title(300, 18px, 150%, $cbro-gray-600);
-      list-style: none;
-   }
-   .position-absolute {
-      bottom: -295px;
-      right: -31vw;
-      width: 80%;
-   }
-   .mobile {
-      &-info {
-         ul {
-            padding: 0;
+         &-price {
+            p:last-child {
+               font-family: Instrument Sans;
+               @include cbro-paragraphe(500, 18px, 133%, #000);
+            }      
          }
-         
-         li {
-            font-family: Instrument Sans;
-            @include media-breakpoint-down(lg) {
-               @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);               
+
+         .btn_dark-purple {
+            position: relative;
+            z-index: 999;
+
+            @include media-breakpoint-down(sm) {
+               width: 100%;
             }
-         }   
-            
-         span {
-            font-size: 24px;
-            color: $cbro-purple-700;
          }
       }
+   }
 
-      &-price {
-         p:last-child {
-            font-family: Instrument Sans;
-            @include cbro-paragraphe(500, 18px, 133%, #000);
-         }      
-      }
+   &_a {
+      background: url(./../img/noise.svg), rgba(231, 221, 241, 0.45);
+   }
 
-      .btn_dark-purple {
-         width: 100%;
-         position: relative;
-         z-index: 999;
-      }
+   &_b {
+      background: url(./../img/noise.svg), rgba(234, 239, 226, 0.65);
    }
-}
 
-// Vocabulaire - Bleu
-#details-hero_d {
-   padding: 10rem 0 0 0;
-   background: url(./../img/noise.svg), rgba(206, 227, 246, 0.45);;
-   @include media-breakpoint-down(lg){
-      padding: 5rem 0 0 0;
+   &_c {
+      background: url(./../img/noise.svg), rgba(254, 234, 210, 0.45);
    }
-   .container .p-dark {
-      @include media-breakpoint-up(lg) {
-         width: 60%;         
-      }
-   }
-   li {
-      @include cbro-title(300, 18px, 150%, $cbro-gray-600);
-      list-style: none;
-   }
-   .position-absolute {
-      bottom: -295px;
-      right: -31vw;
-      width: 80%;
-   }
-   .mobile {
-      &-info {
-         ul {
-            padding: 0;
-         }
-         
-         li {
-            font-family: Instrument Sans;
-            @include media-breakpoint-down(lg) {
-               @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);               
-            }
-         }   
-            
-         span {
-            font-size: 24px;
-            color: $cbro-purple-700;
-         }
-      }
 
-      &-price {
-         p:last-child {
-            font-family: Instrument Sans;
-            @include cbro-paragraphe(500, 18px, 133%, #000);
-         }      
-      }
+   &_d {
+      background: url(./../img/noise.svg), rgba(206, 227, 246, 0.45);
+   }
 
-      .btn_dark-purple {
-         width: 100%;
-         position: relative;
-         z-index: 999;
-      }
-   }
-}
-
-// Neurodéveloppement - Bleu
-#details-hero_e {
-   padding: 10rem 0 0 0;
-   background: url(./../img/noise.svg), rgba(253, 228, 224, 0.45);
-   @include media-breakpoint-down(lg){
-      padding: 5rem 0 0 0;
-   }
-   .container .p-dark {
-      @include media-breakpoint-up(lg) {
-         width: 60%;         
-      }
-   }
-   li {
-      @include cbro-title(300, 18px, 150%, $cbro-gray-600);
-      list-style: none;
-   }
-   .position-absolute {
-      bottom: -295px;
-      right: -31vw;
-      width: 80%;
-   }
-   .mobile {
-      &-info {
-         ul {
-            padding: 0;
-         }
-         
-         li {
-            font-family: Instrument Sans;
-            @include media-breakpoint-down(lg) {
-               @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);               
-            }
-         }   
-            
-         span {
-            font-size: 24px;
-            color: $cbro-purple-700;
-         }
-      }
-
-      &-price {
-         p:last-child {
-            font-family: Instrument Sans;
-            @include cbro-paragraphe(500, 18px, 133%, #000);
-         }      
-      }
-
-      .btn_dark-purple {
-         width: 100%;
-         position: relative;
-         z-index: 999;
-      }
+   &_e {
+      background: url(./../img/noise.svg), rgba(253, 228, 224, 0.45);
    }
 }
 
@@ -315,10 +119,8 @@
 #cards-border {
    background: url(./../img/noise.svg), $cbro-snow-50;
    padding: 108px;
-
    @include media-breakpoint-down(lg) {
       padding: 48px 0 40px 0;
-
       .container {
          display: block !important;
 
@@ -326,7 +128,6 @@
             margin: 32px 0;
          }
       }
-
       .container {
          .row {
             margin-top: 16px;
@@ -334,24 +135,8 @@
          }
       }
    }
-
    @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
-
    a {
       color: $cbro-gray-600;
-   }
-
-   .cards-details {
-      border: 1px solid $cbro-gray-200;
-      border-radius: $cbro-border-radius-16;
-      height: 100%;
-
-      ul {
-         font-family: 'ITCSouvenir-md';
-      }
-
-      &__price {
-         @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
-      }
    }
 }

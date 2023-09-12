@@ -1,0 +1,159 @@
+// Fond de la page connexion
+body {
+  position: relative;
+}
+
+.margin-top {
+  margin-top: 250px;
+}
+
+.bg_img {
+  height: 550px;
+  background: url(../../../img/noise.svg) $cbro-green-800;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+
+  @include media-breakpoint-down(lg) {
+    background-size: 100%;
+  }
+}
+
+#connexion_hero {
+  position: absolute;
+  top: 13%;
+  left: 18%;
+
+  height: 650px;
+
+  //Contenu principal (formulaire, création..)
+  .container_content {
+    width: 100% !important;
+    //margin: -375px 0;
+
+    @include media-breakpoint-down(lg) {
+      margin: -775px 0;
+    }
+  }
+
+  .gap-5 {
+    gap: 15rem !important;
+
+    @include media-breakpoint-down(xxl) {
+      gap: 10rem !important;
+    }
+
+    @include media-breakpoint-down(xl) {
+      gap: 5rem !important;
+    }
+
+    @include media-breakpoint-down(lg) {
+      gap: 0 !important;
+    }
+  }
+  //Conteneur du formulaire
+  .connexion_container {
+    background-color: $cbro-snow-50;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 50px;
+      width: 75%;
+    }
+
+    p {
+      @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+    }
+
+    form {
+      label {
+        @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
+      }
+    }
+  }
+
+  //Conteneur pour la création du compte
+  .container_account {
+    width: 33%;
+    padding-top: 85px;
+
+    @include media-breakpoint-down(lg) {
+      width: 75%;
+      padding-top: 0;
+    }
+
+    p {
+      @include cbro-paragraphe(400, 16px, 160%, $cbro-snow-50);
+    }
+
+    .btn_green {
+      border: 1px solid $cbro-snow-50;
+    }
+
+    .evenement {
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+
+      .mt-5 {
+        margin-top: 140px !important;
+
+        @include media-breakpoint-down(xxl) {
+          margin-top: 50px !important;
+        }
+      }
+
+      p {
+        @include cbro-paragraphe(500, 13px, 20px, $cbro-purple-700);
+        padding: 8px 16px;
+        width: max-content;
+      }
+    }
+  }
+}
+
+#reset_mdp {
+  background-color: $cbro-snow-50;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+
+  .connexion-title_mdp {
+    p {
+      &:first-child {
+        @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-800);
+        opacity: 0.8;
+      }
+    }
+  }
+
+  form {
+    label {
+      @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
+      margin-bottom: 12px;
+    }
+  }
+}
+
+#send_mail {
+  background-color: $cbro-snow-50;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+}

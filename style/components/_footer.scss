@@ -1,63 +1,72 @@
 footer {
-   background-color: $cbro-gray-900;
-   .newsletter {
-      h5 {
-         @include cbro-title(300, 2rem, 44px, $cbro-snow-50);
-         @include media-breakpoint-down(md){
-            @include cbro-title(300, 24px, 32px, $cbro-snow-50);
-         }
+  background-color: $cbro-gray-900;
+  .newsletter {
+    h5 {
+      @include cbro-title(300, 2rem, 44px, $cbro-snow-50);
+      @include media-breakpoint-down(md) {
+        @include cbro-title(300, 24px, 32px, $cbro-snow-50);
       }
-      p {
-         @include cbro-paragraphe(300, 18px, 28px, $cbro-snow-50);
-         @include media-breakpoint-down(md){
-            @include cbro-paragraphe(300, 14px, 20px, $cbro-snow-50);
-         }
+    }
+    p {
+      @include cbro-paragraphe(300, 18px, 28px, $cbro-snow-50);
+      @include media-breakpoint-down(md) {
+        @include cbro-paragraphe(300, 14px, 20px, $cbro-snow-50);
       }
-      input {
-         height: 48px;
-         border-radius: 100px;
-         border: 1px solid $cbro-gray-500;
-         background-color: transparent;
-         padding-bottom: 8px;
-         padding-left: 22px;
-         &::placeholder {
-            @include cbro-paragraphe(300, 14px, 100%, $cbro-snow-50);
-         }
-         &:focus {
-            @include cbro-paragraphe(300, 14px, 100%, $cbro-snow-50);
-            background-color: transparent;
-            border: 1px solid $cbro-gray-500;
-         }
+    }
+    input {
+      height: 48px;
+      border-radius: 100px;
+      border: 1px solid $cbro-gray-500;
+      background-color: transparent;
+      padding-bottom: 8px;
+      padding-left: 22px;
+      &::placeholder {
+        @include cbro-paragraphe(300, 14px, 100%, $cbro-snow-50);
       }
+      &:focus {
+        @include cbro-paragraphe(300, 14px, 100%, $cbro-snow-50);
+        background-color: transparent;
+        border: 1px solid $cbro-gray-500;
+        box-shadow: 0 0 0 0.25rem rgba(176, 175, 173, 0.1) !important;
+      }
+    }
+    button {
+      @include cbro-button(
+        500,
+        16px,
+        $cbro-gray-800,
+        $cbro-white,
+        0px,
+        transparent
+      );
+      margin-left: 6px;
+      @include media-breakpoint-down(lg) {
+        margin-left: 0px;
+      }
+      width: 406px;
+    }
+  }
+  .row:nth-child(2) {
+    h5 {
+      @include cbro-paragraphe(600, 14px, 150%, $cbro-gray-200);
+    }
+    a,
+    p {
+      @include cbro-paragraphe(400, 16px, 24px, $cbro-snow-50);
+      @include media-breakpoint-down(md) {
+        @include cbro-paragraphe(400, 14px, 20px, $cbro-snow-50);
+      }
+    }
+  }
+  hr {
+    color: $cbro-gray-600;
+  }
+  @include media-breakpoint-down(md) {
+    form {
       button {
-         @include cbro-button(500, 16px, $cbro-gray-800, $cbro-white, 0px , transparent);
-         margin-left: 6px;
-         @include media-breakpoint-down(lg) {
-            margin-left: 0px;
-         }
-         width: 406px;
+        margin-top: 14px;
+        width: 100% !important;
       }
-   }
-   .row:nth-child(2) {
-      h5 {
-         @include cbro-paragraphe(600, 14px, 150%, $cbro-gray-200);
-      }
-      a, p {
-         @include cbro-paragraphe(400, 16px, 24px, $cbro-snow-50);
-         @include media-breakpoint-down(md) {
-            @include cbro-paragraphe(400, 14px, 20px, $cbro-snow-50);
-         }
-      }
-   }
-   hr {
-      color: $cbro-gray-600;
-   }
-   @include media-breakpoint-down(md){
-      form {
-         button {
-            margin-top: 14px;
-            width: 100% !important;
-         }
-      }
-   }
+    }
+  }
 }
