@@ -722,6 +722,32 @@ footer hr {
   color: #b0afad !important;
 }
 
+.input_checkbox {
+  display: none;
+}
+.input_checkbox + label span {
+  display: inline-block;
+  border: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #396359;
+  border-radius: 4px;
+}
+.input_checkbox + label span img {
+  height: 12px;
+  width: 12px;
+  display: none;
+}
+.input_checkbox:checked + label span {
+  background-color: #396359;
+}
+.input_checkbox:checked + label span img {
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Base */
 /* Infinity and beyond */
 * {
@@ -2591,4 +2617,40 @@ form label {
   .margin-top {
     margin-top: 0;
   }
+}
+
+body {
+  background: url(<path-to-image>), lightgray 0% 0%/50px 50px repeat, #fcfaf7;
+}
+
+main {
+  height: 100vh;
+}
+main .img_bg img {
+  height: 100vh;
+}
+main .container_content {
+  margin: 25% auto;
+}
+main .container_content .inscription_title p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #4f756c !important;
+  text-transform: uppercase;
+}
+main .container_content .account {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 100% !important;
+  color: #4c4b4a !important;
+}
+main .container_content .btn_inline {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 100% !important;
+  color: #4f756c !important;
 }/*# sourceMappingURL=main.css.map */

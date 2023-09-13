@@ -1,0 +1,33 @@
+body {
+  background: url(<path-to-image>), lightgray 0% 0% / 50px 50px repeat,
+    $cbro-snow-50;
+}
+
+main {
+  height: 100vh;
+
+  .img_bg {
+    img {
+      height: 100vh;
+    }
+  }
+
+  .container_content {
+    margin: 25% auto;
+
+    .inscription_title {
+      p {
+        @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
+        text-transform: uppercase;
+      }
+    }
+
+    .account {
+      @include cbro-paragraphe(400, 14px, 100%, $cbro-gray-700);
+    }
+
+    .btn_inline {
+      @include cbro-paragraphe(500, 14px, 100%, $cbro-green-700);
+    }
+  }
+}

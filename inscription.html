@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cérébro / Tarification</title>
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="./img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="./img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="./img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="./img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="./img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="./img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="./img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="./img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="Cérébro" />
+    <meta name="msapplication-TileColor" content="#4F756C" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://www.lecerebro.com/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="https://www.lecerebro.com/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="https://www.lecerebro.com/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="https://www.lecerebro.com/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="https://www.lecerebro.com/mstile-310x310.png"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <!-- Section connexion -->
+    <main class="d-flex justify-content-start">
+      <section class="img_bg">
+        <img src="img/illustrations/Frame_inscription.png" alt="" class="" />
+      </section>
+      <section
+        class="container_content d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="w-100">
+          <div class="inscription_title d-flex flex-column gap-4 mb-4">
+            <p>S'inscrire</p>
+            <h3 class="h3-dark">Bienvenue sur Cérébro</h3>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control white-focus shadow-none"
+                placeholder="camille@cerebro.fr"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <div class="d-flex flex-column gap-3 position-relative">
+              <label for="password">Mot de passe</label>
+              <div class="input-group d-flex align-items-center">
+                <input
+                  type="password"
+                  id="password3"
+                  class="form-control white-focus shadow-none"
+                  placeholder="*************"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+                <div class="input-group-append">
+                  <i id="eye_on3" class="eye_on d-none">
+                    <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                  /></i>
+                  <i id="eye_off3" class="eye_off">
+                    <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                  /></i>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3 position-relative">
+              <label for="password">Confirmation de mot de passe</label>
+              <div class="input-group d-flex align-items-center">
+                <input
+                  type="password"
+                  id="password3"
+                  class="form-control white-focus shadow-none"
+                  placeholder="*************"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+                <div class="input-group-append">
+                  <i id="eye_on3" class="eye_on d-none">
+                    <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                  /></i>
+                  <i id="eye_off3" class="eye_off">
+                    <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                  /></i>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <input
+                  type="checkbox"
+                  name="general-uses"
+                  id="general-uses"
+                  class="input_checkbox"
+                  checked
+                />
+                <label for="general-uses" class="">
+                  <span class="checkbox position-relative">
+                    <img
+                      src="img/icons/check_white.svg"
+                      alt="check"
+                      class="position-absolute"
+                    />
+                  </span>
+                  <p>
+                    J’accepte les conditions générales de vente ainsi que la
+                    politique de confidentialité
+                  </p>
+                </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="newsletter"
+                  id="newsletter"
+                  class="input_checkbox"
+                  checked
+                />
+                <label for="newsletter" class="">
+                  <span class="checkbox position-relative">
+                    <img
+                      src="img/icons/check_white.svg"
+                      alt="check"
+                      class="position-absolute"
+                    />
+                  </span>
+                  <p>Je souhaite recevoir la newsletter Cérébro</p>
+                </label>
+              </div>
+            </div>
+            <button class="btn_dark_green">Continuer</button>
+          </form>
+        </div>
+        <p class="account mt-3">
+          Vous possédez déja un compte ?
+          <button class="btn_inline">Se connecter</button>
+        </p>
+      </section>
+    </main>
+    <script src="./script/tarif.js"></script>
+    <script src="./script/header.js"></script>
+    <script src="./script/connexion.js"></script>
+  </body>
+</html>
