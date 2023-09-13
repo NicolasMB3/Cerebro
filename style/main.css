@@ -2402,7 +2402,26 @@ body {
 }
 @media (max-width: 991.98px) {
   body {
-    height: 100vh !important;
+    height: 100% !important;
+  }
+}
+body .img_bg_illustration {
+  left: 0;
+  top: 0;
+}
+@media (max-width: 991.98px) {
+  body .img_bg_illustration {
+    width: 100%;
+  }
+}
+
+main {
+  padding-bottom: 300px;
+  overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  main {
+    padding: 0;
   }
 }
 
@@ -2412,7 +2431,7 @@ body {
 }
 @media (max-width: 991.98px) {
   .bg_img {
-    height: 110%;
+    height: 100%;
   }
 }
 
@@ -2435,7 +2454,7 @@ body {
   #forget_mdp,
   #send_mail,
   #reset_mdp {
-    margin-top: 0;
+    margin: 150px 0;
     width: 75%;
   }
 }
@@ -2449,7 +2468,7 @@ form label {
 }
 
 #connexion_hero {
-  margin-top: 350px;
+  margin-top: 370px;
 }
 #connexion_hero .container_account,
 #connexion_hero .connexion_container {
@@ -2463,7 +2482,7 @@ form label {
 }
 @media (max-width: 991.98px) {
   #connexion_hero {
-    margin-top: 100px;
+    margin: 150px 0 50px 0;
   }
 }
 #connexion_hero {
@@ -2508,6 +2527,7 @@ form label {
     padding: 0;
     width: -moz-max-content;
     width: max-content;
+    background: none;
   }
   #connexion_hero .container_account .btn_dark_green .btn_dark_green:active {
     border-bottom: 1px solid #fcfaf7;
@@ -2567,9 +2587,6 @@ form label {
   color: #323231 !important;
 }
 
-.margin-top {
-  margin-top: 300px;
-}
 @media (max-width: 991.98px) {
   .margin-top {
     margin-top: 0;

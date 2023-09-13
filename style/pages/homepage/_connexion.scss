@@ -4,7 +4,25 @@ body {
   background: url(../../../img/noise.svg) repeat $cbro-snow-50;
 
   @include media-breakpoint-down(lg) {
-    height: 100vh !important;
+    height: 100% !important;
+  }
+
+  .img_bg_illustration {
+    left: 0;
+    top: 0;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+}
+
+main {
+  padding-bottom: 300px;
+  overflow: hidden;
+
+  @include media-breakpoint-down(lg) {
+    padding: 0;
   }
 }
 
@@ -13,7 +31,7 @@ body {
   background: url(../../../img/noise.svg) repeat $cbro-green-800;
 
   @include media-breakpoint-down(lg) {
-    height: 110%;
+    height: 100%;
   }
 }
 
@@ -33,7 +51,7 @@ body {
   width: 50%;
 
   @include media-breakpoint-down(lg) {
-    margin-top: 0;
+    margin: 150px 0;
     width: 75%;
   }
 }
@@ -45,7 +63,7 @@ form {
 }
 
 #connexion_hero {
-  margin-top: 350px;
+  margin-top: 370px;
 
   .container_account,
   .connexion_container {
@@ -57,7 +75,7 @@ form {
   }
 
   @include media-breakpoint-down(lg) {
-    margin-top: 100px;
+    margin: 150px 0 50px 0;
   }
 
   //Contenu principal (formulaire, création..
@@ -98,6 +116,7 @@ form {
         text-align: start;
         padding: 0;
         width: max-content;
+        background: none;
 
         .btn_dark_green:active {
           border-bottom: 1px solid $cbro-snow-50;
@@ -158,8 +177,6 @@ form {
 }
 
 .margin-top {
-  margin-top: 300px;
-
   @include media-breakpoint-down(lg) {
     margin-top: 0;
   }
