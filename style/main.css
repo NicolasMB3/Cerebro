@@ -2400,9 +2400,10 @@ body {
   height: 850px;
   background: url(../../../img/noise.svg) repeat #fcfaf7;
 }
-
-.min-height {
-  height: 700px !important;
+@media (max-width: 991.98px) {
+  body {
+    height: 100vh !important;
+  }
 }
 
 .bg_img {
@@ -2499,8 +2500,23 @@ form label {
   line-height: 160% !important;
   color: #fcfaf7 !important;
 }
-#connexion_hero .container_account .btn_green {
-  border: 1px solid #fcfaf7;
+@media (max-width: 991.98px) {
+  #connexion_hero .container_account .btn_dark_green {
+    border: none;
+    border-radius: 0;
+    text-align: start;
+    padding: 0;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #connexion_hero .container_account .btn_dark_green .btn_dark_green:active {
+    border-bottom: 1px solid #fcfaf7;
+  }
+}
+@media (max-width: 991.98px) {
+  #connexion_hero .container_account .btn_dark_green:active, #connexion_hero .container_account .btn_dark_green:hover {
+    border-bottom: 1px solid #fcfaf7;
+  }
 }
 #connexion_hero .container_account .evenement .mt-5 {
   margin-top: 140px !important;
