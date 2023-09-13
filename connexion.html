@@ -116,69 +116,71 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="body">
     <!-- Barre de navigation -->
-    <header
-      class="d-flex gap-3 justify-content-center px-lg-5 px-3 position-fixed w-100 navbar_s mt-3"
-    >
-      <nav class="d-flex justify-content-center navbar w-100">
-        <div class="container-fluid px-0">
-          <a class="py-0" href="index.html"
-            ><img
-              id="navbar-logo"
-              class="ms-2"
-              src="./img/logo/logo-cerebro.svg"
-              alt="Logo de la société"
-          /></a>
-          <div class="d-flex navbar-link d-none d-lg-flex">
-            <a href="#" class="nav-link">
-              <div class="d-flex flex-row align-items-center">
-                <p>Application</p>
-                <img
-                  src="./img/icons/arrow_down.svg"
-                  class="ps-2"
-                  alt="Flèche qui descend"
-                />
-              </div>
-            </a>
-            <a href="#" class="nav-link">
-              <div class="d-flex flex-row align-items-center">
-                <p>Ressources</p>
-                <img
-                  src="./img/icons/arrow_down.svg"
-                  class="ps-2"
-                  alt="Flèche qui descend"
-                />
-              </div>
-            </a>
-            <a href="#" class="nav-link">
-              <div class="d-flex flex-row align-items-center">
-                <p>Tarifs</p>
-              </div>
-            </a>
-            <a href="#" class="nav-link">
-              <div class="d-flex flex-row align-items-center">
-                <p>À propos</p>
-                <img
-                  src="./img/icons/arrow_down.svg"
-                  class="ps-2"
-                  alt="Flèche qui descend"
-                />
-              </div>
-            </a>
+    <header class="position-fixed w-100 navbar_s" id="header_white">
+      <div class="container justify-content-center d-flex gap-3">
+        <nav class="d-flex justify-content-center navbar w-100">
+          <div class="container-fluid px-0">
+            <a class="py-0" href="index.html"
+              ><img
+                id="navbar-logo"
+                class="ms-2"
+                src="./img/logo/logo-cerebro.svg"
+                alt="Logo de la société"
+            /></a>
+            <div class="d-flex navbar-link d-none d-xl-flex">
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>Application</p>
+                  <img
+                    src="./img/icons/arrow_down.svg"
+                    class="ps-2"
+                    alt="Flèche qui descend"
+                  />
+                </div>
+              </a>
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>Ressources</p>
+                  <img
+                    src="./img/icons/arrow_down.svg"
+                    class="ps-2"
+                    alt="Flèche qui descend"
+                  />
+                </div>
+              </a>
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>Tarifs</p>
+                </div>
+              </a>
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>À propos</p>
+                  <img
+                    src="./img/icons/arrow_down.svg"
+                    class="ps-2"
+                    alt="Flèche qui descend"
+                  />
+                </div>
+              </a>
+            </div>
+            <div
+              class="d-flex column-gap-2 align-items-center d-none d-xl-flex"
+            >
+              <button class="btn_full_transparent">Se connecter</button>
+              <button class="btn_green">Tester gratuitement</button>
+            </div>
+            <div class="hamburger-menu d-xl-none">
+              <img
+                src="./img/icons/hamburger.svg"
+                alt="Icône pour déployer un menu responsive"
+              />
+            </div>
           </div>
-          <div class="d-flex column-gap-2 align-items-center d-none d-lg-flex">
-            <button class="btn_full_transparent">Se connecter</button>
-            <button class="btn_green">Tester gratuitement</button>
-          </div>
-          <div class="hamburger-menu d-lg-none">
-            <img
-              src="./img/icons/hamburger.svg"
-              alt="Icône pour déployer un menu responsive"
-            />
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <!-- Section connexion -->
     <img
@@ -187,88 +189,86 @@
       alt="Illustration de fond"
     />
     <div class="bg_img d-flex align-items-center justify-content-center">
-      <section id="connexion_hero" class="w-100">
-        <div
-          id="container_login"
-          class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-5"
-        >
-          <div class="connexion_container p-lg-5 p-3">
-            <div class="d-flex flex-column gap-3">
-              <p>Se connecter</p>
-              <h3 class="h3-dark mb-5">Heureux de vous revoir</h3>
+      <section
+        id="connexion_hero"
+        class="w-100 d-flex flex-lg-row flex-column align-items-center justify-content-center"
+      >
+        <div class="connexion_container w-75-lg p-lg-5 p-4">
+          <div class="d-flex flex-column gap-3">
+            <p>Se connecter</p>
+            <h3 class="h3-dark mb-5">Heureux de vous revoir</h3>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-3">
+            <div class="d-flex flex-column gap-2">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control white-focus shadow-none"
+                placeholder="camille@cerebro.fr"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
             </div>
-            <form action="#" class="form-connexion d-flex flex-column gap-3">
-              <div class="d-flex flex-column gap-2">
-                <label for="email">Adresse e-mail</label>
+            <div class="d-flex flex-column gap-2">
+              <label for="password">Mot de passe</label>
+              <div class="input-group d-flex align-items-center mb-4">
                 <input
-                  type="email"
-                  id="email"
+                  type="password"
+                  id="password1"
                   class="form-control white-focus shadow-none"
-                  placeholder="camille@cerebro.fr"
+                  placeholder="*************"
                   aria-label="Recipient's username"
                   aria-describedby="button-addon2"
                   required
                 />
-              </div>
-              <div class="d-flex flex-column gap-2 position-relative">
-                <label for="password">Mot de passe</label>
-                <div class="input-group d-flex align-items-center mb-4">
-                  <input
-                    type="password"
-                    id="password1"
-                    class="form-control white-focus shadow-none"
-                    placeholder="*************"
-                    aria-label="Recipient's username"
-                    aria-describedby="button-addon2"
-                    required
-                  />
-                  <div class="input-group-append">
-                    <i id="eye_on1" class="eye_on d-none">
-                      <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
-                    /></i>
-                    <i id="eye_off1" class="eye_off">
-                      <img src="img/icons/eye_close.svg" alt="Oeil fermé"
-                    /></i>
-                  </div>
+                <div class="input-group-append">
+                  <i id="eye_on1" class="eye_on d-none">
+                    <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
+                  /></i>
+                  <i id="eye_off1" class="eye_off">
+                    <img src="img/icons/eye_close.svg" alt="Oeil fermé"
+                  /></i>
                 </div>
               </div>
-              <button id="btn_connexion" type="submit" class="btn_green mb-4">
-                Connexion
-              </button>
-            </form>
-            <div class="text-center m">
-              <button id="btn_forget_mdp" class="btn_inline">
-                Mot de passe oublié ?
-              </button>
             </div>
+            <button id="btn_connexion" type="submit" class="btn_green mb-4">
+              Connexion
+            </button>
+          </form>
+          <div class="text-center m">
+            <button id="btn_forget_mdp" class="btn_inline">
+              Mot de passe oublié ?
+            </button>
           </div>
-          <div class="container_account">
-            <div class="account_create">
-              <div class="account_title">
-                <h3 class="h3-white">Nouveau sur Cérébro ?</h3>
-                <p class="mt-1 mb-5">
-                  Créer votre compte en 2 minutes seulement pour activer votre
-                  essai gratuit !
-                </p>
-              </div>
-              <button class="btn_dark_green">Créer mon compte</button>
-            </div>
-            <div class="evenement">
-              <h5 class="h5-dark mt-5">Le prochain évènement à venir</h5>
-              <p class="cbro-badge-pink">
-                Masterclass "thématique" à la fac d'Amiens ce lundi 05/06/2023 à
-                09h00
+        </div>
+        <div class="container_account mt-5">
+          <div class="account_create">
+            <div class="account_title">
+              <h3 class="h3-white">Nouveau sur Cérébro ?</h3>
+              <p class="mt-1 mb-5">
+                Créer votre compte en 2 minutes seulement pour activer votre
+                essai gratuit !
               </p>
             </div>
+            <button class="btn_dark_green">Créer mon compte</button>
+          </div>
+          <div class="evenement d-none d-lg-inline">
+            <h5 class="h5-dark mt-5">Le prochain évènement à venir</h5>
+            <p class="cbro-badge-pink">
+              Masterclass "thématique" à la fac d'Amiens ce lundi 05/06/2023 à
+              09h00
+            </p>
           </div>
         </div>
       </section>
       <!-- Section mot de passe oublié -->
       <section
         id="forget_mdp"
-        class="d-flex justify-content-center align-items-center d-none w-25"
+        class="d-flex justify-content-center align-items-center d-none"
       >
-        <div class="reset_mdp_container p-lg-5 p-3">
+        <div class="w-100 p-lg-5 p-4">
           <div class="d-flex flex-column gap-3">
             <p>Mot de passe oublié ?</p>
             <h3 class="h3-dark mb-1">Réinitialisez votre mot de passe</h3>
@@ -301,8 +301,8 @@
       </section>
       <!-- Section email envoyé -->
       <section id="send_mail" class="d-none">
-        <div class="send_mail_container w-lg-100 p-lg-5 p-3 text-center">
-          <img src="img/icons/Send_email.svg" alt="Email envoyé" />
+        <div class="p-lg-5 p-4 text-center">
+          <img src="img/icons/Send_email.svg" alt="Email envoyé" class="mb-5" />
           <div class="d-flex flex-column gap-3">
             <h3 class="h3-dark mb-1">
               Le lien pour changer votre mot de passe vient de vous être envoyé.
@@ -320,12 +320,12 @@
       </section>
       <!-- Section Modifier Mot de passe -->
       <section id="reset_mdp" class="d-none">
-        <div class="send_mail_container w-lg-100 p-lg-5 p-3">
+        <div class="w-lg-100 p-lg-5 p-4">
           <div class="d-flex flex-column gap-3 mb-4">
             <h3 class="h3-dark mb-1">Modifiez votre mot de passe</h3>
           </div>
           <form action="#" class="form-connexion d-flex flex-column gap-3">
-            <div class="d-flex flex-column gap-2 position-relative">
+            <div class="d-flex flex-column gap-2 position-relative mb-2">
               <label for="password">Nouveau mot de passe</label>
               <div class="input-group d-flex align-items-center">
                 <input

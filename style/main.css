@@ -2398,12 +2398,11 @@ h3 {
 
 body {
   height: 850px;
-  position: relative;
   background: url(../../../img/noise.svg) repeat #fcfaf7;
 }
 
-.margin-top {
-  margin-top: 250px;
+.min-height {
+  height: 700px !important;
 }
 
 .bg_img {
@@ -2416,42 +2415,72 @@ body {
   }
 }
 
-#connexion_hero {
-  margin-top: 12%;
+#connexion_hero .connexion_container,
+#forget_mdp,
+#send_mail,
+#reset_mdp {
+  background-color: #fcfaf7;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+}
+
+#forget_mdp,
+#send_mail,
+#reset_mdp {
+  margin-top: 370px;
+  width: 50%;
 }
 @media (max-width: 991.98px) {
-  #connexion_hero .container_content {
-    margin: -775px 0;
+  #forget_mdp,
+  #send_mail,
+  #reset_mdp {
+    margin-top: 0;
+    width: 75%;
   }
 }
-#connexion_hero .gap-5 {
+
+form label {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #4c4b4a !important;
+}
+
+#connexion_hero {
+  margin-top: 350px;
+}
+#connexion_hero .container_account,
+#connexion_hero .connexion_container {
+  width: 25%;
+}
+@media (max-width: 991.98px) {
+  #connexion_hero .container_account,
+  #connexion_hero .connexion_container {
+    width: 75%;
+  }
+}
+@media (max-width: 991.98px) {
+  #connexion_hero {
+    margin-top: 100px;
+  }
+}
+#connexion_hero {
   gap: 15rem !important;
 }
 @media (max-width: 1399.98px) {
-  #connexion_hero .gap-5 {
+  #connexion_hero {
     gap: 10rem !important;
   }
 }
 @media (max-width: 1199.98px) {
-  #connexion_hero .gap-5 {
+  #connexion_hero {
     gap: 5rem !important;
   }
 }
 @media (max-width: 991.98px) {
-  #connexion_hero .gap-5 {
+  #connexion_hero {
     gap: 0 !important;
-  }
-}
-#connexion_hero .connexion_container {
-  background-color: #fcfaf7;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-  width: 25%;
-}
-@media (max-width: 991.98px) {
-  #connexion_hero .connexion_container {
-    width: 75%;
-    margin-bottom: 50px;
   }
 }
 #connexion_hero .connexion_container p {
@@ -2463,28 +2492,6 @@ body {
   letter-spacing: 0.32px;
   text-transform: uppercase;
 }
-#connexion_hero .connexion_container form label {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 16px !important;
-  line-height: 20px !important;
-  color: #4c4b4a !important;
-}
-#connexion_hero .container_account {
-  width: 20%;
-  padding-top: 85px;
-}
-@media (max-width: 1399.98px) {
-  #connexion_hero .container_account {
-    padding-top: 45px;
-  }
-}
-@media (max-width: 991.98px) {
-  #connexion_hero .container_account {
-    width: 75%;
-    padding-top: 0;
-  }
-}
 #connexion_hero .container_account p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -2495,18 +2502,8 @@ body {
 #connexion_hero .container_account .btn_green {
   border: 1px solid #fcfaf7;
 }
-@media (max-width: 991.98px) {
-  #connexion_hero .container_account .evenement {
-    display: none;
-  }
-}
 #connexion_hero .container_account .evenement .mt-5 {
   margin-top: 140px !important;
-}
-@media (max-width: 1399.98px) {
-  #connexion_hero .container_account .evenement .mt-5 {
-    margin-top: 50px !important;
-  }
 }
 #connexion_hero .container_account .evenement p {
   font-family: "Instrument Sans", sans-serif;
@@ -2519,12 +2516,6 @@ body {
   width: max-content;
 }
 
-#forget_mdp {
-  background-color: #fcfaf7;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-  margin-top: 11%;
-}
 #forget_mdp .connexion-title_mdp p:first-child {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
@@ -2542,20 +2533,7 @@ body {
   color: #323231 !important;
   opacity: 0.8;
 }
-#forget_mdp form label {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 16px !important;
-  line-height: 20px !important;
-  color: #4c4b4a !important;
-  margin-bottom: 12px;
-}
 
-#send_mail {
-  background-color: #fcfaf7;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-}
 #send_mail .p-huge {
   opacity: 0.8;
   font-family: "Instrument Sans", sans-serif;
@@ -2573,14 +2551,11 @@ body {
   color: #323231 !important;
 }
 
-#reset_mdp {
-  background-color: #fcfaf7;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+.margin-top {
+  margin-top: 300px;
 }
-
 @media (max-width: 991.98px) {
-  footer {
-    margin-top: 0 !important;
+  .margin-top {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=main.css.map */

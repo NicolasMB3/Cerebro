@@ -1,12 +1,11 @@
 // Fond de la page connexion
 body {
   height: 850px;
-  position: relative;
   background: url(../../../img/noise.svg) repeat $cbro-snow-50;
 }
 
-.margin-top {
-  margin-top: 250px;
+.min-height {
+  height: 700px !important;
 }
 
 .bg_img {
@@ -18,17 +17,51 @@ body {
   }
 }
 
-#connexion_hero {
-  margin-top: 12%;
+#connexion_hero .connexion_container,
+#forget_mdp,
+#send_mail,
+#reset_mdp {
+  background-color: $cbro-snow-50;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+}
 
-  //Contenu principal (formulaire, création..)
-  .container_content {
+#forget_mdp,
+#send_mail,
+#reset_mdp {
+  margin-top: 370px;
+  width: 50%;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 0;
+    width: 75%;
+  }
+}
+
+form {
+  label {
+    @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
+  }
+}
+
+#connexion_hero {
+  margin-top: 350px;
+
+  .container_account,
+  .connexion_container {
+    width: 25%;
+
     @include media-breakpoint-down(lg) {
-      margin: -775px 0;
+      width: 75%;
     }
   }
 
-  .gap-5 {
+  @include media-breakpoint-down(lg) {
+    margin-top: 100px;
+  }
+
+  //Contenu principal (formulaire, création..
+  & {
     gap: 15rem !important;
 
     @include media-breakpoint-down(xxl) {
@@ -45,43 +78,15 @@ body {
   }
   //Conteneur du formulaire
   .connexion_container {
-    background-color: $cbro-snow-50;
-    border-radius: 20px;
-    box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-    width: 25%;
-
-    @include media-breakpoint-down(lg) {
-      width: 75%;
-      margin-bottom: 50px;
-    }
-
     p {
       @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
       letter-spacing: 0.32px;
       text-transform: uppercase;
     }
-
-    form {
-      label {
-        @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
-      }
-    }
   }
 
-  //Conteneur pour la création du compte
+  // Conteneur pour la création du compte
   .container_account {
-    width: 20%;
-    padding-top: 85px;
-
-    @include media-breakpoint-down(xxl) {
-      padding-top: 45px;
-    }
-
-    @include media-breakpoint-down(lg) {
-      width: 75%;
-      padding-top: 0;
-    }
-
     p {
       @include cbro-paragraphe(400, 16px, 160%, $cbro-snow-50);
     }
@@ -91,16 +96,8 @@ body {
     }
 
     .evenement {
-      @include media-breakpoint-down(lg) {
-        display: none;
-      }
-
       .mt-5 {
         margin-top: 140px !important;
-
-        @include media-breakpoint-down(xxl) {
-          margin-top: 50px !important;
-        }
       }
 
       p {
@@ -112,12 +109,8 @@ body {
   }
 }
 
+// Section Mot de passe oublié
 #forget_mdp {
-  background-color: $cbro-snow-50;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-  margin-top: 11%;
-
   .connexion-title_mdp {
     p {
       &:first-child {
@@ -132,20 +125,10 @@ body {
       }
     }
   }
-
-  form {
-    label {
-      @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
-      margin-bottom: 12px;
-    }
-  }
 }
 
+// Section email envoyé
 #send_mail {
-  background-color: $cbro-snow-50;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-
   .p-huge {
     opacity: 0.8;
     @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
@@ -157,14 +140,10 @@ body {
   }
 }
 
-#reset_mdp {
-  background-color: $cbro-snow-50;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-}
+.margin-top {
+  margin-top: 300px;
 
-footer {
   @include media-breakpoint-down(lg) {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
 }
