@@ -16,13 +16,20 @@
   display: none;
 
   & + label {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    gap: 7px;
+    grid-template-rows: 1fr;
+
     span {
-      display: inline-block;
       border: none;
-      width: 16px;
       height: 16px;
+      width: 16px;
       border: 1px solid $cbro-green-800;
       border-radius: 4px;
+
+      margin-top: 2px;
 
       img {
         height: 12px;

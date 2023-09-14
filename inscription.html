@@ -116,16 +116,25 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body id="body">
+  <body id="body" class="body_inscription position-relative">
     <!-- Section connexion -->
-    <main class="d-flex justify-content-start">
-      <section class="img_bg">
-        <img src="img/illustrations/Frame_inscription.png" alt="" class="" />
-      </section>
+    <a
+      href="index.html"
+      class="btn_full_transparent position-absolute d-none d-lg-inline"
+    >
+      <img src="img/icons/arrow_left.svg" alt="Flèche gauche" />
+    </a>
+    <div class="div_container row w-100">
+      <img
+        src="img/illustrations/frame_inscription.png"
+        alt=""
+        class="col-xxl-5 col-6 d-none d-lg-block"
+      />
+
       <section
-        class="container_content d-flex flex-column justify-content-center align-items-center"
+        class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center py-5"
       >
-        <div class="w-100">
+        <div class="w-75">
           <div class="inscription_title d-flex flex-column gap-4 mb-4">
             <p>S'inscrire</p>
             <h3 class="h3-dark">Bienvenue sur Cérébro</h3>
@@ -148,7 +157,7 @@
               <div class="input-group d-flex align-items-center">
                 <input
                   type="password"
-                  id="password3"
+                  id="password4"
                   class="form-control white-focus shadow-none"
                   placeholder="*************"
                   aria-label="Recipient's username"
@@ -156,10 +165,10 @@
                   required
                 />
                 <div class="input-group-append">
-                  <i id="eye_on3" class="eye_on d-none">
+                  <i id="eye_on4" class="eye_on d-none">
                     <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
                   /></i>
-                  <i id="eye_off3" class="eye_off">
+                  <i id="eye_off4" class="eye_off">
                     <img src="img/icons/eye_close.svg" alt="Oeil fermé"
                   /></i>
                 </div>
@@ -170,7 +179,7 @@
               <div class="input-group d-flex align-items-center">
                 <input
                   type="password"
-                  id="password3"
+                  id="password5"
                   class="form-control white-focus shadow-none"
                   placeholder="*************"
                   aria-label="Recipient's username"
@@ -178,10 +187,10 @@
                   required
                 />
                 <div class="input-group-append">
-                  <i id="eye_on3" class="eye_on d-none">
+                  <i id="eye_on5" class="eye_on d-none">
                     <img src="img/icons/eye_open.svg" alt="Oeil ouvert"
                   /></i>
-                  <i id="eye_off3" class="eye_off">
+                  <i id="eye_off5" class="eye_off">
                     <img src="img/icons/eye_close.svg" alt="Oeil fermé"
                   /></i>
                 </div>
@@ -196,7 +205,7 @@
                   class="input_checkbox"
                   checked
                 />
-                <label for="general-uses" class="">
+                <label for="general-uses">
                   <span class="checkbox position-relative">
                     <img
                       src="img/icons/check_white.svg"
@@ -218,7 +227,7 @@
                   class="input_checkbox"
                   checked
                 />
-                <label for="newsletter" class="">
+                <label for="newsletter">
                   <span class="checkbox position-relative">
                     <img
                       src="img/icons/check_white.svg"
@@ -233,14 +242,14 @@
             <button class="btn_dark_green">Continuer</button>
           </form>
         </div>
-        <p class="account mt-3">
+        <p class="account mt-3 d-flex gap-1">
           Vous possédez déja un compte ?
-          <button class="btn_inline">Se connecter</button>
+          <a href="connexion.html" class="btn_inline">Se connecter</a>
         </p>
       </section>
-    </main>
+    </div>
     <script src="./script/tarif.js"></script>
     <script src="./script/header.js"></script>
-    <script src="./script/connexion.js"></script>
+    <script src="./script/inscription.js"></script>
   </body>
 </html>

@@ -1,20 +1,27 @@
-body {
+.body_inscription {
   background: url(<path-to-image>), lightgray 0% 0% / 50px 50px repeat,
     $cbro-snow-50;
 }
 
-main {
+.btn_full_transparent {
+  border: 1px solid black;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+
+  top: 50px;
+  left: 50px;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.div_container {
   height: 100vh;
 
-  .img_bg {
-    img {
-      height: 100vh;
-    }
-  }
-
   .container_content {
-    margin: 25% auto;
-
     .inscription_title {
       p {
         @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
@@ -24,6 +31,11 @@ main {
 
     .account {
       @include cbro-paragraphe(400, 14px, 100%, $cbro-gray-700);
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
     }
 
     .btn_inline {

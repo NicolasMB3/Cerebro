@@ -725,13 +725,20 @@ footer hr {
 .input_checkbox {
   display: none;
 }
+.input_checkbox + label {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 7px;
+  grid-template-rows: 1fr;
+}
 .input_checkbox + label span {
-  display: inline-block;
   border: none;
-  width: 16px;
   height: 16px;
+  width: 16px;
   border: 1px solid #396359;
   border-radius: 4px;
+  margin-top: 2px;
 }
 .input_checkbox + label span img {
   height: 12px;
@@ -2619,20 +2626,27 @@ form label {
   }
 }
 
-body {
+.body_inscription {
   background: url(<path-to-image>), lightgray 0% 0%/50px 50px repeat, #fcfaf7;
 }
 
-main {
+.btn_full_transparent {
+  border: 1px solid black;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  top: 50px;
+  left: 50px;
+}
+.btn_full_transparent img {
+  width: 32px;
+  height: 32px;
+}
+
+.div_container {
   height: 100vh;
 }
-main .img_bg img {
-  height: 100vh;
-}
-main .container_content {
-  margin: 25% auto;
-}
-main .container_content .inscription_title p {
+.div_container .container_content .inscription_title p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
   font-size: 16px !important;
@@ -2640,14 +2654,18 @@ main .container_content .inscription_title p {
   color: #4f756c !important;
   text-transform: uppercase;
 }
-main .container_content .account {
+.div_container .container_content .account {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: 100% !important;
   color: #4c4b4a !important;
 }
-main .container_content .btn_inline {
+.div_container .container_content a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.div_container .container_content .btn_inline {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500 !important;
   font-size: 14px !important;

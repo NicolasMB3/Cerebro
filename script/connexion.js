@@ -32,7 +32,7 @@ const InputPassword3 = document.getElementById("password3");
 // Regex
 const RegexEmail = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
 
-// Dsiplay none / inline-block et type password / text
+// Dsiplay none / inline-block et type password / text page de connexion
 function HideOff1() {
   eyeOff1.classList.add("d-none");
   eyeOn1.classList.remove("d-none");
@@ -48,6 +48,7 @@ function HideOn1() {
 eyeOff1.addEventListener("click", HideOff1);
 eyeOn1.addEventListener("click", HideOn1);
 
+// Dsiplay none / inline-block et type password / text page de modification de mot de passe
 function HideOff2() {
   eyeOff2.classList.add("d-none");
   eyeOn2.classList.remove("d-none");
