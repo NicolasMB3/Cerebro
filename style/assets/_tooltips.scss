@@ -1,0 +1,34 @@
+.cb-tooltips {
+   border-radius: 8px;
+   border: 1px solid $cbro-gray-200;
+   background: $cbro-snow-50;
+   bottom: 100%;
+   left: 44%;
+   transform: translate(-50%, -12px);
+   padding: 4px 12px;
+   width: 165px;
+   text-align: center;
+   z-index: 0;
+   span::after {
+      content: "";
+      position: absolute;
+      transform: rotate(45deg);
+      width: 10px;
+      height: 10px;
+      top: 90%;
+      left: 48%;
+      border: 1px solid $cbro-gray-200;
+      background: $cbro-snow-50;
+      z-index: -1;
+   }
+   span::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 10px;
+      top: 74%;
+      left: 47%;
+      background: $cbro-snow-50;
+      z-index: 50;
+   }
+}
