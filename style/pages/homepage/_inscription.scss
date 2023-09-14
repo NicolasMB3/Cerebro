@@ -3,20 +3,21 @@
     $cbro-snow-50;
 }
 
-// .btn_full_transparent {
-//   border: 1px solid black;
-//   width: 48px;
-//   height: 48px;
-//   padding: 8px;
+.btn_back {
+  border: 1px solid black;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
 
-//   top: 50px;
-//   left: 50px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
 
-//   img {
-//     width: 32px;
-//     height: 32px;
-//   }
-// }
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
 
 .div_container {
   height: 100vh;
@@ -40,6 +41,62 @@
 
     .btn_inline {
       @include cbro-paragraphe(500, 14px, 100%, $cbro-green-700);
+    }
+
+    .btn_container {
+      @include media-breakpoint-down(lg) {
+        width: 50% !important;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+#inscription_1,
+#inscription_2,
+#inscription_3 {
+  @include media-breakpoint-down(lg) {
+    padding-top: 144px !important;
+  }
+}
+
+#inscription_2 {
+  select {
+    width: 25%;
+  }
+}
+
+#inscription_2,
+#inscription_3 {
+  select {
+    border-radius: 100px !important;
+    border: 1px solid $cbro-gray-200 !important;
+    background: #fff !important;
+    height: 48px;
+    padding: 0 20px !important;
+    outline: none;
+
+    @include media-breakpoint-down(lg) {
+      width: 50%;
+    }
+
+    &::placeholder {
+      @include cbro-paragraphe(400, 14px, normal, $cbro-gray-300);
+    }
+  }
+
+  .p_champs {
+    @include cbro-paragraphe(500, 12px, 20px, $cbro-gray-400);
+  }
+}
+
+#inscription_3 {
+  .input-group {
+    span {
+      @include cbro-paragraphe(400, 14px, 20px, $cbro-gray-500);
     }
   }
 }

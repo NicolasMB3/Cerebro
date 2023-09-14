@@ -8,6 +8,15 @@ const eyeOff5 = document.getElementById("eye_off5");
 const InputPassword4 = document.getElementById("password4");
 const InputPassword5 = document.getElementById("password5");
 
+// Bouton pour changer de section
+const BtnInscription13 = document.getElementById("btn_inscription_1");
+const BtnInscription23 = document.getElementById("btn_inscription_2");
+
+// Section
+const SectionInscription13 = document.getElementById("inscription_1");
+const SectionInscription23 = document.getElementById("inscription_2");
+const SectionInscription33 = document.getElementById("inscription_3");
+
 // Dsiplay none / inline-block et type password / text page de modification de mot de passe
 function HideOff4() {
   eyeOff4.classList.add("d-none");
@@ -38,3 +47,19 @@ function HideOn5() {
 
 eyeOff5.addEventListener("click", HideOff5);
 eyeOn5.addEventListener("click", HideOn5);
+
+// Fonction pour chacher la section Inscription 1/3 et affiché la section Inscription 2/3
+function HideSectionInscription13() {
+  SectionInscription13.classList.add("d-none");
+  SectionInscription23.classList.remove("d-none");
+}
+
+BtnInscription13.addEventListener("click", HideSectionInscription13);
+
+// Fonction pour chacher la section Inscription 1/3 et affiché la section Inscription 2/3
+function HideSectionInscription23() {
+  SectionInscription23.classList.add("d-none");
+  SectionInscription33.classList.remove("d-none");
+}
+
+BtnInscription23.addEventListener("click", HideSectionInscription23);

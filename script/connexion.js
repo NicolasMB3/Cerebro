@@ -93,7 +93,6 @@ BtnConnexion.addEventListener("click", TestRegex);
 // Fonction pour chacher la section Connexion et affiché la section Mot de passe oublié
 function HideSectionConnexion() {
   connexionHero.classList.add("d-none");
-  Body.classList.add("min-height");
   forgetMdp.classList.remove("d-none");
 }
 
@@ -134,7 +133,6 @@ BtnEmail.addEventListener("click", HideSectionMdp1);
 function HideSectionMdp2() {
   forgetMdp.classList.add("d-none");
   connexionHero.classList.remove("d-none");
-  Body.classList.remove("min-height");
 }
 
 BtnReturnConnexion.addEventListener("click", HideSectionMdp2);
@@ -143,7 +141,6 @@ BtnReturnConnexion.addEventListener("click", HideSectionMdp2);
 function HideSectionResetMdp() {
   resetMdp.classList.add("d-none");
   connexionHero.classList.remove("d-none");
-  Body.classList.remove("min-height");
 }
 
 BtnResetMdp.addEventListener("click", HideSectionResetMdp);

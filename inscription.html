@@ -118,23 +118,21 @@
   </head>
   <body id="body" class="body_inscription position-relative">
     <!-- Section connexion -->
-    <a
-      href="index.html"
-      class="btn_full_transparent position-absolute d-none d-lg-inline"
-    >
+    <a href="index.html" class="btn_full_transparent btn_back">
       <img src="img/icons/arrow_left.svg" alt="Flèche gauche" />
     </a>
-    <div class="div_container row w-100">
+    <div class="div_container row w-100 m-0">
       <img
         src="img/illustrations/frame_inscription.png"
-        alt=""
-        class="col-xxl-5 col-6 d-none d-lg-block"
+        alt="Infirmière"
+        class="col-xxl-5 col-6 d-none d-lg-block p-0"
       />
 
       <section
+        id="inscription_1"
         class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center py-5"
       >
-        <div class="w-75">
+        <div class="px-5 w-75">
           <div class="inscription_title d-flex flex-column gap-4 mb-4">
             <p>S'inscrire</p>
             <h3 class="h3-dark">Bienvenue sur Cérébro</h3>
@@ -239,13 +237,184 @@
                 </label>
               </div>
             </div>
-            <button class="btn_dark_green">Continuer</button>
+            <button id="btn_inscription_1" class="btn_dark_green">
+              Continuer
+            </button>
           </form>
         </div>
         <p class="account mt-3 d-flex gap-1">
           Vous possédez déja un compte ?
           <a href="connexion.html" class="btn_inline">Se connecter</a>
         </p>
+      </section>
+      <section
+        id="inscription_2"
+        class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center py-5 d-none"
+      >
+        <div class="px-5 w-75">
+          <div class="inscription_title d-flex flex-column gap-4 mb-4">
+            <p>S'inscrire 2/3</p>
+            <h3 class="h3-dark">Informations personnelles</h3>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <label for="form-select" class="form-label">Civilité *</label>
+                <select
+                  class="form-select form-select-lg d-flex"
+                  name=""
+                  id="form-select"
+                >
+                  <option value="madame" selected>Madame</option>
+                  <option value="monsieur">Monsieur</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex gap-3 position-relative">
+              <div class="input-group d-flex flex-column gap-3">
+                <label for="name">Nom *</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control white-focus shadow-none w-100"
+                  placeholder="Francisco"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+              </div>
+              <div class="input-group d-flex flex-column gap-3">
+                <label for="firstname">Prénom *</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  class="form-control white-focus shadow-none w-100"
+                  placeholder="Emmanuelle"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3 position-relative">
+              <label for="number_street">Adresse</label>
+              <div class="input-group d-flex align-items-center">
+                <input
+                  type="text"
+                  id="number_street"
+                  class="form-control white-focus shadow-none"
+                  placeholder="N° et voie"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <input
+                  type="text"
+                  id="additional_street"
+                  class="form-control white-focus shadow-none"
+                  placeholder="Complément d'adresse"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+              </div>
+              <div class="input-group d-flex align-items-center gap-2">
+                <input
+                  type="text"
+                  id="postal_code"
+                  class="form-control white-focus shadow-none"
+                  placeholder="Code postal"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <input
+                  type="text"
+                  id="city"
+                  class="form-control white-focus shadow-none"
+                  placeholder="Ville"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+              </div>
+            </div>
+            <p class="p_champs">* Champs obligatoires</p>
+            <button id="btn_inscription_2" class="btn_dark_green">
+              Continuer
+            </button>
+          </form>
+        </div>
+      </section>
+      <section
+        id="inscription_3"
+        class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center py-5 d-none"
+      >
+        <div class="px-5 w-75">
+          <div class="inscription_title d-flex flex-column gap-4 mb-4">
+            <p>S'inscrire 3/3</p>
+            <h3 class="h3-dark">Informations professionelles</h3>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <label for="form-select" class="form-label">Vous êtes *</label>
+                <div class="btn_container d-flex gap-3 flex-lg-row flex-column">
+                  <button class="btn_green">Orthophoniste</button>
+                  <button class="btn_green">Etudiant(e)</button>
+                  <button class="btn_green">Une structure</button>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <label for="form-select" class="form-label">Statut</label>
+                <select
+                  class="form-select form-select-lg"
+                  name=""
+                  id="form-select"
+                >
+                  <option value="liberal" selected>Libéral</option>
+                  <option value="salarial">Salarial</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <label for="name">Année de diplôme</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control white-focus shadow-none w-100"
+                placeholder="2023"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <div class="d-flex gap-1">
+                <label for="firstname">ADELI *</label>
+                <span class="d-flex justify-content-between">
+                  <span>ou autre numéro professionel</span>
+                  <img
+                    src="img/icons/info-empty 1.svg"
+                    alt="Icone Informations"
+                  />
+                </span>
+              </div>
+              <input
+                type="text"
+                id="firstname"
+                class="form-control white-focus shadow-none w-100"
+                placeholder="3556853120"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <p class="p_champs">* Champs obligatoires</p>
+            <button class="btn_dark_green">Continuer</button>
+          </form>
+        </div>
       </section>
     </div>
     <script src="./script/tarif.js"></script>

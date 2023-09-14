@@ -51,6 +51,13 @@ footer .newsletter input {
   padding-bottom: 8px;
   padding-left: 22px;
 }
+footer .newsletter input::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 100% !important;
+  color: #fcfaf7 !important;
+}
 footer .newsletter input::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 300 !important;
@@ -443,6 +450,7 @@ footer hr {
 }
 @media (max-width: 991.98px) {
   .btn_dark-purple {
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -470,7 +478,7 @@ footer hr {
   background: none;
   position: absolute;
   margin-right: 10px;
-  top: 50;
+  top: 50%;
   right: 0;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -699,6 +707,13 @@ footer hr {
   padding: 0 20px !important;
   outline: none;
 }
+.form-connexion .form-control::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #b0afad !important;
+}
 .form-connexion .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -796,6 +811,10 @@ h3 {
   box-shadow: 0 0 0 0.25rem rgba(176, 175, 173, 0.5) !important;
 }
 
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(176, 175, 173, 0.5) !important;
+}
+
 .navbar-transition {
   transition: margin 0.3s ease;
 }
@@ -850,6 +869,7 @@ h3 {
   background: #e3ebd5;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -865,6 +885,7 @@ h3 {
   background: #e7ddf1;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -880,6 +901,7 @@ h3 {
   background: #f3e8ed;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -895,6 +917,7 @@ h3 {
   background: #cee3f6;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -910,6 +933,7 @@ h3 {
   background: #fde4e0;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -925,6 +949,7 @@ h3 {
   background: #feead2;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -940,6 +965,7 @@ h3 {
   background: rgba(227, 225, 222, 0.7);
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
   width: 29px;
@@ -2191,7 +2217,8 @@ h3 {
 #details-formation .objectif-details {
   border-radius: 12px;
   background: rgba(230, 228, 222, 0.5);
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   height: 100%;
 }
 #details-formation .objectif-details p {
@@ -2372,6 +2399,7 @@ h3 {
   }
 }
 #listing-event .btn_dark-purple {
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 991.98px) {
@@ -2525,6 +2553,7 @@ body .img_bg_illustration {
     border-radius: 0;
     text-align: start;
     padding: 0;
+    width: -moz-max-content;
     width: max-content;
     background: none;
   }
@@ -2547,6 +2576,7 @@ body .img_bg_illustration {
   line-height: 20px !important;
   color: #a04470 !important;
   padding: 8px 16px;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -2627,6 +2657,20 @@ form label {
   background: url(<path-to-image>), lightgray 0% 0%/50px 50px repeat, #fcfaf7;
 }
 
+.btn_back {
+  border: 1px solid black;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.btn_back img {
+  width: 32px;
+  height: 32px;
+}
+
 .div_container {
   height: 100vh;
 }
@@ -2656,3 +2700,72 @@ form label {
   line-height: 100% !important;
   color: #4f756c !important;
 }
+@media (max-width: 991.98px) {
+  .div_container .container_content .btn_container {
+    width: 50% !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .div_container .container_content .btn_container {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #inscription_1,
+  #inscription_2,
+  #inscription_3 {
+    padding-top: 144px !important;
+  }
+}
+
+#inscription_2 select {
+  width: 25%;
+}
+
+#inscription_2 select,
+#inscription_3 select {
+  border-radius: 100px !important;
+  border: 1px solid #cac8c6 !important;
+  background: #fff !important;
+  height: 48px;
+  padding: 0 20px !important;
+  outline: none;
+}
+@media (max-width: 991.98px) {
+  #inscription_2 select,
+  #inscription_3 select {
+    width: 50%;
+  }
+}
+#inscription_2 select::-moz-placeholder, #inscription_3 select::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #b0afad !important;
+}
+#inscription_2 select::placeholder,
+#inscription_3 select::placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #b0afad !important;
+}
+#inscription_2 .p_champs,
+#inscription_3 .p_champs {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  color: #979694 !important;
+}
+
+#inscription_3 .input-group span {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #7e7d7c !important;
+}/*# sourceMappingURL=main.css.map */
