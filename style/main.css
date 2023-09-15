@@ -2682,6 +2682,12 @@ form label {
   top: 50px;
   left: 50px;
 }
+@media (max-width: 991.98px) {
+  .btn_back {
+    top: 25px;
+    left: 25px;
+  }
+}
 .btn_back img {
   width: 32px;
   height: 32px;
@@ -2716,16 +2722,6 @@ form label {
   line-height: 100% !important;
   color: #4f756c !important;
 }
-@media (max-width: 991.98px) {
-  .div_container .container_content .btn_container {
-    width: 50% !important;
-  }
-}
-@media (max-width: 575.98px) {
-  .div_container .container_content .btn_container {
-    width: 100% !important;
-  }
-}
 
 @media (max-width: 991.98px) {
   #inscription_1,
@@ -2743,7 +2739,6 @@ form label {
 #inscription_3 select {
   border-radius: 100px !important;
   border: 1px solid #cac8c6 !important;
-  background: #fff !important;
   height: 48px;
   padding: 0 20px !important;
   outline: none;

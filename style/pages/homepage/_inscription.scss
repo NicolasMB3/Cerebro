@@ -13,6 +13,11 @@
   top: 50px;
   left: 50px;
 
+  @include media-breakpoint-down(lg) {
+    top: 25px;
+    left: 25px;
+  }
+
   img {
     width: 32px;
     height: 32px;
@@ -42,16 +47,6 @@
     .btn_inline_green {
       @include cbro-paragraphe(500, 14px, 100%, $cbro-green-700);
     }
-
-    .btn_container {
-      @include media-breakpoint-down(lg) {
-        width: 50% !important;
-      }
-
-      @include media-breakpoint-down(sm) {
-        width: 100% !important;
-      }
-    }
   }
 }
 
@@ -74,7 +69,6 @@
   select {
     border-radius: 100px !important;
     border: 1px solid $cbro-gray-200 !important;
-    background: #fff !important;
     height: 48px;
     padding: 0 20px !important;
     outline: none;
