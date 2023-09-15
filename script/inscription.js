@@ -32,6 +32,9 @@ const SectionOrthophoniste = document.getElementById("section_orthophoniste");
 const SectionEtudiant = document.getElementById("section_etudiant");
 const SectionStructure = document.getElementById("section_structure");
 
+// Icon info
+const IconInfo = document.getElementById("icon_info");
+
 // Dsiplay none / inline-block et type password / text page de modification de mot de passe
 function HideOff4() {
   eyeOff4.classList.add("d-none");
@@ -127,3 +130,7 @@ function HideSectionStructure() {
 }
 
 BtnStructure.addEventListener("click", HideSectionStructure);
+
+function HideOnInfoText() {}
+
+IconInfo.addEventListener("click", HideOnInfoText);

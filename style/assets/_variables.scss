@@ -43,7 +43,8 @@ $cbro-purple-600: #ac5b82 !default;
 $cbro-purple-700: #a04470 !default;
 $cbro-purple-800: #942c5e !default;
 $cbro-purple-900: #88154c !default;
-
+// scss-docs-end red-color-variables
+$cbro-red-50: #de5757;
 // Paramètres de valeurs générales
 // paddings
 $cbro-padding-10vh: 10vh;
@@ -67,5 +68,10 @@ $cbro-badge-orange_active: #d3b499;
 $cbro-opacity-0: #ccdde3;
 $cbro-opacity-50: #e7e6e4;
 // header
-$bg_white: #FBF8F4;
-$bg_beige: linear-gradient(0deg, rgba(227, 225, 222, 0.3), rgba(227, 225, 222, 0.3)), rgba(251, 248, 244, 0.6);
+$bg_white: #fbf8f4;
+$bg_beige: linear-gradient(
+    0deg,
+    rgba(227, 225, 222, 0.3),
+    rgba(227, 225, 222, 0.3)
+  ),
+  rgba(251, 248, 244, 0.6);

@@ -173,7 +173,7 @@ footer hr {
   line-height: 150% !important;
   color: #191919 !important;
   transition: transform 0.32s ease-in-out;
-  background: #FBF8F4;
+  background: #fbf8f4;
   backdrop-filter: blur(6px); /* Standard syntax */
   -webkit-backdrop-filter: blur(6px); /* Chrome, Safari, Opera */
   backdrop-filter: blur(6px) brightness(90%); /* Firefox */
@@ -220,7 +220,7 @@ footer hr {
   width: 79px;
   height: 74px;
   border-radius: 100px;
-  background: #FBF8F4;
+  background: #fbf8f4;
   backdrop-filter: blur(6px); /* Standard syntax */
   -webkit-backdrop-filter: blur(6px); /* Chrome, Safari, Opera */
   backdrop-filter: blur(6px) brightness(90%); /* Firefox */
@@ -485,19 +485,8 @@ footer hr {
 }
 
 .btn_not_selected {
-  font-family: "Instrument Sans";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
+  background-color: #e9eeed;
   color: #4f756c;
-  background: #e9eeed;
-  border-radius: 100px;
-  border: 1px solid transparent;
-  padding: 12px 22px;
-  transition: 0.25s all ease-in-out;
-}
-.btn_not_selected:hover {
-  filter: brightness(90%);
 }
 
 .h1-dark {
@@ -747,6 +736,11 @@ footer hr {
   grid-template-columns: 16px 1fr;
   gap: 7px;
   grid-template-rows: 1fr;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #7e7d7c !important;
 }
 .input_checkbox + label span {
   border: none;
@@ -1098,6 +1092,33 @@ h3 {
   left: 47%;
   background: #fcfaf7;
   z-index: 50;
+}
+
+#info_icon {
+  background: transparent;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+#info_icon .cb-tooltips {
+  top: 40px;
+  left: -100px;
+  bottom: -105px !important;
+  text-align: start;
+  width: 260px;
+}
+#info_icon .cb-tooltips span {
+  color: #323231 !important;
+}
+#info_icon span::before {
+  content: "";
+  top: 0;
+  left: 89%;
+}
+#info_icon span::after {
+  content: "";
+  top: -8%;
+  left: 90%;
 }
 
 /* Pages */
@@ -2359,6 +2380,21 @@ h3 {
 #listing-formation .gap-2 > div {
   cursor: pointer;
 }
+#listing-formation .cards-details__info {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #656463 !important;
+}
+#listing-formation .cards-details__info + ul {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #656463 !important;
+  font-family: "Instrument Sans", sans-serif;
+}
 
 #listing-event {
   padding: 0 0 6rem 0;
@@ -2476,7 +2512,8 @@ h3 {
   }
 }
 @media (max-width: 991.98px) {
-  .listing-ebp h2 + h5, .listing-ebp h2 {
+  .listing-ebp h2 + h5,
+  .listing-ebp h2 {
     text-align: left;
   }
 }
@@ -2670,7 +2707,13 @@ form label {
 }
 
 .body_inscription {
-  background: url(<path-to-image>), lightgray 0% 0%/50px 50px repeat, #fcfaf7;
+  background: url(../../../img/noise.svg), repeat, #fcfaf7;
+}
+.body_inscription .div_container .img_bg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .btn_back {
@@ -2722,13 +2765,40 @@ form label {
   line-height: 100% !important;
   color: #4f756c !important;
 }
+@media (max-width: 575.98px) {
+  .div_container .container_content #container_btn button {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
 
+#inscription_1,
+#inscription_2,
+#inscription_3 {
+  padding: 100px 188px !important;
+}
+@media (max-width: 1399.98px) {
+  #inscription_1,
+  #inscription_2,
+  #inscription_3 {
+    padding: 100px !important;
+  }
+}
 @media (max-width: 991.98px) {
   #inscription_1,
   #inscription_2,
   #inscription_3 {
-    padding-top: 144px !important;
+    padding: 144px 1rem 1rem 1rem !important;
   }
+}
+#inscription_1 form div .paragraph_error,
+#inscription_2 form div .paragraph_error,
+#inscription_3 form div .paragraph_error {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  color: #de5757 !important;
 }
 
 #inscription_2 select {
@@ -2770,6 +2840,23 @@ form label {
   font-size: 14px !important;
   line-height: 20px !important;
   color: #7e7d7c !important;
+}
+#inscription_3 .container_info div div {
+  background-color: #fcfaf7;
+  border: 1px solid #cac8c6;
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: 240px;
+  top: 0;
+  right: 0;
+}
+#inscription_3 .container_info div div p {
+  font-style: normal;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+  color: #323231 !important;
 }
 #inscription_3 #section_orthophoniste label {
   margin: 0;

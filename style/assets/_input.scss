@@ -21,7 +21,7 @@
     grid-template-columns: 16px 1fr;
     gap: 7px;
     grid-template-rows: 1fr;
-
+    @include cbro-paragraphe(400, 14px, 150%, $cbro-gray-500);
     span {
       border: none;
       height: 16px;

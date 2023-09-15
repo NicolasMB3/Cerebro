@@ -1,6 +1,12 @@
 .body_inscription {
-  background: url(<path-to-image>), lightgray 0% 0% / 50px 50px repeat,
-    $cbro-snow-50;
+  background: url(../../../img/noise.svg), repeat, $cbro-snow-50;
+
+  .div_container {
+    .img_bg {
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
 }
 
 .btn_back {
@@ -47,14 +53,37 @@
     .btn_inline_green {
       @include cbro-paragraphe(500, 14px, 100%, $cbro-green-700);
     }
+
+    #container_btn {
+      button {
+        @include media-breakpoint-down(sm) {
+          font-size: 13px;
+          padding: 8px 10px;
+        }
+      }
+    }
   }
 }
 
 #inscription_1,
 #inscription_2,
 #inscription_3 {
+  padding: 100px 188px !important;
+
+  @include media-breakpoint-down(xxl) {
+    padding: 100px !important;
+  }
+
   @include media-breakpoint-down(lg) {
-    padding-top: 144px !important;
+    padding: 144px 1rem 1rem 1rem !important;
+  }
+
+  form {
+    div {
+      .paragraph_error {
+        @include cbro-paragraphe(500, 13px, 20px, $cbro-red-50);
+      }
+    }
   }
 }
 
@@ -90,6 +119,27 @@
   .input-group {
     span {
       @include cbro-paragraphe(400, 14px, 20px, $cbro-gray-500);
+    }
+  }
+
+  .container_info {
+    div {
+      div {
+        background-color: $cbro-snow-50;
+        border: 1px solid $cbro-gray-200;
+        padding: 8px 12px;
+        border-radius: 8px;
+
+        width: 240px;
+
+        top: 0;
+        right: 0;
+
+        p {
+          font-style: normal;
+          @include cbro-paragraphe(400, 13px, 18px, $cbro-gray-800);
+        }
+      }
     }
   }
 

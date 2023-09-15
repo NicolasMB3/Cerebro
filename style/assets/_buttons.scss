@@ -151,17 +151,6 @@
 }
 
 .btn_not_selected {
-  @include cbro-button(
-    500,
-    16px,
-    $cbro-green-700,
-    $cbro-green-50,
-    1px,
-    transparent
-  );
-  transition: 0.25s all ease-in-out;
-
-  &:hover {
-    filter: brightness(90%);
-  }
+  background-color: $cbro-green-50;
+  color: $cbro-green-700;
 }

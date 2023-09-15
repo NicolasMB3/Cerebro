@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cérébro / Tarification</title>
+    <title>Cérébro / Inscription</title>
     <link
       rel="apple-touch-icon-precomposed"
       sizes="57x57"
@@ -125,7 +125,7 @@
       <img
         src="img/illustrations/frame_inscription.png"
         alt="Infirmière"
-        class="col-xxl-5 col-6 d-none d-lg-block p-0"
+        class="img_bg col-xxl-5 col-6 d-none d-lg-block p-0"
       />
 
       <section
@@ -358,10 +358,10 @@
             <p>S'inscrire 3/3</p>
             <h3 class="h3-dark">Informations professionelles</h3>
           </div>
-          <div class="d-flex flex-column gap-3 mb-4">
+          <div id="container_btn" class="d-flex flex-column gap-3 mb-4">
             <div>
               <label for="form-select" class="form-label">Vous êtes *</label>
-              <div class="btn_container d-flex gap-3 flex-sm-row flex-column">
+              <div class="btn_container d-flex gap-lg-3 gap-2">
                 <button id="btn_orthophoniste" class="btn_green w-100">
                   Orthophoniste
                 </button>
@@ -412,21 +412,35 @@
                 <label for="num_pro" class="adeli_width">ADELI *</label>
                 <span class="d-flex justify-content-between w-100">
                   <span>ou autre numéro professionel</span>
-                  <img
-                    src="img/icons/info-empty 1.svg"
-                    alt="Icone Informations"
-                  />
+                  <div
+                    class="cbro-badge-grey d-flex align-items-center justify-content-center position-relative parent-tooltips"
+                    id="info_icon"
+                  >
+                    <div class="position-absolute cb-tooltips p-2 d-none">
+                      <span
+                        >Si vous n'êtes pas orthophoniste en France, veuillez
+                        inscrire votre numéro professionnel (INAMI...)</span
+                      >
+                    </div>
+                    <img src="img/icons/info-empty 1.svg" alt="Info icon" />
+                  </div>
                 </span>
               </div>
-              <input
-                type="text"
-                id="num_pro"
-                class="form-control white-focus shadow-none w-100"
-                placeholder="3556853120"
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
-                required
-              />
+              <div class="d-flex flex-column gap-2">
+                <input
+                  type="text"
+                  id="num_pro"
+                  class="form-control white-focus shadow-none w-100"
+                  placeholder="3556853120"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+                <div class="d-flex gap-1">
+                  <img src="img/icons/error_icon.svg" alt="Error icon" />
+                  <p class="paragraph_error">Merci de remplir ce champ</p>
+                </div>
+              </div>
             </div>
             <div
               id="cityandname"
@@ -572,5 +586,6 @@
       </section>
     </div>
     <script src="./script/inscription.js"></script>
+    <script src="./script/tooltips.js"></script>
   </body>
 </html>
