@@ -39,7 +39,7 @@
       cursor: pointer;
     }
 
-    .btn_inline {
+    .btn_inline_green {
       @include cbro-paragraphe(500, 14px, 100%, $cbro-green-700);
     }
 
@@ -79,12 +79,11 @@
     padding: 0 20px !important;
     outline: none;
 
+    @include cbro-paragraphe(400, 14px, normal, black);
+    font-family: inherit;
+
     @include media-breakpoint-down(lg) {
       width: 50%;
-    }
-
-    &::placeholder {
-      @include cbro-paragraphe(400, 14px, normal, $cbro-gray-300);
     }
   }
 
@@ -97,6 +96,23 @@
   .input-group {
     span {
       @include cbro-paragraphe(400, 14px, 20px, $cbro-gray-500);
+    }
+  }
+
+  #section_orthophoniste {
+    label {
+      margin: 0;
+    }
+
+    .adeli_width {
+      width: 75px;
+    }
+
+    span {
+      img {
+        height: 16px;
+        width: 16px;
+      }
     }
   }
 }

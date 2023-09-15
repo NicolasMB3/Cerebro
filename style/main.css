@@ -484,6 +484,22 @@ footer hr {
   cursor: pointer;
 }
 
+.btn_not_selected {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4f756c;
+  background: #e9eeed;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  padding: 12px 22px;
+  transition: 0.25s all ease-in-out;
+}
+.btn_not_selected:hover {
+  filter: brightness(90%);
+}
+
 .h1-dark {
   font-family: "ITCSouvenir-md";
   font-weight: 300 !important;
@@ -2693,7 +2709,7 @@ form label {
   text-decoration: none;
   cursor: pointer;
 }
-.div_container .container_content .btn_inline {
+.div_container .container_content .btn_inline_green {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500 !important;
   font-size: 14px !important;
@@ -2731,27 +2747,18 @@ form label {
   height: 48px;
   padding: 0 20px !important;
   outline: none;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: black !important;
+  font-family: inherit;
 }
 @media (max-width: 991.98px) {
   #inscription_2 select,
   #inscription_3 select {
     width: 50%;
   }
-}
-#inscription_2 select::-moz-placeholder, #inscription_3 select::-moz-placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: normal !important;
-  color: #b0afad !important;
-}
-#inscription_2 select::placeholder,
-#inscription_3 select::placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: normal !important;
-  color: #b0afad !important;
 }
 #inscription_2 .p_champs,
 #inscription_3 .p_champs {
@@ -2768,4 +2775,14 @@ form label {
   font-size: 14px !important;
   line-height: 20px !important;
   color: #7e7d7c !important;
+}
+#inscription_3 #section_orthophoniste label {
+  margin: 0;
+}
+#inscription_3 #section_orthophoniste .adeli_width {
+  width: 75px;
+}
+#inscription_3 #section_orthophoniste span img {
+  height: 16px;
+  width: 16px;
 }/*# sourceMappingURL=main.css.map */

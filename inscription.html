@@ -130,9 +130,9 @@
 
       <section
         id="inscription_1"
-        class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center py-5"
+        class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center p-5"
       >
-        <div class="px-5 w-75">
+        <div class="w-100">
           <div class="inscription_title d-flex flex-column gap-4 mb-4">
             <p>S'inscrire</p>
             <h3 class="h3-dark">Bienvenue sur Cérébro</h3>
@@ -244,14 +244,16 @@
         </div>
         <p class="account mt-3 d-flex gap-1">
           Vous possédez déja un compte ?
-          <a href="connexion.html" class="btn_inline">Se connecter</a>
+          <a href="connexion.html" class="btn_inline_green btn_inline"
+            >Se connecter</a
+          >
         </p>
       </section>
       <section
         id="inscription_2"
-        class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center py-5 d-none"
+        class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center p-5 d-none"
       >
-        <div class="px-5 w-75">
+        <div class="w-100">
           <div class="inscription_title d-flex flex-column gap-4 mb-4">
             <p>S'inscrire 2/3</p>
             <h3 class="h3-dark">Informations personnelles</h3>
@@ -347,42 +349,50 @@
       </section>
       <section
         id="inscription_3"
-        class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center py-5 d-none"
+        class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center justify-content-center p-5 d-none"
       >
-        <div class="px-5 w-75">
+        <div class="w-100">
           <div class="inscription_title d-flex flex-column gap-4 mb-4">
             <p>S'inscrire 3/3</p>
             <h3 class="h3-dark">Informations professionelles</h3>
           </div>
-          <form action="#" class="form-connexion d-flex flex-column gap-4">
-            <div class="d-flex flex-column gap-3">
-              <div>
-                <label for="form-select" class="form-label">Vous êtes *</label>
-                <div class="btn_container d-flex gap-3 flex-lg-row flex-column">
-                  <button class="btn_green">Orthophoniste</button>
-                  <button class="btn_green">Etudiant(e)</button>
-                  <button class="btn_green">Une structure</button>
-                </div>
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div>
+              <label for="form-select" class="form-label">Vous êtes *</label>
+              <div class="btn_container d-flex gap-3 flex-lg-row flex-column">
+                <button id="btn_orthophoniste" class="btn_green">
+                  Orthophoniste
+                </button>
+                <button id="btn_etudiant" class="btn_green btn_not_selected">
+                  Etudiant(e)
+                </button>
+                <button id="btn_structure" class="btn_green btn_not_selected">
+                  Une structure
+                </button>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="w-100" id="section_orthophoniste">
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
             <div class="d-flex flex-column gap-3">
-              <div>
-                <label for="form-select" class="form-label">Statut</label>
+              <div class="d-flex flex-column gap-3">
+                <label for="select_statut" class="form-label">Statut</label>
                 <select
                   class="form-select form-select-lg"
-                  name=""
-                  id="form-select"
+                  name="select_statut"
+                  id="select_statut"
                 >
-                  <option value="liberal" selected>Libéral</option>
-                  <option value="salarial">Salarial</option>
+                  <option id="liberal" value="liberal" selected>Libéral</option>
+                  <option id="salarial" value="salarial">Salarial</option>
                 </select>
               </div>
             </div>
             <div class="input-group d-flex flex-column gap-3">
-              <label for="name">Année de diplôme</label>
+              <label for="diplome">Année de diplôme</label>
               <input
                 type="text"
-                id="name"
+                id="diplome"
                 class="form-control white-focus shadow-none w-100"
                 placeholder="2023"
                 aria-label="Recipient's username"
@@ -392,14 +402,81 @@
             </div>
             <div class="input-group d-flex flex-column gap-3">
               <div class="d-flex gap-1">
-                <label for="firstname">ADELI *</label>
-                <span class="d-flex justify-content-between">
+                <label for="num_pro" class="adeli_width">ADELI *</label>
+                <span class="d-flex justify-content-between w-100">
                   <span>ou autre numéro professionel</span>
                   <img
                     src="img/icons/info-empty 1.svg"
                     alt="Icone Informations"
                   />
                 </span>
+              </div>
+              <input
+                type="text"
+                id="num_pro"
+                class="form-control white-focus shadow-none w-100"
+                placeholder="3556853120"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <div
+              id="cityandname"
+              class="input-group d-flex flex-column gap-3 d-none"
+            >
+              <label for="city_and_name">Nom et ville de ma structure</label>
+              <input
+                type="text"
+                id="city_and_name"
+                class="form-control white-focus shadow-none w-100"
+                placeholder="Nom et ville"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <p class="p_champs">* Champs obligatoires</p>
+            <button class="btn_dark_green mb-3">Continuer</button>
+          </form>
+        </div>
+        <div class="w-100 d-none" id="section_etudiant">
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
+              <div class="input-group d-flex flex-column gap-3">
+                <label for="name">Centre de formation</label>
+                <input
+                  type="text"
+                  id="formation"
+                  class="form-control white-focus shadow-none w-100"
+                  placeholder="Amiens"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <div class="d-flex justify-content-between">
+                <label for="name">Année de diplôme</label>
+                <img
+                  src="img/icons/info-empty 1.svg"
+                  alt="Icone Informations"
+                />
+              </div>
+              <input
+                type="text"
+                id="diplome"
+                class="form-control white-focus shadow-none w-100"
+                placeholder="2023"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <div class="d-flex gap-1">
+                <label for="firstname">Numéro etudiant *</label>
               </div>
               <input
                 type="text"
@@ -412,13 +489,86 @@
               />
             </div>
             <p class="p_champs">* Champs obligatoires</p>
-            <button class="btn_dark_green">Continuer</button>
+            <button class="btn_dark_green mb-3">Continuer</button>
           </form>
         </div>
+        <div class="w-100 d-none" id="section_structure">
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="input-group d-flex flex-column gap-3">
+              <label for="name">Nom de la structure *</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control white-focus shadow-none w-100"
+                placeholder="CHU Amiens"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <div class="d-flex justify-content-between">
+                <label for="name">Nom du responsable *</label>
+                <img
+                  src="img/icons/info-empty 1.svg"
+                  alt="Icone Informations"
+                />
+              </div>
+
+              <div class="d-flex gap-3">
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control white-focus shadow-none w-100"
+                  placeholder="Nom"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+                <input
+                  type="text"
+                  id="firstname"
+                  class="form-control white-focus shadow-none w-100"
+                  placeholder="Prénom"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <label for="responsabilité"
+                >Responsabilité dans la structure</label
+              >
+              <input
+                type="text"
+                id="responsabilité"
+                class="form-control white-focus shadow-none w-100"
+                placeholder="Cadre"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <label for="siret">SIRET</label>
+              <input
+                type="text"
+                id="siret"
+                class="form-control white-focus shadow-none w-100"
+                placeholder="25568765"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                required
+              />
+            </div>
+            <p class="p_champs">* Champs obligatoires</p>
+            <button class="btn_dark_green mb-3">Continuer</button>
+          </form>
+        </div>
+        <button class="btn_inline">Enregistrer et continuer plus tard</button>
       </section>
     </div>
-    <script src="./script/tarif.js"></script>
-    <script src="./script/header.js"></script>
     <script src="./script/inscription.js"></script>
   </body>
 </html>
