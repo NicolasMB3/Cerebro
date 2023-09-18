@@ -133,4 +133,6 @@ BtnStructure.addEventListener("click", HideSectionStructure);
 
 function HideOnInfoText() {}
 
-IconInfo.addEventListener("click", HideOnInfoText);
+if(IconInfo) {
+  IconInfo.addEventListener("click", HideOnInfoText);
+}
