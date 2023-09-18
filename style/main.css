@@ -2627,6 +2627,15 @@ h3 {
   height: 300px;
 }
 
+.m-bottom {
+  margin-bottom: -150px;
+}
+@media (max-width: 991.98px) {
+  .m-bottom {
+    margin-bottom: 0;
+  }
+}
+
 #connexion_hero .connexion_container,
 #forget_mdp,
 #send_mail,
@@ -2643,12 +2652,12 @@ h3 {
 #reset_mdp {
   width: 50%;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   #forget_mdp,
   #send_mail,
   #reset_mdp {
-    margin: 150px 0;
-    width: 75%;
+    margin: 0;
+    width: 100%;
   }
 }
 

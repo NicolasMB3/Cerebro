@@ -80,21 +80,17 @@ eyeOn3.addEventListener("click", HideOn3);
 function TestRegex() {
   const Email = InputEmail.value;
   const found = Email.match(RegexEmail);
-  console.log(found);
-  //null = false
-  //non null = true
 }
 
 BtnConnexion.addEventListener("click", TestRegex);
 
 // Fonction pour cahcher la section Mot de passe oublié et afficher la section Email envoyé
 function HideSectionMdp1() {
-  forgetMdp.classList.add("d-none");
-  sendMail.classList.remove("d-none");
-  sendMail.style.marginBottom = '-150px';
+  forgetMdp.classList.add('d-none');
+  sendMail.classList.remove('d-none');
 
   // Fonction Timer pour la page d'email envoyé
-  const departHeures = .5;
+  const departHeures = 0.5;
   let temps = departHeures * 60;
   const timerElement = document.getElementById("timer");
   setInterval(() => {
@@ -131,13 +127,11 @@ btnInitPassword.addEventListener("click", function(){
   hideElement(loginSection);
   hideElement(registerSection);
   displayElement(passwordSection);
-  passwordSection.style.marginBottom = "-150px"
   registerSection.classList.remove('d-lg-flex');
 }, false);
 
 // Fonction pour cacher la seciton changement de mot passe et afficher la section Connexion
 function HideSectionResetMdp() {
-  resetMdp.style.marginBottom = '-150px';
   resetMdp.classList.add("d-none");
   connexionHero.classList.remove("d-none");
 }
