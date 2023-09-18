@@ -1,0 +1,170 @@
+.body_inscription {
+  background: url(../../../img/noise.svg), repeat, $cbro-snow-50;
+
+  .div_container {
+    .img_bg {
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+}
+
+.btn_back {
+  border: 1px solid black;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+
+  position: absolute;
+  top: 50px;
+  left: 50px;
+
+  @include media-breakpoint-down(lg) {
+    top: 25px;
+    left: 25px;
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.div_container {
+  height: 100vh;
+
+  .container_content {
+    .inscription_title {
+      p {
+        @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
+        text-transform: uppercase;
+      }
+    }
+
+    .account {
+      @include cbro-paragraphe(400, 14px, 100%, $cbro-gray-700);
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn_inline_green {
+      @include cbro-paragraphe(500, 14px, 100%, $cbro-green-700);
+    }
+
+    #container_btn {
+      button {
+        @include media-breakpoint-down(sm) {
+          font-size: 13px;
+          padding: 8px 10px;
+        }
+      }
+    }
+  }
+}
+
+#inscription_1,
+#inscription_2,
+#inscription_3 {
+  .btn_container {
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+    }
+  }
+  padding: 100px 140px !important;
+  justify-content: center;
+  @include media-breakpoint-down(xl) {
+    padding: 115px 1rem 1rem 1rem !important;
+    justify-content: flex-start;
+  }
+
+  form {
+    div {
+      .paragraph_error {
+        @include cbro-paragraphe(500, 13px, 20px, $cbro-red-50);
+      }
+    }
+  }
+}
+
+#inscription_2 {
+  select {
+    width: 25%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}
+
+#inscription_2,
+#inscription_3 {
+  select {
+    border-radius: 100px !important;
+    border: 1px solid $cbro-gray-200 !important;
+    height: 48px;
+    padding: 0 20px !important;
+    outline: none;
+
+    @include cbro-paragraphe(400, 14px, normal, black);
+    font-family: inherit;
+
+    @include media-breakpoint-down(lg) {
+      width: 50%;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+  }
+
+  .p_champs {
+    @include cbro-paragraphe(500, 12px, 20px, $cbro-gray-400);
+  }
+}
+
+#inscription_3 {
+  .input-group {
+    span {
+      @include cbro-paragraphe(400, 14px, 20px, $cbro-gray-500);
+    }
+  }
+
+  .container_info {
+    div {
+      div {
+        background-color: $cbro-snow-50;
+        border: 1px solid $cbro-gray-200;
+        padding: 8px 12px;
+        border-radius: 8px;
+
+        width: 240px;
+
+        top: 0;
+        right: 0;
+
+        p {
+          font-style: normal;
+          @include cbro-paragraphe(400, 13px, 18px, $cbro-gray-800);
+        }
+      }
+    }
+  }
+
+  #section_orthophoniste {
+    label {
+      margin: 0;
+    }
+
+    .adeli_width {
+      width: 75px;
+    }
+
+    span {
+      img {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+}

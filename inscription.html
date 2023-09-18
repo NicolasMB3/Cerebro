@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cérébro</title>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Cérébro">
+    <meta name="msapplication-TileColor" content="#4F756C">
+    <meta name="msapplication-TileImage" content="https://www.lecerebro.com/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="https://www.lecerebro.com/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="https://www.lecerebro.com/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="https://www.lecerebro.com/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="https://www.lecerebro.com/mstile-310x310.png">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
+  </head>
+  <body id="body" class="body_inscription position-relative">
+    <!-- Section connexion -->
+    <a href="index.html" class="btn_full_transparent btn_back">
+      <img src="img/icons/arrow_left.svg" alt="Flèche gauche" />
+    </a>
+    <div class="div_container row w-100 m-0">
+      <img src="img/illustrations/frame_inscription.png" alt="Infirmière" class="img_bg col-xxl-5 col-6 d-none d-lg-block p-0" />
+      <section id="inscription_1" class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center p-lg-5 p-4">
+        <div class="w-100">
+          <div class="inscription_title d-flex flex-column gap-4 mb-4">
+            <p>S'inscrire</p>
+            <h3 class="h3-dark">Bienvenue sur Cérébro</h3>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" class="form-control white-focus shadow-none" placeholder="camille@cerebro.fr" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+            </div>
+            <div class="d-flex flex-column gap-3 position-relative">
+              <label for="password">Mot de passe</label>
+              <div class="input-group d-flex align-items-center">
+                <input type="password" id="password4" class="form-control white-focus shadow-none" placeholder="*************" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+                <div class="input-group-append">
+                  <i id="eye_on4" class="eye_on d-none">
+                    <img src="img/icons/eye_open.svg" alt="Oeil ouvert" />
+                  </i>
+                  <i id="eye_off4" class="eye_off">
+                    <img src="img/icons/eye_close.svg" alt="Oeil fermé" />
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3 position-relative">
+              <label for="password">Confirmation de mot de passe</label>
+              <div class="input-group d-flex align-items-center">
+                <input type="password" id="password5" class="form-control white-focus shadow-none" placeholder="*************" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+                <div class="input-group-append">
+                  <i id="eye_on5" class="eye_on d-none">
+                    <img src="img/icons/eye_open.svg" alt="Oeil ouvert" />
+                  </i>
+                  <i id="eye_off5" class="eye_off">
+                    <img src="img/icons/eye_close.svg" alt="Oeil fermé" />
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <input type="checkbox" name="general-uses" id="general-uses" class="input_checkbox" required checked />
+                <label for="general-uses">
+                  <span class="checkbox position-relative">
+                    <img src="img/icons/check_white.svg" alt="check" class="position-absolute" />
+                  </span>
+                  <p> J’accepte les conditions générales de vente ainsi que la politique de confidentialité </p>
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" name="newsletter" id="newsletter" class="input_checkbox" checked />
+                <label for="newsletter">
+                  <span class="checkbox position-relative">
+                    <img src="img/icons/check_white.svg" alt="check" class="position-absolute" />
+                  </span>
+                  <p>Je souhaite recevoir la newsletter Cérébro</p>
+                </label>
+              </div>
+            </div>
+            <button id="btn_inscription_1" class="btn_dark_green"> Continuer </button>
+          </form>
+        </div>
+        <p class="account mt-3 d-flex gap-1 flex-wrap gap-2"> Vous possédez déja un compte ? <a href="connexion.html" class="btn_inline_green btn_inline">Se connecter</a>
+        </p>
+      </section>
+      <section id="inscription_2" class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center p-lg-5 p-4 d-none">
+        <div class="w-100">
+          <div class="inscription_title d-flex flex-column gap-4 mb-4">
+            <p>S'inscrire 2/3</p>
+            <h3 class="h3-dark">Informations personnelles</h3>
+          </div>
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <label for="form-select" class="form-label">Civilité *</label>
+                <select class="form-select form-select-lg d-flex" name="" id="form-select" required>
+                  <option value="madame" selected>Madame</option>
+                  <option value="monsieur">Monsieur</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex gap-3 position-relative">
+              <div class="input-group d-flex flex-column gap-3">
+                <label for="name">Nom *</label>
+                <input type="text" id="name" class="form-control white-focus shadow-none w-100" placeholder="Francisco" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+              </div>
+              <div class="input-group d-flex flex-column gap-3">
+                <label for="firstname">Prénom *</label>
+                <input type="text" id="firstname" class="form-control white-focus shadow-none w-100" placeholder="Emmanuelle" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3 position-relative">
+              <label for="number_street">Adresse</label>
+              <div class="input-group d-flex align-items-center">
+                <input type="text" id="number_street" class="form-control white-focus shadow-none" placeholder="N° et voie" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <input type="text" id="additional_street" class="form-control white-focus shadow-none" placeholder="Complément d'adresse" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              </div>
+              <div class="input-group d-flex align-items-center gap-2">
+                <input type="text" id="postal_code" class="form-control white-focus shadow-none" placeholder="Code postal" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                <input type="text" id="city" class="form-control white-focus shadow-none w-50" placeholder="Ville" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              </div>
+            </div>
+            <p class="p_champs">* Champs obligatoires</p>
+            <button id="btn_inscription_2" class="btn_dark_green"> Continuer </button>
+          </form>
+        </div>
+      </section>
+      <section id="inscription_3" class="container_content col-xxl-7 col-lg-6 col-12 d-flex flex-column align-items-center p-lg-5 p-4 d-none">
+        <div class="w-100">
+          <div class="inscription_title d-flex flex-column gap-4 mb-4">
+            <p>S'inscrire 3/3</p>
+            <h3 class="h3-dark">Informations professionelles</h3>
+          </div>
+          <div id="container_btn" class="d-flex flex-column gap-3 mb-4">
+            <div>
+              <label for="form-select" class="form-label">Vous êtes *</label>
+              <div class="btn_container d-flex gap-lg-3 gap-2">
+                <button id="btn_orthophoniste" class="btn_green w-100"> Orthophoniste </button>
+                <button id="btn_etudiant" class="btn_green btn_not_selected w-100"> Etudiant(e) </button>
+                <button id="btn_structure" class="btn_green btn_not_selected w-100"> Une structure </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100" id="section_orthophoniste">
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex flex-column gap-3">
+                <label for="select_statut" class="form-label">Statut</label>
+                <select class="form-select form-select-lg" name="select_statut" id="select_statut">
+                  <option id="liberal" value="liberal" selected>Libéral</option>
+                  <option id="salarial" value="salarial">Salarial</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <label for="diplome">Année de diplôme</label>
+              <input type="text" id="diplome" class="form-control white-focus shadow-none w-100" placeholder="2023" aria-label="Recipient's username" aria-describedby="button-addon2" />
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <div class="d-flex gap-1">
+                <label for="num_pro" class="adeli_width">ADELI *</label>
+                <span class="d-flex justify-content-between w-100">
+                  <span>ou autre numéro professionel</span>
+                  <div class="cbro-badge-grey d-flex align-items-center justify-content-center position-relative parent-tooltips" id="info_icon">
+                    <div class="position-absolute cb-tooltips p-2 d-none">
+                      <span>Si vous n'êtes pas orthophoniste en France, veuillez inscrire votre numéro professionnel (INAMI...)</span>
+                    </div>
+                    <img src="img/icons/info-empty 1.svg" alt="Info icon" />
+                  </div>
+                </span>
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <input type="text" id="num_pro" class="form-control white-focus shadow-none w-100" placeholder="3556853120" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+                <div class="d-flex gap-1">
+                  <img src="img/icons/error_icon.svg" alt="Error icon" />
+                  <p class="paragraph_error">Merci de remplir ce champ</p>
+                </div>
+              </div>
+            </div>
+            <div id="cityandname" class="input-group d-flex flex-column gap-3 d-none">
+              <label for="city_and_name">Nom et ville de ma structure</label>
+              <input type="text" id="city_and_name" class="form-control white-focus shadow-none w-100" placeholder="Nom et ville" aria-label="Recipient's username" aria-describedby="button-addon2" />
+            </div>
+            <p class="p_champs">* Champs obligatoires</p>
+            <button class="btn_dark_green mb-3">Continuer</button>
+          </form>
+        </div>
+        <div class="w-100 d-none" id="section_etudiant">
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
+              <div class="input-group d-flex flex-column gap-3">
+                <label for="name">Centre de formation</label>
+                <input type="text" id="formation" class="form-control white-focus shadow-none w-100" placeholder="Amiens" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              </div>
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <div class="d-flex justify-content-between">
+                <label for="name">Année de diplôme</label>
+                <img src="img/icons/info-empty 1.svg" alt="Icone Informations" />
+              </div>
+              <input type="text" id="diplome" class="form-control white-focus shadow-none w-100" placeholder="2023" aria-label="Recipient's username" aria-describedby="button-addon2" />
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <div class="d-flex gap-1">
+                <label for="firstname">Numéro etudiant *</label>
+              </div>
+              <input type="text" id="firstname" class="form-control white-focus shadow-none w-100" placeholder="125485112" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+            </div>
+            <p class="p_champs">* Champs obligatoires</p>
+            <button class="btn_dark_green mb-3">Continuer</button>
+          </form>
+        </div>
+        <div class="w-100 d-none" id="section_structure">
+          <form action="#" class="form-connexion d-flex flex-column gap-4">
+            <div class="input-group d-flex flex-column gap-3">
+              <label for="name">Nom de la structure *</label>
+              <input type="text" id="name" class="form-control white-focus shadow-none w-100" placeholder="CHU Amiens" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <div class="d-flex justify-content-between">
+                <label for="name">Nom du responsable *</label>
+                <img src="img/icons/info-empty 1.svg" alt="Icone Informations" />
+              </div>
+              <div class="d-flex gap-3">
+                <input type="text" id="name" class="form-control white-focus shadow-none w-100" placeholder="Nom" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+                <input type="text" id="firstname" class="form-control white-focus shadow-none w-100" placeholder="Prénom" aria-label="Recipient's username" aria-describedby="button-addon2" required />
+              </div>
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <label for="responsabilité">Responsabilité dans la structure</label>
+              <input type="text" id="responsabilité" class="form-control white-focus shadow-none w-100" placeholder="Cadre" aria-label="Recipient's username" aria-describedby="button-addon2" />
+            </div>
+            <div class="input-group d-flex flex-column gap-3">
+              <label for="siret">SIRET</label>
+              <input type="text" id="siret" class="form-control white-focus shadow-none w-100" placeholder="25568765" aria-label="Recipient's username" aria-describedby="button-addon2" />
+            </div>
+            <p class="p_champs">* Champs obligatoires</p>
+            <button class="btn_dark_green mb-3">Continuer</button>
+          </form>
+        </div>
+        <button class="btn_inline">Enregistrer et continuer plus tard</button>
+      </section>
+    </div>
+    <script src="./script/inscription.js"></script>
+    <script src="./script/tooltips.js"></script>
+  </body>
+</html>

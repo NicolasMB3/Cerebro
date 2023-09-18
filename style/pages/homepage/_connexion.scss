@@ -1,108 +1,84 @@
 // Fond de la page connexion
-body {
-  position: relative;
-}
-
-.margin-top {
-  margin-top: 250px;
-}
-
-.bg_img {
-  height: 550px;
-  background: url(../../../img/noise.svg) $cbro-green-800;
-  background-repeat: no-repeat;
-  background-size: 100% 50%;
-
+#body_hero {
+  background: url(../../../img/noise.svg) repeat $cbro-snow-50;
+  height: 100%;
   @include media-breakpoint-down(lg) {
-    background-size: 100%;
+    height: 100% !important;
+  }
+
+  .img_bg_illustration {
+    left: 0;
+    top: 0;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+  form {
+    label {
+      @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
+    }
+  }
+  .cbro-badge-pink {
+    color: $cbro-purple-700 !important;
   }
 }
 
 #connexion_hero {
-  position: absolute;
-  top: 13%;
-  left: 18%;
-
-  height: 650px;
-
-  //Contenu principal (formulaire, création..)
-  .container_content {
-    width: 100% !important;
-    //margin: -375px 0;
-
-    @include media-breakpoint-down(lg) {
-      margin: -775px 0;
-    }
-  }
-
-  .gap-5 {
-    gap: 15rem !important;
-
-    @include media-breakpoint-down(xxl) {
-      gap: 10rem !important;
-    }
-
-    @include media-breakpoint-down(xl) {
-      gap: 5rem !important;
-    }
-
-    @include media-breakpoint-down(lg) {
-      gap: 0 !important;
-    }
+  background: url(../../../img/noise.svg) repeat $cbro-green-800;
+  padding: 10rem 0 0rem 0;
+  @include media-breakpoint-down(lg){
+     padding: 7rem 0 3rem 0;
   }
   //Conteneur du formulaire
   .connexion_container {
-    background-color: $cbro-snow-50;
-    border-radius: 20px;
-    box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-
-    @include media-breakpoint-down(lg) {
-      margin-bottom: 50px;
-      width: 75%;
+    margin-bottom: -165px;
+    z-index: 505;
+    position: relative;
+    @include media-breakpoint-down(xl){
+      margin-bottom: 0px;
     }
-
     p {
       @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
       letter-spacing: 0.32px;
       text-transform: uppercase;
     }
-
-    form {
-      label {
-        @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
-      }
-    }
   }
-
-  //Conteneur pour la création du compte
+  // Conteneur pour la création du compte
   .container_account {
-    width: 33%;
-    padding-top: 85px;
-
-    @include media-breakpoint-down(lg) {
-      width: 75%;
-      padding-top: 0;
-    }
-
     p {
       @include cbro-paragraphe(400, 16px, 160%, $cbro-snow-50);
     }
 
-    .btn_green {
-      border: 1px solid $cbro-snow-50;
+    .btn_dark_green {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      @include media-breakpoint-down(lg) {
+        border: none;
+        border-radius: 0;
+        text-align: start;
+        padding: 0;
+        width: max-content;
+        background: none;
+
+        .btn_dark_green:active {
+          border-bottom: 1px solid $cbro-snow-50;
+        }
+      }
+
+      &:active,
+      &:hover {
+        @include media-breakpoint-down(lg) {
+          border-bottom: 1px solid $cbro-snow-50;
+        }
+      }
     }
 
     .evenement {
-      @include media-breakpoint-down(lg) {
-        display: none;
-      }
-
       .mt-5 {
         margin-top: 140px !important;
-
-        @include media-breakpoint-down(xxl) {
-          margin-top: 50px !important;
-        }
       }
 
       p {
@@ -114,16 +90,40 @@ body {
   }
 }
 
-#forget_mdp {
+#next_event {
+  height: 300px;
+}
+
+.m-bottom {
+  margin-bottom: -150px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 0;
+  }
+}
+
+#connexion_hero .connexion_container,
+#forget_mdp,
+#send_mail,
+#reset_mdp {
   background-color: $cbro-snow-50;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+  position: relative;
+  z-index: 600;
+}
 
-  position: absolute;
-  top: 83%;
-  left: 50%;
-  transform: translate(-50%, -200%);
+#forget_mdp,
+#send_mail,
+#reset_mdp {
+  width: 50%;
+  @include media-breakpoint-down(xl) {
+    margin: 0;
+    width: 100%;
+  }
+}
 
+// Section Mot de passe oublié
+#forget_mdp {
   .connexion-title_mdp {
     p {
       &:first-child {
@@ -138,25 +138,10 @@ body {
       }
     }
   }
-
-  form {
-    label {
-      @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
-      margin-bottom: 12px;
-    }
-  }
 }
 
+// Section email envoyé
 #send_mail {
-  background-color: $cbro-snow-50;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-
-  position: absolute;
-  top: 86%;
-  left: 50%;
-  transform: translate(-50%, -200%);
-
   .p-huge {
     opacity: 0.8;
     @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
@@ -166,15 +151,4 @@ body {
     opacity: 0.8;
     @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-800);
   }
-}
-
-#reset_mdp {
-  background-color: $cbro-snow-50;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-
-  position: absolute;
-  top: 83%;
-  left: 50%;
-  transform: translate(-50%, -200%);
 }

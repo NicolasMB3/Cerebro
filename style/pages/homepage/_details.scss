@@ -120,6 +120,7 @@
    background: url(./../img/noise.svg), $cbro-snow-50;
    padding: 108px;
    @include media-breakpoint-down(lg) {
+      display: none;
       padding: 48px 0 40px 0;
       .container {
          display: block !important;

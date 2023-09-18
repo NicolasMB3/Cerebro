@@ -142,10 +142,15 @@
 
     margin-right: 10px;
 
-    top: 50;
+    top: 50%;
     right: 0;
     transform: translate(-50%, -50%);
 
     cursor: pointer;
   }
+}
+
+.btn_not_selected {
+  background-color: $cbro-green-50;
+  color: $cbro-green-700;
 }

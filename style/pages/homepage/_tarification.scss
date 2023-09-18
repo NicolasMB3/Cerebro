@@ -9,6 +9,13 @@
    @include media-breakpoint-down(lg){
       padding: 7rem 0 0 0;
    }
+   .sub-title {
+      @include cbro-paragraphe(600, $cbro-border-radius-16, 24px, $cbro-purple-700);
+      @include media-breakpoint-down(lg){
+         @include cbro-paragraphe(600, 14px, 150%, $cbro-purple-700);
+      }
+      text-transform: uppercase;
+   }
    .break-text {
       width: 55%;
       @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);

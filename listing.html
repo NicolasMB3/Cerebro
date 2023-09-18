@@ -109,29 +109,24 @@
                   Lexique
                   <img src="./img/icons/close-tag.svg" class="d-none" alt="Fermer le tag">
                </div>
-               <div class="cbro-badge cbro-badge-blue d-flex align-items-center gap-2" id="vocabulaire">
-                  Vocabulaire
-                  <img src="./img/icons/close-tag.svg" class="d-none" alt="Fermer le tag">
-               </div>
                <div class="cbro-badge cbro-badge-yellow d-flex align-items-center gap-2" id="neurologie">
                   Neurologie
                   <img src="./img/icons/close-tag.svg" class="d-none" alt="Fermer le tag">
                </div>
-               <div class="cbro-badge cbro-badge-orange d-flex align-items-center gap-2" id="developpement">
-                  Neurodéveloppement
-                  <img src="./img/icons/close-tag.svg" class="d-none" alt="Fermer le tag">
-               </div>
-               <div class="cbro-badge-grey d-flex align-items-center justify-content-center d-none" id="refresh">
+               <div class="cbro-badge-grey d-flex align-items-center justify-content-center d-none position-relative parent-tooltips" id="refresh">
+                  <div class="position-absolute cb-tooltips p-2 d-none">
+                     <span>Réinitaliser les filtres</span>
+                  </div>
                   <img src="./img/icons/refresh.svg" alt="Actualiser les tags">
                </div>
             </div>
             <div class="container px-0 mt-4">
                <div class="row g-3">
-                  <div class="col-12 col-lg-4 cards-filtre" data-tag="developpement">
+                  <div class="col-12 col-lg-4 cards-filtre" data-tag="neurologie">
                      <div class="cards-details p-4">
-                        <div class="cbro-badge-orange mb-4">Neurodéveloppement</div>
+                        <div class="cbro-badge-orange mb-4">Neurologie</div>
                         <h5 class="h5-dark">Réaliser des lignes de base</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
+                        <p class="cards-details__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
                         <ul class="ps-0 d-flex align-items-center gap-3 mt-3">
                            <li class="me-1 list-unstyled">4 modules</li>
                            <li>Débutant</li>
@@ -143,7 +138,7 @@
                      <div class="cards-details p-4">
                         <div class="cbro-badge-green mb-4">Méthodologie</div>
                         <h5 class="h5-dark">Réaliser des lignes de base</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
+                        <p class="cards-details__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
                         <ul class="ps-0 d-flex align-items-center gap-3 mt-3">
                            <li class="me-1 list-unstyled">4 modules</li>
                            <li>Débutant</li>
@@ -155,7 +150,7 @@
                      <div class="cards-details p-4">
                         <div class="cbro-badge-purple mb-4">Lexique</div>
                         <h5 class="h5-dark">Réaliser des lignes de base</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
+                        <p class="cards-details__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
                         <ul class="ps-0 d-flex align-items-center gap-3 mt-3">
                            <li class="me-1 list-unstyled">4 modules</li>
                            <li>Débutant</li>
@@ -167,7 +162,7 @@
                      <div class="cards-details p-4">
                         <div class="cbro-badge-purple mb-4">Lexique</div>
                         <h5 class="h5-dark">Réaliser des lignes de base</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
+                        <p class="cards-details__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
                         <ul class="ps-0 d-flex align-items-center gap-3 mt-3">
                            <li class="me-1 list-unstyled">4 modules</li>
                            <li>Débutant</li>
@@ -179,7 +174,7 @@
                      <div class="cards-details p-4">
                         <div class="cbro-badge-yellow mb-4">Neurologie</div>
                         <h5 class="h5-dark">Réaliser des lignes de base</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
+                        <p class="cards-details__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
                         <ul class="ps-0 d-flex flex-wrap align-items-center gap-3 mt-3">
                      <li class="me-1 list-unstyled">4 modules</li>
                      <li>Débutant</li>
@@ -195,7 +190,7 @@
                      <div class="cards-details p-4">
                         <div class="cbro-badge-green mb-4">Méthodologie</div>
                         <h5 class="h5-dark">Réaliser des lignes de base</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
+                        <p class="cards-details__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
                         <ul class="ps-0 d-flex align-items-center gap-3 mt-3">
                            <li class="me-1 list-unstyled">4 modules</li>
                            <li>Débutant</li>
@@ -416,5 +411,6 @@
    </footer>
    <script src="./script/listing.js"></script>
    <script src="./script/header.js"></script>
+   <script src="./script/tooltips.js"></script>
 </body>
 </html>
