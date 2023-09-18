@@ -36,6 +36,9 @@
 
 #listing-formation {
   padding: 0 0 10rem 0;
+  @include media-breakpoint-down(lg) {
+    padding: 0 0 3rem 0;
+  }
   background: url(./../img/noise.svg), $cbro-snow-50;
   .gap-2 > div {
     cursor: pointer;

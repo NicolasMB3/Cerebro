@@ -51,13 +51,6 @@ footer .newsletter input {
   padding-bottom: 8px;
   padding-left: 22px;
 }
-footer .newsletter input::-moz-placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 300 !important;
-  font-size: 14px !important;
-  line-height: 100% !important;
-  color: #fcfaf7 !important;
-}
 footer .newsletter input::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 300 !important;
@@ -139,6 +132,8 @@ footer hr {
   background: #a04470;
   padding-top: 8px;
   padding-bottom: 8px;
+  position: relative;
+  z-index: 500;
 }
 #header-info .calendar {
   width: 24px;
@@ -450,7 +445,6 @@ footer hr {
 }
 @media (max-width: 991.98px) {
   .btn_dark-purple {
-    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -712,13 +706,6 @@ footer hr {
   padding: 0 20px !important;
   outline: none;
 }
-.form-connexion .form-control::-moz-placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: normal !important;
-  color: #b0afad !important;
-}
 .form-connexion .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -879,7 +866,6 @@ h3 {
   background: #e3ebd5;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -895,7 +881,6 @@ h3 {
   background: #e7ddf1;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -911,7 +896,6 @@ h3 {
   background: #f3e8ed;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -927,7 +911,6 @@ h3 {
   background: #cee3f6;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -943,7 +926,6 @@ h3 {
   background: #fde4e0;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -959,7 +941,6 @@ h3 {
   background: #feead2;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -975,7 +956,6 @@ h3 {
   background: rgba(227, 225, 222, 0.7);
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
   width: 29px;
@@ -1684,8 +1664,8 @@ h3 {
 .homepage-exps .active p {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
-  font-size: 20px !important;
-  line-height: 32px !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
   color: #191919 !important;
 }
 @media (max-width: 767.98px) {
@@ -2254,8 +2234,7 @@ h3 {
 #details-formation .objectif-details {
   border-radius: 12px;
   background: rgba(230, 228, 222, 0.5);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   height: 100%;
 }
 #details-formation .objectif-details p {
@@ -2301,6 +2280,7 @@ h3 {
 }
 @media (max-width: 991.98px) {
   #cards-border {
+    display: none;
     padding: 48px 0 40px 0;
   }
   #cards-border .container {
@@ -2377,6 +2357,11 @@ h3 {
   padding: 0 0 10rem 0;
   background: url(./../img/noise.svg), #fcfaf7;
 }
+@media (max-width: 991.98px) {
+  #listing-formation {
+    padding: 0 0 3rem 0;
+  }
+}
 #listing-formation .gap-2 > div {
   cursor: pointer;
 }
@@ -2451,7 +2436,6 @@ h3 {
   }
 }
 #listing-event .btn_dark-purple {
-  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 991.98px) {
@@ -2538,50 +2522,52 @@ h3 {
   flex-shrink: 0;
 }
 
-body {
+#body_hero {
   background: url(../../../img/noise.svg) repeat #fcfaf7;
   height: 100%;
 }
 @media (max-width: 991.98px) {
-  body {
+  #body_hero {
     height: 100% !important;
   }
 }
-body .img_bg_illustration {
+#body_hero .img_bg_illustration {
   left: 0;
   top: 0;
 }
 @media (max-width: 991.98px) {
-  body .img_bg_illustration {
+  #body_hero .img_bg_illustration {
     width: 100%;
   }
+}
+#body_hero form label {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #4c4b4a !important;
+}
+#body_hero .cbro-badge-pink {
+  color: #a04470 !important;
 }
 
 #connexion_hero {
   background: url(../../../img/noise.svg) repeat #396359;
-  padding: 10rem 0 8rem 0;
+  padding: 10rem 0 0rem 0;
 }
 @media (max-width: 991.98px) {
   #connexion_hero {
     padding: 7rem 0 3rem 0;
   }
 }
-#connexion_hero {
-  gap: 6rem !important;
-}
-@media (max-width: 1399.98px) {
-  #connexion_hero {
-    gap: 10rem !important;
-  }
+#connexion_hero .connexion_container {
+  margin-bottom: -165px;
+  z-index: 505;
+  position: relative;
 }
 @media (max-width: 1199.98px) {
-  #connexion_hero {
-    gap: 5rem !important;
-  }
-}
-@media (max-width: 991.98px) {
-  #connexion_hero {
-    gap: 0 !important;
+  #connexion_hero .connexion_container {
+    margin-bottom: 0px;
   }
 }
 #connexion_hero .connexion_container p {
@@ -2600,13 +2586,18 @@ body .img_bg_illustration {
   line-height: 160% !important;
   color: #fcfaf7 !important;
 }
+#connexion_hero .container_account .btn_dark_green {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
 @media (max-width: 991.98px) {
   #connexion_hero .container_account .btn_dark_green {
     border: none;
     border-radius: 0;
     text-align: start;
     padding: 0;
-    width: -moz-max-content;
     width: max-content;
     background: none;
   }
@@ -2629,14 +2620,11 @@ body .img_bg_illustration {
   line-height: 20px !important;
   color: #a04470 !important;
   padding: 8px 16px;
-  width: -moz-max-content;
   width: max-content;
 }
 
-@media (max-width: 991.98px) {
-  .bg_img {
-    height: 100%;
-  }
+#next_event {
+  height: 300px;
 }
 
 #connexion_hero .connexion_container,
@@ -2646,12 +2634,13 @@ body .img_bg_illustration {
   background-color: #fcfaf7;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+  position: relative;
+  z-index: 600;
 }
 
 #forget_mdp,
 #send_mail,
 #reset_mdp {
-  margin-top: 370px;
   width: 50%;
 }
 @media (max-width: 991.98px) {
@@ -2661,14 +2650,6 @@ body .img_bg_illustration {
     margin: 150px 0;
     width: 75%;
   }
-}
-
-form label {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 500 !important;
-  font-size: 16px !important;
-  line-height: 20px !important;
-  color: #4c4b4a !important;
 }
 
 #forget_mdp .connexion-title_mdp p:first-child {
@@ -2710,10 +2691,8 @@ form label {
   background: url(../../../img/noise.svg), repeat, #fcfaf7;
 }
 .body_inscription .div_container .img_bg {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .btn_back {
@@ -2775,20 +2754,22 @@ form label {
 #inscription_1,
 #inscription_2,
 #inscription_3 {
-  padding: 100px 188px !important;
+  padding: 100px 140px !important;
+  justify-content: center;
 }
-@media (max-width: 1399.98px) {
-  #inscription_1,
-  #inscription_2,
-  #inscription_3 {
-    padding: 100px !important;
+@media (max-width: 575.98px) {
+  #inscription_1 .btn_container,
+  #inscription_2 .btn_container,
+  #inscription_3 .btn_container {
+    flex-wrap: wrap;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   #inscription_1,
   #inscription_2,
   #inscription_3 {
-    padding: 144px 1rem 1rem 1rem !important;
+    padding: 115px 1rem 1rem 1rem !important;
+    justify-content: flex-start;
   }
 }
 #inscription_1 form div .paragraph_error,
@@ -2803,6 +2784,11 @@ form label {
 
 #inscription_2 select {
   width: 25%;
+}
+@media (max-width: 575.98px) {
+  #inscription_2 select {
+    width: 100%;
+  }
 }
 
 #inscription_2 select,
@@ -2823,6 +2809,12 @@ form label {
   #inscription_2 select,
   #inscription_3 select {
     width: 50%;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 575.98px) {
+  #inscription_2 select,
+  #inscription_3 select {
+    width: 100%;
   }
 }
 #inscription_2 .p_champs,
@@ -2867,4 +2859,4 @@ form label {
 #inscription_3 #section_orthophoniste span img {
   height: 16px;
   width: 16px;
-}/*# sourceMappingURL=main.css.map */
+}

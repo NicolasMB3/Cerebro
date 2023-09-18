@@ -8,20 +8,17 @@ const eyeOff2 = document.getElementById("eye_off2");
 const eyeOn3 = document.getElementById("eye_on3");
 const eyeOff3 = document.getElementById("eye_off3");
 
-// Section
-const connexionHero = document.getElementById("connexion_hero");
-const forgetMdp = document.getElementById("forget_mdp");
-const sendMail = document.getElementById("send_mail");
-const resetMdp = document.getElementById("reset_mdp");
-const Body = document.getElementById("body");
-
 // Bouton pour changer de section
 const BtnForgetMdp = document.getElementById("btn_forget_mdp");
+const forgetMdp = document.getElementById("forget_mdp");
 const BtnEmail = document.getElementById("btn_email");
+const connexionHero = document.getElementById("connexion_hero");
+const sendMail = document.getElementById("send_mail");
 const BtnReturnConnexion = document.getElementById("btn_return_connexion");
 const BtnResetMdp = document.getElementById("btn_reset_mdp");
 const BtnResendEmail = document.getElementById("btn_resend_email");
 const BtnConnexion = document.getElementById("btn_connexion");
+const resetMdp = document.getElementById("reset_mdp");
 
 // Input
 const InputEmail = document.getElementById("email");
@@ -90,22 +87,15 @@ function TestRegex() {
 
 BtnConnexion.addEventListener("click", TestRegex);
 
-// Fonction pour chacher la section Connexion et affiché la section Mot de passe oublié
-function HideSectionConnexion() {
-  connexionHero.classList.add("d-none");
-  forgetMdp.classList.remove("d-none");
-}
-
-BtnForgetMdp.addEventListener("click", HideSectionConnexion);
-
 // Fonction pour cahcher la section Mot de passe oublié et afficher la section Email envoyé
 function HideSectionMdp1() {
   forgetMdp.classList.add("d-none");
   sendMail.classList.remove("d-none");
+  sendMail.style.marginBottom = '-150px';
 
   // Fonction Timer pour la page d'email envoyé
-  const departMinutes = 60;
-  let temps = departMinutes * 60;
+  const departHeures = .5;
+  let temps = departHeures * 60;
   const timerElement = document.getElementById("timer");
   setInterval(() => {
     let heures = parseInt(temps / 3600, 10);
@@ -116,29 +106,38 @@ function HideSectionMdp1() {
     secondes = secondes < 10 ? "0" + secondes : secondes;
     timerElement.innerText = `${heures}:${minutes}:${secondes}`;
     temps = temps <= 0 ? 0 : temps - 1;
-
-    if (temps !== 0) {
-      BtnResendEmail.disabled = true;
-      BtnResendEmail.style.opacity = "0.5";
-    } else {
-      BtnResendEmail.disabled = false;
-      BtnResendEmail.style.opacity = "1";
-    }
   }, 1000);
 }
 
 BtnEmail.addEventListener("click", HideSectionMdp1);
 
-// Fonction pour cacher la section Mot de passe oublié et afficher la section Connexion
-function HideSectionMdp2() {
-  forgetMdp.classList.add("d-none");
-  connexionHero.classList.remove("d-none");
+// Affiche les autres écrans au clique
+const loginSection = document.getElementById('login_section');
+const registerSection = document.getElementById('register_section');
+const passwordSection = document.getElementById('forget_mdp');
+const mainContainer = document.getElementById('connexion_hero');
+
+const btnInitPassword = document.getElementById('btn_forget_mdp');
+
+function displayElement(elem) {
+  elem.classList.remove('d-none');
 }
 
-BtnReturnConnexion.addEventListener("click", HideSectionMdp2);
+function hideElement(elem) {
+  elem.classList.add('d-none')
+}
+
+btnInitPassword.addEventListener("click", function(){
+  hideElement(loginSection);
+  hideElement(registerSection);
+  displayElement(passwordSection);
+  passwordSection.style.marginBottom = "-150px"
+  registerSection.classList.remove('d-lg-flex');
+}, false);
 
 // Fonction pour cacher la seciton changement de mot passe et afficher la section Connexion
 function HideSectionResetMdp() {
+  resetMdp.style.marginBottom = '-150px';
   resetMdp.classList.add("d-none");
   connexionHero.classList.remove("d-none");
 }

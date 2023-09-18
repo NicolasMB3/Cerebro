@@ -1,5 +1,5 @@
 // Fond de la page connexion
-body {
+#body_hero {
   background: url(../../../img/noise.svg) repeat $cbro-snow-50;
   height: 100%;
   @include media-breakpoint-down(lg) {
@@ -14,32 +14,30 @@ body {
       width: 100%;
     }
   }
+  form {
+    label {
+      @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
+    }
+  }
+  .cbro-badge-pink {
+    color: $cbro-purple-700 !important;
+  }
 }
 
 #connexion_hero {
   background: url(../../../img/noise.svg) repeat $cbro-green-800;
-  padding: 10rem 0 8rem 0;
+  padding: 10rem 0 0rem 0;
   @include media-breakpoint-down(lg){
      padding: 7rem 0 3rem 0;
   }
-  //Contenu principal (formulaire, création..
-  & {
-    gap: 6rem !important;
-
-    @include media-breakpoint-down(xxl) {
-      gap: 10rem !important;
-    }
-
-    @include media-breakpoint-down(xl) {
-      gap: 5rem !important;
-    }
-
-    @include media-breakpoint-down(lg) {
-      gap: 0 !important;
-    }
-  }
   //Conteneur du formulaire
   .connexion_container {
+    margin-bottom: -165px;
+    z-index: 505;
+    position: relative;
+    @include media-breakpoint-down(xl){
+      margin-bottom: 0px;
+    }
     p {
       @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
       letter-spacing: 0.32px;
@@ -53,6 +51,10 @@ body {
     }
 
     .btn_dark_green {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
       @include media-breakpoint-down(lg) {
         border: none;
         border-radius: 0;
@@ -88,10 +90,8 @@ body {
   }
 }
 
-.bg_img {
-  @include media-breakpoint-down(lg) {
-    height: 100%;
-  }
+#next_event {
+  height: 300px;
 }
 
 #connexion_hero .connexion_container,
@@ -101,23 +101,17 @@ body {
   background-color: $cbro-snow-50;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+  position: relative;
+  z-index: 600;
 }
 
 #forget_mdp,
 #send_mail,
 #reset_mdp {
-  margin-top: 370px;
   width: 50%;
-
   @include media-breakpoint-down(lg) {
     margin: 150px 0;
     width: 75%;
-  }
-}
-
-form {
-  label {
-    @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
   }
 }
 

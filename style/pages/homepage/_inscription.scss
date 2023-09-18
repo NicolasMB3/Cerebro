@@ -68,14 +68,16 @@
 #inscription_1,
 #inscription_2,
 #inscription_3 {
-  padding: 100px 188px !important;
-
-  @include media-breakpoint-down(xxl) {
-    padding: 100px !important;
+  .btn_container {
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+    }
   }
-
-  @include media-breakpoint-down(lg) {
-    padding: 144px 1rem 1rem 1rem !important;
+  padding: 100px 140px !important;
+  justify-content: center;
+  @include media-breakpoint-down(xl) {
+    padding: 115px 1rem 1rem 1rem !important;
+    justify-content: flex-start;
   }
 
   form {
@@ -90,6 +92,9 @@
 #inscription_2 {
   select {
     width: 25%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
   }
 }
 
@@ -107,6 +112,9 @@
 
     @include media-breakpoint-down(lg) {
       width: 50%;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
     }
   }
 

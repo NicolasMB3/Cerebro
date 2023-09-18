@@ -88,6 +88,8 @@
    background: $cbro-purple-700;
    padding-top: 8px;
    padding-bottom: 8px;
+   position: relative;
+   z-index: 500;
    .calendar {
       width: 24px;
    }
