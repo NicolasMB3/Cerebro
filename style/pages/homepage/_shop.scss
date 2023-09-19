@@ -1,0 +1,50 @@
+#basket {
+  padding: 10rem 0 8rem 0;
+  background: url(../../../img/noise.svg), repeat, $cbro-snow-50;
+  .container {
+    background: $cbro-snow-50;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 7rem 0 3rem 0;
+  }
+  .shop-desc {
+    @include cbro-paragraphe(400, 12px, 20px, $cbro-gray-400);
+  }
+  .input-group {
+    height: 32px;
+    span {
+      font-size: 20px;
+      width: 32px;
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $cbro-gray-200;
+      background: $border;
+    }
+    input {
+      padding: 3px;
+      width: 32px;
+      border: 1px solid $cbro-gray-200;
+      background: transparent;
+    }
+  }
+  .basket-img {
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
+  }
+  .basket-price {
+    @include cbro-paragraphe(400, 16px, 24px, $cbro-gray-800);
+  }
+  .basket-paragraph {
+    @include cbro-paragraphe(400, 14px, 20px, $cbro-gray-600);
+    width: 90%;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+  .paiement-title {
+    @include cbro-paragraphe(500, 20px, 32px, $cbro-gray-800);
+  }
+}

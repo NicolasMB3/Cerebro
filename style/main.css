@@ -351,6 +351,23 @@ footer hr {
 .btn_green:hover {
   filter: brightness(90%);
 }
+.btn_disabled_green {
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #e9eeed;
+  background: #396359;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  padding: 12px 22px;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transition: 0.25s all ease-in-out;
+}
+.btn_disabled_green:hover {
+  filter: brightness(90%);
+}
 .btn_dark_green {
   font-family: "Instrument Sans";
   font-weight: 500;
@@ -418,10 +435,10 @@ footer hr {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  color: #191919;
-  background: #fff;
+  color: #fff;
+  background: #a04470;
   border-radius: 100px;
-  border: 0px solid #b87394;
+  border: 0px solid #a04470;
   padding: 12px 22px;
   transition: 0.25s all ease-in-out;
 }
@@ -476,11 +493,6 @@ footer hr {
   right: 0;
   transform: translate(-50%, -50%);
   cursor: pointer;
-}
-
-.btn_not_selected {
-  background-color: #e9eeed;
-  color: #4f756c;
 }
 
 .h1-dark {
@@ -675,6 +687,39 @@ footer hr {
     font-family: "ITCSouvenir-md";
     font-weight: 300 !important;
     font-size: 22px !important;
+    line-height: 150% !important;
+    color: #fcfaf7 !important;
+  }
+}
+
+.h6-dark {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 36px !important;
+  color: #191919 !important;
+}
+@media (max-width: 991.98px) {
+  .h6-dark {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+    color: #191919 !important;
+  }
+}
+.h6-white {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 36px !important;
+  color: #fcfaf7 !important;
+}
+@media (max-width: 991.98px) {
+  .h6-white {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500 !important;
+    font-size: 16px !important;
     line-height: 150% !important;
     color: #fcfaf7 !important;
   }
@@ -1092,8 +1137,9 @@ h3 {
 }
 #info_icon span::before {
   content: "";
-  top: 0;
+  top: -2px;
   left: 89%;
+  border-radius: 14px;
 }
 #info_icon span::after {
   content: "";
@@ -2073,18 +2119,18 @@ h3 {
   line-height: 160% !important;
   color: #323231 !important;
 }
-#tarif .row {
+#tarif .test {
   padding: 40px;
   border-radius: 64px 8px;
   background: #e6eef1;
 }
 @media (max-width: 991.98px) {
-  #tarif .row {
+  #tarif .test {
     padding: 20px;
     border-radius: 8px 64px;
   }
 }
-#tarif .row .tarif-illustration {
+#tarif .test .tarif-illustration {
   width: auto;
   height: 100%;
 }
@@ -2127,7 +2173,7 @@ h3 {
   font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 24px !important;
-  color: #4f756c !important;
+  color: #33788d !important;
   text-transform: uppercase;
 }
 @media (max-width: 991.98px) {
@@ -2136,7 +2182,7 @@ h3 {
     font-weight: 600 !important;
     font-size: 14px !important;
     line-height: 150% !important;
-    color: #4f756c !important;
+    color: #33788d !important;
   }
 }
 .tarif-faq .accordion-items {
@@ -2592,7 +2638,7 @@ h3 {
   justify-content: center;
   text-decoration: none;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   #connexion_hero .container_account .btn_dark_green {
     border: none;
     border-radius: 0;
@@ -2701,6 +2747,7 @@ h3 {
 }
 .body_inscription .div_container .img_bg {
   object-fit: cover;
+  height: 100vh;
   object-position: 50% 50%;
 }
 
@@ -2717,11 +2764,19 @@ h3 {
   .btn_back {
     top: 25px;
     left: 25px;
+    width: 38px;
+    height: 38px;
   }
 }
 .btn_back img {
   width: 32px;
   height: 32px;
+}
+@media (max-width: 991.98px) {
+  .btn_back img {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .div_container {
@@ -2753,11 +2808,18 @@ h3 {
   line-height: 100% !important;
   color: #4f756c !important;
 }
+.div_container .container_content #container_btn button {
+  width: fit-content;
+}
 @media (max-width: 575.98px) {
   .div_container .container_content #container_btn button {
     font-size: 13px;
     padding: 8px 10px;
   }
+}
+
+#inscription_1 {
+  height: 100vh;
 }
 
 #inscription_1,
@@ -2868,4 +2930,75 @@ h3 {
 #inscription_3 #section_orthophoniste span img {
   height: 16px;
   width: 16px;
+}
+
+#basket {
+  padding: 10rem 0 8rem 0;
+  background: url(../../../img/noise.svg), repeat, #fcfaf7;
+}
+#basket .container {
+  background: #fcfaf7;
+}
+@media (max-width: 991.98px) {
+  #basket {
+    padding: 7rem 0 3rem 0;
+  }
+}
+#basket .shop-desc {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  color: #979694 !important;
+}
+#basket .input-group {
+  height: 32px;
+}
+#basket .input-group span {
+  font-size: 20px;
+  width: 32px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cac8c6;
+  background: #F3F1EE;
+}
+#basket .input-group input {
+  padding: 3px;
+  width: 32px;
+  border: 1px solid #cac8c6;
+  background: transparent;
+}
+#basket .basket-img {
+  border-radius: 8px;
+  width: 64px;
+  height: 64px;
+}
+#basket .basket-price {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+#basket .basket-paragraph {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #656463 !important;
+  width: 90%;
+}
+@media (max-width: 991.98px) {
+  #basket .basket-paragraph {
+    width: 100%;
+  }
+}
+#basket .paiement-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  color: #323231 !important;
 }

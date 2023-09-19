@@ -85,6 +85,21 @@
    }
 }
 
+.h6 {
+   &-dark {
+      @include cbro-paragraphe(500, 16px, 36px, $cbro-gray-900);
+      @include media-breakpoint-down(lg){
+         @include cbro-paragraphe(500, 16px, 150%, $cbro-gray-900);
+      }
+   }
+   &-white {
+      @include cbro-paragraphe(500, 16px, 36px, $cbro-snow-50);
+      @include media-breakpoint-down(lg){
+         @include cbro-paragraphe(500, 16px, 150%, $cbro-snow-50);
+      }
+   }
+}
+
 .p {
    &-dark {
       @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);

@@ -55,8 +55,9 @@
 
   span::before {
     content: "";
-    top: 0;
+    top: -2px;
     left: 89%;
+    border-radius: 14px;
   }
 
   span::after {

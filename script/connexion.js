@@ -102,6 +102,10 @@ function HideSectionMdp1() {
     secondes = secondes < 10 ? "0" + secondes : secondes;
     timerElement.innerText = `${heures}:${minutes}:${secondes}`;
     temps = temps <= 0 ? 0 : temps - 1;
+    if(temp = temps >= 0) {
+      BtnResendEmail.classList.remove('btn_green');
+      BtnResendEmail.classList.add('btn_disabled_green');
+    }
   }, 1000);
 }
 

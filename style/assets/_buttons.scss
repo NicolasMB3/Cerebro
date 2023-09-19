@@ -15,6 +15,24 @@
       filter: brightness(90%);
     }
   }
+  // Disabled Green button
+  &_disabled_green {
+    @include cbro-button(
+      500,
+      16px,
+      $cbro-green-50,
+      $cbro-green-800,
+      1px,
+      transparent
+    );
+    cursor: not-allowed;
+    opacity: 0.5;
+    transition: 0.25s all ease-in-out;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
   // Dark Green button / Bouton de création de compte
   &_dark_green {
     @include cbro-button(
@@ -86,10 +104,10 @@
     @include cbro-button(
       500,
       16px,
-      $cbro-gray-900,
       $cbro-white,
+      $cbro-purple-700,
       0px,
-      $cbro-purple-500
+      $cbro-purple-700
     );
     transition: 0.25s all ease-in-out;
 
@@ -148,9 +166,4 @@
 
     cursor: pointer;
   }
-}
-
-.btn_not_selected {
-  background-color: $cbro-green-50;
-  color: $cbro-green-700;
 }

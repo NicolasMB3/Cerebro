@@ -4,6 +4,7 @@
   .div_container {
     .img_bg {
       object-fit: cover;
+      height: 100vh;
       object-position: 50% 50%;
     }
   }
@@ -22,11 +23,17 @@
   @include media-breakpoint-down(lg) {
     top: 25px;
     left: 25px;
+    width: 38px;
+    height: 38px;
   }
 
   img {
     width: 32px;
     height: 32px;
+    @include media-breakpoint-down(lg) {
+      width: 28px;
+      height: 28px;
+    }
   }
 }
 
@@ -56,6 +63,7 @@
 
     #container_btn {
       button {
+        width: fit-content;
         @include media-breakpoint-down(sm) {
           font-size: 13px;
           padding: 8px 10px;
@@ -63,6 +71,10 @@
       }
     }
   }
+}
+
+#inscription_1 {
+  height: 100vh;
 }
 
 #inscription_1,
