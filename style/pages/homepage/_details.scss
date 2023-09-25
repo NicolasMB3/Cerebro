@@ -1,143 +1,181 @@
 // Les lignes de base en orthophonie
 #details-hero {
-   &_a, &_b, &_c, &_d, &_e {
-      padding: 10rem 0 0 0;
-      @include media-breakpoint-down(lg){
-         padding: 5rem 0 0 0;
+  &_a,
+  &_b,
+  &_c,
+  &_d,
+  &_e {
+    padding: 10rem 0 0 0;
+    @include media-breakpoint-down(lg) {
+      padding: 5rem 0 0 0;
+    }
+    .container .p-dark {
+      @include media-breakpoint-up(lg) {
+        width: 60%;
       }
-      .container .p-dark {
-         @include media-breakpoint-up(lg) {
-            width: 60%;         
-         }
+    }
+    li {
+      @include cbro-title(300, 18px, 150%, $cbro-gray-600);
+      list-style: none;
+    }
+
+    .position-absolute {
+      bottom: -295px;
+      right: -31vw;
+      width: 80%;
+    }
+    .mobile {
+      &-info {
+        ul {
+          padding: 0;
+        }
+
+        li {
+          font-family: Instrument Sans;
+          @include media-breakpoint-down(lg) {
+            @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);
+          }
+        }
+
+        span {
+          font-size: 24px;
+          color: $cbro-purple-700;
+        }
       }
-      li {
-         @include cbro-title(300, 18px, 150%, $cbro-gray-600);
-         list-style: none;
+
+      &-price {
+        p:last-child {
+          font-family: Instrument Sans;
+          @include cbro-paragraphe(500, 18px, 133%, #000);
+        }
       }
-      .position-absolute {
-         bottom: -295px;
-         right: -31vw;
-         width: 80%;
+
+      .btn_dark-purple {
+        position: relative;
+        z-index: 999;
+
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+        }
       }
-      .mobile {
-         &-info {
-            ul {
-               padding: 0;
-            }
-            
-            li {
-               font-family: Instrument Sans;
-               @include media-breakpoint-down(lg) {
-                  @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);               
-               }
-            }   
-               
-            span {
-               font-size: 24px;
-               color: $cbro-purple-700;
-            }
-         }
+    }
+  }
 
-         &-price {
-            p:last-child {
-               font-family: Instrument Sans;
-               @include cbro-paragraphe(500, 18px, 133%, #000);
-            }      
-         }
+  &_a {
+    background: url(./../img/noise.svg), rgba(231, 221, 241, 0.45);
+  }
 
-         .btn_dark-purple {
-            position: relative;
-            z-index: 999;
+  &_b {
+    background: url(./../img/noise.svg), rgba(234, 239, 226, 0.65);
+  }
 
-            @include media-breakpoint-down(sm) {
-               width: 100%;
-            }
-         }
-      }
-   }
+  &_c {
+    background: url(./../img/noise.svg), rgba(254, 234, 210, 0.45);
+  }
 
-   &_a {
-      background: url(./../img/noise.svg), rgba(231, 221, 241, 0.45);
-   }
+  &_d {
+    background: url(./../img/noise.svg), rgba(206, 227, 246, 0.45);
+  }
 
-   &_b {
-      background: url(./../img/noise.svg), rgba(234, 239, 226, 0.65);
-   }
-
-   &_c {
-      background: url(./../img/noise.svg), rgba(254, 234, 210, 0.45);
-   }
-
-   &_d {
-      background: url(./../img/noise.svg), rgba(206, 227, 246, 0.45);
-   }
-
-   &_e {
-      background: url(./../img/noise.svg), rgba(253, 228, 224, 0.45);
-   }
+  &_e {
+    background: url(./../img/noise.svg), rgba(253, 228, 224, 0.45);
+  }
 }
 
 // À l’issu de cette formation...
 #details-formation {
-   background: url(./../img/noise.svg), $cbro-snow-50;
-   p {
-      @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
-   }
-   .objectif-details {
-      border-radius: 12px;
-      background: rgba(230, 228, 222, 0.50);
-      backdrop-filter: blur(6px);
-      height: 100%;
-      p {
-         @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-800);
-      }
-   }
+  background: url(./../img/noise.svg), $cbro-snow-50;
+  p {
+    @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
+  }
+  .objectif-details {
+    border-radius: 12px;
+    background: rgba(230, 228, 222, 0.5);
+    backdrop-filter: blur(6px);
+    height: 100%;
+    p {
+      @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-800);
+    }
+  }
 
-   .col {
-      margin-top: -280px;
-   }
-   .card-gradiant {
-      border-radius: 16px;
-      background: linear-gradient(148deg, rgba(227, 225, 222, 0.60) -16.18%, rgba(227, 225, 222, 0.00) 97.43%);
-   }
-   .scroll-card {
-      border-radius: 20px;
-      background: $cbro-snow-50;
-      box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
-      position: sticky;
-      top: 135px;
-   }
-   ul {
-      padding-left: 22px;
-      li {
-         @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);
+  .col {
+    margin-top: -280px;
+  }
+  .card-gradiant {
+    border-radius: 16px;
+    background: linear-gradient(
+      148deg,
+      rgba(227, 225, 222, 0.6) -16.18%,
+      rgba(227, 225, 222, 0) 97.43%
+    );
+  }
+  .scroll-card {
+    border-radius: 20px;
+    background: $cbro-snow-50;
+    box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+    position: sticky;
+    top: 135px;
+
+    .card-price {
+      p:first-child {
+        @include cbro-paragraphe(400, 16px, 24px, $cbro-gray-800);
       }
-   }
+
+      p:last-child {
+        @include cbro-paragraphe(500, 18px, 24px, $cbro-gray-900);
+      }
+    }
+  }
+  ul {
+    padding-left: 16px;
+    list-style: none;
+    li {
+      @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);
+    }
+
+    li::before {
+      content: "";
+      background: $cbro-purple-700;
+      font-weight: bold;
+      display: block;
+      position: absolute;
+      top: 11px;
+      width: 4px;
+      height: 4px;
+      margin-left: -1em;
+      border-radius: 50%;
+      left: 0;
+    }
+
+    .bull_before_green::before {
+      background: $cbro-green-700;
+    }
+  }
 }
 
 // Ces formations pourraient vous intéresser
 #cards-border {
-   background: url(./../img/noise.svg), $cbro-snow-50;
-   padding: 108px;
-   @include media-breakpoint-down(lg) {
-      display: none;
-      padding: 48px 0 40px 0;
-      .container {
-         display: block !important;
+  background: url(./../img/noise.svg), $cbro-snow-50;
+  padding: 108px;
+  @include media-breakpoint-down(lg) {
+    display: none;
+    padding: 48px 0 40px 0;
+    .container {
+      display: block !important;
 
-         a {
-            margin: 32px 0;
-         }
+      a {
+        margin: 32px 0;
       }
-      .container {
-         .row {
-            margin-top: 16px;
-            display: block;
-         }
+    }
+    .container {
+      .row {
+        margin-top: 16px;
+        display: block;
       }
-   }
-   @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
-   a {
-      color: $cbro-gray-600;
-   }
+    }
+  }
+  @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
+  a {
+    color: $cbro-gray-600;
+  }
 }

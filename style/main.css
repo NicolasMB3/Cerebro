@@ -1,5 +1,14 @@
 @charset "UTF-8";
 /* Assets */
+.pt-6 {
+  padding-top: 4rem;
+}
+
+.width-fit-content {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
 @font-face {
   font-family: "ITCSouvenir-md";
   src: url("../font/SouvenirStd-Light.eot");
@@ -50,6 +59,13 @@ footer .newsletter input {
   background-color: transparent;
   padding-bottom: 8px;
   padding-left: 22px;
+}
+footer .newsletter input::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 100% !important;
+  color: #fcfaf7 !important;
 }
 footer .newsletter input::placeholder {
   font-family: "Instrument Sans", sans-serif;
@@ -233,13 +249,13 @@ footer hr {
   font-family: Instrument Sans;
   box-sizing: content-box;
   background-color: #a04470;
-  border: 3px solid #e3e1de;
+  border: 3px solid #fbf8f4;
   border-radius: 999px;
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 50%;
-  top: 20%;
+  left: 51%;
+  top: 22%;
   font-size: 11px;
   display: flex;
   align-items: center;
@@ -322,13 +338,13 @@ footer hr {
   font-family: Instrument Sans;
   box-sizing: content-box;
   background-color: #a04470;
-  border: 3px solid #e3e1de;
+  border: 3px solid #fbf8f4;
   border-radius: 999px;
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 50%;
-  top: 20%;
+  left: 51%;
+  top: 22%;
   font-size: 11px;
   display: flex;
   align-items: center;
@@ -443,7 +459,7 @@ footer hr {
   transition: 0.25s all ease-in-out;
 }
 .btn_purple:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #88154c;
 }
 .btn_dark-purple {
   font-family: "Instrument Sans";
@@ -462,6 +478,7 @@ footer hr {
 }
 @media (max-width: 991.98px) {
   .btn_dark-purple {
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -751,6 +768,13 @@ footer hr {
   padding: 0 20px !important;
   outline: none;
 }
+.form-connexion .form-control::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #b0afad !important;
+}
 .form-connexion .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -795,6 +819,28 @@ footer hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.bull_purple {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #b5a5c5;
+}
+.bull_dark_purple {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #a04470;
+}
+.bull_dark_green {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #4f756c;
 }
 
 /* Base */
@@ -911,6 +957,7 @@ h3 {
   background: #e3ebd5;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -926,6 +973,7 @@ h3 {
   background: #e7ddf1;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -941,6 +989,7 @@ h3 {
   background: #f3e8ed;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -956,6 +1005,7 @@ h3 {
   background: #cee3f6;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -971,6 +1021,7 @@ h3 {
   background: #fde4e0;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -986,6 +1037,7 @@ h3 {
   background: #feead2;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1001,6 +1053,7 @@ h3 {
   background: rgba(227, 225, 222, 0.7);
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
   width: 29px;
@@ -1148,6 +1201,15 @@ h3 {
 }
 
 /* Pages */
+.pt-6 {
+  padding-top: 4rem;
+}
+
+.width-fit-content {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
 /* First container */
 #homepage-plateforme {
   overflow-x: hidden;
@@ -1858,6 +1920,15 @@ h3 {
   font-size: 18px;
 }
 
+.pt-6 {
+  padding-top: 4rem;
+}
+
+.width-fit-content {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
 /* First container */
 #tarif-offre {
   overflow-x: hidden;
@@ -2280,7 +2351,8 @@ h3 {
 #details-formation .objectif-details {
   border-radius: 12px;
   background: rgba(230, 228, 222, 0.5);
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   height: 100%;
 }
 #details-formation .objectif-details p {
@@ -2304,8 +2376,23 @@ h3 {
   position: sticky;
   top: 135px;
 }
+#details-formation .scroll-card .card-price p:first-child {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+#details-formation .scroll-card .card-price p:last-child {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  color: #191919 !important;
+}
 #details-formation ul {
-  padding-left: 22px;
+  padding-left: 16px;
+  list-style: none;
 }
 #details-formation ul li {
   font-family: "Instrument Sans", sans-serif;
@@ -2313,6 +2400,22 @@ h3 {
   font-size: 16px !important;
   line-height: 150% !important;
   color: #656463 !important;
+}
+#details-formation ul li::before {
+  content: "";
+  background: #a04470;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  top: 11px;
+  width: 4px;
+  height: 4px;
+  margin-left: -1em;
+  border-radius: 50%;
+  left: 0;
+}
+#details-formation ul .bull_before_green::before {
+  background: #4f756c;
 }
 
 #cards-border {
@@ -2482,6 +2585,7 @@ h3 {
   }
 }
 #listing-event .btn_dark-purple {
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 991.98px) {
@@ -2644,6 +2748,7 @@ h3 {
     border-radius: 0;
     text-align: start;
     padding: 0;
+    width: -moz-max-content;
     width: max-content;
     background: none;
   }
@@ -2666,6 +2771,7 @@ h3 {
   line-height: 20px !important;
   color: #a04470 !important;
   padding: 8px 16px;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -2746,9 +2852,11 @@ h3 {
   background: url(../../../img/noise.svg), repeat, #fcfaf7;
 }
 .body_inscription .div_container .img_bg {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100vh;
-  object-position: 50% 50%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .btn_back {
@@ -2809,6 +2917,7 @@ h3 {
   color: #4f756c !important;
 }
 .div_container .container_content #container_btn button {
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 575.98px) {
@@ -2962,7 +3071,7 @@ h3 {
   justify-content: center;
   align-items: center;
   border: 1px solid #cac8c6;
-  background: #F3F1EE;
+  background: #f3f1ee;
 }
 #basket .input-group input {
   padding: 3px;
@@ -3001,4 +3110,4 @@ h3 {
   font-size: 20px !important;
   line-height: 32px !important;
   color: #323231 !important;
-}
+}/*# sourceMappingURL=main.css.map */

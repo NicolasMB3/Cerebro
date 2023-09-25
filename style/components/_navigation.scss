@@ -1,115 +1,115 @@
 /* Barre de navigation (sans le block d'information) */
 @mixin header($bg, $blur) {
-   margin-top: 22px;
-   transition: transform 0.32s ease-in-out;
+  margin-top: 22px;
+  transition: transform 0.32s ease-in-out;
 
-   .navbar {
-      @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-900);
-      transition: transform 0.32s ease-in-out;
-      background: $bg;
-      backdrop-filter: blur($blur); /* Standard syntax */
-      -webkit-backdrop-filter: blur($blur); /* Chrome, Safari, Opera */
-      backdrop-filter: blur($blur) brightness(90%); /* Firefox */
-      box-shadow: 0px 4px 10px 0px rgba(50, 50, 49, 0.06);
-      @include media-breakpoint-down(xl){
-         padding: 20px 23px;
-         margin-top: 2px;
+  .navbar {
+    @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-900);
+    transition: transform 0.32s ease-in-out;
+    background: $bg;
+    backdrop-filter: blur($blur); /* Standard syntax */
+    -webkit-backdrop-filter: blur($blur); /* Chrome, Safari, Opera */
+    backdrop-filter: blur($blur) brightness(90%); /* Firefox */
+    box-shadow: 0px 4px 10px 0px rgba(50, 50, 49, 0.06);
+    @include media-breakpoint-down(xl) {
+      padding: 20px 23px;
+      margin-top: 2px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 14px 23px;
+      margin-top: 2px;
+    }
+    padding: 12px 16px;
+    border-radius: 5000px;
+    #navbar-connect {
+      @include cbro-paragraphe(500, 16px, 150%, $cbro-gray-900);
+    }
+    a {
+      #navbar-logo {
+        width: auto;
+        height: 25px;
       }
-      @include media-breakpoint-down(md){
-         padding: 14px 23px;
-         margin-top: 2px;
-      }
-      padding: 12px 16px;
-      border-radius: 5000px;
-      #navbar-connect {
-         @include cbro-paragraphe(500, 16px, 150%, $cbro-gray-900);
-      }
+    }
+    .navbar-link {
       a {
-         #navbar-logo {
-            width: auto;
-            height: 25px;
-         }
+        padding: 0 1vw;
       }
-      .navbar-link {
-         a {
-            padding: 0 1vw;
-         }
+    }
+    .container-fluid {
+      .d-flex:nth-child(3) {
+        a:nth-child(2) {
+          @include cbro-paragraphe(400, 16px, 150%, $cbro-white);
+          background: $cbro-green-700;
+          padding: 12px 22px;
+        }
       }
-      .container-fluid {
-         .d-flex:nth-child(3) {
-            a:nth-child(2) {
-               @include cbro-paragraphe(400, 16px, 150%, $cbro-white);
-               background: $cbro-green-700;
-               padding: 12px 22px;
-            }
-         }
-      }
-   }
-   .panier {
-      width: 79px;
-      height: 74px;
-      border-radius: 100px;
-      background: $bg;
-      backdrop-filter: blur($blur); /* Standard syntax */
-      -webkit-backdrop-filter: blur($blur); /* Chrome, Safari, Opera */
-      backdrop-filter: blur($blur) brightness(90%); /* Firefox */
-      position: relative;
-      border: none;
-      box-shadow: 0px 4px 10px 0px rgba(50, 50, 49, 0.06);
-      img {
-         display: inline-block;
-         height: 32px;
-         width: 32px;
-      }
-      &:after {
-         content: attr(data-number);
-         font-family: Instrument Sans;
-         box-sizing: content-box;
-         background-color: $cbro-purple-700;
-         border: 3px solid $cbro-gray-100;
-         border-radius: 999px;
-         position: absolute;
-         width: 16px;
-         height: 16px;
-         left: 50%;
-         top: 20%;
-         font-size: 11px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         color: $cbro-white;
-      }
-   }
+    }
+  }
+  .panier {
+    width: 79px;
+    height: 74px;
+    border-radius: 100px;
+    background: $bg;
+    backdrop-filter: blur($blur); /* Standard syntax */
+    -webkit-backdrop-filter: blur($blur); /* Chrome, Safari, Opera */
+    backdrop-filter: blur($blur) brightness(90%); /* Firefox */
+    position: relative;
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(50, 50, 49, 0.06);
+    img {
+      display: inline-block;
+      height: 32px;
+      width: 32px;
+    }
+    &:after {
+      content: attr(data-number);
+      font-family: Instrument Sans;
+      box-sizing: content-box;
+      background-color: $cbro-purple-700;
+      border: 3px solid $bg_white;
+      border-radius: 999px;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 51%;
+      top: 22%;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $cbro-white;
+    }
+  }
 }
 
 /* Block d'information */
 #header-info {
-   @include cbro-paragraphe(400, 16px, 20px, $cbro-white);
-   background: $cbro-purple-700;
-   padding-top: 8px;
-   padding-bottom: 8px;
-   position: relative;
-   z-index: 500;
-   .calendar {
-      width: 24px;
-   }
-   span {
-      @include cbro-paragraphe(500, 16px, 20px, $cbro-white);
-   }
-   a {
-      @include cbro-paragraphe(600, 16px, 20px, $cbro-white);
-   }
+  @include cbro-paragraphe(400, 16px, 20px, $cbro-white);
+  background: $cbro-purple-700;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+  z-index: 500;
+  .calendar {
+    width: 24px;
+  }
+  span {
+    @include cbro-paragraphe(500, 16px, 20px, $cbro-white);
+  }
+  a {
+    @include cbro-paragraphe(600, 16px, 20px, $cbro-white);
+  }
 }
 
 .navbar-hidden {
-   transform: translateY(-15vh);
+  transform: translateY(-15vh);
 }
 
 #header {
-   &_white {
-      @include header($bg_white, 6px);
-   }
-   &_beige {
-      @include header($bg_beige, 4px);
-   }
+  &_white {
+    @include header($bg_white, 6px);
+  }
+  &_beige {
+    @include header($bg_beige, 4px);
+  }
 }

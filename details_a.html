@@ -1,382 +1,768 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cérébro / Tarification</title>
-   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
-   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
-   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
-   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
-   <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
-   <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
-   <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
-   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
-   <link rel="icon" type="image/png" href="./img/favicons/favicon-196x196.png" sizes="196x196">
-   <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96">
-   <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png" sizes="32x32">
-   <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png" sizes="16x16">
-   <link rel="icon" type="image/png" href="./img/favicons/favicon-128.png" sizes="128x128">
-   <meta name="application-name" content="Cérébro">
-   <meta name="msapplication-TileColor" content="#4F756C">
-   <meta name="msapplication-TileImage" content="https://www.lecerebro.com/mstile-144x144.png">
-   <meta name="msapplication-square70x70logo" content="https://www.lecerebro.com/mstile-70x70.png">
-   <meta name="msapplication-square150x150logo" content="https://www.lecerebro.com/mstile-150x150.png">
-   <meta name="msapplication-wide310x150logo" content="https://www.lecerebro.com/mstile-310x150.png">
-   <meta name="msapplication-square310x310logo" content="https://www.lecerebro.com/mstile-310x310.png">
-   <link rel="stylesheet" href="style/main.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
-</head>
-<body>
-   <div class="d-flex justify-content-center w-100 px-3 d-none d-lg-flex" id="header-info">
-      <img src="./img/icons/calendar_simple.svg" alt="Image d'un calendrier" class="calendar pe-2">
-      <p><span>Masterclass</span> “thématique” à la fac d’Amiens ce lundi 05/06/23 à 09h00</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cérébro / Tarification</title>
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="./img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="./img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="./img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="./img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="./img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="./img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="./img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="./img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="Cérébro" />
+    <meta name="msapplication-TileColor" content="#4F756C" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://www.lecerebro.com/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="https://www.lecerebro.com/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="https://www.lecerebro.com/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="https://www.lecerebro.com/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="https://www.lecerebro.com/mstile-310x310.png"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="d-flex justify-content-center w-100 px-3 d-none d-lg-flex"
+      id="header-info"
+    >
+      <img
+        src="./img/icons/calendar_simple.svg"
+        alt="Image d'un calendrier"
+        class="calendar pe-2"
+      />
+      <p>
+        <span>Masterclass</span> “thématique” à la fac d’Amiens ce lundi
+        05/06/23 à 09h00
+      </p>
       <a class="nav-link ps-3 d-flex align-items-center" href="#">
-         Je participe
-         <img src="./img/icons/arrow_90.svg" class="ps-1" alt="En savoir plus">
+        Je participe
+        <img src="./img/icons/arrow_90.svg" class="ps-1" alt="En savoir plus" />
       </a>
-   </div>
-   <!-- Barre de navigation -->
-   <header class="position-fixed w-100 navbar_s" id="header_white">
+    </div>
+    <!-- Barre de navigation -->
+    <header class="position-fixed w-100 navbar_s" id="header_white">
       <div class="container justify-content-center d-flex gap-3">
-         <nav class="d-flex justify-content-center navbar w-100">
-            <div class="container-fluid px-0">
-               <a class="py-0" href="index.html"><img id="navbar-logo" class="ms-2" src="./img/logo/logo-cerebro.svg" alt="Logo de la société"></a>
-               <div class="d-flex navbar-link d-none d-xl-flex">
-                  <a href="#" class="nav-link">
-                     <div class="d-flex flex-row align-items-center">
-                        <p>Application</p>
-                        <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
-                     </div>
-                  </a>
-                  <a href="#" class="nav-link">
-                     <div class="d-flex flex-row align-items-center">
-                        <p>Ressources</p>
-                        <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
-                     </div>
-                  </a>
-                  <a href="tarifs.html" class="nav-link">
-                     <div class="d-flex flex-row align-items-center">
-                        <p>Tarifs</p>
-                     </div>
-                  </a>
-                  <a href="#" class="nav-link">
-                     <div class="d-flex flex-row align-items-center">
-                        <p>À propos</p>
-                        <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend">
-                     </div>
-                  </a>
-               </div>
-               <div class="d-flex column-gap-2 align-items-center d-none d-xl-flex">
-                  <button class="btn_full_transparent">Se connecter</button>
-                  <button class="btn_green">Tester gratuitement</button>
-               </div>
-               <div class="hamburger-menu d-xl-none">
-                  <img src="./img/icons/hamburger.svg" alt="Icône pour déployer un menu responsive">
-               </div>
+        <nav class="d-flex justify-content-center navbar w-100">
+          <div class="container-fluid px-0">
+            <a class="py-0" href="index.html"
+              ><img
+                id="navbar-logo"
+                class="ms-2"
+                src="./img/logo/logo-cerebro.svg"
+                alt="Logo de la société"
+            /></a>
+            <div class="d-flex navbar-link d-none d-xl-flex">
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>Application</p>
+                  <img
+                    src="./img/icons/arrow_down.svg"
+                    class="ps-2"
+                    alt="Flèche qui descend"
+                  />
+                </div>
+              </a>
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>Ressources</p>
+                  <img
+                    src="./img/icons/arrow_down.svg"
+                    class="ps-2"
+                    alt="Flèche qui descend"
+                  />
+                </div>
+              </a>
+              <a href="tarifs.html" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>Tarifs</p>
+                </div>
+              </a>
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>À propos</p>
+                  <img
+                    src="./img/icons/arrow_down.svg"
+                    class="ps-2"
+                    alt="Flèche qui descend"
+                  />
+                </div>
+              </a>
             </div>
-         </nav>
-         <button class="h2-dark d-none d-xl-flex panier d-flex justify-content-center align-items-center" data-number="1">
-            <img src="img/icons/shop_dark.svg" alt="Icon Panier">
-         </button>   
+            <div
+              class="d-flex column-gap-2 align-items-center d-none d-xl-flex"
+            >
+              <button class="btn_full_transparent">Se connecter</button>
+              <button class="btn_green">Tester gratuitement</button>
+            </div>
+            <div class="hamburger-menu d-xl-none">
+              <img
+                src="./img/icons/hamburger.svg"
+                alt="Icône pour déployer un menu responsive"
+              />
+            </div>
+          </div>
+        </nav>
+        <button
+          class="h2-dark d-none d-xl-flex panier d-flex justify-content-center align-items-center"
+          data-number="1"
+        >
+          <img src="img/icons/shop_dark.svg" alt="Icon Panier" />
+        </button>
       </div>
-   </header>
-   <!-- Section principale -->
-   <section id="details-hero_a" class="pb-5 pb-5 overflow-hidden">
+    </header>
+    <!-- Section principale -->
+    <section id="details-hero_a" class="pb-5 pb-5 overflow-hidden">
       <div class="container position-relative">
-         <a href="index.html" class="breadcrumb d-none d-lg-flex align-items-center gap-2 text-decoration-none">
-            <img src="./img/icons/cheveron-down.svg" alt="Revenir en arrière">
-            Retour au formations
-         </a>
-         <div class="cbro-badge-purple mt-5">Lexique</div>
-         <h1 class="h1-dark mt-4 mb-0 pb-2">Les lignes de base en orthophonie</h1>
-         <p class="p-dark">De la théorie jusqu'à leur utilisation en pratique clinique, venez découvrir cette formation appliquée au lexique.</p>
-         <div class="d-flex align-items-center mt-4">
-            <ul class="ps-0 pb-2 d-flex align-items-center gap-3">
-               <li class="me-1">5 modules</li>
-               <li>&bull;</li>
-               <li>Débutant</li>
+        <a
+          href="index.html"
+          class="breadcrumb d-none d-lg-flex align-items-center gap-2 text-decoration-none"
+        >
+          <img src="./img/icons/cheveron-down.svg" alt="Revenir en arrière" />
+          Retour au formations
+        </a>
+        <div class="cbro-badge-purple mt-5">Lexique</div>
+        <h1 class="h1-dark mt-4 mb-0 pb-2">
+          Les lignes de base en orthophonie
+        </h1>
+        <p class="p-dark">
+          De la théorie jusqu'à leur utilisation en pratique clinique, venez
+          découvrir cette formation appliquée au lexique.
+        </p>
+        <div class="d-flex align-items-center mt-4">
+          <ul class="ps-0 pb-2 d-flex align-items-center gap-2">
+            <li class="me-1">5 modules</li>
+            <li class="bull_purple"></li>
+            <li class="ms-1">Débutant</li>
+          </ul>
+        </div>
+        <div class="mobile d-block d-xl-none">
+          <div class="mobile-info">
+            <ul class="d-flex flex-column">
+              <li class="d-flex gap-3 align-items-center">
+                <span class="bull_dark_purple"></span> Un accès illimité à la
+                formation
+              </li>
+              <li class="d-flex gap-3 align-items-center">
+                <span class="bull_dark_purple"></span> Des ressources
+                complémentaires
+              </li>
+              <li class="d-flex gap-3 align-items-center">
+                <span class="bull_dark_purple"></span> Un matériel “Exos lexico”
+                offert
+              </li>
             </ul>
-         </div>
-         <div class="mobile d-block d-xl-none">
-            <div class="mobile-info">
-               <ul class="d-flex flex-column">
-                  <li class="d-flex gap-3 align-items-center"><span>&bull;</span> Un accès illimité à la formation</li>
-                  <li class="d-flex gap-3 align-items-center"><span>&bull;</span> Des ressources complémentaires</li>
-                  <li class="d-flex gap-3 align-items-center"><span>&bull;</span> Un matériel “Exos lexico” offert</li>
-               </ul>
-            </div>
-            <div class="mobile-price d-flex justify-content-between pb-4 pt-2">
-               <p>Tarif TTC</p>
-               <p>90,00€</p>
-            </div>
-            <button class="btn_purple gap-2 me-md-3 me-0 w-100 mt-4"><img src="img/icons/shop.svg" alt="Icone Panier">Ajouter à mon panier</button>
-         </div>
-         <img class="position-absolute d-none d-lg-flex" src="./img/icons/abstrait_1.svg" alt="Image décorative">
+          </div>
+          <div class="mobile-price d-flex justify-content-between pb-4 pt-2">
+            <p>Tarif TTC</p>
+            <p>90,00€</p>
+          </div>
+          <button class="btn_purple gap-2 me-md-3 me-0 w-100 mt-4">
+            <img src="img/icons/shop.svg" alt="Icone Panier" />Ajouter à mon
+            panier
+          </button>
+        </div>
+        <img
+          class="position-absolute d-none d-lg-flex"
+          src="./img/icons/abstrait_1.svg"
+          alt="Image décorative"
+        />
       </div>
-   </section> 
-   <!-- À l’issu de cette formation ... -->
-   <section id="details-formation" class="pt-5 pb-5 pb-5">
+    </section>
+    <!-- À l’issu de cette formation ... -->
+    <section id="details-formation" class="pt-6 pb-5 pb-5">
       <div class="container">
-         <div class="row gx-5">
-            <div class="col-12 col-xl-9">
-               <h2 class="h2-dark pb-2">À l’issu de cette formation, vous pourrez mettre en place vos premières lignes de base avec vos patients.</h2>
-               <p>Un format volontairement court est proposé de façon à vous présenter les informations les plus importantes tout en s’appuyant sur une bibliographie récente et spécifique.</p> 
-               <h2 class="h2-dark mt-5 pt-4 pb-2">Vos objectifs</h2>  
-               <div class="row g-4">
-                  <div class="col-sm">
-                     <div class="objectif-details p-4">
-                        <h3 class="h3-green">1.</h3>
-                        <p>Comprendre le concept méthodologique et leur utilité en orthophonie</p>
-                     </div>
-                  </div>
-                  <div class="col-sm">
-                     <div class="objectif-details p-4">
-                        <h3 class="h3-green">2.</h3>
-                        <p>Savoir à quel moment, comment et pourquoi les proposer</p>
-                     </div>
-                  </div>
-                  <div class="col-sm">
-                     <div class="objectif-details p-4">
-                        <h3 class="h3-green">3.</h3>
-                        <p>Savoir construire ses propres lignes de base</p>
-                     </div>
-                  </div>
-               </div>
-               <h2 class="h2-dark mt-5 pt-4 pb-2">Contenu de la formation</h2> 
-               <div class="accordion px-0 d-flex flex-column gap-4" id="accordionExample">
-                  <div class="accordion-items pe-0">
-                     <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                           <span>Module 1</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Fondements théoriques et définitions</span>
-                        </button>
-                     </h2>
-                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-                           Pourquoi avoir opté pour un abonnement plutôt que pour un achat à l’unité ?
-                        </div>
-                     </div>
-                  </div>
-                  <div class="accordion-items pe-0">
-                     <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                           <span>Module 2</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Mise en place des lignes de base</span>
-                        </button>
-                     </h2>
-                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-                           Module 2 <span class="mx-2">&bull;</span> Mise en place des lignes de base
-                        </div>
-                     </div>
-                  </div>
-                  <div class="accordion-items pe-0">
-                     <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThrid" aria-expanded="false" aria-controls="collapseThrid">
-                           <span>Module 3</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Lignes de base et lexique en orthophonie</span>
-                        </button>
-                     </h2>
-                     <div id="collapseThrid" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-                           En souscrivant à la licence, vous avez accès à l’application CérébroLex avec la possibilité de démarrer autant de prises en charge que vous le souhaitez. Vous avez également accès à l’ensemble du matériel disponible sur le site : fichiers pdf et tableurs de suivi, ainsi qu’aux revues de littérature, fiches synthèses et résumés d’articlecréer autant.
-                        </div>
-                     </div>
-                  </div>
-                  <div class="accordion-items pe-0">
-                     <h2 class="accordion-header position-relative">
-                        <button class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                           <span>Module 4</span> <span class="d-none d-lg-block mx-2">&bull;</span> <span>Cas cliniques</span>
-                        </button>
-                     </h2>
-                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-                           En souscrivant à la licence, vous avez accès à l’application CérébroLex avec la possibilité de démarrer autant de prises en charge que vous le souhaitez. Vous avez également accès à l’ensemble du matériel disponible sur le site : fichiers pdf et tableurs de suivi, ainsi qu’aux revues de littérature, fiches synthèses et résumés d’articlecréer autant.
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="p-4 mt-5 card-gradiant">
-                  <h4 class="h4-dark">Les pré-requis pour un suivi optimal de la formation</h4>
-                  <ul class="mb-0">
-                     <li>Disposer d’un ordinateur d’une résolution minimale de 1280 x 720</li>
-                     <li>Être équipé de la suite Microsoft Office</li>
-                  </ul>
-               </div>
+        <div class="row justify-content-between gx-5">
+          <div class="col-12 col-xl-8">
+            <h2 class="h2-dark pb-2">
+              À l’issu de cette formation, vous pourrez mettre en place vos
+              premières lignes de base avec vos patients.
+            </h2>
+            <p>
+              Un format volontairement court est proposé de façon à vous
+              présenter les informations les plus importantes tout en s’appuyant
+              sur une bibliographie récente et spécifique.
+            </p>
+            <h2 class="h2-dark mt-5 pt-4 pb-2">Vos objectifs</h2>
+            <div class="row g-4">
+              <div class="col-sm">
+                <div class="objectif-details p-4">
+                  <h3 class="h3-green">1.</h3>
+                  <p>
+                    Comprendre le concept méthodologique et leur utilité en
+                    orthophonie
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="objectif-details p-4">
+                  <h3 class="h3-green">2.</h3>
+                  <p>Savoir à quel moment, comment et pourquoi les proposer</p>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="objectif-details p-4">
+                  <h3 class="h3-green">3.</h3>
+                  <p>Savoir construire ses propres lignes de base</p>
+                </div>
+              </div>
             </div>
-            <div class="col d-none d-xl-block">
-               <div class="scroll-card p-3">
-                  <img src="./img/illustrations/frame_1.png" alt="Image décorative" class="img-fluid w-100">
-                  <ul class="mt-3">
-                     <li>Un accès illimité à la formation</li>
-                     <li>Des ressources complémentaires</li>
-                     <li>Un matériel "Exos lexico" offert</li>
-                  </ul>
-                  <div class="d-flex align-items-center justify-content-between">
-                     <p>Tarif TTC</p>
-                     <p>90,00€</p>
+            <h2 class="h2-dark mt-5 pt-4 pb-2">Contenu de la formation</h2>
+            <div
+              class="accordion px-0 d-flex flex-column gap-4"
+              id="accordionExample"
+            >
+              <div class="accordion-items pe-0">
+                <h2 class="accordion-header position-relative">
+                  <button
+                    class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-lg-center align-items-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    <span>Module 1</span>
+                    <span class="d-none d-lg-block mx-2 bull_dark_green"></span>
+                    <span>Fondements théoriques et définitions</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body pt-0">
+                    Pourquoi avoir opté pour un abonnement plutôt que pour un
+                    achat à l’unité ?
                   </div>
-                  <button class="btn_purple d-flex align-items-center gap-2 justify-content-center me-md-3 me-0 w-100 mt-4"><img src="img/icons/shop.svg" alt="Icone Panier">Ajouter à mon panier</button>
-               </div>
+                </div>
+              </div>
+              <div class="accordion-items pe-0">
+                <h2 class="accordion-header position-relative">
+                  <button
+                    class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-lg-center align-items-start collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <span>Module 2</span>
+                    <span class="d-none d-lg-block mx-2 bull_dark_green"></span>
+                    <span>Mise en place des lignes de base</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body pt-0">
+                    Module 2 <span class="mx-2">&bull;</span> Mise en place des
+                    lignes de base
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-items pe-0">
+                <h2 class="accordion-header position-relative">
+                  <button
+                    class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-lg-center align-items-start collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThrid"
+                    aria-expanded="false"
+                    aria-controls="collapseThrid"
+                  >
+                    <span>Module 3</span>
+                    <span class="d-none d-lg-block mx-2 bull_dark_green"></span>
+                    <span>Lignes de base et lexique en orthophonie</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThrid"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body pt-0">
+                    En souscrivant à la licence, vous avez accès à l’application
+                    CérébroLex avec la possibilité de démarrer autant de prises
+                    en charge que vous le souhaitez. Vous avez également accès à
+                    l’ensemble du matériel disponible sur le site : fichiers pdf
+                    et tableurs de suivi, ainsi qu’aux revues de littérature,
+                    fiches synthèses et résumés d’articlecréer autant.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-items pe-0">
+                <h2 class="accordion-header position-relative">
+                  <button
+                    class="accordion-button shadow-none d-lg-flex flex-column flex-lg-row align-items-lg-center align-items-start collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    <span>Module 4</span>
+                    <span class="d-none d-lg-block mx-2 bull_dark_green"></span>
+                    <span>Cas cliniques</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body pt-0">
+                    En souscrivant à la licence, vous avez accès à l’application
+                    CérébroLex avec la possibilité de démarrer autant de prises
+                    en charge que vous le souhaitez. Vous avez également accès à
+                    l’ensemble du matériel disponible sur le site : fichiers pdf
+                    et tableurs de suivi, ainsi qu’aux revues de littérature,
+                    fiches synthèses et résumés d’articlecréer autant.
+                  </div>
+                </div>
+              </div>
             </div>
-         </div>
+            <div class="p-4 mt-5 card-gradiant">
+              <h4 class="h4-dark">
+                Les pré-requis pour un suivi optimal de la formation
+              </h4>
+              <ul class="mb-0">
+                <li class="position-relative bull_before_green mb-1">
+                  Disposer d’un ordinateur d’une résolution minimale de 1280 x
+                  720
+                </li>
+                <li class="position-relative bull_before_green">
+                  Être équipé de la suite Microsoft Office
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="width-fit-content col col-xl-3 d-none d-xl-block">
+            <div class="scroll-card p-4">
+              <img
+                src="./img/illustrations/frame_1.png"
+                alt="Image décorative"
+                class="img-fluid w-100 mb-1"
+              />
+              <ul class="mt-3">
+                <li class="pb-2 position-relative">
+                  Un accès illimité à la formation
+                </li>
+                <li class="pb-2 position-relative">
+                  Des ressources complémentaires
+                </li>
+                <li class="pb-2 position-relative">
+                  Un matériel "Exos lexico" offert
+                </li>
+              </ul>
+              <div
+                class="card-price d-flex align-items-center justify-content-between"
+              >
+                <p>Tarif TTC</p>
+                <p>90,00€</p>
+              </div>
+              <button
+                class="btn_purple d-flex align-items-center gap-2 justify-content-center me-md-3 me-0 w-100 mt-4"
+              >
+                <img src="img/icons/shop.svg" alt="Icone Panier" />Ajouter à mon
+                panier
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-   </section> 
-   <!-- Ces formations pourraient vous intéresser -->
-   <section id="cards-border">
+    </section>
+    <!-- Ces formations pourraient vous intéresser -->
+    <section id="cards-border">
       <div class="container d-flex justify-content-between mb-4">
-         <h2 class="h4-dark">Ces formations pourraient aussi vous intéresser</h2>
-         <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
-            Voir toutes les formations
-            <img src="img/icons/arrow_90_gray.svg" alt="Voir toutes les formations">
-         </a>
+        <h2 class="h4-dark">Ces formations pourraient aussi vous intéresser</h2>
+        <a
+          href="#"
+          class="d-flex align-items-center gap-2 text-decoration-none"
+        >
+          Voir toutes les formations
+          <img
+            src="img/icons/arrow_90_gray.svg"
+            alt="Voir toutes les formations"
+          />
+        </a>
       </div>
       <div class="container">
-         <div class="row g-3 gap-2">
-            <div class="col-sm">
-               <div class="cards-details p-4">
-                  <div class="cbro-badge-purple mb-4">Lexique</div>
-                  <h5 class="h5-dark">Réaliser des lignes de base</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
-                  <ul class="ps-0 d-flex align-items-center gap-3 mt-3">
-                     <li class="me-1 list-unstyled">4 modules</li>
-                     <li>Débutant</li>
-                  </ul>
-                  <p class="cards-details__price">90,00 TTC</p>
-               </div>
+        <div class="row g-3 gap-2">
+          <div class="col-sm">
+            <div class="cards-details p-4">
+              <div class="cbro-badge-purple mb-4">Lexique</div>
+              <h5 class="h5-dark">Réaliser des lignes de base</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem sit tenetur quis.
+              </p>
+              <ul class="ps-0 d-flex align-items-center gap-3 mt-3">
+                <li class="me-1 list-unstyled">4 modules</li>
+                <li>Débutant</li>
+              </ul>
+              <p class="cards-details__price">90,00 TTC</p>
             </div>
-            <div class="col-sm">
-               <div class="cards-details p-4">
-                  <div class="cbro-badge-green mb-4">Méthodologie</div>
-                  <h5 class="h5-dark">Créer un compte rendu</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
-                  <ul class="ps-0 d-flex flex-wrap align-items-center gap-3 mt-3 gap-4">
-                     <li class="me-1 list-unstyled">4 modules</li>
-                     <li>Débutant</li>
-                     <li>
-                        <img src="img/icons/word.svg" alt="Logo Word">
-                        Word
-                     </li>
-                  </ul>
-                  <p class="cards-details__price">120,00 TTC</p>
-               </div>
+          </div>
+          <div class="col-sm">
+            <div class="cards-details p-4">
+              <div class="cbro-badge-green mb-4">Méthodologie</div>
+              <h5 class="h5-dark">Créer un compte rendu</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem sit tenetur quis.
+              </p>
+              <ul
+                class="ps-0 d-flex flex-wrap align-items-center gap-3 mt-3 gap-4"
+              >
+                <li class="me-1 list-unstyled">4 modules</li>
+                <li>Débutant</li>
+                <li>
+                  <img src="img/icons/word.svg" alt="Logo Word" />
+                  Word
+                </li>
+              </ul>
+              <p class="cards-details__price">120,00 TTC</p>
             </div>
-            <div class="col-sm">
-               <div class="cards-details p-4">
-                  <div class="cbro-badge-green mb-4">Méthodologie</div>
-                  <h5 class="h5-dark">Créer un tableur de suivi</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit tenetur quis.</p>
-                  <ul class="ps-0 d-flex flex-wrap align-items-center gap-3 mt-3 gap-4">
-                     <li class="me-1 list-unstyled">5 modules</li>
-                     <li>Débutant</li>
-                     <li>
-                        <img src="img/icons/excel.svg" alt="logo Excel">
-                        Excel
-                     </li>
-                  </ul>
-                  <p class="cards-details__price">120,00 TTC</p>
-               </div>
+          </div>
+          <div class="col-sm">
+            <div class="cards-details p-4">
+              <div class="cbro-badge-green mb-4">Méthodologie</div>
+              <h5 class="h5-dark">Créer un tableur de suivi</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem sit tenetur quis.
+              </p>
+              <ul
+                class="ps-0 d-flex flex-wrap align-items-center gap-3 mt-3 gap-4"
+              >
+                <li class="me-1 list-unstyled">5 modules</li>
+                <li>Débutant</li>
+                <li>
+                  <img src="img/icons/excel.svg" alt="logo Excel" />
+                  Excel
+                </li>
+              </ul>
+              <p class="cards-details__price">120,00 TTC</p>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </section>
-   <!-- Découvrir la licence -->
-   <section class="homepage-licence">
+    </section>
+    <!-- Découvrir la licence -->
+    <section class="homepage-licence">
       <div class="container">
-         <div class="row text-center">
-            <div class="col d-flex flex-column justify-content-center align-items-left">
-               <h2 class="py-2 h2-dark mb-0">Prêt-e à révolutionner votre pratique au quotidien ?</h2>
-               <h5 class="sub-title pb-2">Découvrez notre licence dès maintenant</h5>
-               <div class="mt-3">
-                  <button class="btn_green me-md-3 me-0">Tester gratuitement</button>
-                  <button class="btn_transparent d-none d-lg-inline-block">Explorer la licence</button>
-               </div>
+        <div class="row text-center">
+          <div
+            class="col d-flex flex-column justify-content-center align-items-left"
+          >
+            <h2 class="py-2 h2-dark mb-0">
+              Prêt-e à révolutionner votre pratique au quotidien ?
+            </h2>
+            <h5 class="sub-title pb-2">
+              Découvrez notre licence dès maintenant
+            </h5>
+            <div class="mt-3">
+              <button class="btn_green me-md-3 me-0">
+                Tester gratuitement
+              </button>
+              <button class="btn_transparent d-none d-lg-inline-block">
+                Explorer la licence
+              </button>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </section>
-   <!-- Footer -->
-   <footer class="py-md-4 py-2">
+    </section>
+    <!-- Footer -->
+    <footer class="py-md-4 py-2">
       <div class="container pt-5">
-         <div class="row newsletter mb-5">
-            <div class="col-12 col-lg mb-4 mb-lg-0">
-               <h5>Restons en contact !</h5>
-               <p>Ne ratez rien des dernières actualités de Cérébro</p>
-            </div>
-            <div class="col">
-               <form>
-                  <div class="d-flex flex-column flex-sm-row gap-2">
-                     <label for="newsletter1" class="visually-hidden">Votre e-mail</label>
-                     <input id="newsletter1" type="email" class="form-control shadow-none" placeholder="Votre e-mail">
-                     <button class="btn_green mt-0">Souscrire à la newsletter</button>
-                  </div>
-               </form>
-            </div>
-         </div>
-         <div class="row pt-4">
-            <div class="col-lg-4 col-12 mb-lg-3 pb-md-3 mb-3">
-               <a href="#"><img src="./img/logo/logo-cerebro_white.svg" alt="Logo de la société"></a>
-               <p class="mt-4">Lorem ipsum dolor sit amet consectetur. In cras pellentesque suspendisse.</p>
-               <ul class="list-unstyled d-flex gap-3 d-md-none mt-4">
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/instagram.svg" alt="Redirection vers Intagram"></a></li>
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/linkedin.svg" alt="Redirection vers Linkedin"></a></li>
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/facebook.svg" alt="Redirection vers Facebook"></a></li>
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/twitter.svg" alt="Redirection vers Twitter"></a></li>
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/youtube.svg" alt="Redirection vers Youtube"></a></li>
-               </ul>
-            </div>
-            <div class="col-md col-6 mb-3">
-               <h5 class="mb-3 text-uppercase">Applications</h5>
-               <ul class="nav flex-column">
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-decoration-none">CérébroLex</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">CérébroVerbs</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">CérébroSyntax</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Tarifs</a></li>
-               </ul>
-            </div>
-            <div class="col-md col-6 mb-3">
-               <h5 class="mb-3 text-uppercase">Ressources</h5>
-               <ul class="nav flex-column">
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Matériels</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Résumés d’articles</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Tableurs</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Formations</a></li>
-               </ul>
-            </div>
-            <div class="col-md col-6 mb-3">
-               <h5 class="mb-3 text-uppercase">À propos</h5>
-               <ul class="nav flex-column">
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">L’équipe</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">FAQ</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Nous contacter</a></li>
-               </ul>
-            </div>
-            <div class="col-md col-6 mb-3">
-               <h5 class="mb-3 text-uppercase">Legal</h5>
-               <ul class="nav flex-column">
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Conditions générales</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Mentions légales</a></li>
-                  <li class="nav-item mb-3"><a href="#" class="nav-link p-0">Politique de confidentialité</a></li>
-               </ul>
-            </div>
-            <hr class="my-4">
-            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between pt-3 px-0">
-               <p class="mb-4 mb-md-0">&copy; 2023 Cérébro. Tous droits reservés</p>
-               <ul class="list-unstyled d-flex gap-3 d-none d-md-flex">
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/instagram.svg" alt="Redirection vers Intagram"></a></li>
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/linkedin.svg" alt="Redirection vers Linkedin"></a></li>
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/facebook.svg" alt="Redirection vers Facebook"></a></li>
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/twitter.svg" alt="Redirection vers Twitter"></a></li>
-                  <li class="ms-2"><a class="link-body-emphasis" href="#"><img src="./img/icons/youtube.svg" alt="Redirection vers Youtube"></a></li>
-               </ul>
-            </div>
-         </div>
+        <div class="row newsletter mb-5">
+          <div class="col-12 col-lg mb-4 mb-lg-0">
+            <h5>Restons en contact !</h5>
+            <p>Ne ratez rien des dernières actualités de Cérébro</p>
+          </div>
+          <div class="col">
+            <form>
+              <div class="d-flex flex-column flex-sm-row gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Votre e-mail</label
+                >
+                <input
+                  id="newsletter1"
+                  type="email"
+                  class="form-control shadow-none"
+                  placeholder="Votre e-mail"
+                />
+                <button class="btn_green mt-0">
+                  Souscrire à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-lg-4 col-12 mb-lg-3 pb-md-3 mb-3">
+            <a href="#"
+              ><img
+                src="./img/logo/logo-cerebro_white.svg"
+                alt="Logo de la société"
+            /></a>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur. In cras pellentesque
+              suspendisse.
+            </p>
+            <ul class="list-unstyled d-flex gap-3 d-md-none mt-4">
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/instagram.svg"
+                    alt="Redirection vers Intagram"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/linkedin.svg"
+                    alt="Redirection vers Linkedin"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/facebook.svg"
+                    alt="Redirection vers Facebook"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/twitter.svg"
+                    alt="Redirection vers Twitter"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/youtube.svg"
+                    alt="Redirection vers Youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">Applications</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0 text-decoration-none"
+                  >CérébroLex</a
+                >
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">CérébroVerbs</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">CérébroSyntax</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Tarifs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">Ressources</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Matériels</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Résumés d’articles</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Tableurs</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Formations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">À propos</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">L’équipe</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">FAQ</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Nous contacter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">Legal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Conditions générales</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Mentions légales</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr class="my-4" />
+          <div
+            class="d-flex flex-column flex-sm-row align-items-center justify-content-between pt-3 px-0"
+          >
+            <p class="mb-4 mb-md-0">
+              &copy; 2023 Cérébro. Tous droits reservés
+            </p>
+            <ul class="list-unstyled d-flex gap-3 d-none d-md-flex">
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/instagram.svg"
+                    alt="Redirection vers Intagram"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/linkedin.svg"
+                    alt="Redirection vers Linkedin"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/facebook.svg"
+                    alt="Redirection vers Facebook"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/twitter.svg"
+                    alt="Redirection vers Twitter"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/youtube.svg"
+                    alt="Redirection vers Youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-   </footer>
-   <script src="./script/tarif.js"></script>
-   <script src="./script/header.js"></script>
-</body>
+    </footer>
+    <script src="./script/tarif.js"></script>
+    <script src="./script/header.js"></script>
+  </body>
 </html>

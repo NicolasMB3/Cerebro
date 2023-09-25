@@ -1,0 +1,25 @@
+.bull {
+  &_purple {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: $cbro-bull-purple;
+  }
+
+  &_dark_purple {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: $cbro-purple-700;
+  }
+
+  &_dark_green {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: $cbro-green-700;
+  }
+}
