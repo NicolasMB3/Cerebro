@@ -27,15 +27,15 @@
 #connexion_hero {
   background: url(../../../img/noise.svg) repeat $cbro-green-800;
   padding: 10rem 0 0rem 0;
-  @include media-breakpoint-down(lg){
-     padding: 7rem 0 3rem 0;
+  @include media-breakpoint-down(lg) {
+    padding: 7rem 0 3rem 0;
   }
   //Conteneur du formulaire
   .connexion_container {
     margin-bottom: -165px;
     z-index: 505;
     position: relative;
-    @include media-breakpoint-down(xl){
+    @include media-breakpoint-down(xl) {
       margin-bottom: 0px;
     }
     p {

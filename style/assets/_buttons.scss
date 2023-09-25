@@ -96,7 +96,7 @@
     transition: 0.25s all ease-in-out;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: $cbro-gray-100;
     }
   }
   // Full purple button
@@ -129,7 +129,7 @@
     transition: 0.25s all ease-in-out;
 
     &:hover {
-      opacity: 0.8;
+      background-color: $cbro-purple-900;
     }
 
     @include media-breakpoint-down(lg) {

@@ -1,13 +1,21 @@
 .cards-details {
-   border: 1px solid $cbro-gray-200;
-   border-radius: $cbro-border-radius-16;
-   height: 100%;
+  border: 1px solid $cbro-gray-200;
+  border-radius: $cbro-border-radius-16;
+  height: 100%;
 
-   ul {
-      font-family: 'ITCSouvenir-md';
-   }
+  transition: background-color 0.2s ease-in-out !important;
 
-   &__price {
-      @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
-   }
+  ul {
+    li {
+      font-family: "ITCSouvenir-md", sans-serif;
+    }
+  }
+
+  &__price {
+    @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
+  }
+
+  &:hover {
+    background-color: rgba(227, 225, 222, 0.251);
+  }
 }

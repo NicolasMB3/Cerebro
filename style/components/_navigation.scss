@@ -112,4 +112,15 @@
   &_beige {
     @include header($bg_beige, 4px);
   }
+  &_transparent {
+    @include header($bg_transparent, 6px);
+
+    .navbar {
+      color: white !important;
+
+      .btn_full_transparent {
+        color: white;
+      }
+    }
+  }
 }
