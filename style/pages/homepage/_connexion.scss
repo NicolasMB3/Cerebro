@@ -124,6 +124,12 @@
 
 // Section Mot de passe oublié
 #forget_mdp {
+  .forget_mdp_title {
+    @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+  }
+
   .connexion-title_mdp {
     p {
       &:first-child {
