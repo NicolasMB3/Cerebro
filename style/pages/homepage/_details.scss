@@ -26,20 +26,39 @@
     }
     .mobile {
       &-info {
-        ul {
-          padding: 0;
-        }
-
         li {
           font-family: Instrument Sans;
+
           @include media-breakpoint-down(lg) {
             @include cbro-paragraphe(400, 16px, 150%, $cbro-gray-600);
+          }
+
+          &::before {
+            content: "";
+            background: $cbro-purple-700;
+            font-weight: bold;
+            display: block;
+            position: absolute;
+            top: 11px;
+            width: 4px;
+            height: 4px;
+            margin-left: -1em;
+            border-radius: 50%;
+            left: 0;
           }
         }
 
         span {
           font-size: 24px;
           color: $cbro-purple-700;
+        }
+      }
+
+      .price_container {
+        width: fit-content;
+
+        @include media-breakpoint-down(sm) {
+          width: 100%;
         }
       }
 

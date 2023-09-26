@@ -2392,9 +2392,6 @@ h3 {
   right: -31vw;
   width: 80%;
 }
-#details-hero_a .mobile-info ul, #details-hero_b .mobile-info ul, #details-hero_c .mobile-info ul, #details-hero_d .mobile-info ul, #details-hero_e .mobile-info ul {
-  padding: 0;
-}
 #details-hero_a .mobile-info li, #details-hero_b .mobile-info li, #details-hero_c .mobile-info li, #details-hero_d .mobile-info li, #details-hero_e .mobile-info li {
   font-family: Instrument Sans;
 }
@@ -2407,9 +2404,31 @@ h3 {
     color: #656463 !important;
   }
 }
+#details-hero_a .mobile-info li::before, #details-hero_b .mobile-info li::before, #details-hero_c .mobile-info li::before, #details-hero_d .mobile-info li::before, #details-hero_e .mobile-info li::before {
+  content: "";
+  background: #a04470;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  top: 11px;
+  width: 4px;
+  height: 4px;
+  margin-left: -1em;
+  border-radius: 50%;
+  left: 0;
+}
 #details-hero_a .mobile-info span, #details-hero_b .mobile-info span, #details-hero_c .mobile-info span, #details-hero_d .mobile-info span, #details-hero_e .mobile-info span {
   font-size: 24px;
   color: #a04470;
+}
+#details-hero_a .mobile .price_container, #details-hero_b .mobile .price_container, #details-hero_c .mobile .price_container, #details-hero_d .mobile .price_container, #details-hero_e .mobile .price_container {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 575.98px) {
+  #details-hero_a .mobile .price_container, #details-hero_b .mobile .price_container, #details-hero_c .mobile .price_container, #details-hero_d .mobile .price_container, #details-hero_e .mobile .price_container {
+    width: 100%;
+  }
 }
 #details-hero_a .mobile-price p:last-child, #details-hero_b .mobile-price p:last-child, #details-hero_c .mobile-price p:last-child, #details-hero_d .mobile-price p:last-child, #details-hero_e .mobile-price p:last-child {
   font-family: Instrument Sans;
