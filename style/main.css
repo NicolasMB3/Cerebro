@@ -3285,6 +3285,11 @@ h3 {
     --bs-gutter-x: 4rem;
   }
 }
+@media (min-width: 1200px) {
+  #contact_hero .col-xl-6 {
+    height: 450px;
+  }
+}
 #contact_hero .contact_container {
   background-color: #fcfaf7;
   margin-bottom: -165px;
@@ -3318,11 +3323,6 @@ h3 {
   line-height: normal !important;
   color: black !important;
   font-family: inherit;
-}
-@media (max-width: 991.98px) {
-  #contact_hero .contact_container select {
-    width: 50%;
-  }
 }
 @media (max-width: 991.98px) and (max-width: 575.98px) {
   #contact_hero .contact_container select {
@@ -3358,6 +3358,11 @@ h3 {
 
 #email_copy {
   height: 250px;
+}
+@media (max-width: 1199.98px) {
+  #email_copy {
+    height: 200px;
+  }
 }
 #email_copy .w-225px {
   width: 225px !important;

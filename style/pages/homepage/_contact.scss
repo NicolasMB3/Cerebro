@@ -14,6 +14,12 @@
       --bs-gutter-x: 4rem;
     }
   }
+
+  .col-xl-6 {
+    @include media-breakpoint-up(xl) {
+      height: 450px;
+    }
+  }
   //Conteneur du formulaire
   .contact_container {
     background-color: $cbro-snow-50;
@@ -42,7 +48,6 @@
       font-family: inherit;
 
       @include media-breakpoint-down(lg) {
-        width: 50%;
         @include media-breakpoint-down(sm) {
           width: 100%;
         }
@@ -76,6 +81,10 @@
 
 #email_copy {
   height: 250px;
+
+  @include media-breakpoint-down(xl) {
+    height: 200px;
+  }
 
   .w-225px {
     width: 225px !important;

@@ -16,7 +16,7 @@ function HideOffToast() {
     targets: toast,
     translateY: "-250px",
     duration: 500,
-    easing: "easeInOutExpo",
+    easing: "easeOutExpo",
   });
 }
 
@@ -25,7 +25,7 @@ function HideOnToast() {
     targets: toast,
     translateY: "250px",
     duration: 500,
-    easing: "easeInOutExpo",
+    easing: "easeInExpo",
   });
 }
 
