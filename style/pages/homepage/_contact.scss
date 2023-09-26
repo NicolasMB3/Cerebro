@@ -17,7 +17,7 @@
 
   .col-xl-6 {
     @include media-breakpoint-up(xl) {
-      height: 450px;
+      height: 400px;
     }
   }
   //Conteneur du formulaire
@@ -80,7 +80,7 @@
 }
 
 #email_copy {
-  height: 250px;
+  height: 300px;
 
   @include media-breakpoint-down(xl) {
     height: 200px;

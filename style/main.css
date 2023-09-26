@@ -3287,7 +3287,7 @@ h3 {
 }
 @media (min-width: 1200px) {
   #contact_hero .col-xl-6 {
-    height: 450px;
+    height: 400px;
   }
 }
 #contact_hero .contact_container {
@@ -3357,7 +3357,7 @@ h3 {
 }
 
 #email_copy {
-  height: 250px;
+  height: 300px;
 }
 @media (max-width: 1199.98px) {
   #email_copy {
