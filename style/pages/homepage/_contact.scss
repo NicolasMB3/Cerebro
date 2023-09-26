@@ -1,0 +1,130 @@
+#contact_hero {
+  background: url(../../../img/noise.svg) repeat rgba(211, 220, 218, 0.7);
+  height: 100%;
+  padding: 10rem 0 0rem 0;
+
+  @include media-breakpoint-down(xl) {
+    padding: 4rem 0 3rem 0;
+  }
+
+  .gx-5 {
+    --bs-gutter-x: 7rem;
+
+    @include media-breakpoint-down(xxl) {
+      --bs-gutter-x: 4rem;
+    }
+  }
+  //Conteneur du formulaire
+  .contact_container {
+    background-color: $cbro-snow-50;
+    margin-bottom: -165px;
+    z-index: 505;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+
+    position: relative;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 0px;
+    }
+    p {
+      @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+    }
+
+    select {
+      border-radius: 100px !important;
+      border: 1px solid $cbro-gray-200 !important;
+      height: 48px;
+      outline: none;
+
+      @include cbro-paragraphe(400, 14px, normal, black);
+      font-family: inherit;
+
+      @include media-breakpoint-down(lg) {
+        width: 50%;
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+        }
+      }
+    }
+
+    .message {
+      border-radius: 16px !important;
+      height: 150px;
+      padding: 20px !important;
+      resize: none;
+    }
+  }
+
+  .container_faq {
+    span {
+      @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+    }
+
+    p {
+      @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
+      a {
+        color: $cbro-green-700;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#email_copy {
+  height: 250px;
+
+  .w-225px {
+    width: 225px !important;
+  }
+
+  .container_copy {
+    width: 75%;
+
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+    }
+
+    h5 {
+      width: 50%;
+
+      @include media-breakpoint-down(xl) {
+        width: 100%;
+      }
+    }
+  }
+
+  #copy_clipboard {
+    width: fit-content;
+    padding: 6px 12px;
+
+    color: $cbro-green-700;
+    border: 1px dashed $cbro-gray-200;
+    border-radius: 100px;
+
+    .container_icon {
+      .icone_check {
+        height: 20px;
+        width: 20px;
+
+        top: -10px;
+        left: -20px;
+      }
+
+      .icone_copy {
+        display: block !important;
+        opacity: 0;
+
+        top: -10px;
+        left: -20px;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

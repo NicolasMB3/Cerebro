@@ -1,14 +1,5 @@
 @charset "UTF-8";
 /* Assets */
-.pt-6 {
-  padding-top: 4rem;
-}
-
-.width-fit-content {
-  width: -moz-fit-content !important;
-  width: fit-content !important;
-}
-
 @font-face {
   font-family: "ITCSouvenir-md";
   src: url("../font/SouvenirStd-Light.eot");
@@ -854,7 +845,8 @@ footer hr {
   }
 }
 
-.form-connexion .form-control {
+.form-connexion .form-control,
+.form-contact .form-control {
   border-radius: 100px !important;
   border: 1px solid #cac8c6 !important;
   background: #fff !important;
@@ -863,14 +855,15 @@ footer hr {
   padding: 0 20px !important;
   outline: none;
 }
-.form-connexion .form-control::-moz-placeholder {
+.form-connexion .form-control::-moz-placeholder, .form-contact .form-control::-moz-placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: normal !important;
   color: #b0afad !important;
 }
-.form-connexion .form-control::placeholder {
+.form-connexion .form-control::placeholder,
+.form-contact .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 14px !important;
@@ -945,6 +938,37 @@ footer hr {
   background-color: #4f756c;
 }
 
+.toast-container {
+  transform: translateY(250px);
+}
+.toast-container .toast {
+  background-color: white;
+  --bs-toast-border-color: none;
+}
+.toast-container .toast .toast-header {
+  border: none;
+  padding-bottom: 0;
+}
+.toast-container .toast .toast-header p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  color: #288d4e !important;
+}
+.toast-container .toast .toast-header .btn-close {
+  height: 20px;
+  width: 20px;
+}
+.toast-container .toast .toast-body {
+  padding-top: 0px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #656463 !important;
+}
+
 /* Base */
 /* Infinity and beyond */
 * {
@@ -1003,6 +1027,19 @@ h3 {
 
 .form-select:focus {
   box-shadow: 0 0 0 0.25rem rgba(176, 175, 173, 0.5) !important;
+}
+
+.pt-6 {
+  padding-top: 4rem;
+}
+
+.px-8 {
+  padding: 0 5rem;
+}
+
+.width-fit-content {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 
 .navbar-transition {
@@ -1307,15 +1344,6 @@ h3 {
 }
 
 /* Pages */
-.pt-6 {
-  padding-top: 4rem;
-}
-
-.width-fit-content {
-  width: -moz-fit-content !important;
-  width: fit-content !important;
-}
-
 /* First container */
 #homepage-plateforme {
   overflow-x: hidden;
@@ -2024,15 +2052,6 @@ h3 {
 }
 .homepage-licence button {
   font-size: 18px;
-}
-
-.pt-6 {
-  padding-top: 4rem;
-}
-
-.width-fit-content {
-  width: -moz-fit-content !important;
-  width: fit-content !important;
 }
 
 /* First container */
@@ -3246,4 +3265,139 @@ h3 {
   font-size: 20px !important;
   line-height: 32px !important;
   color: #323231 !important;
+}
+
+#contact_hero {
+  background: url(../../../img/noise.svg) repeat rgba(211, 220, 218, 0.7);
+  height: 100%;
+  padding: 10rem 0 0rem 0;
+}
+@media (max-width: 1199.98px) {
+  #contact_hero {
+    padding: 4rem 0 3rem 0;
+  }
+}
+#contact_hero .gx-5 {
+  --bs-gutter-x: 7rem;
+}
+@media (max-width: 1399.98px) {
+  #contact_hero .gx-5 {
+    --bs-gutter-x: 4rem;
+  }
+}
+#contact_hero .contact_container {
+  background-color: #fcfaf7;
+  margin-bottom: -165px;
+  z-index: 505;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px rgba(50, 50, 49, 0.12);
+  position: relative;
+}
+@media (max-width: 1199.98px) {
+  #contact_hero .contact_container {
+    margin-bottom: 0px;
+  }
+}
+#contact_hero .contact_container p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #4f756c !important;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+#contact_hero .contact_container select {
+  border-radius: 100px !important;
+  border: 1px solid #cac8c6 !important;
+  height: 48px;
+  outline: none;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: black !important;
+  font-family: inherit;
+}
+@media (max-width: 991.98px) {
+  #contact_hero .contact_container select {
+    width: 50%;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 575.98px) {
+  #contact_hero .contact_container select {
+    width: 100%;
+  }
+}
+#contact_hero .contact_container .message {
+  border-radius: 16px !important;
+  height: 150px;
+  padding: 20px !important;
+  resize: none;
+}
+#contact_hero .container_faq span {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #4f756c !important;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+#contact_hero .container_faq p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+#contact_hero .container_faq p a {
+  color: #4f756c;
+  text-decoration: none;
+}
+
+#email_copy {
+  height: 250px;
+}
+#email_copy .w-225px {
+  width: 225px !important;
+}
+#email_copy .container_copy {
+  width: 75%;
+}
+@media (max-width: 1199.98px) {
+  #email_copy .container_copy {
+    width: 100%;
+  }
+}
+#email_copy .container_copy h5 {
+  width: 50%;
+}
+@media (max-width: 1199.98px) {
+  #email_copy .container_copy h5 {
+    width: 100%;
+  }
+}
+#email_copy #copy_clipboard {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 6px 12px;
+  color: #4f756c;
+  border: 1px dashed #cac8c6;
+  border-radius: 100px;
+}
+#email_copy #copy_clipboard .container_icon .icone_check {
+  height: 20px;
+  width: 20px;
+  top: -10px;
+  left: -20px;
+}
+#email_copy #copy_clipboard .container_icon .icone_copy {
+  display: block !important;
+  opacity: 0;
+  top: -10px;
+  left: -20px;
+}
+#email_copy #copy_clipboard:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
