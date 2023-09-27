@@ -10,6 +10,20 @@
 
   overflow: hidden;
 
+  .cta_title {
+    width: 75%;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+
+  button {
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
   &-blue {
     background-color: $cbro-blue-800;
   }
@@ -22,7 +36,7 @@
     top: 0;
     right: 0;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       right: -75px;
     }
   }
