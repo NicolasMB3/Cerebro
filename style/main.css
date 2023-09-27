@@ -981,6 +981,11 @@ footer hr {
   padding: 40px;
   overflow: hidden;
 }
+@media (max-width: 767.98px) {
+  .cta {
+    padding: 30px;
+  }
+}
 .cta-blue {
   background-color: #19677f;
 }
@@ -990,6 +995,11 @@ footer hr {
 .cta img {
   top: 0;
   right: 0;
+}
+@media (max-width: 767.98px) {
+  .cta img {
+    right: -75px;
+  }
 }
 
 /* Base */
