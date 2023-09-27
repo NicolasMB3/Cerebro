@@ -3,6 +3,10 @@
   height: 100%;
   padding: 10rem 0 108px 0;
 
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 48px;
+  }
+
   .container_faq {
     background: rgba(230, 228, 222, 0.5);
     border-radius: 20px;
@@ -28,16 +32,19 @@
         border-radius: 100px;
         @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-900);
 
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
+
         @include media-breakpoint-down(sm) {
           padding: 4px 8px;
-          width: 100%;
           @include cbro-paragraphe(400, 14px, 160%, $cbro-gray-900);
         }
       }
 
       gap: 24px;
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         gap: 10px;
       }
 
@@ -47,6 +54,10 @@
       }
 
       border-bottom: 1px solid $cbro-gray-200;
+
+      @include media-breakpoint-down(md) {
+        border-bottom: none;
+      }
     }
   }
 }

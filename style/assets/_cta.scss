@@ -1,5 +1,10 @@
 .cta {
   margin-top: 64px;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 38px;
+  }
+
   @include cbro-paragraphe(400, 18px, 160%, $cbro-opacity-50);
   border-radius: 20px;
   padding: 40px;
@@ -35,9 +40,5 @@
   img {
     top: 0;
     right: 0;
-
-    @include media-breakpoint-down(lg) {
-      right: -75px;
-    }
   }
 }
