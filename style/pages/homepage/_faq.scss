@@ -1,0 +1,40 @@
+#faq {
+  background: url(../../../img/noise.svg) repeat $cbro-snow-50;
+  height: 100%;
+  padding: 10rem 0 108px 0;
+
+  .container_faq {
+    background: rgba(230, 228, 222, 0.5);
+    border-radius: 20px;
+
+    .faq_title {
+      .span-faq {
+        @include cbro-paragraphe(600, 16px, 150%, $cbro-blue-700);
+        text-transform: uppercase;
+        letter-spacing: 0.32px;
+      }
+
+      .h2-blue {
+        font-style: italic;
+        color: $cbro-blue-700;
+      }
+    }
+
+    .btn_container {
+      button {
+        border: none;
+        background-color: $cbro-snow-50;
+        padding: 4px 16px;
+        border-radius: 100px;
+        @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-900);
+      }
+
+      .btn_selected {
+        color: $cbro-blue-50 !important;
+        background-color: $cbro-blue-600;
+      }
+
+      border-bottom: 1px solid $cbro-gray-200;
+    }
+  }
+}

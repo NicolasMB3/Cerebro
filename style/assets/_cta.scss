@@ -1,0 +1,21 @@
+.cta {
+  margin-top: 64px;
+  @include cbro-paragraphe(400, 18px, 160%, $cbro-opacity-50);
+  border-radius: 20px;
+  padding: 40px;
+
+  overflow: hidden;
+
+  &-blue {
+    background-color: $cbro-blue-800;
+  }
+
+  &-green {
+    background-color: $cbro-green-800;
+  }
+
+  img {
+    top: 0;
+    right: 0;
+  }
+}

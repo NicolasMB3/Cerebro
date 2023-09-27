@@ -1,52 +1,83 @@
-.accordion-button:focus, .accordion-button:not(.collapsed), .accordion-button {
-   background-color: transparent !important;
+.accordion-button:focus,
+.accordion-button:not(.collapsed),
+.accordion-button {
+  background-color: transparent !important;
 }
 
 .accordion-header {
-   img {
-      position: absolute;
-      right: -10px;
-      top: 18px;
-      width: 28px;
-      height: 28px;
-   }
+  img {
+    position: absolute;
+    right: -10px;
+    top: 18px;
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .accordion-items {
-   background-color: transparent;
-   border-radius: $cbro-border-radius-16;
-   border: 1px solid $cbro-gray-200;
-   padding-right: 32px;
-   button {
-      @include cbro-paragraphe(500, 20px, 32px, $cbro-gray-900);
-      position: relative;
+  background-color: transparent;
+  border-radius: $cbro-border-radius-16;
+  border: 1px solid $cbro-gray-200;
+  padding-right: 32px;
+  button {
+    @include cbro-paragraphe(500, 20px, 32px, $cbro-gray-900);
+    position: relative;
 
-      span:first-child {
-         color: $cbro-green-700;
-      }
+    span:first-child {
+      color: $cbro-green-700;
+    }
 
-      &::after {
-         content: "";
-         position: absolute;
-         top: 20px;
-         right: 20px;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
 
-      @include media-breakpoint-down(lg){
-         @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
-      }
-   }
+    @include media-breakpoint-down(lg) {
+      @include cbro-paragraphe(500, 18px, 150%, $cbro-gray-900);
+    }
+  }
 }
 
 .accordion-body {
-   @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
+  @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
 }
 
 // Supprime l'icône de base sur la page tarification
 .tarif-faq {
-   .accordion-button:focus, .accordion-button:not(.collapsed), .accordion-button {
-      &::after {
-         display: none;
-     }
-   }
+  .accordion-button:focus,
+  .accordion-button:not(.collapsed),
+  .accordion-button {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+// Accordion pour la page FAQ
+
+.accordion_white {
+  .accordion-items {
+    background-color: $cbro-snow-50;
+
+    h2 {
+      span {
+        color: $cbro-gray-900;
+        @include cbro-paragraphe(500, 18px, 28px, $cbro-gray-900);
+      }
+
+      .accordion-button {
+        padding-right: 44px;
+
+        &::after {
+          background-image: url(../../img/icons/accordion-plus.svg);
+        }
+
+        &:not(.collapsed)::after {
+          background-image: url(../../img/icons/accordion-minus.svg);
+        }
+      }
+    }
+  }
 }

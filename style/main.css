@@ -527,6 +527,7 @@ footer hr {
   border-radius: 100px;
   border: 0px solid #191919;
   padding: 12px 22px;
+  text-decoration: none;
   transition: 0.25s all ease-in-out;
 }
 .btn_white:hover {
@@ -969,6 +970,28 @@ footer hr {
   color: #656463 !important;
 }
 
+.cta {
+  margin-top: 64px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #e7e6e4 !important;
+  border-radius: 20px;
+  padding: 40px;
+  overflow: hidden;
+}
+.cta-blue {
+  background-color: #19677f;
+}
+.cta-green {
+  background-color: #396359;
+}
+.cta img {
+  top: 0;
+  right: 0;
+}
+
 /* Base */
 /* Infinity and beyond */
 * {
@@ -1203,7 +1226,9 @@ h3 {
   height: 14px;
 }
 
-.accordion-button:focus, .accordion-button:not(.collapsed), .accordion-button {
+.accordion-button:focus,
+.accordion-button:not(.collapsed),
+.accordion-button {
   background-color: transparent !important;
 }
 
@@ -1256,8 +1281,31 @@ h3 {
   color: #323231 !important;
 }
 
-.tarif-faq .accordion-button:focus::after, .tarif-faq .accordion-button:not(.collapsed)::after, .tarif-faq .accordion-button::after {
+.tarif-faq .accordion-button:focus::after,
+.tarif-faq .accordion-button:not(.collapsed)::after,
+.tarif-faq .accordion-button::after {
   display: none;
+}
+
+.accordion_white .accordion-items {
+  background-color: #fcfaf7;
+}
+.accordion_white .accordion-items h2 span {
+  color: #191919;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+  color: #191919 !important;
+}
+.accordion_white .accordion-items h2 .accordion-button {
+  padding-right: 44px;
+}
+.accordion_white .accordion-items h2 .accordion-button::after {
+  background-image: url(../../img/icons/accordion-plus.svg);
+}
+.accordion_white .accordion-items h2 .accordion-button:not(.collapsed)::after {
+  background-image: url(../../img/icons/accordion-minus.svg);
 }
 
 .cards-details {
@@ -3405,4 +3453,45 @@ h3 {
 }
 #email_copy #copy_clipboard:hover {
   cursor: pointer;
+}
+
+#faq {
+  background: url(../../../img/noise.svg) repeat #fcfaf7;
+  height: 100%;
+  padding: 10rem 0 108px 0;
+}
+#faq .container_faq {
+  background: rgba(230, 228, 222, 0.5);
+  border-radius: 20px;
+}
+#faq .container_faq .faq_title .span-faq {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #33788d !important;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+}
+#faq .container_faq .faq_title .h2-blue {
+  font-style: italic;
+  color: #33788d;
+}
+#faq .container_faq .btn_container {
+  border-bottom: 1px solid #cac8c6;
+}
+#faq .container_faq .btn_container button {
+  border: none;
+  background-color: #fcfaf7;
+  padding: 4px 16px;
+  border-radius: 100px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #191919 !important;
+}
+#faq .container_faq .btn_container .btn_selected {
+  color: #e6eef1 !important;
+  background-color: #4d899c;
 }/*# sourceMappingURL=main.css.map */
