@@ -193,7 +193,7 @@
     <section id="contact_hero">
       <div class="container">
         <div class="row gx-5 justify-content-center">
-          <div class="col-12 col-xl-6">
+          <div class="col-12 col-xl-6 d-none d-lg-block">
             <div class="container_faq d-flex h-75 pt-6 mt-4 mt-xl-0">
               <div>
                 <div class="contact_title">
@@ -214,7 +214,7 @@
           <div class="col-12 col-xl-6">
             <div class="contact_container w-100 p-lg-5 p-4">
               <form action="#" class="form-contact d-flex flex-column gap-4">
-                <div class="d-flex gap-4">
+                <div class="d-flex flex-sm-row flex-column gap-4">
                   <div class="d-flex flex-column gap-3 w-100">
                     <label for="lastname">Nom</label>
                     <input
@@ -240,7 +240,7 @@
                     />
                   </div>
                 </div>
-                <div class="d-flex gap-4">
+                <div class="d-flex flex-sm-row flex-column gap-4">
                   <div class="d-flex flex-column gap-3 w-100">
                     <label for="email">Adresse mail</label>
                     <input
@@ -299,11 +299,14 @@
         </div>
       </div>
     </section>
+    <!-- Section email -->
     <section id="email_copy">
       <div class="container">
         <div>
           <div>
-            <div class="container_copy">
+            <div
+              class="container_copy d-sm-block d-flex flex-column align-items-center"
+            >
               <h5 class="h5-dark mt-5 mb-3">
                 Vous pouvez également nous contacter à l'adresse suivante...
               </h5>
@@ -331,6 +334,7 @@
         </div>
       </div>
     </section>
+    <!-- Toast -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div
         id="liveToast"
@@ -358,7 +362,7 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="py-md-4 py-2 margin-top position-relative">
+    <footer class="py-md-4 py-2 margin-top-contact position-relative">
       <div class="container pt-5">
         <div class="row newsletter mb-5">
           <div class="col-12 col-lg mb-4 mb-lg-0">

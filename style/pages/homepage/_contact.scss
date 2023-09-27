@@ -7,6 +7,10 @@
     padding: 4rem 0 3rem 0;
   }
 
+  @include media-breakpoint-down(lg) {
+    padding: 10rem 0 3rem 0;
+  }
+
   .gx-5 {
     --bs-gutter-x: 7rem;
 
@@ -135,5 +139,11 @@
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+.margin-top-contact {
+  @include media-breakpoint-down(sm) {
+    margin-top: 25px;
   }
 }

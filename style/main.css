@@ -3348,6 +3348,11 @@ h3 {
     padding: 4rem 0 3rem 0;
   }
 }
+@media (max-width: 991.98px) {
+  #contact_hero {
+    padding: 10rem 0 3rem 0;
+  }
+}
 #contact_hero .gx-5 {
   --bs-gutter-x: 7rem;
 }
@@ -3476,6 +3481,12 @@ h3 {
 }
 #email_copy #copy_clipboard:hover {
   cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+  .margin-top-contact {
+    margin-top: 25px;
+  }
 }
 
 #faq {
