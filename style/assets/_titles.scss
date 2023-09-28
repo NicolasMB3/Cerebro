@@ -1,110 +1,132 @@
 .h1 {
-   &-dark {
-      @include cbro-title(300, 2.625rem, 125%, $cbro-gray-900);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 28px, 130%, $cbro-gray-900);
-      }
-   }
-   &-white {
-      @include cbro-title(300, 2.625rem, 125%, $cbro-snow-50);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 28px, 130%, $cbro-snow-50);
-      }
-   }
+  &-dark {
+    @include cbro-title(300, 2.625rem, 125%, $cbro-gray-900);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 28px, 130%, $cbro-gray-900);
+    }
+  }
+  &-white {
+    @include cbro-title(300, 2.625rem, 125%, $cbro-snow-50);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 28px, 130%, $cbro-snow-50);
+    }
+  }
 }
 
 .h2 {
-   &-dark {
-      @include cbro-title(300, 36px, 130%, $cbro-black);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 24px, 130%, $cbro-gray-900);
-      }
-   }
-   &-white {
-      @include cbro-title(300, 36px, 130%, $cbro-snow-50);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 24px, 130%, $cbro-snow-50);
-      }
-   }
+  &-dark {
+    @include cbro-title(300, 36px, 130%, $cbro-black);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 24px, 130%, $cbro-gray-900);
+    }
+  }
+  &-white {
+    @include cbro-title(300, 36px, 130%, $cbro-snow-50);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 24px, 130%, $cbro-snow-50);
+    }
+  }
 }
 
 .h3 {
-   &-dark {
-      @include cbro-title(300, 32px, 130%, $cbro-black);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 24px, 130%, $cbro-gray-900);
-      }
-   }
-   &-white {
-      @include cbro-title(300, 32px, 130%, $cbro-snow-50);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 24px, 130%, $cbro-snow-50);
-      }
-   }
-   &-green {
-      @include cbro-title(300, 32px, 130%, $cbro-green-700);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 24px, 130%, $cbro-green-700);
-      }
-   }
+  &-dark {
+    @include cbro-title(300, 32px, 130%, $cbro-black);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 24px, 130%, $cbro-gray-900);
+    }
+  }
+  &-white {
+    @include cbro-title(300, 32px, 130%, $cbro-snow-50);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 24px, 130%, $cbro-snow-50);
+    }
+  }
+  &-green {
+    @include cbro-title(300, 32px, 130%, $cbro-green-700);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 24px, 130%, $cbro-green-700);
+    }
+  }
 }
 
 .h4 {
-   &-dark {
-      @include cbro-title(300, 28px, 130%, $cbro-black);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 22px, 130%, $cbro-gray-900);
-      }
-   }
-   &-white {
-      @include cbro-title(300, 28px, 130%, $cbro-snow-50);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 22px, 130%, $cbro-snow-50);
-      }
-   }
-   &-purple {
-      @include cbro-title(300, 28px, 130%, $cbro-gray-800);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 22px, 130%, $cbro-gray-800);
-      }
-   }
+  &-dark {
+    @include cbro-title(300, 28px, 130%, $cbro-black);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 22px, 130%, $cbro-gray-900);
+    }
+  }
+  &-white {
+    @include cbro-title(300, 28px, 130%, $cbro-snow-50);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 22px, 130%, $cbro-snow-50);
+    }
+  }
+  &-purple {
+    @include cbro-title(300, 28px, 130%, $cbro-gray-800);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 22px, 130%, $cbro-gray-800);
+    }
+  }
 }
 
 .h5 {
-   &-dark {
-      @include cbro-title(300, 24px, 36px, $cbro-gray-900);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 22px, 150%, $cbro-gray-900);
-      }
-   }
-   &-white {
-      @include cbro-title(300, 24px, 36px, $cbro-snow-50);
-      @include media-breakpoint-down(lg){
-         @include cbro-title(300, 22px, 150%, $cbro-snow-50);
-      }
-   }
+  &-dark {
+    @include cbro-title(300, 24px, 36px, $cbro-gray-900);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 22px, 150%, $cbro-gray-900);
+    }
+  }
+  &-white {
+    @include cbro-title(300, 24px, 36px, $cbro-snow-50);
+    @include media-breakpoint-down(lg) {
+      @include cbro-title(300, 22px, 150%, $cbro-snow-50);
+    }
+  }
 }
 
 .h6 {
-   &-dark {
-      @include cbro-paragraphe(500, 16px, 36px, $cbro-gray-900);
-      @include media-breakpoint-down(lg){
-         @include cbro-paragraphe(500, 16px, 150%, $cbro-gray-900);
-      }
-   }
-   &-white {
-      @include cbro-paragraphe(500, 16px, 36px, $cbro-snow-50);
-      @include media-breakpoint-down(lg){
-         @include cbro-paragraphe(500, 16px, 150%, $cbro-snow-50);
-      }
-   }
+  &-dark {
+    @include cbro-paragraphe(500, 16px, 36px, $cbro-gray-900);
+    @include media-breakpoint-down(lg) {
+      @include cbro-paragraphe(500, 16px, 150%, $cbro-gray-900);
+    }
+  }
+  &-white {
+    @include cbro-paragraphe(500, 16px, 36px, $cbro-snow-50);
+    @include media-breakpoint-down(lg) {
+      @include cbro-paragraphe(500, 16px, 150%, $cbro-snow-50);
+    }
+  }
 }
 
 .p {
-   &-dark {
-      @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
-      @include media-breakpoint-down(md){
-         @include cbro-paragraphe(400, $cbro-border-radius-16, 160%, $cbro-gray-800);
-      }
-   }
+  &-dark {
+    @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-800);
+    @include media-breakpoint-down(md) {
+      @include cbro-paragraphe(
+        400,
+        $cbro-border-radius-16,
+        160%,
+        $cbro-gray-800
+      );
+    }
+  }
+}
+
+.subtitle {
+  &-green {
+    @include cbro-paragraphe(600, 16px, 150%, $cbro-green-700);
+    text-transform: uppercase;
+  }
+
+  &-blue {
+    @include cbro-paragraphe(600, 16px, 150%, $cbro-blue-700);
+    text-transform: uppercase;
+  }
+
+  &-light-blue {
+    @include cbro-paragraphe(600, 16px, 150%, $cbro-opacity-0);
+    text-transform: uppercase;
+  }
 }

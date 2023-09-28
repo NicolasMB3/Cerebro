@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cérébro / FAQ</title>
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="./img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="./img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="./img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="./img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="./img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="./img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="./img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="./img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicons/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="Cérébro" />
+    <meta name="msapplication-TileColor" content="#4F756C" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://www.lecerebro.com/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="https://www.lecerebro.com/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="https://www.lecerebro.com/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="https://www.lecerebro.com/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="https://www.lecerebro.com/mstile-310x310.png"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="d-flex justify-content-center w-100 px-3 d-none d-lg-flex"
+      id="header-info"
+    >
+      <img
+        src="./img/icons/calendar_simple.svg"
+        alt="Image d'un calendrier"
+        class="calendar pe-2"
+      />
+      <p>
+        <span>Masterclass</span> “thématique” à la fac d’Amiens ce lundi
+        05/06/23 à 09h00
+      </p>
+      <a class="nav-link ps-3 d-flex align-items-center" href="#">
+        Je participe
+        <img src="./img/icons/arrow_90.svg" class="ps-1" alt="En savoir plus" />
+      </a>
+    </div>
+    <!-- Barre de navigation -->
+    <header class="position-fixed w-100 navbar_s" id="header_white">
+      <div class="container justify-content-center d-flex gap-3">
+        <nav class="d-flex justify-content-center navbar w-100">
+          <div class="container-fluid px-0">
+            <a class="py-0" href="index.html"
+              ><img
+                id="navbar-logo"
+                class="ms-2"
+                src="./img/logo/logo-cerebro.svg"
+                alt="Logo de la société"
+            /></a>
+            <div class="d-flex navbar-link d-none d-xl-flex">
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>Application</p>
+                  <img
+                    src="./img/icons/arrow_down.svg"
+                    class="ps-2"
+                    alt="Flèche qui descend"
+                  />
+                </div>
+              </a>
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>Ressources</p>
+                  <img
+                    src="./img/icons/arrow_down.svg"
+                    class="ps-2"
+                    alt="Flèche qui descend"
+                  />
+                </div>
+              </a>
+              <a href="tarifs.html" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>Tarifs</p>
+                </div>
+              </a>
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-row align-items-center">
+                  <p>À propos</p>
+                  <img
+                    src="./img/icons/arrow_down.svg"
+                    class="ps-2"
+                    alt="Flèche qui descend"
+                  />
+                </div>
+              </a>
+            </div>
+            <div
+              class="d-flex column-gap-2 align-items-center d-none d-xl-flex"
+            >
+              <button class="btn_full_transparent">Se connecter</button>
+              <button class="btn_green">Tester gratuitement</button>
+            </div>
+            <div class="hamburger-menu d-xl-none">
+              <img
+                src="./img/icons/hamburger.svg"
+                alt="Icône pour déployer un menu responsive"
+              />
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Section hero -->
+    <section id="equipe_hero">
+      <div class="container w-75">
+        <div class="equipe_title d-flex flex-column text-center">
+          <p class="subtitle-green pb-4">à propos</p>
+          <h1 class="h1-dark">
+            Mus nascetur placerat phasellus adipiscing. Eu nisl enim fermentum
+            et nisi est sit purus.
+          </h1>
+          <p class="p-equipe-dark">
+            Nisl ullamcorper commodo lectus at hendrerit netus dictumst tellus.
+            Enim velit amet lorem morbi. Risus nam vel hendrerit eu purus. Felis
+            nunc praesent cras interdum amet dui. Arcu feugiat aenean quam
+            aliquam.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Présentation cerebro -->
+    <section id="section_presentation">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="img/illustrations/img_equipe.png"
+              alt="Image des fondateurs de Cérébro"
+            />
+          </div>
+          <div class="col-6 align-self-center">
+            <div class="presentation_title d-flex flex-column">
+              <p class="subtitle-blue pb-3">Sur-titre</p>
+              <h2 class="h2-dark pb-2">
+                Maecenas orci sollicitudin adipiscing etiam pharetra nunc
+                sodales.
+              </h2>
+              <p class="p-equipe-dark">
+                Cérébro a été conçu pour faciliter l'application d’une démarche
+                Evidence-Based Practice (EBP) dans les pratiques cliniques des
+                orthophonistes. L’objectif est de mettre à disposition des
+                outils afin d'améliorer la qualité des soins thérapeutiques et
+                d'optimiser les résultats obtenus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ce qui compte pour nous -->
+    <section id="section_words">
+      <div class="container">
+        <div class="container_words row justify-content-center w-100">
+          <div
+            class="col-8 align-items-center words_title text-center d-flex flex-column"
+          >
+            <p class="subtitle-light-blue p-3">Ce qui compte pour nous</p>
+            <h2 class="h2-white">
+              Mus nascetur placerat phasellus adipiscing. Eu nisl enim fermentum
+              et nisi est sit purus.
+            </h2>
+          </div>
+          <div class="col-12">
+            <div class="d-flex gap-5">
+              <div class="d-flex flex-column align-items-center">
+                <img
+                  src="img/icons/icon_school_bg.svg"
+                  alt="Icone Ecole"
+                  class="pb-4 mb-2"
+                />
+                <h5 class="h5-white">Valeur en quelques mots</h5>
+                <p class="p-equipe-white text-center">
+                  Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum
+                  commodo venenatis
+                </p>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <img
+                  src="img/icons/icon_time_bg.svg"
+                  alt="Icone Temps"
+                  class="pb-4 mb-2"
+                />
+                <h5 class="h5-white">Valeur en quelques mots</h5>
+                <p class="p-equipe-white text-center">
+                  Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum
+                  commodo venenatis
+                </p>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <img
+                  src="img/icons/icon_work_bg.svg"
+                  alt="Icone Travail"
+                  class="pb-4 mb-2"
+                />
+                <h5 class="h5-white">Valeur en quelques mots</h5>
+                <p class="p-equipe-white text-center">
+                  Lorem ipsum dolor sit amet consectetur. Lobortis at bibendum
+                  commodo venenatis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BACKGROUND BLUE -->
+    <section id="bg-blue"></section>
+    <!-- Mission et objectif -->
+    <section id="section_missionetobjectif">
+      <div class="container">
+        <div class="container_missionetobjectif d-flex">
+          <div>
+            <div class="d-flex flex-column gap-3">
+              <p class="subtitle-blue">Mission</p>
+              <h3 class="h3-dark">
+                Lectus eget odio in velit urna lorem ut. Fringilla quis lorem
+                ac.
+              </h3>
+              <p class="p-equipe-dark">
+                Odio in vivamus tincidunt duis. Quam pharetra risus sit tortor
+                quis. Amet lorem amet bibendum parturient dictum. Nulla mi amet
+                tristique quam felis pharetra scelerisque. Risus nisi ut morbi
+                etiam elementum scelerisque convallis velit sit.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex flex-column gap-3">
+              <p class="subtitle-blue">Objectif (long terme)</p>
+              <h3 class="h3-dark">
+                Nulla egestas volutpat elementum id. Donec neque leo ornare.
+              </h3>
+              <p class="p-equipe-dark">
+                Habitant nec aliquet aliquet urna. Amet convallis odio
+                vestibulum sit consectetur. Etiam pretium eget consequat sed ut
+                velit ut sit tincidunt. Cras turpis odio egestas volutpat amet
+                commodo. Sit vitae libero posuere a turpis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- L'équipe -->
+    <section id="section_equipe">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-5">
+            <div class="equipe_title">
+              <p class="subtitle-green pb-3">L'équipe</p>
+              <h3 class="h3-dark pb-2">Les fondateurs de Cérébro</h3>
+              <p class="p-equipe-dark">
+                Odio in vivamus tincidunt duis. Quam pharetra risus sit tortor
+                quis. Amet lorem amet bibendum parturient dictum.
+              </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <img
+              src="img/illustrations/img_camille.png"
+              alt="Image de Camille"
+              class="pb-4 mb-2"
+            />
+            <h5 class="h5-dark">Camille Martial</h5>
+            <p class="p-equipe-little-dark">
+              Étudiante en 5ème année d'orthophonie (Sorbonne Université)
+              Titulaire du DU de Réhabilitation neuropsychologique (Sorbonne
+              Université) Licence Humanités, Lettres et Sciences Humaines (Paris
+              Nanterre)
+            </p>
+          </div>
+          <div class="col-3">
+            <img
+              src="img/illustrations/img_vincent.png"
+              alt="Image de Camille"
+              class="pb-4 mb-2"
+            />
+            <h5 class="h5-dark">Vincent Vidmaire</h5>
+            <p class="p-equipe-little-dark">
+              Orthophoniste diplômé de Paris VI en 2015 Titulaire du DU de
+              Réhabilitation neuropsychologique (Sorbonne Université) Exercice
+              en libéral et en structure (CRTLA Avicenne)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Découvrir la licence -->
+    <section class="homepage-licence">
+      <div class="container">
+        <div class="row text-center">
+          <div
+            class="col d-flex flex-column justify-content-center align-items-left"
+          >
+            <h2 class="py-2 h2-dark mb-0">
+              Prêt-e à révolutionner votre pratique au quotidien ?
+            </h2>
+            <h5 class="sub-title pb-2">
+              Découvrez notre licence dès maintenant
+            </h5>
+            <div class="mt-3">
+              <button class="btn_green me-md-3 me-0">
+                Tester gratuitement
+              </button>
+              <button class="btn_transparent d-none d-lg-inline-block">
+                Explorer la licence
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-md-4 py-2">
+      <div class="container pt-5">
+        <div class="row newsletter mb-5">
+          <div class="col-12 col-lg mb-4 mb-lg-0">
+            <h5>Restons en contact !</h5>
+            <p>Ne ratez rien des dernières actualités de Cérébro</p>
+          </div>
+          <div class="col">
+            <form>
+              <div class="d-flex flex-column flex-sm-row gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Votre e-mail</label
+                >
+                <input
+                  id="newsletter1"
+                  type="email"
+                  class="form-control shadow-none"
+                  placeholder="Votre e-mail"
+                />
+                <button class="btn_green mt-0">
+                  Souscrire à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-lg-4 col-12 mb-lg-3 pb-md-3 mb-3">
+            <a href="#"
+              ><img
+                src="./img/logo/logo-cerebro_white.svg"
+                alt="Logo de la société"
+            /></a>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur. In cras pellentesque
+              suspendisse.
+            </p>
+            <ul class="list-unstyled d-flex gap-3 d-md-none mt-4">
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/instagram.svg"
+                    alt="Redirection vers Intagram"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/linkedin.svg"
+                    alt="Redirection vers Linkedin"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/facebook.svg"
+                    alt="Redirection vers Facebook"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/twitter.svg"
+                    alt="Redirection vers Twitter"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/youtube.svg"
+                    alt="Redirection vers Youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">Applications</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0 text-decoration-none"
+                  >CérébroLex</a
+                >
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">CérébroVerbs</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">CérébroSyntax</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Tarifs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">Ressources</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Matériels</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Résumés d’articles</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Tableurs</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Formations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">À propos</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">L’équipe</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">FAQ</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Nous contacter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md col-6 mb-3">
+            <h5 class="mb-3 text-uppercase">Legal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Conditions générales</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0">Mentions légales</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a href="#" class="nav-link p-0"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr class="my-4" />
+          <div
+            class="d-flex flex-column flex-sm-row align-items-center justify-content-between pt-3 px-0"
+          >
+            <p class="mb-4 mb-md-0">
+              &copy; 2023 Cérébro. Tous droits reservés
+            </p>
+            <ul class="list-unstyled d-flex gap-3 d-none d-md-flex">
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/instagram.svg"
+                    alt="Redirection vers Intagram"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/linkedin.svg"
+                    alt="Redirection vers Linkedin"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/facebook.svg"
+                    alt="Redirection vers Facebook"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/twitter.svg"
+                    alt="Redirection vers Twitter"
+                /></a>
+              </li>
+              <li class="ms-2">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="./img/icons/youtube.svg"
+                    alt="Redirection vers Youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script/tarif.js"></script>
+    <script src="./script/header.js"></script>
+    <script src="./script/faq.js"></script>
+  </body>
+</html>

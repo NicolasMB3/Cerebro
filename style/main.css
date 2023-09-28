@@ -846,6 +846,31 @@ footer hr {
   }
 }
 
+.subtitle-green {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #4f756c !important;
+  text-transform: uppercase;
+}
+.subtitle-blue {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #33788d !important;
+  text-transform: uppercase;
+}
+.subtitle-light-blue {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #ccdde3 !important;
+  text-transform: uppercase;
+}
+
 .form-connexion .form-control,
 .form-contact .form-control {
   border-radius: 100px !important;
@@ -3559,4 +3584,67 @@ h3 {
   #faq .container_faq .btn_container {
     border-bottom: none;
   }
+}
+
+.p-equipe-dark {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 170% !important;
+  color: #323231 !important;
+}
+.p-equipe-little-dark {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
+}
+.p-equipe-white {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #e7e6e4 !important;
+}
+
+#equipe_hero {
+  background: url(../../../img/noise.svg) repeat #e3e1de;
+  height: 100%;
+  padding: 10rem 0 88px 0;
+}
+
+#section_presentation {
+  padding: 8rem 0;
+  height: 100%;
+  background: url(../../../img/noise.svg) repeat #fcfaf7;
+}
+#section_words {
+  padding: 50px 0;
+  background: url(../../../img/noise.svg) repeat #fcfaf7;
+}
+#section_words .container_words {
+  margin-bottom: -25%;
+  z-index: 99999;
+  position: relative;
+  padding: 64px;
+  border-radius: 20px;
+  background: url(../../../img/noise.svg) repeat #19677f;
+  gap: 88px;
+}
+#section_missionetobjectif {
+  padding: 68px 0 108px 0;
+  background: url(../../../img/noise.svg) repeat #e6eef1;
+}
+#section_missionetobjectif .container_missionetobjectif {
+  gap: 108px;
+}
+#section_equipe {
+  padding: 8rem 0;
+  background: url(../../../img/noise.svg) repeat #fcfaf7;
+}
+
+#bg-blue {
+  background: url(../../../img/noise.svg) repeat #e6eef1;
+  height: 350px;
 }/*# sourceMappingURL=main.css.map */
