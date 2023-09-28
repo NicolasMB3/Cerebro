@@ -80,12 +80,20 @@
       gap: 88px;
 
       @include media-breakpoint-down(xxl) {
+        margin-bottom: -30%;
+      }
+
+      @include media-breakpoint-down(xl) {
         margin-bottom: -45%;
+
+        h5 {
+          font-size: 20px !important;
+        }
       }
 
       @include media-breakpoint-down(lg) {
-        padding: 32px;
-        gap: 64px;
+        padding: 40px 32px;
+        gap: 48px;
         margin-bottom: -75%;
 
         h5 {
@@ -95,10 +103,12 @@
 
       @include media-breakpoint-down(md) {
         margin-bottom: -110%;
+        padding: 40px 16px;
       }
 
       @include media-breakpoint-down(sm) {
         margin-bottom: -125%;
+        padding: 40px 0;
       }
     }
   }
@@ -126,6 +136,14 @@
 
     @include media-breakpoint-down(lg) {
       padding: 4rem 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      h5 {
+        @include cbro-paragraphe(600, 18px, 150%, $cbro-gray-900);
+        text-transform: uppercase;
+        font-family: "Instrument Sans", sans-serif;
+      }
     }
   }
 

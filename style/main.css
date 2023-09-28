@@ -3683,13 +3683,21 @@ h3 {
 }
 @media (max-width: 1399.98px) {
   #section_words .container_words {
+    margin-bottom: -30%;
+  }
+}
+@media (max-width: 1199.98px) {
+  #section_words .container_words {
     margin-bottom: -45%;
+  }
+  #section_words .container_words h5 {
+    font-size: 20px !important;
   }
 }
 @media (max-width: 991.98px) {
   #section_words .container_words {
-    padding: 32px;
-    gap: 64px;
+    padding: 40px 32px;
+    gap: 48px;
     margin-bottom: -75%;
   }
   #section_words .container_words h5 {
@@ -3699,11 +3707,13 @@ h3 {
 @media (max-width: 767.98px) {
   #section_words .container_words {
     margin-bottom: -110%;
+    padding: 40px 16px;
   }
 }
 @media (max-width: 575.98px) {
   #section_words .container_words {
     margin-bottom: -125%;
+    padding: 40px 0;
   }
 }
 #section_missionetobjectif {
@@ -3730,6 +3740,17 @@ h3 {
 @media (max-width: 991.98px) {
   #section_equipe {
     padding: 4rem 0;
+  }
+}
+@media (max-width: 767.98px) {
+  #section_equipe h5 {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 150% !important;
+    color: #191919 !important;
+    text-transform: uppercase;
+    font-family: "Instrument Sans", sans-serif;
   }
 }
 #section_partenaires {
