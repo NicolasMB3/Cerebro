@@ -141,6 +141,7 @@ footer hr {
   padding-bottom: 8px;
   position: relative;
   z-index: 500;
+  transition: all 0.2s;
 }
 #header-info .calendar {
   width: 24px;
@@ -158,6 +159,14 @@ footer hr {
   font-size: 16px !important;
   line-height: 20px !important;
   color: #fff !important;
+}
+
+#header-cross {
+  background: #a04470;
+  padding-right: 10px;
+}
+#header-cross img {
+  cursor: pointer;
 }
 
 .navbar-hidden {
@@ -965,7 +974,8 @@ footer hr {
 }
 
 .toast-container {
-  transform: translateY(250px);
+  transform: translateX(400px);
+  z-index: 99999999999 !important;
 }
 .toast-container .toast {
   background-color: white;

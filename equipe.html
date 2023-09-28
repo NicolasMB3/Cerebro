@@ -115,25 +115,38 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="./script/anime.js"></script>
   </head>
-  <body>
-    <div
-      class="d-flex justify-content-center w-100 px-3 d-none d-lg-flex"
-      id="header-info"
-    >
-      <img
-        src="./img/icons/calendar_simple.svg"
-        alt="Image d'un calendrier"
-        class="calendar pe-2"
-      />
-      <p>
-        <span>Masterclass</span> “thématique” à la fac d’Amiens ce lundi
-        05/06/23 à 09h00
-      </p>
-      <a class="nav-link ps-3 d-flex align-items-center" href="#">
-        Je participe
-        <img src="./img/icons/arrow_90.svg" class="ps-1" alt="En savoir plus" />
-      </a>
+  <body class="body">
+    <div class="d-flex" id="header">
+      <div
+        class="d-flex justify-content-center w-100 px-3 d-none d-lg-flex"
+        id="header-info"
+      >
+        <img
+          src="./img/icons/calendar_simple.svg"
+          alt="Image d'un calendrier"
+          class="calendar pe-2"
+        />
+        <p>
+          <span>Masterclass</span> “thématique” à la fac d’Amiens ce lundi
+          05/06/23 à 09h00
+        </p>
+        <a class="nav-link ps-3 d-flex align-items-center" href="#">
+          Je participe
+          <img
+            src="./img/icons/arrow_90.svg"
+            class="ps-1"
+            alt="En savoir plus"
+          />
+        </a>
+      </div>
+      <div
+        id="header-cross"
+        class="d-flex justify-content-center align-items-center"
+      >
+        <img src="img/icons/cross_white.svg" alt="Croix blanche" />
+      </div>
     </div>
     <!-- Barre de navigation -->
     <header class="position-fixed w-100 navbar_s" id="header_white">

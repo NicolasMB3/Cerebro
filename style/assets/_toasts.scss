@@ -1,5 +1,7 @@
 .toast-container {
-  transform: translateY(250px);
+  transform: translateX(400px);
+  z-index: 99999999999 !important;
+
   .toast {
     background-color: white;
     --bs-toast-border-color: none;

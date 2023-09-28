@@ -90,6 +90,8 @@
   padding-bottom: 8px;
   position: relative;
   z-index: 500;
+
+  transition: all 0.2s;
   .calendar {
     width: 24px;
   }
@@ -98,6 +100,15 @@
   }
   a {
     @include cbro-paragraphe(600, 16px, 20px, $cbro-white);
+  }
+}
+
+#header-cross {
+  background: $cbro-purple-700;
+  padding-right: 10px;
+
+  img {
+    cursor: pointer;
   }
 }
 

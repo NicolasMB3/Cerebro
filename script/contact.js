@@ -10,12 +10,12 @@ btnContact.addEventListener("click", HideOffToast);
 btnCloseToast.addEventListener("click", HideOnToast);
 
 function HideOffToast() {
-  toast.style.display = "block";
-
   anime({
     targets: toast,
-    translateY: "-250px",
+    translateX: "-400px",
     duration: 500,
+    endDelay: 1000,
+    direction: "alternate",
     easing: "easeOutExpo",
   });
 }
@@ -23,7 +23,7 @@ function HideOffToast() {
 function HideOnToast() {
   anime({
     targets: toast,
-    translateY: "250px",
+    translateX: "400px",
     duration: 500,
     easing: "easeInExpo",
   });
