@@ -3612,7 +3612,15 @@ h3 {
   background: url("../../../img/illustrations/abstrait_equipe.svg") no-repeat;
   padding: 10rem 0 88px 0;
 }
-#equipe_hero .equipe_title {
+#equipe_hero .container {
+  width: 75%;
+}
+@media (max-width: 991.98px) {
+  #equipe_hero .container {
+    width: 100%;
+  }
+}
+#equipe_hero .container .equipe_title {
   position: relative;
   z-index: 99999;
 }
@@ -3629,6 +3637,11 @@ h3 {
   height: 100%;
   background: url(../../../img/noise.svg) repeat #fcfaf7;
 }
+@media (max-width: 991.98px) {
+  #section_presentation {
+    padding: 4rem 0;
+  }
+}
 #section_presentation .img_camille_vincent {
   width: -webkit-fill-available;
   height: 416px;
@@ -3639,12 +3652,18 @@ h3 {
   border-radius: 10px;
   margin-right: 80px;
 }
+@media (max-width: 991.98px) {
+  #section_presentation .img_camille_vincent {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
 #section_words {
   padding: 50px 0;
   background: url(../../../img/noise.svg) repeat #fcfaf7;
 }
 #section_words .container_words {
-  margin-bottom: -25%;
+  margin: 0 0 -25% 0;
   z-index: 99999;
   position: relative;
   padding: 64px;
@@ -3652,20 +3671,73 @@ h3 {
   background: url(../../../img/noise.svg) repeat #19677f;
   gap: 88px;
 }
+@media (max-width: 1399.98px) {
+  #section_words .container_words {
+    margin-bottom: -45%;
+  }
+}
+@media (max-width: 991.98px) {
+  #section_words .container_words {
+    padding: 32px;
+    gap: 64px;
+    margin-bottom: -75%;
+  }
+  #section_words .container_words h5 {
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  #section_words .container_words {
+    margin-bottom: -110%;
+  }
+}
+@media (max-width: 575.98px) {
+  #section_words .container_words {
+    margin-bottom: -125%;
+  }
+}
 #section_missionetobjectif {
   padding: 68px 0 108px 0;
   background: url(../../../img/noise.svg) repeat #e6eef1;
 }
+@media (max-width: 991.98px) {
+  #section_missionetobjectif {
+    padding: 4rem 0;
+  }
+}
 #section_missionetobjectif .container_missionetobjectif {
   gap: 108px;
+}
+@media (max-width: 991.98px) {
+  #section_missionetobjectif .container_missionetobjectif {
+    gap: 80px !important;
+  }
 }
 #section_equipe {
   padding: 7rem 0;
   background: url(../../../img/noise.svg) repeat #fcfaf7;
 }
+@media (max-width: 991.98px) {
+  #section_equipe {
+    padding: 4rem 0;
+  }
+}
 #section_partenaires {
   padding: 8rem 0;
   background: url(../../../img/noise.svg) repeat #fcfaf7;
+}
+#section_partenaires .partenaires_title {
+  width: 50%;
+}
+@media (max-width: 991.98px) {
+  #section_partenaires .partenaires_title {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  #section_partenaires {
+    padding: 4rem 0;
+  }
 }
 #section_partenaires .container_logo {
   height: 65px;
@@ -3680,4 +3752,14 @@ h3 {
 #bg-blue {
   background: url(../../../img/noise.svg) repeat #e6eef1;
   height: 350px;
+}
+@media (max-width: 1199.98px) {
+  #bg-blue {
+    height: 400px;
+  }
+}
+@media (max-width: 991.98px) {
+  #bg-blue {
+    height: 500px;
+  }
 }/*# sourceMappingURL=main.css.map */

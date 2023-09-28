@@ -16,9 +16,17 @@
   background: url("../../../img/illustrations/abstrait_equipe.svg") no-repeat;
   padding: 10rem 0 88px 0;
 
-  .equipe_title {
-    position: relative;
-    z-index: 99999;
+  .container {
+    width: 75%;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+
+    .equipe_title {
+      position: relative;
+      z-index: 99999;
+    }
   }
 }
 
@@ -33,6 +41,11 @@
 #section {
   &_presentation {
     padding: 8rem 0;
+
+    @include media-breakpoint-down(lg) {
+      padding: 4rem 0;
+    }
+
     height: 100%;
     background: url(../../../img/noise.svg) repeat $cbro-snow-50;
 
@@ -43,6 +56,11 @@
       object-position: 20%; // L'image se déplacera de 20% vers la droite.
       border-radius: 10px;
       margin-right: 80px;
+
+      @include media-breakpoint-down(lg) {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
     }
   }
 
@@ -50,7 +68,8 @@
     padding: 50px 0;
     background: url(../../../img/noise.svg) repeat $cbro-snow-50;
     .container_words {
-      margin-bottom: -25%;
+      margin: 0 0 -25% 0;
+
       z-index: 99999;
       position: relative;
 
@@ -59,6 +78,28 @@
       background: url(../../../img/noise.svg) repeat $cbro-blue-800;
 
       gap: 88px;
+
+      @include media-breakpoint-down(xxl) {
+        margin-bottom: -45%;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding: 32px;
+        gap: 64px;
+        margin-bottom: -75%;
+
+        h5 {
+          font-size: 22px !important;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: -110%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: -125%;
+      }
     }
   }
 
@@ -66,19 +107,43 @@
     padding: 68px 0 108px 0;
     background: url(../../../img/noise.svg) repeat $cbro-blue-50;
 
+    @include media-breakpoint-down(lg) {
+      padding: 4rem 0;
+    }
+
     .container_missionetobjectif {
       gap: 108px;
+
+      @include media-breakpoint-down(lg) {
+        gap: 80px !important;
+      }
     }
   }
 
   &_equipe {
     padding: 7rem 0;
     background: url(../../../img/noise.svg) repeat $cbro-snow-50;
+
+    @include media-breakpoint-down(lg) {
+      padding: 4rem 0;
+    }
   }
 
   &_partenaires {
     padding: 8rem 0;
     background: url(../../../img/noise.svg) repeat $cbro-snow-50;
+
+    .partenaires_title {
+      width: 50%;
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 4rem 0;
+    }
 
     .container_logo {
       height: 65px;
@@ -94,4 +159,12 @@
 #bg-blue {
   background: url(../../../img/noise.svg) repeat $cbro-blue-50;
   height: 350px;
+
+  @include media-breakpoint-down(xl) {
+    height: 400px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    height: 500px;
+  }
 }
