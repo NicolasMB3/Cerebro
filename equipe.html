@@ -215,8 +215,7 @@
       </div>
     </header>
     <!-- Section hero -->
-    <section id="equipe_hero" class="position-relative">
-      <div class="bg_img_hero position-absolute"></div>
+    <section id="equipe_hero">
       <div class="container">
         <div class="equipe_title d-flex flex-column text-center">
           <p class="subtitle-green pb-4">à propos</p>
@@ -412,28 +411,38 @@
             Lectus eget odio in velit urna lorem ut. Fringilla quis lorem ac.
           </h3>
         </div>
-        <div class="container_logo d-flex justify-content-between">
-          <!-- AJOUT DE PARTENAIRES = IMAGE DE COULEUR GRISE -->
-          <img
-            src="img/logo/logo_ecoledesign.png"
-            alt="Logo Ecole de design"
-            class="w-25"
-          />
-          <img
-            src="img/logo/logo_24supelec.png"
-            alt="Logo CentraleSupélec"
-            class="w-25"
-          />
-          <img
-            src="img/logo/logo_assistance_paris.png"
-            alt="Logo Assistance hôpitaux publique de Paris"
-            class="w-25"
-          />
-          <img
-            src="img/logo/logo_pepite.png"
-            alt="Logo Pépite France"
-            class="w-25"
-          />
+        <div class="logos">
+          <div
+            id="container_logo"
+            class="slider-track container_logo d-flex justify-content-between w-100"
+          >
+            <!-- AJOUT DE PARTENAIRES = IMAGE DE COULEUR GRISE -->
+            <img
+              src="img/logo/logo_aeplvc.png"
+              alt="Logo Pépite France"
+              class="w-25"
+            />
+            <img
+              src="img/logo/logo_ecoledesign.png"
+              alt="Logo Ecole de design"
+              class="w-25"
+            />
+            <img
+              src="img/logo/logo_24supelec.png"
+              alt="Logo CentraleSupélec"
+              class="w-25"
+            />
+            <img
+              src="img/logo/logo_assistance_paris.png"
+              alt="Logo Assistance hôpitaux publique de Paris"
+              class="w-25"
+            />
+            <img
+              src="img/logo/logo_pepite.png"
+              alt="Logo Pépite France"
+              class="w-25"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -652,8 +661,8 @@
         </div>
       </div>
     </footer>
-    <script src="./script/tarif.js"></script>
     <script src="./script/header.js"></script>
+    <script src="./script/equipe.js"></script>
     <script src="./script/faq.js"></script>
   </body>
 </html>

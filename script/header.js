@@ -1,10 +1,18 @@
 // Animation de la barre de navigation au scroll
 const navbar = document.querySelector(".navbar_s");
+const navbarElNav = document.getElementById("navbar");
 const littleNavbar = document.querySelector(".navbar_s nav");
 let timeScrollOff = 1700;
 let isNavbarVisible = true;
 let scrollTimeout;
 
+// Sous-menu
+const btnLinkApp = document.getElementById("link-app");
+const arrowLinkApp = document.getElementById("arrow-link-app");
+
+const containerNav = document.getElementById("container_nav");
+
+// Barre d'annonce
 const btnCrossHeader = document.getElementById("header-cross");
 const header = document.getElementById("header");
 
@@ -76,6 +84,19 @@ navbar.addEventListener("mouseleave", () => {
   if (window.scrollY > 80) {
     hideNavbar();
   }
+});
+
+// Afficher / Cacher le sous-menu
+btnLinkApp.addEventListener("click", () => {
+  containerNav.classList.toggle("d-none");
+  navbarElNav.classList.toggle("active");
+
+  anime({
+    targets: arrowLinkApp,
+    rotate: "180deg",
+    duration: 200,
+    easing: "easeInOutExpo",
+  });
 });
 
 // Cacher la barre d'annonce

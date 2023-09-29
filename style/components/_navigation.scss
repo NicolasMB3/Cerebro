@@ -32,7 +32,13 @@
     }
     .navbar-link {
       a {
-        padding: 0 1vw;
+        cursor: pointer;
+        border-radius: 100px;
+        padding: 6px 12px;
+
+        &:hover {
+          background-color: rgba(25, 25, 25, 0.04);
+        }
       }
     }
     .container-fluid {
@@ -41,6 +47,52 @@
           @include cbro-paragraphe(400, 16px, 150%, $cbro-white);
           background: $cbro-green-700;
           padding: 12px 22px;
+        }
+      }
+    }
+
+    &.active {
+      border-radius: 24px;
+      background: linear-gradient(
+          0deg,
+          rgb(227, 225, 222) 0%,
+          rgb(227, 225, 222) 100%
+        ),
+        #fbf8f4;
+    }
+
+    .container_nav {
+      .container_nav_title {
+        @include cbro-paragraphe(600, 11px, 150%, $cbro-gray-500);
+        text-transform: uppercase;
+      }
+
+      .container_nav_link {
+        border-bottom: 1px solid $cbro-opacity-50;
+
+        .nav {
+          border-radius: 16px;
+          transition: outline 0.2s;
+        }
+        .nav:hover {
+          outline: 1px solid $cbro-gray-200;
+        }
+
+        .nav_title {
+          @include cbro-paragraphe(500, 16px, 150%, $cbro-gray-900);
+        }
+
+        .nav_text {
+          @include cbro-paragraphe(400, 15px, 150%, $cbro-gray-600);
+        }
+      }
+
+      .container_souscription {
+        p {
+          a {
+            text-decoration: none;
+            @include cbro-paragraphe(500, 15px, 100%, $cbro-purple-700);
+          }
         }
       }
     }
