@@ -60,4 +60,14 @@
       }
     }
   }
+
+  .cta {
+    div {
+      a {
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
