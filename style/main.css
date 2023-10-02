@@ -244,6 +244,10 @@ footer hr {
   border-radius: 24px;
   background: linear-gradient(0deg, rgb(227, 225, 222) 0%, rgb(227, 225, 222) 100%), #fbf8f4;
 }
+#header_white .navbar .container_nav {
+  height: 0;
+  animation: height 0.2 ease-in-out;
+}
 #header_white .navbar .container_nav .container_nav_title {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
@@ -251,6 +255,11 @@ footer hr {
   line-height: 150% !important;
   color: #7e7d7c !important;
   text-transform: uppercase;
+}
+#header_white .navbar .container_nav #container_app,
+#header_white .navbar .container_nav #container_ressources,
+#header_white .navbar .container_nav #container_apropos {
+  opacity: 0;
 }
 #header_white .navbar .container_nav .container_nav_link {
   border-bottom: 1px solid #d8d6d1;
@@ -425,6 +434,10 @@ footer hr {
   border-radius: 24px;
   background: linear-gradient(0deg, rgb(227, 225, 222) 0%, rgb(227, 225, 222) 100%), #fbf8f4;
 }
+#header_beige .navbar .container_nav {
+  height: 0;
+  animation: height 0.2 ease-in-out;
+}
 #header_beige .navbar .container_nav .container_nav_title {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
@@ -432,6 +445,11 @@ footer hr {
   line-height: 150% !important;
   color: #7e7d7c !important;
   text-transform: uppercase;
+}
+#header_beige .navbar .container_nav #container_app,
+#header_beige .navbar .container_nav #container_ressources,
+#header_beige .navbar .container_nav #container_apropos {
+  opacity: 0;
 }
 #header_beige .navbar .container_nav .container_nav_link {
   border-bottom: 1px solid #d8d6d1;
@@ -606,6 +624,10 @@ footer hr {
   border-radius: 24px;
   background: linear-gradient(0deg, rgb(227, 225, 222) 0%, rgb(227, 225, 222) 100%), #fbf8f4;
 }
+#header_transparent .navbar .container_nav {
+  height: 0;
+  animation: height 0.2 ease-in-out;
+}
 #header_transparent .navbar .container_nav .container_nav_title {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 600 !important;
@@ -613,6 +635,11 @@ footer hr {
   line-height: 150% !important;
   color: #7e7d7c !important;
   text-transform: uppercase;
+}
+#header_transparent .navbar .container_nav #container_app,
+#header_transparent .navbar .container_nav #container_ressources,
+#header_transparent .navbar .container_nav #container_apropos {
+  opacity: 0;
 }
 #header_transparent .navbar .container_nav .container_nav_link {
   border-bottom: 1px solid #d8d6d1;

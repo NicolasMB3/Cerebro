@@ -14,6 +14,7 @@ const arrayBtnLink = document.querySelectorAll(
 const arrayContainerNav = document.querySelectorAll(
   "#container_app, #container_ressources, #container_apropos"
 );
+const containerNav = document.getElementById("container_nav");
 
 // Barre d'annonce
 const btnCrossHeader = document.getElementById("header-cross");
@@ -109,7 +110,7 @@ arrayBtnLink.forEach((button, i) => {
           easing: "easeInOutExpo",
         });
 
-        navbar.addEventListener("mouseleave", () => {
+        /*navbar.addEventListener("mouseleave", () => {
           container.classList.add("d-none");
           navbarElNav.classList.remove("active");
           button.classList.remove("actived");
@@ -121,7 +122,7 @@ arrayBtnLink.forEach((button, i) => {
             duration: 200,
             easing: "easeInOutExpo",
           });
-        });
+        });*/
       });
     });
     // Si le bouton précédemment appuyer et le même alors on cache le conteneur
@@ -145,8 +146,31 @@ arrayBtnLink.forEach((button, i) => {
         btn.classList.remove("actived");
       });
       arrayBtnLink[i].classList.add("actived");
-
       index = i;
+
+      anime({
+        targets: navbarElNav,
+        borderRadius: ["5000px", "24px"],
+        duration: 500,
+        easing: "easeInOutExpo",
+      });
+
+      anime({
+        targets: containerNav,
+        height: "100%",
+        duration: 1000,
+        easing: "easeInOutExpo",
+      });
+
+      anime({
+        targets: arrayContainerNav[i],
+        easing: "easeInOutExpo",
+        opacity: {
+          value: "1",
+          duration: 500,
+          delay: 500,
+        },
+      });
 
       anime({
         targets: arrayArrowUp[i],

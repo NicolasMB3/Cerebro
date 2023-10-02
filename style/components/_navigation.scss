@@ -66,9 +66,17 @@
     }
 
     .container_nav {
+      height: 0;
+      animation: height 0.2 ease-in-out;
       .container_nav_title {
         @include cbro-paragraphe(600, 11px, 150%, $cbro-gray-500);
         text-transform: uppercase;
+      }
+
+      #container_app,
+      #container_ressources,
+      #container_apropos {
+        opacity: 0;
       }
 
       .container_nav_link {
