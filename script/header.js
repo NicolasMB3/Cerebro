@@ -7,26 +7,13 @@ let isNavbarVisible = true;
 let scrollTimeout;
 
 // Sous-menu
-const btnLink = document.querySelector(".navbar-link");
-/*
-const btnLinkApp = document.getElementById("link-app");
-const btnLinkRessources = document.getElementById("link-ressources");
-const btnLinkApropos = document.getElementById("link-apropos");
-*/
-
-const arrowUp = document.querySelectorAll(".arrow_up");
-/*
-const arrowLinkApp = document.getElementById("arrow-link-app");
-const arrowLinkRessources = document.getElementById("arrow-link-ressources");
-const arrowLinkApropos = document.getElementById("arrow-link-apropos");
-*/
-
-const containerNav = document.querySelector("#container_nav");
-/*
-const containerApp = document.getElementById("container_app");
-const containerRessources = document.getElementById("container_ressources");
-const containerApropos = document.getElementById("container_apropos");
-*/
+const arrayArrowUp = document.querySelectorAll(".arrow_up");
+const arrayBtnLink = document.querySelectorAll(
+  "#link-app, #link-ressources, #link-apropos"
+);
+const arrayContainerNav = document.querySelectorAll(
+  "#container_app, #container_ressources, #container_apropos"
+);
 
 // Barre d'annonce
 const btnCrossHeader = document.getElementById("header-cross");
@@ -102,65 +89,74 @@ navbar.addEventListener("mouseleave", () => {
   }
 });
 
-const arrayBtnLink = document.querySelectorAll(".navbar-link a");
+let index;
+// Pour chaque bouton de la barre de navigation
+arrayBtnLink.forEach((button, i) => {
+  // On ajoute un évènement au click
+  button.addEventListener("click", () => {
+    // Pour chaque conteneur de la barre de navigation
+    arrayContainerNav.forEach((container) => {
+      // Ils sont hidden de base et à chaque click
+      container.classList.add("d-none");
+      navbarElNav.classList.remove("active");
 
-[...arrayBtnLink].forEach((e) => {
-  e.addEventListener("click", (button) => {
-    containerNav.children[i].classList.remove();
+      // Et chaque arrow mis à 0 à chaque click
+      arrayArrowUp.forEach((arrow) => {
+        anime({
+          targets: arrow,
+          rotate: "-1turn",
+          duration: 200,
+          easing: "easeInOutExpo",
+        });
+
+        navbar.addEventListener("mouseleave", () => {
+          container.classList.add("d-none");
+          navbarElNav.classList.remove("active");
+          button.classList.remove("actived");
+          index = undefined;
+
+          anime({
+            targets: arrow,
+            rotate: "-1turn",
+            duration: 200,
+            easing: "easeInOutExpo",
+          });
+        });
+      });
+    });
+    // Si le bouton précédemment appuyer et le même alors on cache le conteneur
+    if (index === i) {
+      navbarElNav.classList.remove("active");
+      arrayContainerNav[i].classList.add("d-none");
+      arrayBtnLink[i].classList.remove("actived");
+      index = undefined;
+
+      anime({
+        targets: arrayArrowUp[i],
+        rotate: "-1turn",
+        duration: 200,
+        easing: "easeInOutExpo",
+      });
+    } else {
+      // Sinon on affiche le conteneur cliqué
+      navbarElNav.classList.add("active");
+      arrayContainerNav[i].classList.remove("d-none");
+      arrayBtnLink.forEach((btn) => {
+        btn.classList.remove("actived");
+      });
+      arrayBtnLink[i].classList.add("actived");
+
+      index = i;
+
+      anime({
+        targets: arrayArrowUp[i],
+        rotate: "0.5turn",
+        duration: 200,
+        easing: "easeInOutExpo",
+      });
+    }
   });
 });
-
-arrayBtnLink.forEach((button) => {});
-
-/*
-// Afficher / Cacher le sous-menu Application
-btnLinkApp.addEventListener("click", () => {
-  containerNav.classList.remove("d-none");
-  navbarElNav.classList.add("active");
-  containerRessources.classList.add("d-none");
-  containerApp.classList.remove("d-none");
-  containerApropos.classList.add("d-none");
-
-  anime({
-    targets: arrowLinkApp,
-    rotate: "180deg",
-    duration: 200,
-    easing: "easeInOutExpo",
-  });
-});
-
-// Afficher / Cacher le sous-menu Ressources
-btnLinkRessources.addEventListener("click", () => {
-  containerNav.classList.remove("d-none");
-  navbarElNav.classList.add("active");
-  containerRessources.classList.remove("d-none");
-  containerApp.classList.add("d-none");
-  containerApropos.classList.add("d-none");
-
-  anime({
-    targets: arrowLinkRessources,
-    rotate: "180deg",
-    duration: 200,
-    easing: "easeInOutExpo",
-  });
-});
-
-// Afficher / Cacher le sous-menu A propos
-btnLinkApropos.addEventListener("click", () => {
-  containerNav.classList.remove("d-none");
-  navbarElNav.classList.add("active");
-  containerRessources.classList.add("d-none");
-  containerApp.classList.add("d-none");
-  containerApropos.classList.remove("d-none");
-
-  anime({
-    targets: arrowLinkApropos,
-    rotate: "180deg",
-    duration: 200,
-    easing: "easeInOutExpo",
-  });
-});
-*/
 
 // Cacher la barre d'annonce
 btnCrossHeader.addEventListener("click", () => {

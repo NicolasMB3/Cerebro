@@ -228,6 +228,9 @@ footer hr {
 #header_white .navbar .navbar-link a:hover {
   background-color: rgba(25, 25, 25, 0.04);
 }
+#header_white .navbar .navbar-link a.actived {
+  background-color: rgba(25, 25, 25, 0.04);
+}
 #header_white .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -406,6 +409,9 @@ footer hr {
 #header_beige .navbar .navbar-link a:hover {
   background-color: rgba(25, 25, 25, 0.04);
 }
+#header_beige .navbar .navbar-link a.actived {
+  background-color: rgba(25, 25, 25, 0.04);
+}
 #header_beige .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -582,6 +588,9 @@ footer hr {
   padding: 6px 12px;
 }
 #header_transparent .navbar .navbar-link a:hover {
+  background-color: rgba(25, 25, 25, 0.04);
+}
+#header_transparent .navbar .navbar-link a.actived {
   background-color: rgba(25, 25, 25, 0.04);
 }
 #header_transparent .navbar .container-fluid .d-flex:nth-child(3) a:nth-child(2) {
