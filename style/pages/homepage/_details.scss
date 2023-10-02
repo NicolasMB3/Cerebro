@@ -78,30 +78,46 @@
         }
       }
     }
+  }
+
+  &_a {
+    background: url(./../img/noise.svg), rgba(231, 221, 241, 0.45);
 
     .img_decorative {
       opacity: 0.5;
     }
   }
 
-  &_a {
-    background: url(./../img/noise.svg), rgba(231, 221, 241, 0.45);
-  }
-
   &_b {
     background: url(./../img/noise.svg), rgba(234, 239, 226, 0.65);
+
+    .img_decorative {
+      opacity: 0.8;
+    }
   }
 
   &_c {
     background: url(./../img/noise.svg), rgba(254, 234, 210, 0.45);
+
+    .img_decorative {
+      opacity: 1;
+    }
   }
 
   &_d {
     background: url(./../img/noise.svg), rgba(206, 227, 246, 0.45);
+
+    .img_decorative {
+      opacity: 0.5;
+    }
   }
 
   &_e {
     background: url(./../img/noise.svg), rgba(253, 228, 224, 0.45);
+
+    .img_decorative {
+      opacity: 0.8;
+    }
   }
 }
 

@@ -68,14 +68,36 @@
       }
 
       .container_nav_link {
-        border-bottom: 1px solid $cbro-opacity-50;
+        border-bottom: 1px solid #d8d6d1;
+        width: 100%;
 
         .nav {
           border-radius: 16px;
-          transition: outline 0.2s;
+          border: 1px solid transparent;
+          cursor: pointer;
+
+          transition: border 0.2s;
+
+          img {
+            padding: 12px;
+            border-radius: 10px;
+            background: rgba(25, 25, 25, 0.04);
+
+            &.logo_cerebrolex {
+              background: #e9eeed;
+            }
+
+            &.logo_cerebrosyntax {
+              background: #e6eef1;
+            }
+
+            &.logo_cerebroverbs {
+              background: #f3e8ed;
+            }
+          }
         }
         .nav:hover {
-          outline: 1px solid $cbro-gray-200;
+          border: 1px solid $cbro-gray-200;
         }
 
         .nav_title {
@@ -84,6 +106,29 @@
 
         .nav_text {
           @include cbro-paragraphe(400, 15px, 150%, $cbro-gray-600);
+        }
+      }
+
+      #container_ressources .container_nav_link,
+      #container_apropos .container_nav_link {
+        border-bottom: none;
+      }
+
+      #container_ressources .last_article {
+        background: rgba(25, 25, 25, 0.04);
+        height: 100%;
+        border-radius: 16px;
+        padding: 20px;
+
+        h5 {
+          @include cbro-paragraphe(500, 18px, 140%, $cbro-gray-900);
+          margin-bottom: auto;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 13px;
+          padding: 10px 20px;
         }
       }
 

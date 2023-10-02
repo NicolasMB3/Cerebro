@@ -148,7 +148,7 @@
             <a class="py-0" href="index.html"
               ><img
                 id="navbar-logo"
-                class="ms-2"
+                class="ms-3 ps-1"
                 src="./img/logo/logo-cerebro.svg"
                 alt="Logo de la société"
             /></a>
@@ -164,12 +164,14 @@
                   />
                 </div>
               </a>
-              <a class="nav-link">
+              <a class="nav-link" id="link-ressources">
                 <div class="d-flex flex-row align-items-center gap-2">
                   <p>Ressources</p>
                   <img
+                    id="arrow-link-ressources"
                     src="./img/icons/arrow_down.svg"
                     alt="Flèche qui descend"
+                    class="arrow_up"
                   />
                 </div>
               </a>
@@ -178,12 +180,14 @@
                   <p>Tarifs</p>
                 </div>
               </a>
-              <a class="nav-link">
+              <a class="nav-link" id="link-apropos">
                 <div class="d-flex flex-row align-items-center gap-2">
                   <p>À propos</p>
                   <img
+                    id="arrow-link-apropos"
                     src="./img/icons/arrow_down.svg"
                     alt="Flèche qui descend"
+                    class="arrow_up"
                   />
                 </div>
               </a>
@@ -201,55 +205,194 @@
               />
             </div>
           </div>
-          <div id="container_nav" class="container_nav d-none w-100">
-            <div>
-              <span class="container_nav_title ps-3 ms-1">Language oral</span>
+          <div id="container_nav" class="container_nav w-100">
+            <div id="container_app" class="d-none">
+              <div>
+                <span class="container_nav_title ps-3 ms-1">Language oral</span>
+              </div>
+              <div
+                class="container_nav_link d-flex justify-content-between align-items-center pb-4 mb-2"
+              >
+                <div
+                  class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                >
+                  <img
+                    src="img/logo/logo_cerebrolex.svg"
+                    alt="Logo CérébroLex"
+                    class="logo_cerebrolex"
+                  />
+                  <a href="#" class="d-flex flex-column text-decoration-none">
+                    <span class="nav_title">CérébroLex</span>
+                    <p class="nav_text">
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                >
+                  <img
+                    src="img/logo/logo_cerebrosyntax.svg"
+                    alt="Logo CérébroSyntax"
+                    class="logo_cerebrosyntax"
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="nav_title">CérébroSyntax</span>
+                    <p class="nav_text">
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                >
+                  <img
+                    src="img/logo/logo_cerebroverbs.svg"
+                    alt="Logo CérébroVerbs"
+                    class="logo_cerebroverbs"
+                  />
+                  <div class="d-flex flex-column">
+                    <span class="nav_title">CérébroVerbs</span>
+                    <p class="nav_text">
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="container_souscription py-1 px-1">
+                <p class="d-flex gap-1">
+                  Psst... Envie de bénéficier des applications ?
+                  <a href="#" class="d-flex align-items-center gap-1"
+                    ><span>Souscrivez dès maintenant à la Licence Cérébro</span>
+                    <img
+                      src="img/icons/arrow_90_purple.svg"
+                      alt="Fléche haut"
+                    />
+                  </a>
+                </p>
+              </div>
             </div>
-            <div
-              class="container_nav_link d-flex justify-content-between align-items-center pb-4 mb-2"
-            >
-              <div
-                class="nav d-flex gap-3 justify-content-center align-items-center p-3"
-              >
-                <img src="img/logo/logo_cerebrolex.svg" alt="Logo CérébroLex" />
-                <div class="d-flex flex-column">
-                  <span class="nav_title">CérébroLex</span>
-                  <p class="nav_text">Lorem ipsum dolor sit amet consectetur</p>
+            <div id="container_ressources" class="row d-none">
+              <div class="col-4 pb-2">
+                <div>
+                  <span class="container_nav_title ps-3 ms-1">Apprendre</span>
+                </div>
+                <div
+                  class="container_nav_link d-flex flex-column justify-content-between align-items-start"
+                >
+                  <div
+                    class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                  >
+                    <img
+                      src="img/icons/icon_school-hat.svg"
+                      alt="Icone chapeau d'école"
+                    />
+                    <a href="#" class="d-flex flex-column text-decoration-none">
+                      <span class="nav_title">Formations</span>
+                      <p class="nav_text">
+                        Lorem ipsum dolor sit amet consectetur
+                      </p>
+                    </a>
+                  </div>
+                  <div
+                    class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                  >
+                    <img src="img/icons/icon_paper.svg" alt="Icone papier" />
+                    <div class="d-flex flex-column">
+                      <span class="nav_title">Résumé d'articles</span>
+                      <p class="nav_text">
+                        Lorem ipsum dolor sit amet consectetur
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div
-                class="nav d-flex gap-3 justify-content-center align-items-center p-3"
-              >
-                <img
-                  src="img/logo/logo_cerebrosyntax.svg"
-                  alt="Logo CérébroSyntax"
-                />
-                <div class="d-flex flex-column">
-                  <span class="nav_title">CérébroSyntax</span>
-                  <p class="nav_text">Lorem ipsum dolor sit amet consectetur</p>
+              <div class="col-4 pb-2">
+                <div>
+                  <span class="container_nav_title ps-4 ms-2">Accompagner</span>
+                </div>
+                <div
+                  class="container_nav_link d-flex flex-column justify-content-between align-items-center"
+                >
+                  <div
+                    class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                  >
+                    <img
+                      src="img/icons/icon_brain.svg"
+                      alt="Icone travail de la mémoire"
+                    />
+                    <a href="#" class="d-flex flex-column text-decoration-none">
+                      <span class="nav_title">Matériels</span>
+                      <p class="nav_text">
+                        Lorem ipsum dolor sit amet consectetur
+                      </p>
+                    </a>
+                  </div>
+                  <div
+                    class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                  >
+                    <img src="img/icons/icon_table.svg" alt="Icone tableur" />
+                    <div class="d-flex flex-column">
+                      <span class="nav_title">Tableurs</span>
+                      <p class="nav_text">
+                        Lorem ipsum dolor sit amet consectetur
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div
-                class="nav d-flex gap-3 justify-content-center align-items-center p-3"
-              >
-                <img
-                  src="img/logo/logo_cerebroverbs.svg"
-                  alt="Logo CérébroVerbs"
-                />
-                <div class="d-flex flex-column">
-                  <span class="nav_title">CérébroVerbs</span>
-                  <p class="nav_text">Lorem ipsum dolor sit amet consectetur</p>
+              <div class="col-4 pb-4 pe-4">
+                <div
+                  class="last_article d-flex flex-column justify-content-between align-items-start"
+                >
+                  <div>
+                    <span class="container_nav_title">Nouveau</span>
+                  </div>
+                  <h5 class="last_article_title w-75">
+                    Les exos de Cérébro - Manuel d'utilisation
+                  </h5>
+                  <a href="#" class="btn_transparent">En savoir plus</a>
                 </div>
               </div>
             </div>
-            <div class="container_souscription">
-              <p class="d-flex gap-1">
-                Psst... Envie de bénéficier des applications ?
-                <a href="#" class="d-flex align-items-center gap-1"
-                  ><span>Souscrivez dès maintenant à la Licence Cérébro</span>
-                  <img src="img/icons/arrow_90_purple.svg" alt="Fléche haut" />
-                </a>
-              </p>
+            <div id="container_apropos" class="d-none">
+              <div
+                class="container_nav_link d-flex justify-content-between align-items-center"
+              >
+                <div
+                  class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                >
+                  <img src="img/icons/icon_team.svg" alt="Icone team" />
+                  <a href="#" class="d-flex flex-column text-decoration-none">
+                    <span class="nav_title">L'équipe</span>
+                    <p class="nav_text">
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                >
+                  <img src="img/icons/icon_help.svg" alt="Icon FAQ" />
+                  <div class="d-flex flex-column">
+                    <span class="nav_title">FAQ</span>
+                    <p class="nav_text">
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="nav d-flex gap-3 justify-content-center align-items-center p-3"
+                >
+                  <img src="img/icons/icon_mail.svg" alt="Icone mail" />
+                  <div class="d-flex flex-column">
+                    <span class="nav_title">Contact</span>
+                    <p class="nav_text">
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </nav>

@@ -250,14 +250,31 @@ footer hr {
   text-transform: uppercase;
 }
 #header_white .navbar .container_nav .container_nav_link {
-  border-bottom: 1px solid #e7e6e4;
+  border-bottom: 1px solid #d8d6d1;
+  width: 100%;
 }
 #header_white .navbar .container_nav .container_nav_link .nav {
   border-radius: 16px;
-  transition: outline 0.2s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+#header_white .navbar .container_nav .container_nav_link .nav img {
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(25, 25, 25, 0.04);
+}
+#header_white .navbar .container_nav .container_nav_link .nav img.logo_cerebrolex {
+  background: #e9eeed;
+}
+#header_white .navbar .container_nav .container_nav_link .nav img.logo_cerebrosyntax {
+  background: #e6eef1;
+}
+#header_white .navbar .container_nav .container_nav_link .nav img.logo_cerebroverbs {
+  background: #f3e8ed;
 }
 #header_white .navbar .container_nav .container_nav_link .nav:hover {
-  outline: 1px solid #cac8c6;
+  border: 1px solid #cac8c6;
 }
 #header_white .navbar .container_nav .container_nav_link .nav_title {
   font-family: "Instrument Sans", sans-serif;
@@ -272,6 +289,29 @@ footer hr {
   font-size: 15px !important;
   line-height: 150% !important;
   color: #656463 !important;
+}
+#header_white .navbar .container_nav #container_ressources .container_nav_link,
+#header_white .navbar .container_nav #container_apropos .container_nav_link {
+  border-bottom: none;
+}
+#header_white .navbar .container_nav #container_ressources .last_article {
+  background: rgba(25, 25, 25, 0.04);
+  height: 100%;
+  border-radius: 16px;
+  padding: 20px;
+}
+#header_white .navbar .container_nav #container_ressources .last_article h5 {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 140% !important;
+  color: #191919 !important;
+  margin-bottom: auto;
+}
+#header_white .navbar .container_nav #container_ressources .last_article a {
+  text-decoration: none;
+  font-size: 13px;
+  padding: 10px 20px;
 }
 #header_white .navbar .container_nav .container_souscription p a {
   text-decoration: none;
@@ -388,14 +428,31 @@ footer hr {
   text-transform: uppercase;
 }
 #header_beige .navbar .container_nav .container_nav_link {
-  border-bottom: 1px solid #e7e6e4;
+  border-bottom: 1px solid #d8d6d1;
+  width: 100%;
 }
 #header_beige .navbar .container_nav .container_nav_link .nav {
   border-radius: 16px;
-  transition: outline 0.2s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+#header_beige .navbar .container_nav .container_nav_link .nav img {
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(25, 25, 25, 0.04);
+}
+#header_beige .navbar .container_nav .container_nav_link .nav img.logo_cerebrolex {
+  background: #e9eeed;
+}
+#header_beige .navbar .container_nav .container_nav_link .nav img.logo_cerebrosyntax {
+  background: #e6eef1;
+}
+#header_beige .navbar .container_nav .container_nav_link .nav img.logo_cerebroverbs {
+  background: #f3e8ed;
 }
 #header_beige .navbar .container_nav .container_nav_link .nav:hover {
-  outline: 1px solid #cac8c6;
+  border: 1px solid #cac8c6;
 }
 #header_beige .navbar .container_nav .container_nav_link .nav_title {
   font-family: "Instrument Sans", sans-serif;
@@ -410,6 +467,29 @@ footer hr {
   font-size: 15px !important;
   line-height: 150% !important;
   color: #656463 !important;
+}
+#header_beige .navbar .container_nav #container_ressources .container_nav_link,
+#header_beige .navbar .container_nav #container_apropos .container_nav_link {
+  border-bottom: none;
+}
+#header_beige .navbar .container_nav #container_ressources .last_article {
+  background: rgba(25, 25, 25, 0.04);
+  height: 100%;
+  border-radius: 16px;
+  padding: 20px;
+}
+#header_beige .navbar .container_nav #container_ressources .last_article h5 {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 140% !important;
+  color: #191919 !important;
+  margin-bottom: auto;
+}
+#header_beige .navbar .container_nav #container_ressources .last_article a {
+  text-decoration: none;
+  font-size: 13px;
+  padding: 10px 20px;
 }
 #header_beige .navbar .container_nav .container_souscription p a {
   text-decoration: none;
@@ -526,14 +606,31 @@ footer hr {
   text-transform: uppercase;
 }
 #header_transparent .navbar .container_nav .container_nav_link {
-  border-bottom: 1px solid #e7e6e4;
+  border-bottom: 1px solid #d8d6d1;
+  width: 100%;
 }
 #header_transparent .navbar .container_nav .container_nav_link .nav {
   border-radius: 16px;
-  transition: outline 0.2s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+#header_transparent .navbar .container_nav .container_nav_link .nav img {
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(25, 25, 25, 0.04);
+}
+#header_transparent .navbar .container_nav .container_nav_link .nav img.logo_cerebrolex {
+  background: #e9eeed;
+}
+#header_transparent .navbar .container_nav .container_nav_link .nav img.logo_cerebrosyntax {
+  background: #e6eef1;
+}
+#header_transparent .navbar .container_nav .container_nav_link .nav img.logo_cerebroverbs {
+  background: #f3e8ed;
 }
 #header_transparent .navbar .container_nav .container_nav_link .nav:hover {
-  outline: 1px solid #cac8c6;
+  border: 1px solid #cac8c6;
 }
 #header_transparent .navbar .container_nav .container_nav_link .nav_title {
   font-family: "Instrument Sans", sans-serif;
@@ -548,6 +645,29 @@ footer hr {
   font-size: 15px !important;
   line-height: 150% !important;
   color: #656463 !important;
+}
+#header_transparent .navbar .container_nav #container_ressources .container_nav_link,
+#header_transparent .navbar .container_nav #container_apropos .container_nav_link {
+  border-bottom: none;
+}
+#header_transparent .navbar .container_nav #container_ressources .last_article {
+  background: rgba(25, 25, 25, 0.04);
+  height: 100%;
+  border-radius: 16px;
+  padding: 20px;
+}
+#header_transparent .navbar .container_nav #container_ressources .last_article h5 {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 140% !important;
+  color: #191919 !important;
+  margin-bottom: auto;
+}
+#header_transparent .navbar .container_nav #container_ressources .last_article a {
+  text-decoration: none;
+  font-size: 13px;
+  padding: 10px 20px;
 }
 #header_transparent .navbar .container_nav .container_souscription p a {
   text-decoration: none;
@@ -1117,12 +1237,40 @@ footer hr {
   opacity: 1;
   background-color: #8e9b7a;
 }
+.bull_light_green {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #b5ca91;
+}
 .bull_dark_green {
   height: 4px;
   width: 4px;
   border-radius: 50%;
   opacity: 1;
   background-color: #4f756c;
+}
+.bull_yellow {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #e7ccab;
+}
+.bull_blue {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #b5cade;
+}
+.bull_orange {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #f2c2ba;
 }
 
 .toast-container {
@@ -2769,23 +2917,35 @@ h3 {
     width: 100%;
   }
 }
-#details-hero_a .img_decorative, #details-hero_b .img_decorative, #details-hero_c .img_decorative, #details-hero_d .img_decorative, #details-hero_e .img_decorative {
-  opacity: 0.5;
-}
 #details-hero_a {
   background: url(./../img/noise.svg), rgba(231, 221, 241, 0.45);
+}
+#details-hero_a .img_decorative {
+  opacity: 0.5;
 }
 #details-hero_b {
   background: url(./../img/noise.svg), rgba(234, 239, 226, 0.65);
 }
+#details-hero_b .img_decorative {
+  opacity: 0.8;
+}
 #details-hero_c {
   background: url(./../img/noise.svg), rgba(254, 234, 210, 0.45);
+}
+#details-hero_c .img_decorative {
+  opacity: 1;
 }
 #details-hero_d {
   background: url(./../img/noise.svg), rgba(206, 227, 246, 0.45);
 }
+#details-hero_d .img_decorative {
+  opacity: 0.5;
+}
 #details-hero_e {
   background: url(./../img/noise.svg), rgba(253, 228, 224, 0.45);
+}
+#details-hero_e .img_decorative {
+  opacity: 0.8;
 }
 
 #details-formation {
@@ -2989,6 +3149,10 @@ h3 {
     padding-top: 30px;
     padding-bottom: 60px;
   }
+}
+#listing-event .container .row {
+  margin-left: 0;
+  margin-right: 0;
 }
 #listing-event .sub-title {
   font-family: "Instrument Sans", sans-serif;

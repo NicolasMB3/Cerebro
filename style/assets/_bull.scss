@@ -23,11 +23,43 @@
     background-color: $cbro-bull-green;
   }
 
+  &_light_green {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: $cbro-bull-light-green;
+  }
+
   &_dark_green {
     height: 4px;
     width: 4px;
     border-radius: 50%;
     opacity: 1;
     background-color: $cbro-green-700;
+  }
+
+  &_yellow {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: $cbro-bull-yellow;
+  }
+
+  &_blue {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: $cbro-bull-blue;
+  }
+
+  &_orange {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: $cbro-bull-orange;
   }
 }
