@@ -16,6 +16,7 @@
     @include media-breakpoint-down(lg) {
       display: none;
     }
+
     background: url(./../img/noise.svg), $cbro-gray-100;
     position: absolute;
     top: -250px;

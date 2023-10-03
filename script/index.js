@@ -87,3 +87,51 @@ collapseHeaders.forEach((header, index) => {
     });
   });
 });
+
+const elHeaderBackground = document.querySelector(".header-background");
+const elImgWomenHeader = document.querySelector(".women-header");
+const arrayElTitle = document.querySelectorAll("#h1-title-home, #p-title-home");
+const arrayElContainerHome = document.querySelectorAll(".container_home");
+let timer;
+
+arrayElTitle.forEach((el, index) => {
+  anime({
+    targets: el,
+    translateY: ["-20px", "0"],
+    opacity: ["0", "1"],
+    duration: 1000,
+    delay: (timer = index * 300),
+    easing: "easeInOutExpo",
+  });
+});
+
+arrayElContainerHome.forEach((el) => {
+  anime({
+    targets: el,
+    translateY: ["-20px", "0"],
+    opacity: ["0", "1"],
+    duration: 1000,
+    delay: timer + 300,
+    easing: "easeInOutExpo",
+  });
+});
+
+anime({
+  targets: elImgWomenHeader,
+  translateY: ["-100px", "0"],
+  opacity: {
+    value: ["0", "1"],
+    duration: 3000,
+  },
+  duration: 2000,
+  delay: 1000,
+  easing: "easeOutExpo",
+});
+
+anime({
+  targets: elHeaderBackground,
+  translateY: ["-800px", "0"],
+  opacity: ["0", "1"],
+  duration: 3000,
+  easing: "easeOutExpo",
+});
