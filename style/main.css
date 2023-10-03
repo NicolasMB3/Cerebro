@@ -1840,7 +1840,7 @@ h3 {
   top: -250px;
   right: -6rem;
   z-index: 0;
-  border-radius: 0px 0px 0px 24px;
+  border-radius: 0px 0px 24px 24px;
 }
 @media (max-width: 991.98px) {
   #homepage-plateforme .header-background {
@@ -2242,6 +2242,15 @@ h3 {
   font-size: 16px !important;
   line-height: 24px !important;
   color: #323231 !important;
+}
+.homepage-avantage .quality iframe {
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  height: 202px;
+  width: 202px;
+}
+.homepage-avantage .quality iframe#img-ebp:first-child circle {
+  transform-origin: 50% 50%;
 }
 .homepage-avantage .patients {
   background-color: #65867e;

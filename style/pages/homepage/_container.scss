@@ -22,7 +22,7 @@
     top: -250px;
     right: -6rem;
     z-index: 0;
-    border-radius: 0px 0px 0px 24px;
+    border-radius: 0px 0px 24px 24px;
   }
   h1 + p {
     @include cbro-paragraphe(400, 18px, 170%, $cbro-gray-700);
@@ -334,6 +334,18 @@
         24px,
         $cbro-gray-800
       );
+    }
+
+    iframe {
+      object-position: 50% 50%;
+      height: 202px;
+      width: 202px;
+
+      &#img-ebp:first-child {
+        circle {
+          transform-origin: 50% 50%;
+        }
+      }
     }
   }
   .patients {

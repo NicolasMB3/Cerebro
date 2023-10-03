@@ -88,6 +88,7 @@ collapseHeaders.forEach((header, index) => {
   });
 });
 
+// Section HERO
 const elHeaderBackground = document.querySelector(".header-background");
 const elImgWomenHeader = document.querySelector(".women-header");
 const arrayElTitle = document.querySelectorAll("#h1-title-home, #p-title-home");
@@ -118,7 +119,9 @@ arrayElContainerHome.forEach((el) => {
 
 anime({
   targets: elImgWomenHeader,
-  translateY: ["-100px", "0"],
+  translateY: {
+    value: ["-100px", "0"],
+  },
   opacity: {
     value: ["0", "1"],
     duration: 3000,
@@ -135,3 +138,29 @@ anime({
   duration: 3000,
   easing: "easeOutExpo",
 });
+
+// Section LES RESSOURCES
+const arrayNumber = document.querySelectorAll(".number_animation");
+
+arrayNumber.forEach((el) => {
+  anime({
+    targets: el,
+    innerText: [0, el.innerText],
+    easing: "easeOutExpo",
+    round: true,
+    duration: 3000,
+  });
+});
+
+// Section POURQUOI NOUS
+const imgEBP = document.getElementById("img-ebp");
+imgEBP.contentDocument;
+
+/*
+anime({
+  targets: imgEBP,
+  rotate: ["0", "360deg"],
+  duration: 60000,
+  loop: true,
+  easing: "linear",
+});*/
