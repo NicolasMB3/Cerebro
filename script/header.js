@@ -131,7 +131,7 @@ arrayBtnLink.forEach((button, i) => {
 
           anime({
             targets: containerNav,
-            height: "0",
+            height: 0,
             duration: 1000,
             delay: 200,
             easing: "easeInOutExpo",
@@ -241,7 +241,7 @@ arrayBtnLink.forEach((button, i) => {
           easing: "easeInOutExpo",
         });
       } else {
-        containerNav.style.height = "100%";
+        containerNav.scrollHeight; // A régler
         arrayContainerNav[i].style.opacity = "1";
       }
       index = i;
