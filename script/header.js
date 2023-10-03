@@ -90,7 +90,7 @@ navbar.addEventListener("mouseleave", () => {
   }
 });
 
-let index;
+let index = undefined;
 // Pour chaque bouton de la barre de navigation
 arrayBtnLink.forEach((button, i) => {
   // On ajoute un évènement au click
@@ -110,8 +110,7 @@ arrayBtnLink.forEach((button, i) => {
           easing: "easeInOutExpo",
         });
 
-        /*navbar.addEventListener("mouseleave", () => {
-          container.classList.add("d-none");
+        navbar.addEventListener("mouseleave", () => {
           navbarElNav.classList.remove("active");
           button.classList.remove("actived");
           index = undefined;
@@ -122,13 +121,39 @@ arrayBtnLink.forEach((button, i) => {
             duration: 200,
             easing: "easeInOutExpo",
           });
-        });*/
+
+          anime({
+            targets: container,
+            opacity: "0",
+            duration: 500,
+            easing: "easeInOutExpo",
+          });
+
+          anime({
+            targets: containerNav,
+            height: "0",
+            duration: 1000,
+            delay: 200,
+            easing: "easeInOutExpo",
+          });
+
+          anime({
+            targets: navbarElNav,
+            borderRadius: ["24px", "5000px"],
+            duration: 500,
+            delay: 800,
+            easing: "easeInOutExpo",
+          });
+
+          setTimeout(() => {
+            container.classList.add("d-none");
+          }, 500);
+        });
       });
     });
     // Si le bouton précédemment appuyer et le même alors on cache le conteneur
     if (index === i) {
       navbarElNav.classList.remove("active");
-      arrayContainerNav[i].classList.add("d-none");
       arrayBtnLink[i].classList.remove("actived");
       index = undefined;
 
@@ -136,6 +161,33 @@ arrayBtnLink.forEach((button, i) => {
         targets: arrayArrowUp[i],
         rotate: "-1turn",
         duration: 200,
+        easing: "easeInOutExpo",
+      });
+
+      anime({
+        targets: arrayContainerNav[i],
+        opacity: "0",
+        duration: 500,
+        easing: "easeInOutExpo",
+      });
+
+      setTimeout(() => {
+        arrayContainerNav[i].classList.add("d-none");
+      }, 500);
+
+      anime({
+        targets: containerNav,
+        height: "0",
+        duration: 1000,
+        delay: 200,
+        easing: "easeInOutExpo",
+      });
+
+      anime({
+        targets: navbarElNav,
+        borderRadius: ["24px", "5000px"],
+        duration: 500,
+        delay: 800,
         easing: "easeInOutExpo",
       });
     } else {
@@ -146,38 +198,53 @@ arrayBtnLink.forEach((button, i) => {
         btn.classList.remove("actived");
       });
       arrayBtnLink[i].classList.add("actived");
-      index = i;
-
-      anime({
-        targets: navbarElNav,
-        borderRadius: ["5000px", "24px"],
-        duration: 500,
-        easing: "easeInOutExpo",
-      });
-
-      anime({
-        targets: containerNav,
-        height: "100%",
-        duration: 1000,
-        easing: "easeInOutExpo",
-      });
-
-      anime({
-        targets: arrayContainerNav[i],
-        easing: "easeInOutExpo",
-        opacity: {
-          value: "1",
+      if (index === undefined) {
+        anime({
+          targets: navbarElNav,
+          borderRadius: ["5000px", "24px"],
           duration: 500,
-          delay: 500,
-        },
-      });
+          easing: "easeInOutExpo",
+        });
 
-      anime({
-        targets: arrayArrowUp[i],
-        rotate: "0.5turn",
-        duration: 200,
-        easing: "easeInOutExpo",
-      });
+        anime({
+          targets: containerNav,
+          height: containerNav.scrollHeight,
+          duration: 1000,
+          easing: "easeInOutExpo",
+        });
+
+        anime({
+          targets: arrayContainerNav[i],
+          easing: "easeInOutExpo",
+          opacity: {
+            value: "1",
+            duration: 500,
+            delay: 500,
+          },
+        });
+
+        setTimeout(() => {
+          arrayContainerNav[i].classList.remove("d-none");
+        }, 500);
+
+        anime({
+          targets: arrayArrowUp[i],
+          rotate: "0.5turn",
+          duration: 200,
+          easing: "easeInOutExpo",
+        });
+
+        anime({
+          targets: navbarElNav,
+          backgroundColor: "#fbf8f4",
+          duration: 1000,
+          easing: "easeInOutExpo",
+        });
+      } else {
+        containerNav.style.height = "100%";
+        arrayContainerNav[i].style.opacity = "1";
+      }
+      index = i;
     }
   });
 });
