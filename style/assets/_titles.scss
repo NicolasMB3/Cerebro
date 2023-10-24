@@ -137,6 +137,10 @@
   &-light-gray {
     @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-600);
   }
+
+  &-super-light-gray {
+    @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
+  }
 }
 
 .subtitle {
@@ -152,6 +156,11 @@
 
   &-light-blue {
     @include cbro-paragraphe(600, 16px, 150%, $cbro-opacity-0);
+    text-transform: uppercase;
+  }
+
+  &-gray {
+    @include cbro-paragraphe(600, 14px, 150%, $cbro-gray-500);
     text-transform: uppercase;
   }
 }
