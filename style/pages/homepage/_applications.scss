@@ -64,6 +64,12 @@
         }
     }
 
+    .btn_transparent {
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+
     .line-mobile {
         border-bottom: 1px solid $cbro-gray-200;
     }
@@ -94,10 +100,10 @@
             }
         }
     }
-}
 
-a {
-    cursor: pointer;
+    a {
+        cursor: pointer;
+    }
 }
 
 .bg-logo {

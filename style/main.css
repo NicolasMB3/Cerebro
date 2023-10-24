@@ -4351,6 +4351,11 @@ h3 {
     width: 100%;
   }
 }
+@media (max-width: 575.98px) {
+  #section_app .btn_transparent {
+    width: 100%;
+  }
+}
 #section_app .line-mobile {
   border-bottom: 1px solid #cac8c6;
 }
@@ -4376,8 +4381,7 @@ h3 {
 #section_app .nav-mobile .list-span:hover {
   background-color: transparent;
 }
-
-a {
+#section_app a {
   cursor: pointer;
 }
 
