@@ -119,6 +119,12 @@
         .btn_transparent {
             padding: 8px 16px;
         }
+
+        div {
+            a {
+                color: $cbro-gray-600;
+            }
+        }
     }
 
     .container-app {
@@ -172,6 +178,12 @@
             border-radius: 8px;
             height: 65px;
             width: 65px;
+        }
+    }
+
+    .width-max-content {
+        @include media-breakpoint-down(sm) {
+            width: auto !important;
         }
     }
 }
