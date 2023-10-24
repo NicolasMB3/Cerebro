@@ -1512,6 +1512,11 @@ h3 {
   width: fit-content !important;
 }
 
+.width-max-content {
+  width: -moz-max-content !important;
+  width: max-content !important;
+}
+
 .navbar-transition {
   transition: margin 0.3s ease;
 }
@@ -4384,47 +4389,60 @@ h3 {
 #section_app a {
   cursor: pointer;
 }
-
-.bg-logo-green {
+#section_app .img-formations {
+  border-radius: 10px;
+  -o-object-position: 50%;
+     object-position: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#section_app .cards-details {
+  padding: 24px;
+  height: auto;
+}
+#section_app .cards-details .btn_transparent {
+  padding: 8px 16px;
+}
+#section_app .container-app .card-app {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #cac8c6;
+  background-color: #fcfaf7;
+}
+#section_app .container-app .card-app .btn_transparent {
+  font-size: 14px;
+}
+#section_app .container-app-info {
+  background: #396359;
+  padding: 20px 28px;
+  border-radius: 16px;
+}
+#section_app .container-app-info .btn_full_transparent {
+  top: 8px;
+  right: 14px;
+}
+#section_app .container-app-info .btn_full_transparent:hover {
+  background-color: transparent;
+}
+#section_app .bg-logo-green {
   background: #e9eeed;
   padding: 14px;
   border-radius: 8px;
   height: 65px;
   width: 65px;
 }
-.bg-logo-red {
+#section_app .bg-logo-red {
   background: #f3e8ed;
   padding: 14px;
   border-radius: 8px;
   height: 65px;
   width: 65px;
 }
-.bg-logo-blue {
+#section_app .bg-logo-blue {
   background: #e6eef1;
   padding: 14px;
   border-radius: 8px;
   height: 65px;
   width: 65px;
-}
-
-.container-app .card-app {
-  padding: 24px;
-  border-radius: 16px;
-  border: 1px solid #cac8c6;
-  background-color: #fcfaf7;
-}
-.container-app .card-app .btn_transparent {
-  font-size: 14px;
-}
-.container-app-info {
-  background: #396359;
-  padding: 20px 28px;
-  border-radius: 16px;
-}
-.container-app-info .btn_full_transparent {
-  top: 8px;
-  right: 14px;
-}
-.container-app-info .btn_full_transparent:hover {
-  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */

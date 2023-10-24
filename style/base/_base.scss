@@ -2,6 +2,7 @@
 * {
   -webkit-font-smoothing: antialiased;
 }
+
 header {
   z-index: 9999999999;
   max-width: 100%;
@@ -22,6 +23,7 @@ p {
 h1 {
   @include cbro-title(300, 42px, 120%, $cbro-gray-900);
   padding-bottom: 24px;
+
   span {
     font-style: italic;
     color: $cbro-purple-800;
@@ -55,4 +57,8 @@ h3 {
 
 .width-fit-content {
   width: fit-content !important;
+}
+
+.width-max-content {
+  width: max-content !important;
 }
