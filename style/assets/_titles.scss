@@ -138,6 +138,10 @@
     @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-600);
   }
 
+  &-white {
+    @include cbro-paragraphe(400, 16px, 150%, $cbro-snow-50);
+  }
+
   &-super-light-gray {
     @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
   }

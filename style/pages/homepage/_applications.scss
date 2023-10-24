@@ -42,6 +42,10 @@
     .illustration {
         height: 200px;
         width: 200px;
+
+        &_ampoule {
+            width: 12%;
+        }
     }
 }
 
@@ -84,6 +88,21 @@ a {
 
         .btn_transparent {
             font-size: 14px;
+        }
+    }
+
+    &-info {
+        background: $cbro-green-800;
+        padding: 20px 28px;
+        border-radius: 16px;
+
+        .btn_full_transparent {
+            top: 8px;
+            right: 14px;
+
+            &:hover {
+                background-color: transparent;
+            }
         }
     }
 }
