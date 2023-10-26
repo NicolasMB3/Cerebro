@@ -116,13 +116,57 @@
         padding: 24px;
         height: auto;
 
+        button {
+            background-color: transparent;
+        }
+
         .btn_transparent {
             padding: 8px 16px;
         }
 
-        div {
-            a {
-                color: $cbro-gray-600;
+        &.nav {
+            border-radius: 12px;
+            transition: all 0.2s;
+
+            button {
+                @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
+                background-color: transparent;
+
+                &.active {
+                    @include cbro-paragraphe(600, 16px, 160%, $cbro-green-700);
+
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 4px;
+                        position: absolute;
+                        left: 0;
+                        bottom: -1rem;
+                        z-index: 2;
+                        @include cbro-paragraphe(600, 16px, 160%, $cbro-green-700);
+                        border-bottom: 2px solid $cbro-green-700 !important;
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        .p-card {
+            overflow: hidden;
+            white-space: wrap;
+            text-overflow: ellipsis;
+            height: 125px;
+            @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
+        }
+
+        .card_body {
+            ul {
+                li {
+                    color: $cbro-gray-600;
+                }
             }
         }
     }

@@ -4401,10 +4401,61 @@ h3 {
   padding: 24px;
   height: auto;
 }
+#section_app .cards-details button {
+  background-color: transparent;
+}
 #section_app .cards-details .btn_transparent {
   padding: 8px 16px;
 }
-#section_app .cards-details div a {
+#section_app .cards-details.nav {
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+#section_app .cards-details.nav button {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #656463 !important;
+  background-color: transparent;
+}
+#section_app .cards-details.nav button.active {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #4f756c !important;
+}
+#section_app .cards-details.nav button.active::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  z-index: 2;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #4f756c !important;
+  border-bottom: 2px solid #4f756c !important;
+}
+#section_app .cards-details.nav:hover {
+  background-color: transparent;
+}
+#section_app .cards-details .p-card {
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  height: 125px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #656463 !important;
+}
+#section_app .cards-details .card_body ul li {
   color: #656463;
 }
 #section_app .container-app .card-app {
