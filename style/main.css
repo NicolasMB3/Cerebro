@@ -1439,6 +1439,34 @@ footer hr {
   right: 0;
 }
 
+.pagination-container .pagination li {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+.pagination-container .pagination li a {
+  padding: 4px 12px 4px 12px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #000;
+}
+.pagination-container .pagination li a:first-child, .pagination-container .pagination li a:last-child {
+  border-radius: 50%;
+  padding: 4px 8px 4px 8px;
+}
+.pagination-container .pagination li a:focus {
+  box-shadow: none;
+}
+.pagination-container .pagination li a.active {
+  background-color: #396359;
+  color: #fff;
+}
+.pagination-container .pagination li:hover {
+  background-color: #e3e1de;
+}
+
 /* Base */
 /* Infinity and beyond */
 * {
@@ -1515,6 +1543,11 @@ h3 {
 .width-max-content {
   width: -moz-max-content !important;
   width: max-content !important;
+}
+
+.min-width-max-content {
+  min-width: -moz-max-content !important;
+  min-width: max-content !important;
 }
 
 .navbar-transition {
@@ -4364,12 +4397,12 @@ h3 {
 #section_app .line-mobile {
   border-bottom: 1px solid #cac8c6;
 }
+#section_app .overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
 #section_app .nav-mobile {
   border: none;
   background-color: transparent;
-}
-#section_app .nav-mobile .overflow-x-auto::-webkit-scrollbar {
-  display: none;
 }
 #section_app .nav-mobile .list-span {
   border-bottom: 2px solid transparent;

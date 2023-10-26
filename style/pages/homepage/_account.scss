@@ -74,13 +74,14 @@
         border-bottom: 1px solid $cbro-gray-200;
     }
 
+
+    .overflow-x-auto::-webkit-scrollbar {
+        display: none;
+    }
+
     .nav-mobile {
         border: none;
         background-color: transparent;
-
-        .overflow-x-auto::-webkit-scrollbar {
-            display: none;
-        }
 
         .list-span {
             border-bottom: 2px solid transparent;
