@@ -4569,6 +4569,11 @@ h3 {
   color: #7e7d7c !important;
   border-bottom: 1px solid #cac8c6;
 }
+@media (max-width: 575.98px) {
+  #section_app .table-documents thead {
+    border-bottom: 1px solid transparent;
+  }
+}
 #section_app .table-documents thead th {
   font-weight: 600;
 }

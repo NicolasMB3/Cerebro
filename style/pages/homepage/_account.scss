@@ -245,6 +245,10 @@
             @include cbro-paragraphe(600, 13px, normal, $cbro-gray-500);
             border-bottom: 1px solid $cbro-gray-200;
 
+            @include media-breakpoint-down(sm) {
+                border-bottom: 1px solid transparent;
+            }
+
             th {
                 font-weight: 600;
 
