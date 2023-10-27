@@ -174,6 +174,30 @@
                 }
             }
         }
+
+        .subsubtitle {
+            @include cbro-paragraphe(500, 16px, 20px, $cbro-gray-700);
+        }
+
+        .subtext {
+            @include cbro-paragraphe(400, 16px, 20px, $cbro-gray-700);
+        }
+
+        .container-info_account {
+            width: 50%;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
+        .container-info_account-2 {
+            width: 50%;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
     }
 
     .container-app {
@@ -297,6 +321,8 @@
             }
         }
     }
+
+
 }
 
 
