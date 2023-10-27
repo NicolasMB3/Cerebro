@@ -9,15 +9,17 @@
             border: 1px solid transparent;
 
             a {
-                padding: 4px 12px 4px 12px;
                 border: 1px solid transparent;
                 background-color: transparent;
                 color: $cbro-black;
+                height: 32px;
+                width: 32px;
+                @include cbro-paragraphe(400, 16px, 100%, $cbro-black);
+
 
                 &:first-child,
                 &:last-child {
                     border-radius: 50%;
-                    padding: 4px 8px 4px 8px;
                 }
 
                 &:focus {
@@ -26,7 +28,7 @@
 
                 &.active {
                     background-color: $cbro-green-800;
-                    color: $cbro-white;
+                    @include cbro-paragraphe(500, 16px, 100%, $cbro-white);
                 }
             }
 

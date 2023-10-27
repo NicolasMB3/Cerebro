@@ -4,7 +4,11 @@
     padding: 10rem 0 12rem 0;
 
     @include media-breakpoint-down(lg) {
-        padding: 10rem 0 5rem 0;
+        padding: 8rem 0 5rem 0;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 7rem 0 5rem 0;
     }
 
     .nav-app,

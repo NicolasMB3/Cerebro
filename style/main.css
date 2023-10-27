@@ -1447,21 +1447,30 @@ footer hr {
   border: 1px solid transparent;
 }
 .pagination-container .pagination li a {
-  padding: 4px 12px 4px 12px;
   border: 1px solid transparent;
   background-color: transparent;
   color: #000;
+  height: 32px;
+  width: 32px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 100% !important;
+  color: #000 !important;
 }
 .pagination-container .pagination li a:first-child, .pagination-container .pagination li a:last-child {
   border-radius: 50%;
-  padding: 4px 8px 4px 8px;
 }
 .pagination-container .pagination li a:focus {
   box-shadow: none;
 }
 .pagination-container .pagination li a.active {
   background-color: #396359;
-  color: #fff;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 100% !important;
+  color: #fff !important;
 }
 .pagination-container .pagination li:hover {
   background-color: #e3e1de;
@@ -4326,7 +4335,12 @@ h3 {
 }
 @media (max-width: 991.98px) {
   #section_app {
-    padding: 10rem 0 5rem 0;
+    padding: 8rem 0 5rem 0;
+  }
+}
+@media (max-width: 767.98px) {
+  #section_app {
+    padding: 7rem 0 5rem 0;
   }
 }
 #section_app .nav-app,
