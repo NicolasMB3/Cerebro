@@ -4459,9 +4459,11 @@ h3 {
 #section_app .cards-details {
   padding: 24px;
   height: auto;
+  background-color: #fcfaf7;
 }
-#section_app .cards-details button {
-  background-color: transparent;
+#section_app .cards-details a img {
+  height: 24px;
+  width: 24px;
 }
 #section_app .cards-details .btn_transparent {
   padding: 8px 16px;
@@ -4546,6 +4548,56 @@ h3 {
   #section_app .cards-details .container-info_account-2 {
     width: 100%;
   }
+}
+#section_app .cards-details .container-info_account-3 {
+  width: 25%;
+}
+@media (max-width: 575.98px) {
+  #section_app .cards-details .container-info_account-3 {
+    width: 100%;
+  }
+}
+#section_app .cards-details .container-info_account-4 {
+  width: 75%;
+}
+@media (max-width: 575.98px) {
+  #section_app .cards-details .container-info_account-4 {
+    width: 100%;
+  }
+}
+#section_app .cards-details .form-select,
+#section_app .cards-details .form-control {
+  border-radius: 24px;
+}
+#section_app .cards-details .form-select::-moz-placeholder, #section_app .cards-details .form-control::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #4c4b4a !important;
+}
+#section_app .cards-details .form-select::placeholder,
+#section_app .cards-details .form-control::placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #4c4b4a !important;
+}
+#section_app .cards-details .form-select.gray::-moz-placeholder, #section_app .cards-details .form-control.gray::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #b0afad !important;
+}
+#section_app .cards-details .form-select.gray::placeholder,
+#section_app .cards-details .form-control.gray::placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #b0afad !important;
 }
 #section_app .container-app .card-app {
   padding: 24px;

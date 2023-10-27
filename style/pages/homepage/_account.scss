@@ -120,9 +120,13 @@
     .cards-details {
         padding: 24px;
         height: auto;
+        background-color: $cbro-snow-50;
 
-        button {
-            background-color: transparent;
+        a {
+            img {
+                height: 24px;
+                width: 24px;
+            }
         }
 
         .btn_transparent {
@@ -196,6 +200,37 @@
 
             @include media-breakpoint-down(md) {
                 width: 100%;
+            }
+        }
+
+        .container-info_account-3 {
+            width: 25%;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
+        .container-info_account-4 {
+            width: 75%;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
+        .form-select,
+        .form-control {
+            border-radius: 24px;
+
+            &::placeholder {
+                @include cbro-paragraphe(400, 14px, normal, $cbro-gray-700);
+            }
+
+            &.gray {
+                &::placeholder {
+                    @include cbro-paragraphe(400, 14px, normal, $cbro-gray-300);
+                }
             }
         }
     }

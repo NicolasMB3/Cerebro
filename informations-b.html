@@ -74,9 +74,9 @@
                     </div>
                     <div class="d-flex column-gap-2 align-items-center d-none d-xl-flex">
                         <button class="btn_full_transparent d-flex align-items-center gap-1">
-                            <img src="img/icons/icon_account.svg" alt="Account">
+                            <img src="img/icons/icon_account.svg" alt="Account" />
                             <span>Clara G.</span>
-                            <img src="img/icons/arrow_down.svg" alt="Arrow">
+                            <img src="img/icons/arrow_down.svg" alt="Arrow" />
                         </button>
                     </div>
                     <div class="hamburger-menu d-xl-none">
@@ -120,7 +120,8 @@
                             </svg>
                             <span>Mes ressources</span>
                         </a>
-                        <a href="#" class="list-span d-flex align-items-center active gap-3 px-0 text-decoration-none">
+                        <a href="formations.html"
+                            class="list-span d-flex align-items-center gap-3 px-0 text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <path
@@ -156,8 +157,7 @@
                             </svg>
                             <span>Marrainage</span>
                         </a>
-                        <a href="informations-a.html"
-                            class="list-span d-flex align-items-center gap-3 px-0 text-decoration-none">
+                        <a href="#" class="list-span d-flex align-items-center gap-3 px-0 active text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <path
@@ -224,7 +224,8 @@
                             </svg>
                             <span>Mes ressources</span>
                         </a>
-                        <a href="#" class="list-span d-flex align-items-center active gap-3 mb-1 text-decoration-none">
+                        <a href="formations.html"
+                            class="list-span d-flex align-items-center gap-3 mb-1 text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <path
@@ -260,8 +261,7 @@
                             </svg>
                             <span>Marrainage</span>
                         </a>
-                        <a href="informations-a.html"
-                            class="list-span d-flex align-items-center gap-3 mb-1 text-decoration-none">
+                        <a href="#" class="list-span d-flex align-items-center gap-3 mb-1 active text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <path
@@ -293,66 +293,122 @@
                 </div>
                 <!-- Contenu -->
                 <div class="col-xl-9 col-12 container-app">
-                    <div class="d-flex flex-column gap-4">
-                        <div class="cta cta-green d-flex flex-lg-row flex-column justify-content-between justify-content-md-center
-                            gap-4 align-items-lg-center position-relative mt-0">
-                            <div class="cta_title z-1">
-                                <h3 class="h3-white">
-                                    Enrichissez vos connaissances dès maintenant
-                                </h3>
-                                <p>
-                                    Cérébro vous accompagne pour mettre en place une thérapie avec son patient, gagner
-                                    en productivité ou faire un point méthodologique.
-                                </p>
+                    <div class="row gy-4 mx-0">
+                        <div class="cards-details">
+                            <div class="d-flex justify-content-between mb-4">
+                                <h5 class="h5-subtitle-dark m-0">Informations personnelles</h5>
+                                <a href="informations-a.html"
+                                    class="btn_transparent p-0 text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-none d-sm-flex">
+                                    <img src="img/icons/check_dark.svg" alt="Sauvegarder">
+                                    Sauvegarder
+                                </a>
                             </div>
-                            <div class="z-1">
-                                <a href="contact.html"
-                                    class="btn_contact btn_white d-inline-block text-center">Contactez-nous</a>
+                            <div class="d-flex mb-4 gap-3">
+                                <div class="w-50 d-flex flex-column gap-2">
+                                    <span class="subsubtitle">Civilité</span>
+                                    <select class="form-select d-flex px-3 py-2" name="" id="form-select" required>
+                                        <option value="madame" selected>Madame</option>
+                                        <option value="monsieur">Monsieur</option>
+                                        <option value="other">Autre</option>
+                                    </select>
+                                </div>
+                                <div class="w-50"></div>
                             </div>
-                            <img src="img/illustrations/vector-cta_green.svg" alt="Illustration"
-                                class="position-absolute h-100 d-none d-lg-block" />
-                        </div>
-                        <div class="row justify-content-between cards-details mx-0">
-                            <div class="col-12 col-md-4 col-lg-3 col-xl-2 p-0 d-lg-block d-md-none">
-                                <img src="img/illustrations/Frame_2.png" alt=""
-                                    class="img-formations h-100 pe-0 pe-xl-0 pe-md-3 pe-sm-0 pb-4 pb-lg-0">
+                            <div class="d-flex mb-4 gap-3">
+                                <div class="w-50 d-flex flex-column gap-2">
+                                    <span class="subsubtitle">Nom</span>
+                                    <input type="text" class="px-3 py-2 form-control white-focus shadow-none"
+                                        placeholder="Francisco" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2" />
+                                </div>
+                                <div class="w-50 d-flex flex-column gap-2">
+                                    <span class="subsubtitle">Prénom</span>
+                                    <input type="text" class="px-3 py-2 form-control white-focus shadow-none"
+                                        placeholder="Emmanuelle" aria-label=" Recipient's username"
+                                        aria-describedby="button-addon2" />
+                                </div>
                             </div>
-                            <div class="col-12 col-md-8 col-lg-6 col-xl-6 col-xxl-7 p-0">
-                                <span class="cbro-badge-green">Méthodologie</span>
-                                <h5 class="h5-dark mt-4 width-max-content">Créer un tableur de suivi sur Excel</h5>
-                                <ul class="ps-0 d-flex align-items-center gap-2 mt-2 mb-0 list-unstyled pb-3 pb-md-0">
-                                    <li class="me-1 subtitle-light-gray">Formation courte 1h</li>
-                                    <li class="bull_green"></li>
-                                    <li class="ms-1">Débutant</li>
-                                    <li class="bull_green d-sm-block d-none"></li>
-                                    <li class="ms-1 d-sm-block d-none"><img src="img/icons/excel.svg" alt="Excel"> Excel
-                                    </li>
-                                </ul>
+                            <div class="d-flex flex-column flex-sm-row">
+                                <div class="w-100 d-flex flex-column gap-3 mb-sm-0 mb-4">
+                                    <span class="subsubtitle">Adresse</span>
+                                    <input type="text" class="px-3 py-2 form-control white-focus shadow-none"
+                                        placeholder="123 rue des peupliers" aria-label=" Recipient's username"
+                                        aria-describedby="button-addon2" />
+                                    <input type="text" class="gray px-3 py-2 form-control white-focus shadow-none"
+                                        placeholder="Complément d'adresse" aria-label=" Recipient's username"
+                                        aria-describedby="button-addon2" />
+                                    <div class="d-flex flex-column flex-sm-row gap-3 gap-sm-2">
+                                        <input type="text"
+                                            class="container-info_account-3 px-3 py-2 form-control white-focus shadow-none"
+                                            placeholder="80000" aria-label=" Recipient's username"
+                                            aria-describedby="button-addon2" />
+                                        <input type="text"
+                                            class="container-info_account-4 px-3 py-2 form-control white-focus shadow-none"
+                                            placeholder="Amiens" aria-label=" Recipient's username"
+                                            aria-describedby="button-addon2" />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-auto p-0">
-                                <a href="#" class="btn_transparent text-decoration-none text-center d-inline-block">
-                                    Accéder à la formation
+                            <div class="">
+                                <a href="informations-a.html"
+                                    class="btn_transparent p-0 text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-sm-none d-flex">
+                                    <img src="img/icons/check_dark.svg" alt="Sauvegarder">
+                                    Sauvegarder
                                 </a>
                             </div>
                         </div>
-                        <div class="row justify-content-between cards-details mx-0">
-                            <div class="col-12 col-md-4 col-lg-3 col-xl-2 p-0 d-lg-block d-md-none">
-                                <img src="img/illustrations/frame_1.png" alt=""
-                                    class="img-formations h-100 pe-0 pe-xl-0 pe-md-3 pe-sm-0 pb-4 pb-lg-0">
+                        <div class="cards-details">
+                            <div class="d-flex justify-content-between mb-4">
+                                <h5 class="h5-subtitle-dark m-0">Connexion et sécurité</h5>
+                                <button class="btn_full_transparent p-0">
+                                    <img src="img/icons/crayon.svg" alt="Modifier">
+                                </button>
                             </div>
-                            <div class="col-12 col-md-8 col-lg-6 col-xl-6 col-xxl-7 p-0">
-                                <span class="cbro-badge-purple">Lexique</span>
-                                <h5 class="h5-dark mt-4 width-max-content">Les lignes de base</h5>
-                                <ul class="ps-0 d-flex align-items-center gap-2 mt-2 mb-0 list-unstyled pb-3 pb-md-0">
-                                    <li class="me-1 subtitle-light-gray">Formation courte 1h</li>
-                                    <li class="bull_green"></li>
-                                    <li class="ms-1">Débutant</li>
-                                </ul>
+                            <div class="d-flex flex-column flex-md-row">
+                                <div class="container-info_account-2 d-flex flex-column gap-2 mb-sm-0 mb-4">
+                                    <span class="subsubtitle">Email</span>
+                                    <span class="subtext">Emmanuelle.francisco@gmail.com</span>
+                                </div>
+                                <div class="container-info_account-2 d-flex flex-column gap-2">
+                                    <span class="subsubtitle">Mot de passe</span>
+                                    <span class="subtext">*****************</span>
+                                </div>
                             </div>
-                            <div class="col-auto p-0">
-                                <a href="#" class="btn_transparent text-decoration-none text-center d-inline-block">
-                                    Accéder à la formation
-                                </a>
+                        </div>
+                        <div class="cards-details">
+                            <div class="d-flex justify-content-between mb-4">
+                                <h5 class="h5-subtitle-dark m-0">Informations professionnelles</h5>
+                                <button class="btn_full_transparent p-0">
+                                    <img src="img/icons/crayon.svg" alt="Modifier">
+                                </button>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="w-50 d-flex flex-column gap-2">
+                                    <span class="subsubtitle">Vous êtes</span>
+                                    <span class="subtext">Orthophoniste</span>
+                                </div>
+                                <div class="w-50 d-flex flex-column gap-2">
+                                    <span class="subsubtitle">Statut</span>
+                                    <span class="subtext">Salarié(e)</span>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="w-50 d-flex flex-column gap-2">
+                                    <span class="subsubtitle">Année de diplôme</span>
+                                    <span class="subtext">2023</span>
+                                </div>
+                                <div class="w-50 d-flex flex-column gap-2">
+                                    <span class="subsubtitle">ADELI</span>
+                                    <span class="subtext">3556853120</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row">
+                                <div class="container-info_account d-flex flex-column gap-2">
+                                    <span class="subsubtitle">Nom et ville de ma structure</span>
+                                    <span class="subtext">Nom de la structure - 80800 Amiens</span>
+                                </div>
+                                <div class="w-50 d-flex flex-column gap-2">
+                                </div>
                             </div>
                         </div>
                     </div>
