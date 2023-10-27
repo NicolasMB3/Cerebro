@@ -1120,6 +1120,12 @@ footer hr {
     color: #191919 !important;
   }
 }
+.h5-subtitle-dark {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #323231;
+}
 .h5-white {
   font-family: "ITCSouvenir-md";
   font-weight: 300 !important;
@@ -4345,7 +4351,7 @@ h3 {
 }
 #section_app .nav-app,
 #section_app .nav-mobile {
-  background-color: #fcfaf7;
+  background: #fcfaf7;
   border: 1px solid #cac8c6;
   border-radius: 16px;
   padding: 12px;
@@ -4551,4 +4557,74 @@ h3 {
   #section_app .width-max-content {
     width: auto !important;
   }
+}
+#section_app .cards-details.table-doc {
+  background: #fcfaf7;
+}
+#section_app .table-documents thead {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  line-height: normal !important;
+  color: #7e7d7c !important;
+  border-bottom: 1px solid #cac8c6;
+}
+#section_app .table-documents thead th {
+  font-weight: 600;
+}
+#section_app .table-documents thead th:last-child {
+  text-align: end;
+}
+#section_app .table-documents tbody tr td {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 160% !important;
+  color: #656463 !important;
+}
+#section_app .table-documents tbody tr td.new-documents {
+  font-weight: 500 !important;
+  color: #191919 !important;
+}
+#section_app .table-documents tbody tr td.doc-date {
+  opacity: 0.8;
+}
+#section_app .table-documents tbody tr td:last-child {
+  text-align: end;
+}
+#section_app .table-documents tbody tr td:last-child button {
+  background-color: transparent;
+}
+#section_app .table-documents tbody tr td:first-child {
+  width: 62px;
+}
+#section_app .table-documents tbody tr td:first-child img {
+  background-color: rgba(25, 25, 25, 0.05);
+  padding: 9px;
+  border-radius: 8px;
+}
+#section_app .table-documents tbody tr td:nth-child(2) {
+  width: 645px;
+}
+
+.notif-dots::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  width: 6px;
+  height: 6px;
+  background-color: #ac5b82;
+  border-radius: 100px;
+}
+
+.list-span .notif-dots::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 1px;
+  width: 6px;
+  height: 6px;
+  background-color: #ac5b82;
+  border-radius: 100px;
 }/*# sourceMappingURL=main.css.map */

@@ -95,6 +95,13 @@
     }
   }
 
+  &-subtitle-dark {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: $cbro-gray-800;
+  }
+
   &-white {
     @include cbro-title(300, 24px, 36px, $cbro-snow-50);
 
