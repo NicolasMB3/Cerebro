@@ -65,13 +65,6 @@ footer .newsletter input {
   line-height: 100% !important;
   color: #fcfaf7 !important;
 }
-footer .newsletter input::-moz-placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 300 !important;
-  font-size: 14px !important;
-  line-height: 100% !important;
-  color: #fcfaf7 !important;
-}
 footer .newsletter input::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 300 !important;
@@ -906,7 +899,6 @@ footer hr {
 }
 @media (max-width: 991.98px) {
   .btn_dark-purple {
-    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -1257,13 +1249,6 @@ footer hr {
   padding: 0 20px !important;
   outline: none;
 }
-.form-connexion .form-control::-moz-placeholder, .form-contact .form-control::-moz-placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: normal !important;
-  color: #b0afad !important;
-}
 .form-connexion .form-control::placeholder,
 .form-contact .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
@@ -1551,17 +1536,14 @@ h3 {
 }
 
 .width-fit-content {
-  width: -moz-fit-content !important;
   width: fit-content !important;
 }
 
 .width-max-content {
-  width: -moz-max-content !important;
   width: max-content !important;
 }
 
 .min-width-max-content {
-  min-width: -moz-max-content !important;
   min-width: max-content !important;
 }
 
@@ -1598,6 +1580,14 @@ h3 {
     transform: translateY(0);
   }
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 /* Stuffs */
 .breadcrumb {
   font-family: "Instrument Sans", sans-serif;
@@ -1625,7 +1615,6 @@ h3 {
   background: #e3ebd5;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1641,7 +1630,6 @@ h3 {
   background: #e7ddf1;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1657,7 +1645,6 @@ h3 {
   background: #f3e8ed;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1673,7 +1660,6 @@ h3 {
   background: #cee3f6;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1689,7 +1675,6 @@ h3 {
   background: #fde4e0;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1705,7 +1690,6 @@ h3 {
   background: #feead2;
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1721,7 +1705,6 @@ h3 {
   background: rgba(227, 225, 222, 0.7);
   border-radius: 99px;
   padding: 4px 12px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
   width: 29px;
@@ -2332,8 +2315,7 @@ h3 {
   color: #323231 !important;
 }
 .homepage-avantage .quality iframe {
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-position: 50% 50%;
   height: 202px;
   width: 202px;
 }
@@ -3067,7 +3049,6 @@ h3 {
   color: #a04470;
 }
 #details-hero_a .mobile .price_container, #details-hero_b .mobile .price_container, #details-hero_c .mobile .price_container, #details-hero_d .mobile .price_container, #details-hero_e .mobile .price_container {
-  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 575.98px) {
@@ -3136,8 +3117,7 @@ h3 {
 #details-formation .objectif-details {
   border-radius: 12px;
   background: rgba(230, 228, 222, 0.5);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   height: 100%;
 }
 #details-formation .objectif-details p {
@@ -3373,7 +3353,6 @@ h3 {
   }
 }
 #listing-event .btn_dark-purple {
-  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 991.98px) {
@@ -3536,7 +3515,6 @@ h3 {
     border-radius: 0;
     text-align: start;
     padding: 0;
-    width: -moz-max-content;
     width: max-content;
     background: none;
   }
@@ -3559,7 +3537,6 @@ h3 {
   line-height: 20px !important;
   color: #a04470 !important;
   padding: 8px 16px;
-  width: -moz-max-content;
   width: max-content;
 }
 
@@ -3649,11 +3626,9 @@ h3 {
   background: url(../../../img/noise.svg), repeat, #fcfaf7;
 }
 .body_inscription .div_container .img_bg {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100vh;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-position: 50% 50%;
 }
 
 .btn_back {
@@ -3714,7 +3689,6 @@ h3 {
   color: #4f756c !important;
 }
 .div_container .container_content #container_btn button {
-  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 575.98px) {
@@ -3842,8 +3816,106 @@ h3 {
   padding: 10rem 0 8rem 0;
   background: url(../../../img/noise.svg), repeat, #fcfaf7;
 }
+@media (max-width: 991.98px) {
+  #basket .cards-details {
+    border: none;
+  }
+}
+#basket .cards-details:hover {
+  background-color: #fcfaf7 !important;
+}
+#basket .cbro-badge-pink {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #a04470 !important;
+}
+#basket .form-shop input {
+  border-radius: 24px;
+}
+#basket .form-shop .subsubtitle {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #4c4b4a !important;
+}
+#basket .shop-check {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+#basket .breadcrumb img {
+  transform: rotate(-180deg);
+}
+#basket .breadcrumb .element {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #656463 !important;
+}
+#basket .breadcrumb .element_active {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #323231 !important;
+}
 #basket .container {
   background: #fcfaf7;
+}
+#basket .title-para {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  color: #323231 !important;
+}
+#basket .btn_purple {
+  margin-top: 30px;
+}
+#basket .shop-area input {
+  border-radius: 24px;
+}
+#basket .shop-area ::placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #656463 !important;
+}
+#basket input[type=number]::-webkit-inner-spin-button,
+#basket input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#basket .shop-code {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #4c4b4a !important;
+}
+#basket .price-annon {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #656463 !important;
+}
+#basket .price-annon_bold {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+#basket hr {
+  color: #e3e1de;
 }
 @media (max-width: 991.98px) {
   #basket {
@@ -3873,6 +3945,7 @@ h3 {
 #basket .input-group input {
   padding: 3px;
   width: 32px;
+  text-align: center;
   border: 1px solid #cac8c6;
   background: transparent;
 }
@@ -4031,7 +4104,6 @@ h3 {
   }
 }
 #email_copy #copy_clipboard {
-  width: -moz-fit-content;
   width: fit-content;
   padding: 6px 12px;
   color: #4f756c;
@@ -4197,10 +4269,8 @@ h3 {
 #section_presentation .img_camille_vincent {
   width: -webkit-fill-available;
   height: 416px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 20%;
-     object-position: 20%;
+  object-fit: cover;
+  object-position: 20%;
   border-radius: 10px;
   margin-right: 80px;
 }
@@ -4316,13 +4386,25 @@ h3 {
 }
 #section_partenaires .container_logo {
   height: 65px;
+  width: 100%;
   gap: 3rem;
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: max-content;
 }
 #section_partenaires .container_logo img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: contain;
+  object-position: center;
+}
+
+.logos {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
 }
 
 #bg-blue {
@@ -4435,7 +4517,6 @@ h3 {
   border-radius: 0;
 }
 #section_app .nav-mobile .list-span span {
-  width: -moz-max-content;
   width: max-content;
 }
 #section_app .nav-mobile .list-span.active {
@@ -4450,10 +4531,8 @@ h3 {
 }
 #section_app .img-formations {
   border-radius: 10px;
-  -o-object-position: 50%;
-     object-position: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-position: 50%;
+  object-fit: cover;
   width: 100%;
 }
 #section_app .cards-details {
@@ -4569,13 +4648,6 @@ h3 {
 #section_app .cards-details .form-control {
   border-radius: 24px;
 }
-#section_app .cards-details .form-select::-moz-placeholder, #section_app .cards-details .form-control::-moz-placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: normal !important;
-  color: #4c4b4a !important;
-}
 #section_app .cards-details .form-select::placeholder,
 #section_app .cards-details .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
@@ -4583,13 +4655,6 @@ h3 {
   font-size: 14px !important;
   line-height: normal !important;
   color: #4c4b4a !important;
-}
-#section_app .cards-details .form-select.gray::-moz-placeholder, #section_app .cards-details .form-control.gray::-moz-placeholder {
-  font-family: "Instrument Sans", sans-serif;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: normal !important;
-  color: #b0afad !important;
 }
 #section_app .cards-details .form-select.gray::placeholder,
 #section_app .cards-details .form-control.gray::placeholder {
@@ -4723,4 +4788,4 @@ h3 {
   height: 6px;
   background-color: #ac5b82;
   border-radius: 100px;
-}/*# sourceMappingURL=main.css.map */
+}

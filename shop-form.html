@@ -90,115 +90,87 @@
          <div class="row gy-4">
             <div class="col-12 col-lg-8">
                <div class="cards-details p-0 p-lg-4 h-auto">
-                  <h5 class="title-para">Mon panier</h5>
-                  <div class="row mb-2 mt-4 gx-4 d-none d-lg-flex">
-                     <div class="col-7 shop-desc">
-                        Article
-                     </div>
-                     <div class="col-2 shop-desc">
-                        Qté
-                     </div>
-                     <div class="col-2 shop-desc">
-                        Prix
-                     </div>
-                     <div class="col shop-desc">
-                        Suppr
-                     </div>
+                  <div class="breadcrumb d-flex gap-2">
+                     <span class="element">Panier</span>
+                     <img src="./img/icons/cheveron-down.svg" alt="Suivant">
+                     <span class="element_active">Informations</span>
+                     <img src="./img/icons/cheveron-down.svg" alt="Suivant">
+                     <span class="element">Paiement</span>
+                     <img src="./img/icons/cheveron-down.svg" alt="Suivant">
+                     <span class="element">Confirmation</span>
                   </div>
-                  <div class="row gy-4">
-                     <div class="col-12">
-                        <div class="row gx-4">
-                           <div class="col-12 col-lg-7 mb-3 mb-lg-0">
-                              <div class="d-flex gap-4 align-lg-items-center">
-                                 <img src="./img/illustrations/licence.svg" alt="Image de la licence">
-                                 <div>
-                                    <h6 class="mb-0 h6-dark">La licence Cérébro - Facturation annuelle</h6>
-                                    <p class="basket-paragraph">Comprend l’ensemble des applications Cérébro et l’accès à toutes les ressources (matériels, revues, tableurs...)</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-6 col-lg-2">
-                              <div class="d-flex align-items-center h-100">
-                                 <div class="input-group flex-nowrap">
-                                    <span class="input-group-text text-center" id="addon-wrapping">-</span>
-                                    <input type="email" class="text-center" id="exampleFormControlInput1" autocomplete="off" placeholder="1">
-                                    <span class="input-group-text text-center" id="addon-wrapping_2">+</span>
-                                  </div>
-                              </div>
-                           </div>
-                           <div class="col-6 col-lg-2">
-                              <div class="d-flex align-items-center justify-content-end justify-content-lg-start h-100 basket-price">
-                                 270,00€
-                              </div>
-                           </div>
-                           <div class="col-6 col-lg d-none d-lg-flex">
-                              <div class="d-flex align-items-center justify-content-center h-100">
-                                 <img src="./img/icons/bin.svg" alt="Supprimer du panier">
-                              </div>
-                           </div>
-                        </div>
+                  <h5 class="title-para">Informations</h5>
+                  <span class="shop-check">Vérification de vos informations personnelles</span>
+                  <div class="mt-4 w-50 form-shop">
+                     <div class="d-flex mb-4 gap-3">
+                         <div class="w-50 d-flex flex-column gap-2">
+                             <span class="subsubtitle">Nom</span>
+                             <input type="text" class="px-3 py-2 form-control white-focus shadow-none"
+                                 placeholder="Francisco" aria-label="Recipient's username"
+                                 aria-describedby="button-addon2" />
+                         </div>
+                         <div class="w-50 d-flex flex-column gap-2">
+                             <span class="subsubtitle">Prénom</span>
+                             <input type="text" class="px-3 py-2 form-control white-focus shadow-none"
+                                 placeholder="Emmanuelle" aria-label=" Recipient's username"
+                                 aria-describedby="button-addon2" />
+                         </div>
                      </div>
-                     <div class="col-12">
-                        <div class="row gx-4">
-                           <div class="col-12 col-lg-7 mb-3 mb-lg-0">
-                              <div class="d-flex align-items-center gap-4">
-                                 <img src="./img/illustrations/licence_2.png" class="basket-img" alt="Image de la licence">
-                                 <div>
-                                    <h6 class="mb-0 h6-dark">Les lignes de base</h6>
-                                    <p class="basket-paragraph">Risus ornare in lectus quam tempus risus volutpat.</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-6 col-lg-2">
-                              <div class="d-flex align-items-center h-100">
-                                 <div class="input-group flex-nowrap">
-                                    <span class="input-group-text text-center" id="addon-wrapping">-</span>
-                                    <input type="number" class="text-center" id="exampleFormControlInput1" placeholder="1">
-                                    <span class="input-group-text text-center" id="addon-wrapping_2">+</span>
-                                  </div>
-                              </div>
-                           </div>
-                           <div class="col-6 col-lg-2">
-                              <div class="d-flex align-items-center justify-content-end justify-content-lg-start h-100 basket-price">
-                                 90,00€
-                              </div>
-                           </div>
-                           <div class="col-6 col-lg d-none d-lg-flex">
-                              <div class="d-flex align-items-center justify-content-center h-100">
-                                 <img src="./img/icons/bin.svg" alt="Supprimer du panier">
-                              </div>
-                           </div>
-                        </div>
+                     <div class="d-flex flex-column flex-sm-row">
+                         <div class="w-100 d-flex flex-column gap-3 mb-sm-0 mb-4">
+                             <span class="subsubtitle">Adresse</span>
+                             <input type="text" class="px-3 py-2 form-control white-focus shadow-none"
+                                 placeholder="123 rue des peupliers" aria-label=" Recipient's username"
+                                 aria-describedby="button-addon2" />
+                             <input type="text" class="gray px-3 py-2 form-control white-focus shadow-none"
+                                 placeholder="Complément d'adresse" aria-label=" Recipient's username"
+                                 aria-describedby="button-addon2" />
+                             <div class="d-flex flex-column flex-sm-row gap-3 gap-sm-2">
+                                 <input type="text"
+                                     class="container-info_account-3 px-3 py-2 form-control white-focus shadow-none"
+                                     placeholder="80000" aria-label=" Recipient's username"
+                                     aria-describedby="button-addon2" />
+                                 <input type="text"
+                                     class="container-info_account-4 px-3 py-2 form-control white-focus shadow-none"
+                                     placeholder="Amiens" aria-label=" Recipient's username"
+                                     aria-describedby="button-addon2" />
+                             </div>
+                         </div>
                      </div>
-                  </div>
-               </div>
-               <div class="cards-details p-0 p-lg-4 h-auto mt-4 d-none d-lg-block">
-                  <p class="paiement-title">Nous acceptons les paiements par...</p>
-                  <div class="d-flex align-items-center flex-wrap gap-3 mt-3">
-                     <img src="./img/icons/mastercard.svg" alt="Paiement par Mastercard">
-                     <img src="./img/icons/cartes_bancaires.svg" alt="Paiement par CB">
-                     <img src="./img/icons/visa.svg" alt="Paiement par Visa">
-                     <img src="./img/icons/paypal.svg" alt="Paiement par Paypal">
-                     <img src="./img/icons/alma.svg" alt="Paiement par Alma">
-                  </div>
+                     <div class="mt-4">
+                        <input
+                          type="checkbox"
+                          name="general-uses"
+                          id="general-uses"
+                          class="input_checkbox"
+                          required
+                          checked
+                        />
+                        <label for="general-uses">
+                          <span class="checkbox position-relative">
+                            <img
+                              src="img/icons/check_white.svg"
+                              alt="check"
+                              class="position-absolute"
+                            />
+                          </span>
+                          <p>
+                           Adresse de facturation identique
+                          </p>
+                        </label>
+                      </div>
+                 </div>
                </div>
             </div>
             <div class="col-12 col-lg d-flex flex-column-reverse flex-lg-column">
-               <div class="cards-details p-0 p-lg-4 h-auto mt-4 d-block d-lg-none">
-                  <p class="paiement-title text-center">Nous acceptons les paiements par...</p>
-                  <div class="d-flex align-items-center flex-wrap justify-content-center gap-3 mt-3">
-                     <img src="./img/icons/mastercard.svg" alt="Paiement par Mastercard">
-                     <img src="./img/icons/cartes_bancaires.svg" alt="Paiement par CB">
-                     <img src="./img/icons/visa.svg" alt="Paiement par Visa">
-                     <img src="./img/icons/paypal.svg" alt="Paiement par Paypal">
-                     <img src="./img/icons/alma.svg" alt="Paiement par Alma">
-                  </div>
-               </div>
                <div class="cards-details p-0 p-lg-4 h-auto mt-4 mt-lg-0">
                   <div class="d-flex align-items-center justify-content-between mb-4 d-none d-lg-flex">
-                     <h5 class="title-para mb-0">Mon panier</h5>
-                     <span class="cbro-badge-pink">2 articles</span>
+                     <h5 class="title-para mb-0">Ma commande</h5>
                   </div>
+                  <div class="">
+                     <div></div>
+                  </div>
+                  <hr>
                   <div class="d-flex align-items-center justify-content-between">
                      <span class="price-annon mb-0">Sous total</span>
                      <span class="price-annon mb-0">360,00€</span>
