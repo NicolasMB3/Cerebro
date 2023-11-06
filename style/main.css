@@ -65,6 +65,13 @@ footer .newsletter input {
   line-height: 100% !important;
   color: #fcfaf7 !important;
 }
+footer .newsletter input::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 100% !important;
+  color: #fcfaf7 !important;
+}
 footer .newsletter input::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 300 !important;
@@ -899,6 +906,7 @@ footer hr {
 }
 @media (max-width: 991.98px) {
   .btn_dark-purple {
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -1249,6 +1257,13 @@ footer hr {
   padding: 0 20px !important;
   outline: none;
 }
+.form-connexion .form-control::-moz-placeholder, .form-contact .form-control::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #b0afad !important;
+}
 .form-connexion .form-control::placeholder,
 .form-contact .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
@@ -1536,14 +1551,17 @@ h3 {
 }
 
 .width-fit-content {
+  width: -moz-fit-content !important;
   width: fit-content !important;
 }
 
 .width-max-content {
+  width: -moz-max-content !important;
   width: max-content !important;
 }
 
 .min-width-max-content {
+  min-width: -moz-max-content !important;
   min-width: max-content !important;
 }
 
@@ -1615,6 +1633,7 @@ h3 {
   background: #e3ebd5;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1630,6 +1649,7 @@ h3 {
   background: #e7ddf1;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1645,6 +1665,7 @@ h3 {
   background: #f3e8ed;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1660,6 +1681,7 @@ h3 {
   background: #cee3f6;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1675,6 +1697,7 @@ h3 {
   background: #fde4e0;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1690,6 +1713,7 @@ h3 {
   background: #feead2;
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
 }
@@ -1705,6 +1729,7 @@ h3 {
   background: rgba(227, 225, 222, 0.7);
   border-radius: 99px;
   padding: 4px 12px;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid transparent;
   width: 29px;
@@ -2315,7 +2340,8 @@ h3 {
   color: #323231 !important;
 }
 .homepage-avantage .quality iframe {
-  object-position: 50% 50%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
   height: 202px;
   width: 202px;
 }
@@ -3049,6 +3075,7 @@ h3 {
   color: #a04470;
 }
 #details-hero_a .mobile .price_container, #details-hero_b .mobile .price_container, #details-hero_c .mobile .price_container, #details-hero_d .mobile .price_container, #details-hero_e .mobile .price_container {
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 575.98px) {
@@ -3117,7 +3144,8 @@ h3 {
 #details-formation .objectif-details {
   border-radius: 12px;
   background: rgba(230, 228, 222, 0.5);
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   height: 100%;
 }
 #details-formation .objectif-details p {
@@ -3353,6 +3381,7 @@ h3 {
   }
 }
 #listing-event .btn_dark-purple {
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 991.98px) {
@@ -3515,6 +3544,7 @@ h3 {
     border-radius: 0;
     text-align: start;
     padding: 0;
+    width: -moz-max-content;
     width: max-content;
     background: none;
   }
@@ -3537,6 +3567,7 @@ h3 {
   line-height: 20px !important;
   color: #a04470 !important;
   padding: 8px 16px;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -3626,9 +3657,11 @@ h3 {
   background: url(../../../img/noise.svg), repeat, #fcfaf7;
 }
 .body_inscription .div_container .img_bg {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100vh;
-  object-position: 50% 50%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .btn_back {
@@ -3689,6 +3722,7 @@ h3 {
   color: #4f756c !important;
 }
 .div_container .container_content #container_btn button {
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 575.98px) {
@@ -3880,6 +3914,13 @@ h3 {
 }
 #basket .shop-area input {
   border-radius: 24px;
+}
+#basket .shop-area ::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #656463 !important;
 }
 #basket .shop-area ::placeholder {
   font-family: "Instrument Sans", sans-serif;
@@ -4104,6 +4145,7 @@ h3 {
   }
 }
 #email_copy #copy_clipboard {
+  width: -moz-fit-content;
   width: fit-content;
   padding: 6px 12px;
   color: #4f756c;
@@ -4269,8 +4311,10 @@ h3 {
 #section_presentation .img_camille_vincent {
   width: -webkit-fill-available;
   height: 416px;
-  object-fit: cover;
-  object-position: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 20%;
+     object-position: 20%;
   border-radius: 10px;
   margin-right: 80px;
 }
@@ -4390,11 +4434,14 @@ h3 {
   gap: 3rem;
   display: flex;
   animation: scroll 30s linear infinite;
+  width: -moz-max-content;
   width: max-content;
 }
 #section_partenaires .container_logo img {
-  object-fit: contain;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .logos {
@@ -4517,6 +4564,7 @@ h3 {
   border-radius: 0;
 }
 #section_app .nav-mobile .list-span span {
+  width: -moz-max-content;
   width: max-content;
 }
 #section_app .nav-mobile .list-span.active {
@@ -4531,8 +4579,10 @@ h3 {
 }
 #section_app .img-formations {
   border-radius: 10px;
-  object-position: 50%;
-  object-fit: cover;
+  -o-object-position: 50%;
+     object-position: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 #section_app .cards-details {
@@ -4648,6 +4698,13 @@ h3 {
 #section_app .cards-details .form-control {
   border-radius: 24px;
 }
+#section_app .cards-details .form-select::-moz-placeholder, #section_app .cards-details .form-control::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #4c4b4a !important;
+}
 #section_app .cards-details .form-select::placeholder,
 #section_app .cards-details .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
@@ -4655,6 +4712,13 @@ h3 {
   font-size: 14px !important;
   line-height: normal !important;
   color: #4c4b4a !important;
+}
+#section_app .cards-details .form-select.gray::-moz-placeholder, #section_app .cards-details .form-control.gray::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: normal !important;
+  color: #b0afad !important;
 }
 #section_app .cards-details .form-select.gray::placeholder,
 #section_app .cards-details .form-control.gray::placeholder {
@@ -4788,4 +4852,4 @@ h3 {
   height: 6px;
   background-color: #ac5b82;
   border-radius: 100px;
-}
+}/*# sourceMappingURL=main.css.map */
