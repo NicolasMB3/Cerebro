@@ -4679,7 +4679,12 @@ h3 {
   }
 }
 #section_app .cards-details .container-info_account-3 {
-  width: 25%;
+  width: 15%;
+}
+@media (max-width: 991.98px) {
+  #section_app .cards-details .container-info_account-3 {
+    width: 25%;
+  }
 }
 @media (max-width: 575.98px) {
   #section_app .cards-details .container-info_account-3 {
@@ -4687,31 +4692,47 @@ h3 {
   }
 }
 #section_app .cards-details .container-info_account-4 {
-  width: 75%;
+  width: 100%;
 }
-@media (max-width: 575.98px) {
-  #section_app .cards-details .container-info_account-4 {
-    width: 100%;
-  }
+#section_app .cards-details .form-select {
+  padding: 12px 48px 12px 20px;
+  background-position: right 1.2rem center !important;
+  background-image: url(../../../img/icons/arrow-down_gray.svg);
+  background-size: 24px;
+}
+#section_app .cards-details .form-control {
+  padding: 12px 20px;
 }
 #section_app .cards-details .form-select,
 #section_app .cards-details .form-control {
   border-radius: 24px;
+  border: 1px solid #cac8c6;
+  vertical-align: middle;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #4c4b4a !important;
+  font-family: Instrument Sans;
 }
-#section_app .cards-details .form-select::-moz-placeholder, #section_app .cards-details .form-control::-moz-placeholder {
+#section_app .cards-details .form-select[type=password]::-moz-placeholder, #section_app .cards-details .form-control[type=password]::-moz-placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: normal !important;
   color: #4c4b4a !important;
+  color: #b0afad !important;
+  transform: translateY(20%);
 }
-#section_app .cards-details .form-select::placeholder,
-#section_app .cards-details .form-control::placeholder {
+#section_app .cards-details .form-select[type=password]::placeholder,
+#section_app .cards-details .form-control[type=password]::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: normal !important;
   color: #4c4b4a !important;
+  color: #b0afad !important;
+  transform: translateY(20%);
 }
 #section_app .cards-details .form-select.gray::-moz-placeholder, #section_app .cards-details .form-control.gray::-moz-placeholder {
   font-family: "Instrument Sans", sans-serif;

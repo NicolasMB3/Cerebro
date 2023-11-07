@@ -204,7 +204,11 @@
         }
 
         .container-info_account-3 {
-            width: 25%;
+            width: 15%;
+
+            @include media-breakpoint-down(lg) {
+                width: 25%;
+            }
 
             @include media-breakpoint-down(sm) {
                 width: 100%;
@@ -212,19 +216,33 @@
         }
 
         .container-info_account-4 {
-            width: 75%;
+            width: 100%;
+        }
 
-            @include media-breakpoint-down(sm) {
-                width: 100%;
-            }
+        .form-select {
+            padding: 12px 48px 12px 20px;
+            background-position: right 1.2rem center !important;
+            background-image: url(../../../img/icons/arrow-down_gray.svg);
+            background-size: 24px;
+        }
+
+        .form-control {
+            padding: 12px 20px;
         }
 
         .form-select,
         .form-control {
             border-radius: 24px;
+            border: 1px solid $cbro-gray-200;
+            vertical-align: middle;
 
-            &::placeholder {
+            @include cbro-paragraphe(400, 14px, 20px, $cbro-gray-700);
+            font-family: Instrument Sans;
+
+            &[type='password']::placeholder {
                 @include cbro-paragraphe(400, 14px, normal, $cbro-gray-700);
+                color: $cbro-gray-300 !important;
+                transform: translateY(20%);
             }
 
             &.gray {
@@ -360,8 +378,6 @@
             }
         }
     }
-
-
 }
 
 
