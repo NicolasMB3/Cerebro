@@ -122,7 +122,8 @@
         height: auto;
         background-color: $cbro-snow-50;
 
-        a {
+        a,
+        button {
             img {
                 height: 24px;
                 width: 24px;
@@ -374,6 +375,51 @@
                     &:nth-child(2) {
                         width: 645px;
                     }
+                }
+            }
+        }
+    }
+
+    .modal {
+        .modal-content {
+            .modal-header {
+                border-bottom: none;
+
+                .modal-title {
+                    img {
+                        height: 24px;
+                        width: 24px;
+                    }
+
+                    span {
+                        @include cbro-paragraphe(500, 16px, 24px, $cbro-gray-800);
+                        font-style: normal;
+                    }
+                }
+            }
+
+            .modal-body {
+                p {
+                    border-bottom: 1px solid $cbro-gray-200;
+
+                }
+            }
+
+            .modal-footer {
+                border-top: none;
+
+                .btn-secondary {
+                    background-color: transparent;
+                    border: none;
+                    @include cbro-paragraphe(500, 14px, 150%, $cbro-black);
+                }
+
+                .btn-primary {
+                    border-radius: 100px;
+                    background-color: #D52A2A;
+                    border: none;
+                    padding: 8px 16px;
+                    @include cbro-paragraphe(500, 14px, 150%, $cbro-white);
                 }
             }
         }

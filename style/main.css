@@ -4590,7 +4590,8 @@ h3 {
   height: auto;
   background-color: #fcfaf7;
 }
-#section_app .cards-details a img {
+#section_app .cards-details a img,
+#section_app .cards-details button img {
   height: 24px;
   width: 24px;
 }
@@ -4851,6 +4852,47 @@ h3 {
 }
 #section_app .table-documents tbody tr td:nth-child(2) {
   width: 645px;
+}
+#section_app .modal .modal-content .modal-header {
+  border-bottom: none;
+}
+#section_app .modal .modal-content .modal-header .modal-title img {
+  height: 24px;
+  width: 24px;
+}
+#section_app .modal .modal-content .modal-header .modal-title span {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+  font-style: normal;
+}
+#section_app .modal .modal-content .modal-body p {
+  border-bottom: 1px solid #cac8c6;
+}
+#section_app .modal .modal-content .modal-footer {
+  border-top: none;
+}
+#section_app .modal .modal-content .modal-footer .btn-secondary {
+  background-color: transparent;
+  border: none;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #000 !important;
+}
+#section_app .modal .modal-content .modal-footer .btn-primary {
+  border-radius: 100px;
+  background-color: #D52A2A;
+  border: none;
+  padding: 8px 16px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #fff !important;
 }
 
 .notif-dots::after {
