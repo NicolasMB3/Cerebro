@@ -4811,7 +4811,7 @@ h3 {
   color: #7e7d7c !important;
   border-bottom: 1px solid #cac8c6;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   #section_app .table-documents .table-header {
     border-bottom: 1px solid transparent;
   }
@@ -4832,8 +4832,12 @@ h3 {
 #section_app .table-documents .table-row .new-documents {
   font-weight: 500 !important;
   color: #191919 !important;
-  width: -moz-fit-content;
-  width: fit-content;
+}
+@media (max-width: 991.98px) {
+  #section_app .table-documents .table-row .new-documents .cbro-badge-pink {
+    font-size: 12px !important;
+    padding: 4px 8px;
+  }
 }
 #section_app .table-documents .table-row .container-formations {
   white-space: nowrap;

@@ -327,7 +327,7 @@
             @include cbro-paragraphe(600, 13px, normal, $cbro-gray-500);
             border-bottom: 1px solid $cbro-gray-200;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 border-bottom: 1px solid transparent;
             }
 
@@ -348,7 +348,12 @@
                 font-weight: 500 !important;
                 color: $cbro-gray-900 !important;
 
-                width: fit-content;
+                .cbro-badge-pink {
+                    @include media-breakpoint-down(lg) {
+                        font-size: 12px !important;
+                        padding: 4px 8px;
+                    }
+                }
             }
 
             .container-formations {
