@@ -91,12 +91,291 @@
             <div class="row h-100">
                 <div class="col-3 d-xxl-block d-none">
                     <!-- Barre de navigation Desktop -->
-                    <div class="nav-app list-unstyled d-flex flex-column gap-2 p-3">
+                    <div class="nav-app list-unstyled d-flex flex-column gap-4 p-3">
                         <div class="position-relative">
                             <img src="img/icons/loupe.svg" alt="Loupe" class="position-absolute loupe-search">
                             <input type="text" class="form-control form-control-search white-focus shadow-none"
                                 placeholder="Rechercher..." aria-label=" Recipient's username"
                                 aria-describedby="button-addon2" />
+                        </div>
+                        <h5 class="h5-subtitle-dark m-0">Filtrer par</h5>
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <!-- Type de ressource -->
+                            <div class="accordion-item p-0 pb-3">
+                                <h2 class="accordion-header border-0">
+                                    <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        Type de ressource
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0 pt-3">
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-1"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-1">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Exo Lexicos
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-2"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-2">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Trios lexicos
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-3"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-3">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Questionnaire
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-4"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-4">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Rééducation de l'alexie et de l’agraphie
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-5"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-5">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Tableurs
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Type de tâche -->
+                            <div class="accordion-item p-0 pb-3 pt-4">
+                                <h2 class="accordion-header border-0">
+                                    <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        Type de tâche
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0 pt-3">
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-6"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-6">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Manuel d'utilisation
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-7"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-7">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Tableurs de suivi
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-8"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-8">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Fiches de références
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-9"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-9">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Tomes
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-10"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-10">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Formes
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-11"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-11">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Appariement
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-12"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-12">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Jugement
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-13"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-13">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Évocation
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-14"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-14">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    PACE
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nombre de pages -->
+                            <div class="accordion-item p-0 pb-3 pt-4">
+                                <h2 class="accordion-header border-0">
+                                    <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        Nombre de pages
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0 pt-3">
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-15"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-15">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Entre 1 et 10 pages
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-16"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-16">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Entre 10 et 50 pages
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-17"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-17">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Entre 50 et 200 pages
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-18"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-18">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Plus de 200 pages
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

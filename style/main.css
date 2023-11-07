@@ -4561,6 +4561,34 @@ h3 {
   left: 18px;
   transform: translateY(-50%);
 }
+#section_app .nav-app .accordion .accordion-item,
+#section_app .nav-mobile .accordion .accordion-item {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #cac8c6;
+}
+#section_app .nav-app .accordion .accordion-item button,
+#section_app .nav-mobile .accordion .accordion-item button {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+#section_app .nav-app .accordion .accordion-item .accordion-button:not(.collapsed),
+#section_app .nav-mobile .accordion .accordion-item .accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+#section_app .nav-app .accordion .accordion-item .checkbox p,
+#section_app .nav-mobile .accordion .accordion-item .checkbox p {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #656463 !important;
+  transform: translateY(-2px);
+}
 #section_app .illustration {
   height: 200px;
   width: 200px;

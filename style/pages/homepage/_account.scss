@@ -67,6 +67,30 @@
             left: 18px;
             transform: translateY(-50%);
         }
+
+        .accordion {
+            .accordion-item {
+                background-color: transparent;
+                border: none;
+                border-radius: 0px;
+                border-bottom: 1px solid $cbro-gray-200;
+
+                button {
+                    @include cbro-paragraphe(500, 16px, 24px, $cbro-gray-800);
+                }
+
+                .accordion-button:not(.collapsed) {
+                    box-shadow: none;
+                }
+
+                .checkbox {
+                    p {
+                        @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
     }
 
     .illustration {
