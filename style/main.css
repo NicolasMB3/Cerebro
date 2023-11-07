@@ -4835,6 +4835,11 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
 }
+#section_app .table-documents .table-row .container-formations {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+}
 #section_app .table-documents .table-row span.doc-date {
   opacity: 0.8;
 }

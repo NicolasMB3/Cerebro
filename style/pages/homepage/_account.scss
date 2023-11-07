@@ -351,6 +351,12 @@
                 width: fit-content;
             }
 
+            .container-formations {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow-y: hidden;
+            }
+
             span.doc-date {
                 opacity: 0.8;
             }
