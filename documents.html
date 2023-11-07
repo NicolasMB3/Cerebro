@@ -300,31 +300,35 @@
                     <div class="d-flex flex-column gap-4">
                         <div class="cards-details table-doc">
                             <h5 class="h5-subtitle-dark mb-sm-4 mb-2">Mes documents</h5>
-                            <table class="table-documents w-100">
-                                <thead>
-                                    <tr>
-                                        <th class="pb-3 d-none d-sm-table-cell">Type</th>
-                                        <th class="pb-3 d-none d-sm-table-cell">Nom</th>
-                                        <th class="pb-3 d-none d-sm-table-cell">Date</th>
-                                        <th class="pb-3 d-none d-sm-table-cell">Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="pt-3"><img src="img/icons/note-eur.svg" alt="Note"></td>
-                                        <td class="pt-3 new-documents">
+                            <div class="table-documents w-100">
+                                <div class="row table-header d-flex align-items-center">
+                                    <span class="col-md-1 col-sm-2 table-cell-header pb-3 d-none d-sm-block">Type</span>
+                                    <div class="col-md-9 col-sm-8 d-flex justify-content-between">
+                                        <span class="table-cell-header pb-3 d-none d-sm-block">Nom</span>
+                                        <span class="table-cell-header pb-3 d-none d-sm-block">Date
+                                            <img src="img/icons/arrow-down_gray.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <span
+                                        class="col-md-2 col-sm-2 table-cell-header pb-3 d-none d-sm-flex justify-content-end">Actions</span>
+                                </div>
+                                <div class="row table-row d-flex align-items-center">
+                                    <span class="col-md-1 col-sm-2 pt-3 d-flex justify-content-start"><img
+                                            src="img/icons/note-eur.svg" alt="Note" class="img-table"></span>
+                                    <div class="col-md-9 col-sm-8 d-flex justify-content-between">
+                                        <span class="pt-3 new-documents">
                                             <span>Formation - Lignes de base</span>
                                             <span class="ms-md-3 ms-1 cbro-badge-pink">Nouveau</span>
-                                        </td>
-                                        <td class="pt-3 doc-date">18/05/23</td>
-                                        <td class="pt-3">
-                                            <button class="border-0 p-0">
-                                                <img src="img/icons/printer.svg" alt="Imprimer">
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        </span>
+                                        <span class="pt-3 doc-date">18/05/23</span>
+                                    </div>
+                                    <span class="col-md-2 col-sm-2 pt-3 d-flex justify-content-end">
+                                        <button class="border-0 p-2">
+                                            <img src="img/icons/printer.svg" alt="Imprimer">
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -323,7 +323,7 @@
     }
 
     .table-documents {
-        thead {
+        .table-header {
             @include cbro-paragraphe(600, 13px, normal, $cbro-gray-500);
             border-bottom: 1px solid $cbro-gray-200;
 
@@ -331,51 +331,48 @@
                 border-bottom: 1px solid transparent;
             }
 
-            th {
+            .table-cell-header {
                 font-weight: 600;
 
                 &:last-child {
                     text-align: end;
                 }
             }
+
         }
 
-        tbody {
-            tr {
-                td {
-                    @include cbro-paragraphe(400, 14px, 160%, $cbro-gray-600);
+        .table-row {
+            @include cbro-paragraphe(400, 14px, 160%, $cbro-gray-600);
 
-                    &.new-documents {
-                        font-weight: 500 !important;
-                        color: $cbro-gray-900 !important;
-                    }
+            .new-documents {
+                font-weight: 500 !important;
+                color: $cbro-gray-900 !important;
 
-                    &.doc-date {
-                        opacity: 0.8;
-                    }
+                width: fit-content;
+            }
 
-                    &:last-child {
-                        text-align: end;
+            span.doc-date {
+                opacity: 0.8;
+            }
 
-                        button {
-                            background-color: transparent;
-                        }
-                    }
+            &:last-child {
+                text-align: end;
 
-                    &:first-child {
-                        width: 62px;
+                button {
+                    background-color: transparent;
+                    transition: all 0.2s;
+                    border-radius: 100px;
 
-                        img {
-                            background-color: rgba(25, 25, 25, 0.05);
-                            padding: 9px;
-                            border-radius: 8px;
-                        }
-                    }
-
-                    &:nth-child(2) {
-                        width: 645px;
+                    &:hover {
+                        background-color: rgba(25, 25, 25, 0.05);
                     }
                 }
+            }
+
+            .img-table {
+                background-color: rgba(25, 25, 25, 0.05);
+                padding: 9px;
+                border-radius: 8px;
             }
         }
     }
