@@ -92,7 +92,7 @@
                 <!-- Barre de navigation Mobile -->
                 <div class="nav-mobile p-0">
                     <div class="d-flex gap-4 overflow-x-auto">
-                        <a href="applications-a.html"
+                        <a href="applications-vide.html"
                             class="list-span d-flex align-items-center gap-3 px-0 text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
@@ -196,7 +196,7 @@
                 <div class="col-3 d-xl-block d-none">
                     <!-- Barre de navigation Desktop -->
                     <div class="nav-app list-unstyled d-flex flex-column gap-2">
-                        <a href="applications-a.html"
+                        <a href="applications-vide.html"
                             class="list-span d-flex align-items-start gap-3 mb-1 text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
@@ -294,53 +294,75 @@
                 <!-- Contenu -->
                 <div class="col-xl-9 col-12 container-app">
                     <div class="row gy-4 mx-0">
-                        <!-- Informations personnelles -->
+                        <!-- Informations professionnelles -->
                         <div class="cards-details">
                             <div class="d-flex justify-content-between mb-4">
                                 <h5 class="h5-subtitle-dark m-0">Informations personnelles</h5>
-                                <a href="informations-b.html" class="btn_full_transparent p-1">
-                                    <img src="img/icons/crayon.svg" alt="Modifier">
+                                <a href="informations-account.html"
+                                    class="p-0 btn_transparent text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-none d-sm-flex">
+                                    <img src="img/icons/check_dark.svg" alt="Sauvegarder">
+                                    Sauvegarder
                                 </a>
                             </div>
-                            <div class="d-flex mb-4">
+                            <div class="d-flex mb-4 gap-3">
                                 <div class="w-50 d-flex flex-column gap-2">
                                     <span class="subsubtitle">Civilité</span>
-                                    <span class="subtext">Madame</span>
+                                    <select class="form-select d-flex" name="" id="form-select" required>
+                                        <option value="madame" selected>Madame</option>
+                                        <option value="monsieur">Monsieur</option>
+                                        <option value="other">Autre</option>
+                                    </select>
                                 </div>
                                 <div class="w-50"></div>
                             </div>
-                            <div class="d-flex mb-4">
+                            <div class="d-flex mb-4 gap-3">
                                 <div class="w-50 d-flex flex-column gap-2">
                                     <span class="subsubtitle">Nom</span>
-                                    <span class="subtext">Francisco</span>
+                                    <input type="text" class="form-control white-focus shadow-none" value="Francisco"
+                                        placeholder="Votre nom" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2" />
                                 </div>
                                 <div class="w-50 d-flex flex-column gap-2">
                                     <span class="subsubtitle">Prénom</span>
-                                    <span class="subtext">Emmanuelle</span>
+                                    <input type="text" class="form-control white-focus shadow-none" value="Emmanuelle"
+                                        placeholder="Votre prénom" aria-label=" Recipient's username"
+                                        aria-describedby="button-addon2" />
                                 </div>
                             </div>
                             <div class="d-flex flex-column flex-sm-row">
-                                <div class="container-info_account d-flex flex-column gap-2 mb-sm-0 mb-4">
+                                <div class="w-100 d-flex flex-column gap-3 mb-sm-0 mb-4">
                                     <span class="subsubtitle">Adresse</span>
-                                    <div class="subtext d-flex gap-2 flex-row flex-sm-column">
-                                        <span>123 rue des peupliers</span>
-                                        <span>80000 Amiens</span>
+                                    <input type="text" class="form-control white-focus shadow-none"
+                                        value="123 rue des peupliers" placeholder="Votre adresse"
+                                        aria-label=" Recipient's username" aria-describedby="button-addon2" />
+                                    <input type="text" class="gray form-control white-focus shadow-none"
+                                        placeholder="Complément d'adresse" aria-label=" Recipient's username"
+                                        aria-describedby="button-addon2" />
+                                    <div class="d-flex flex-column flex-sm-row gap-3 gap-sm-2">
+                                        <input type="text"
+                                            class="container-info_account-3 form-control white-focus shadow-none"
+                                            value="80000" placeholder="Numéro de département"
+                                            aria-label=" Recipient's username" aria-describedby="button-addon2" />
+                                        <input type="text"
+                                            class="container-info_account-4 form-control white-focus shadow-none"
+                                            value="Amiens" placeholder="Votre ville" aria-label=" Recipient's username"
+                                            aria-describedby="button-addon2" />
                                     </div>
                                 </div>
-                                <div class="container-info_account d-flex flex-column gap-2">
-                                    <span class="subsubtitle">Adresse de facturation</span>
-                                    <div class="subtext d-flex gap-2 flex-row flex-sm-column">
-                                        <span>123 rue des peupliers</span>
-                                        <span>80000 Amiens</span>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="">
+                                <a href="informations-account.html"
+                                    class="btn_transparent p-0 text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-sm-none d-flex">
+                                    <img src="img/icons/check_dark.svg" alt="Sauvegarder">
+                                    Sauvegarder
+                                </a>
                             </div>
                         </div>
                         <!-- Connexion et sécurité -->
                         <div class="cards-details">
                             <div class="d-flex justify-content-between mb-4">
                                 <h5 class="h5-subtitle-dark m-0">Connexion et sécurité</h5>
-                                <a href="informations-c.html" class="text-decoration-none btn_full_transparent p-1">
+                                <a href="informations-modif-connexion.html" class="p-1 text-decoration-none btn_full_transparent">
                                     <img src="img/icons/crayon.svg" alt="Modifier">
                                 </a>
                             </div>
@@ -359,48 +381,29 @@
                         <div class="cards-details">
                             <div class="d-flex justify-content-between mb-4">
                                 <h5 class="h5-subtitle-dark m-0">Informations professionnelles</h5>
-                                <a href="informations-a.html"
-                                    class="btn_transparent p-0 text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-none d-sm-flex">
-                                    <img src="img/icons/check_dark.svg" alt="Sauvegarder">
-                                    Sauvegarder
+                                <a href="informations-modif-pro.html" class="btn_full_transparent p-1">
+                                    <img src="img/icons/crayon.svg" alt="Modifier">
                                 </a>
                             </div>
-                            <div class="d-flex mb-4 gap-3 flex-column flex-sm-row">
-                                <div class="container-info_account d-flex flex-column gap-3">
+                            <div class="d-flex mb-4">
+                                <div class="w-50 d-flex flex-column gap-2">
                                     <span class="subsubtitle">Vous êtes</span>
-                                    <select class="form-select d-flex" name="" id="form-select" required>
-                                        <option value="orthophoniste" selected>Orthophoniste</option>
-                                        <option value="etudiant">Etudiant</option>
-                                    </select>
+                                    <span class="subtext">Orthophoniste</span>
                                 </div>
-                                <div class="container-info_account d-flex flex-column gap-3">
+                                <div class="w-50 d-flex flex-column gap-2">
                                     <span class="subsubtitle">Statut</span>
-                                    <select class="form-select d-flex" name="" id="form-select" required>
-                                        <option value="orthophoniste" selected>Salarial</option>
-                                        <option value="etudiant">Libéral</option>
-                                    </select>
+                                    <span class="subtext">Salarié(e)</span>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column flex-md-row gap-3 mb-sm-0 mb-4">
-                                <div class="container-info_account-2 d-flex flex-column gap-3">
+                            <div class="d-flex">
+                                <div class="w-50 d-flex flex-column gap-2">
                                     <span class="subsubtitle">Année de diplôme</span>
-                                    <input type="text" class="form-control white-focus shadow-none" value="2023"
-                                        placeholder="Votre année de diplôme" aria-label="Recipient's username"
-                                        aria-describedby="button-addon2" />
+                                    <span class="subtext">2023</span>
                                 </div>
-                                <div class="container-info_account-2 d-flex flex-column gap-3 mb-1">
-                                    <span class="subsubtitle">ADELI * ou autre numéro professionnel</span>
-                                    <input type="text" class="form-control white-focus shadow-none" value="3556853120"
-                                        placeholder="Votre numéro professionnel" aria-label="Recipient's username"
-                                        aria-describedby="button-addon2" />
+                                <div class="w-50 d-flex flex-column gap-2">
+                                    <span class="subsubtitle">ADELI</span>
+                                    <span class="subtext">3556853120</span>
                                 </div>
-                            </div>
-                            <div class="">
-                                <a href="informations-a.html"
-                                    class="btn_transparent p-0 text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-sm-none d-flex">
-                                    <img src="img/icons/check_dark.svg" alt="Sauvegarder">
-                                    Sauvegarder
-                                </a>
                             </div>
                         </div>
                     </div>

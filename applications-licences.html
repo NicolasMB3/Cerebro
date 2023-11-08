@@ -38,7 +38,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body id="body_hero" class="modal-on">
+<body id="body_hero">
     <!-- Barre de navigation -->
     <header class="position-fixed w-100 navbar_s" id="header_beige">
         <div class="container justify-content-center d-flex gap-3">
@@ -74,9 +74,9 @@
                     </div>
                     <div class="d-flex column-gap-2 align-items-center d-none d-xl-flex">
                         <button class="btn_full_transparent d-flex align-items-center gap-1">
-                            <img src="img/icons/icon_account.svg" alt="Account" />
+                            <img src="img/icons/icon_account.svg" alt="Account">
                             <span>Clara G.</span>
-                            <img src="img/icons/arrow_down.svg" alt="Arrow" />
+                            <img src="img/icons/arrow_down.svg" alt="Arrow">
                         </button>
                     </div>
                     <div class="hamburger-menu d-xl-none">
@@ -89,11 +89,10 @@
     <section id="section_app">
         <div class="container">
             <div class="d-xl-none d-block">
-                <!-- Barre de navigation Mobile -->
                 <div class="nav-mobile p-0">
+                    <!-- Navigation mobile -->
                     <div class="d-flex gap-4 overflow-x-auto">
-                        <a href="applications-a.html"
-                            class="list-span d-flex align-items-center gap-3 px-0 text-decoration-none">
+                        <a href="#" class="list-span d-flex align-items-center gap-3 px-0 active text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <path
@@ -157,7 +156,8 @@
                             </svg>
                             <span>Marrainage</span>
                         </a>
-                        <a href="#" class="list-span d-flex align-items-center gap-3 px-0 active text-decoration-none">
+                        <a href="informations-account.html"
+                            class="list-span d-flex align-items-center gap-3 px-0 text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <path
@@ -194,10 +194,9 @@
         <div class="container">
             <div class="row h-100">
                 <div class="col-3 d-xl-block d-none">
-                    <!-- Barre de navigation Desktop -->
+                    <!-- Navigation desktop -->
                     <div class="nav-app list-unstyled d-flex flex-column gap-2">
-                        <a href="applications-a.html"
-                            class="list-span d-flex align-items-start gap-3 mb-1 text-decoration-none">
+                        <a href="#" class="list-span d-flex align-items-start active gap-3 mb-1 text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <path
@@ -261,7 +260,8 @@
                             </svg>
                             <span>Marrainage</span>
                         </a>
-                        <a href="#" class="list-span d-flex align-items-center gap-3 mb-1 active text-decoration-none">
+                        <a href="informations-account.html"
+                            class="list-span d-flex align-items-center gap-3 mb-1 text-decoration-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <path
@@ -293,148 +293,60 @@
                 </div>
                 <!-- Contenu -->
                 <div class="col-xl-9 col-12 container-app">
-                    <div class="row gy-4 mx-0">
-                        <!-- Informations personnelles -->
-                        <div class="cards-details">
-                            <div class="d-flex justify-content-between mb-4">
-                                <h5 class="h5-subtitle-dark m-0">Informations personnelles</h5>
-                                <a href="informations-b.html" class="btn_full_transparent p-1">
-                                    <img src="img/icons/crayon.svg" alt="Modifier">
-                                </a>
-                            </div>
-                            <div class="d-flex mb-4">
-                                <div class="w-50 d-flex flex-column gap-2">
-                                    <span class="subsubtitle">Civilité</span>
-                                    <span class="subtext">Madame</span>
+                    <span class="subtitle-gray">Langage oral</span>
+                    <div class="d-flex flex-lg-row flex-column gap-4 mt-3">
+                        <div>
+                            <div class="card-app d-flex flex-column align-items-start justify-content-between h-100">
+                                <div>
+                                    <img src="img/logo/logo_cerebrolex.svg" alt="CerebroLex" class="bg-logo-green mb-3">
+                                    <h5 class="h5-dark mb-2">Cérébro Lex</h5>
+                                    <p class="p-super-light-gray mb-sm-5 mb-0">Outil de rééducation des troubles de la
+                                        production
+                                        lexicale des
+                                        noms concrets chez le patient aphasique.</p>
                                 </div>
-                                <div class="w-50"></div>
-                            </div>
-                            <div class="d-flex mb-4">
-                                <div class="w-50 d-flex flex-column gap-2">
-                                    <span class="subsubtitle">Nom</span>
-                                    <span class="subtext">Francisco</span>
-                                </div>
-                                <div class="w-50 d-flex flex-column gap-2">
-                                    <span class="subsubtitle">Prénom</span>
-                                    <span class="subtext">Emmanuelle</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column flex-sm-row">
-                                <div class="container-info_account d-flex flex-column gap-2 mb-sm-0 mb-4">
-                                    <span class="subsubtitle">Adresse</span>
-                                    <div class="subtext d-flex gap-2 flex-row flex-sm-column">
-                                        <span>123 rue des peupliers</span>
-                                        <span>80000 Amiens</span>
-                                    </div>
-                                </div>
-                                <div class="container-info_account d-flex flex-column gap-2">
-                                    <span class="subsubtitle">Adresse de facturation</span>
-                                    <div class="subtext d-flex gap-2 flex-row flex-sm-column">
-                                        <span>123 rue des peupliers</span>
-                                        <span>80000 Amiens</span>
-                                    </div>
-                                </div>
+                                <a href="#"
+                                    class="btn_transparent text-decoration-none text-center d-sm-block d-none">Ouvrir
+                                    l'application</a>
                             </div>
                         </div>
-                        <!-- Connexion et sécurité -->
-                        <div class="cards-details">
-                            <div class="d-flex justify-content-between mb-4">
-                                <h5 class="h5-subtitle-dark m-0">Connexion et sécurité</h5>
-                                <a href="informations-c.html" class="text-decoration-none btn_full_transparent p-1">
-                                    <img src="img/icons/crayon.svg" alt="Modifier">
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row gap-4 gap-md-0">
-                                <div class="container-info_account-2 d-flex flex-column gap-3">
-                                    <span class="subsubtitle">Email</span>
-                                    <span class="subtext">Emmanuelle.francisco@gmail.com</span>
+                        <div>
+                            <div class="card-app d-flex flex-column align-items-start justify-content-between h-100">
+                                <div>
+                                    <img src="img/logo/logo_cerebroverbs.svg" alt="CerebroVerbs"
+                                        class="bg-logo-red mb-3">
+                                    <h5 class="h5-dark mb-2">Cérébro Lex</h5>
+                                    <p class="p-super-light-gray mb-sm-5 mb-0">Outil de rééducation des troubles de la
+                                        production
+                                        lexicale des
+                                        noms concrets chez le patient aphasique.</p>
                                 </div>
-                                <div class="container-info_account-2 d-flex flex-column gap-3">
-                                    <span class="subsubtitle">Mot de passe</span>
-                                    <span class="subtext">*****************</span>
-                                </div>
+                                <a href="#"
+                                    class="btn_transparent text-decoration-none text-center d-sm-block d-none">Ouvrir
+                                    l'application</a>
                             </div>
                         </div>
-                        <!-- Informations professionnelles -->
-                        <div class="cards-details">
-                            <div class="d-flex justify-content-between mb-4">
-                                <h5 class="h5-subtitle-dark m-0">Informations professionnelles</h5>
-                                <a href="informations-a.html"
-                                    class="btn_transparent p-0 text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-none d-sm-flex">
-                                    <img src="img/icons/check_dark.svg" alt="Sauvegarder">
-                                    Sauvegarder
-                                </a>
-                            </div>
-                            <div class="d-flex mb-4 gap-3 flex-column flex-sm-row">
-                                <div class="container-info_account d-flex flex-column gap-3">
-                                    <span class="subsubtitle">Vous êtes</span>
-                                    <select class="form-select d-flex" name="" id="form-select" required>
-                                        <option value="orthophoniste" selected>Orthophoniste</option>
-                                        <option value="etudiant">Etudiant</option>
-                                    </select>
+                        <div>
+                            <div class="card-app d-flex flex-column align-items-start justify-content-between h-100">
+                                <div>
+                                    <img src="img/logo/logo_cerebrosyntax.svg" alt="CerebroSyntax"
+                                        class="bg-logo-blue mb-3">
+                                    <h5 class="h5-dark mb-2">Cérébro Lex</h5>
+                                    <p class="p-super-light-gray mb-sm-5 mb-0">Outil de rééducation des troubles de la
+                                        production
+                                        lexicale des
+                                        noms concrets chez le patient aphasique.</p>
                                 </div>
-                                <div class="container-info_account d-flex flex-column gap-3">
-                                    <span class="subsubtitle">Statut</span>
-                                    <select class="form-select d-flex" name="" id="form-select" required>
-                                        <option value="orthophoniste" selected>Salarial</option>
-                                        <option value="etudiant">Libéral</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row gap-3 mb-sm-0 mb-4">
-                                <div class="container-info_account-2 d-flex flex-column gap-3">
-                                    <span class="subsubtitle">Année de diplôme</span>
-                                    <input type="text" class="form-control white-focus shadow-none" value="2023"
-                                        placeholder="Votre année de diplôme" aria-label="Recipient's username"
-                                        aria-describedby="button-addon2" />
-                                </div>
-                                <div class="container-info_account-2 d-flex flex-column gap-3 mb-1">
-                                    <span class="subsubtitle">ADELI * ou autre numéro professionnel</span>
-                                    <input type="text" class="form-control white-focus shadow-none" value="3556853120"
-                                        placeholder="Votre numéro professionnel" aria-label="Recipient's username"
-                                        aria-describedby="button-addon2" />
-                                </div>
-                            </div>
-                            <div class="">
-                                <a href="informations-a.html"
-                                    class="btn_transparent p-0 text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-sm-none d-flex">
-                                    <img src="img/icons/check_dark.svg" alt="Sauvegarder">
-                                    Sauvegarder
-                                </a>
+                                <a href="#"
+                                    class="btn_transparent text-decoration-none text-center d-sm-block d-none">Ouvrir
+                                    l'application</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal de confirmation de modification -->
-        <div class="modal d-block" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="false">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content p-4 pb-3">
-                    <div class="modal-header p-0 pb-3">
-                        <h1 class="modal-title fs-5 d-flex align-items-start gap-2 p-0 width-max-content"
-                            id="staticBackdropLabel"><img src="img/icons/error_icon.svg" alt="">
-                            <span>Confirmation de changement de statut
-                                professionnel</span>
-                        </h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <p class="pb-3">Êtes-vous sûr(e) de vouloir changer votre statut professionnel ? Cette action
-                            peut
-                            avoir des
-                            conséquences importantes sur votre profil et vos privilèges. </p>
-                    </div>
-                    <div class="modal-footer p-0 pt-3 justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                        <button type="button" class="btn btn-primary">Confirmer le changement</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="modal-backdrop fade show"></div>
 </body>
 <!-- Footer -->
 <footer class="py-md-4 py-2">
