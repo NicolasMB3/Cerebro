@@ -250,6 +250,26 @@
   }
 }
 
+#details-ressource.non-abonne-large {
+  height: 2200px;
+
+  @include media-breakpoint-down(xl) {
+    height: 2250px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    height: 2400px;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 2600px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 2700px;
+  }
+}
+
 .bg-gradient-opacity {
   background: url(../../../img/noise.svg), linear-gradient(to top, rgba($cbro-snow-50, 1) 0%, rgba($cbro-snow-50, 0) 100%);
   width: 100%;
@@ -271,7 +291,7 @@
   background: url(./../img/noise.svg), $cbro-snow-50;
 
   @include media-breakpoint-down(lg) {
-    padding: 5rem 0 0 0;
+    padding: 8rem 0 0 0;
   }
 
   .breadcrumb {
@@ -323,6 +343,38 @@
     @include media-breakpoint-down(lg) {
       display: block;
       padding: 0;
+    }
+  }
+
+  .container.container-litterature {
+    padding: 0 15rem !important;
+
+    @include media-breakpoint-down(xxl) {
+      padding: 0 8rem !important;
+    }
+
+    @include media-breakpoint-down(xl) {
+      padding: 0 3rem !important;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 0 1rem !important;
+    }
+
+    .p-big-gray {
+      font-family: "ITCSouvenir-md", sans-serif;
+    }
+  }
+
+  .figure {
+    width: 50%;
+
+    @include media-breakpoint-down(lg) {
+      width: 75%;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
     }
   }
 }

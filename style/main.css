@@ -1756,6 +1756,19 @@ h3 {
   width: 14px;
   height: 14px;
 }
+.cbro-badge-dark-gray {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 150% !important;
+  color: #191919 !important;
+  background: #979694;
+  border-radius: 99px;
+  padding: 4px 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff !important;
+}
 
 .accordion-button:focus,
 .accordion-button:not(.collapsed),
@@ -3276,6 +3289,30 @@ h3 {
   }
 }
 
+#details-ressource.non-abonne-large {
+  height: 2200px;
+}
+@media (max-width: 1199.98px) {
+  #details-ressource.non-abonne-large {
+    height: 2250px;
+  }
+}
+@media (max-width: 991.98px) {
+  #details-ressource.non-abonne-large {
+    height: 2400px;
+  }
+}
+@media (max-width: 767.98px) {
+  #details-ressource.non-abonne-large {
+    height: 2600px;
+  }
+}
+@media (max-width: 575.98px) {
+  #details-ressource.non-abonne-large {
+    height: 2700px;
+  }
+}
+
 .bg-gradient-opacity {
   background: url(../../../img/noise.svg), linear-gradient(to top, #fcfaf7 0%, rgba(252, 250, 247, 0) 100%);
   width: 100%;
@@ -3294,7 +3331,7 @@ h3 {
 }
 @media (max-width: 991.98px) {
   #details-ressource {
-    padding: 5rem 0 0 0;
+    padding: 8rem 0 0 0;
   }
 }
 #details-ressource .breadcrumb .breadcrumb-item {
@@ -3345,6 +3382,40 @@ h3 {
   #details-ressource #cards-border {
     display: block;
     padding: 0;
+  }
+}
+#details-ressource .container.container-litterature {
+  padding: 0 15rem !important;
+}
+@media (max-width: 1399.98px) {
+  #details-ressource .container.container-litterature {
+    padding: 0 8rem !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  #details-ressource .container.container-litterature {
+    padding: 0 3rem !important;
+  }
+}
+@media (max-width: 991.98px) {
+  #details-ressource .container.container-litterature {
+    padding: 0 1rem !important;
+  }
+}
+#details-ressource .container.container-litterature .p-big-gray {
+  font-family: "ITCSouvenir-md", sans-serif;
+}
+#details-ressource .figure {
+  width: 50%;
+}
+@media (max-width: 991.98px) {
+  #details-ressource .figure {
+    width: 75%;
+  }
+}
+@media (max-width: 767.98px) {
+  #details-ressource .figure {
+    width: 100%;
   }
 }
 
