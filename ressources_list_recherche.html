@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cérébro</title>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Cérébro" />
+    <meta name="msapplication-TileColor" content="#4F756C" />
+    <meta name="msapplication-TileImage" content="https://www.lecerebro.com/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="https://www.lecerebro.com/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="https://www.lecerebro.com/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="https://www.lecerebro.com/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="https://www.lecerebro.com/mstile-310x310.png" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</head>
+
+<body id="body_hero">
+    <!-- Barre de navigation -->
+    <header class="position-fixed w-100 navbar_s" id="header_beige">
+        <div class="container justify-content-center d-flex gap-3">
+            <nav class="d-flex justify-content-center navbar w-100">
+                <div class="container-fluid px-0">
+                    <a class="py-0" href="index.html">
+                        <img id="navbar-logo" class="ms-2" src="./img/logo/logo-cerebro.svg" alt="Logo de la société" />
+                    </a>
+                    <div class="d-flex navbar-link d-none d-xl-flex">
+                        <a href="#" class="nav-link">
+                            <div class="d-flex flex-row align-items-center">
+                                <p>Application</p>
+                                <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend" />
+                            </div>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <div class="d-flex flex-row align-items-center">
+                                <p>Ressources</p>
+                                <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend" />
+                            </div>
+                        </a>
+                        <a href="tarifs.html" class="nav-link">
+                            <div class="d-flex flex-row align-items-center">
+                                <p>Tarifs</p>
+                            </div>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <div class="d-flex flex-row align-items-center">
+                                <p>À propos</p>
+                                <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex column-gap-2 align-items-center d-none d-xl-flex">
+                        <button class="btn_full_transparent d-flex align-items-center gap-1">
+                            <img src="img/icons/icon_account.svg" alt="Account">
+                            <span>Clara G.</span>
+                            <img src="img/icons/arrow_down.svg" alt="Arrow">
+                        </button>
+                    </div>
+                    <div class="hamburger-menu d-xl-none">
+                        <img src="./img/icons/hamburger.svg" alt="Icône pour déployer un menu responsive" />
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="section_app">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-3 d-xxl-block d-none">
+                    <!-- Barre de navigation Desktop -->
+                    <div class="nav-app list-unstyled d-flex flex-column gap-4 p-3">
+                        <div class="position-relative">
+                            <img src="img/icons/loupe.svg" alt="Loupe" class="position-absolute loupe-search">
+                            <input type="text" class="form-control form-control-search white-focus shadow-none"
+                                placeholder="Rechercher..." aria-label=" Recipient's username"
+                                aria-describedby="button-addon2" />
+                        </div>
+                        <h5 class="h5-subtitle-dark m-0">Filtrer par</h5>
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <!-- Type de ressource -->
+                            <div class="accordion-item p-0 pb-3">
+                                <h2 class="accordion-header border-0">
+                                    <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        Type de ressource
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0 pt-3">
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-1"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-1">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Exo Lexicos
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-2"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-2">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Trios lexicos
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-3"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-3">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Questionnaire
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-4"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-4">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Rééducation de l'alexie et de l’agraphie
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-5"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-5">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Tableurs
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Type de tâche -->
+                            <div class="accordion-item p-0 pb-3 pt-4">
+                                <h2 class="accordion-header border-0">
+                                    <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        Type de tâche
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0 pt-3">
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-6"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-6">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Manuel d'utilisation
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-7"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-7">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Tableurs de suivi
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-8"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-8">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Fiches de références
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-9"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-9">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Tomes
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-10"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-10">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Formes
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-11"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-11">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Appariement
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-12"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-12">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Jugement
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-13"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-13">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Évocation
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-14"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-14">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    PACE
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nombre de pages -->
+                            <div class="accordion-item p-0 pb-3 pt-4">
+                                <h2 class="accordion-header border-0">
+                                    <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        Nombre de pages
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0 pt-3">
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-15"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-15">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Entre 1 et 10 pages
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-16"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-16">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Entre 10 et 50 pages
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-17"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-17">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Entre 50 et 200 pages
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-18"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-18">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Plus de 200 pages
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Utilisation de la ressource -->
+                            <div class="accordion-item p-0 pb-3 pt-4">
+                                <h2 class="accordion-header border-0">
+                                    <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        Utilisation de la ressource
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0 pt-3">
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-19"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-19">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    En séance
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-20"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-20">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    À domicile
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accéssibilité -->
+                            <div class="accordion-item p-0 pb-3 pt-4">
+                                <h2 class="accordion-header border-0">
+                                    <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        Accéssibilité
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0 pt-3">
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-21"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-21">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    En libre accès (payant)
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-22"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-22">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    En libre accès (gratuit)
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-23"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-23">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Inclus dans la licence
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Domaine de rééducation -->
+                            <div class="accordion-item p-0 pb-3 pt-4">
+                                <h2 class="accordion-header border-0">
+                                    <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseSix">
+                                        Domaine de rééducation
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0 pt-3">
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-24"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-24">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Lecture
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-25"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-25">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Lexique
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="search-checkbox" id="search-checkbox-26"
+                                                class="input_checkbox" />
+                                            <label for="search-checkbox-26">
+                                                <span class="checkbox position-relative">
+                                                    <img src="img/icons/check_white.svg" alt="check"
+                                                        class="position-absolute" />
+                                                </span>
+                                                <p class="span-checkbox">
+                                                    Orthographe
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contenu -->
+                <div class="col-xxl-9 col-12 container-app">
+                    <div class="d-flex flex-column gap-4">
+                        <p class="p-light-gray">100 résultats trouvés pour : “<span class="p-dark">test</span>”</p>
+                        <div
+                            class="d-flex cards-details nav mx-0 p-3 ps-4 flex-nowrap overflow-x-auto justify-content-between gap-5">
+                            <div class="d-flex gap-4">
+                                <button class="p-0 border-0 position-relative min-width-max-content">Tous</button>
+                                <button
+                                    class="p-0 border-0 position-relative min-width-max-content active">Matériels</button>
+                                <button class="p-0 border-0 position-relative min-width-max-content">Tableurs</button>
+                                <button class="p-0 border-0 position-relative min-width-max-content">Veille
+                                    scientifique</button>
+                            </div>
+                            <div class="d-flex gap-3 container-app__vue align-items-center min-width-max-content">
+                                <div class="span-filtre">
+                                    <span>Filtrer par :<span class="span-recherche"><select name="" id="">
+                                                <option value="1">Nouveautés</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
+                                </div>
+                                <div class="btn_container_vue d-flex align-items-center gap-2">
+                                    <a href="ressources_list.html"
+                                        class="border-0 d-flex align-items-center active"><img
+                                            src="img/icons/vue_list-white.svg" alt="Vue Liste"></a>
+                                    <a href="ressources_card.html" class="border-0 d-flex align-items-center"><img
+                                            src="img/icons/vue_card-black.svg" alt="Vue Carte"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 justify-content-between cards-vue">
+                            <!-- Carte -->
+                            <div class="col-12">
+                                <div class="cards-details">
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <!-- Entete card -->
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span class="cbro-badge-blue">Exos lexico</span>
+                                            <span class="cbro-badge-pink">Nouveau</span>
+                                        </div>
+                                        <div>
+                                            <button class="p-1 border-0 btn_full_transparent">
+                                                <img src="img/icons/bookmark_green.svg" alt="Bookmark">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card_body d-flex flex-column gap-3">
+                                        <h5 class="h5-dark m-0">Tableurs de suivi - Légumes</h5>
+                                        <p class="p-card m-0 h-100">Les tableurs de Cérébro vous permettront de
+                                            suivre la progression
+                                            de vos patients
+                                            en dénomination et en désignation sur les items des fiches de référence,
+                                            grâce à
+                                            des tableaux et des graphiques automatiques.</p>
+                                        <ul class="ps-0 d-flex align-items-center gap-2 m-0 mt-1 list-unstyled pb-0">
+                                            <li class="me-1">5 pages</li>
+                                            <li class="bull_green"></li>
+                                            <li class="ms-1">Inclus dans la licence</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carte -->
+                            <div class="col-12">
+                                <div class="cards-details">
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <!-- Entete card -->
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span class="cbro-badge-blue">Exos lexico</span>
+                                            <span class="cbro-badge-pink">Nouveau</span>
+                                        </div>
+                                        <div>
+                                            <button class="p-1 border-0 btn_full_transparent">
+                                                <img src="img/icons/bookmark_green.svg" alt="Bookmark">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card_body d-flex flex-column gap-3">
+                                        <h5 class="h5-dark m-0">Tableurs de suivi - Légumes</h5>
+                                        <p class="p-card m-0 h-100">Les tableurs de Cérébro vous permettront de
+                                            suivre la progression
+                                            de vos patients
+                                            en dénomination et en désignation sur les items des fiches de référence,
+                                            grâce à
+                                            des tableaux et des graphiques automatiques.</p>
+                                        <ul class="ps-0 d-flex align-items-center gap-2 m-0 mt-1 list-unstyled pb-0">
+                                            <li class="me-1">5 pages</li>
+                                            <li class="bull_green"></li>
+                                            <li class="ms-1">Inclus dans la licence</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carte -->
+                            <div class="col-12">
+                                <div class="cards-details">
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <!-- Entete card -->
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span class="cbro-badge-blue">Exos lexico</span>
+                                            <span class="cbro-badge-pink">Nouveau</span>
+                                        </div>
+                                        <div>
+                                            <button class="p-1 border-0 btn_full_transparent">
+                                                <img src="img/icons/bookmark_green.svg" alt="Bookmark">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card_body d-flex flex-column gap-3">
+                                        <h5 class="h5-dark m-0">Tableurs de suivi - Légumes</h5>
+                                        <p class="p-card m-0 h-100">Les tableurs de Cérébro vous permettront de
+                                            suivre la progression
+                                            de vos patients
+                                            en dénomination et en désignation sur les items des fiches de référence,
+                                            grâce à
+                                            des tableaux et des graphiques automatiques.</p>
+                                        <ul class="ps-0 d-flex align-items-center gap-2 m-0 mt-1 list-unstyled pb-0">
+                                            <li class="me-1">5 pages</li>
+                                            <li class="bull_green"></li>
+                                            <li class="ms-1">Inclus dans la licence</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carte -->
+                            <div class="col-12">
+                                <div class="cards-details">
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <!-- Entete card -->
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span class="cbro-badge-blue">Exos lexico</span>
+                                            <span class="cbro-badge-pink">Nouveau</span>
+                                        </div>
+                                        <div>
+                                            <button class="p-1 border-0 btn_full_transparent">
+                                                <img src="img/icons/bookmark_green.svg" alt="Bookmark">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card_body d-flex flex-column gap-3">
+                                        <h5 class="h5-dark m-0">Tableurs de suivi - Légumes</h5>
+                                        <p class="p-card m-0 h-100">Les tableurs de Cérébro vous permettront de
+                                            suivre la progression
+                                            de vos patients
+                                            en dénomination et en désignation sur les items des fiches de référence,
+                                            grâce à
+                                            des tableaux et des graphiques automatiques.</p>
+                                        <ul class="ps-0 d-flex align-items-center gap-2 m-0 mt-1 list-unstyled pb-0">
+                                            <li class="me-1">5 pages</li>
+                                            <li class="bull_green"></li>
+                                            <li class="ms-1">Inclus dans la licence</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carte -->
+                            <div class="col-12">
+                                <div class="cards-details">
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <!-- Entete card -->
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span class="cbro-badge-blue">Exos lexico</span>
+                                            <span class="cbro-badge-pink">Nouveau</span>
+                                        </div>
+                                        <div>
+                                            <button class="p-1 border-0 btn_full_transparent">
+                                                <img src="img/icons/bookmark_green.svg" alt="Bookmark">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card_body d-flex flex-column gap-3">
+                                        <h5 class="h5-dark m-0">Tableurs de suivi - Légumes</h5>
+                                        <p class="p-card m-0 h-100">Les tableurs de Cérébro vous permettront de
+                                            suivre la progression
+                                            de vos patients
+                                            en dénomination et en désignation sur les items des fiches de référence,
+                                            grâce à
+                                            des tableaux et des graphiques automatiques.</p>
+                                        <ul class="ps-0 d-flex align-items-center gap-2 m-0 mt-1 list-unstyled pb-0">
+                                            <li class="me-1">5 pages</li>
+                                            <li class="bull_green"></li>
+                                            <li class="ms-1">Inclus dans la licence</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carte -->
+                            <div class="col-12">
+                                <div class="cards-details">
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <!-- Entete card -->
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span class="cbro-badge-blue">Exos lexico</span>
+                                            <span class="cbro-badge-pink">Nouveau</span>
+                                        </div>
+                                        <div>
+                                            <button class="p-1 border-0 btn_full_transparent">
+                                                <img src="img/icons/bookmark_green.svg" alt="Bookmark">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card_body d-flex flex-column gap-3">
+                                        <h5 class="h5-dark m-0">Tableurs de suivi - Légumes</h5>
+                                        <p class="p-card m-0 h-100">Les tableurs de Cérébro vous permettront de
+                                            suivre la progression
+                                            de vos patients
+                                            en dénomination et en désignation sur les items des fiches de référence,
+                                            grâce à
+                                            des tableaux et des graphiques automatiques.</p>
+                                        <ul class="ps-0 d-flex align-items-center gap-2 m-0 mt-1 list-unstyled pb-0">
+                                            <li class="me-1">5 pages</li>
+                                            <li class="bull_green"></li>
+                                            <li class="ms-1">Inclus dans la licence</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <nav class="mt-4 pt-3 pagination-container w-100 d-flex justify-content-center align-items-center"
+                        aria-label="Page navigation example">
+                        <ul class="pagination d-flex gap-2">
+                            <li class="page-item">
+                                <a class="p-0 page-link page-link-arrow d-flex justify-content-center align-items-center"
+                                    href="#" aria-label="Previous">
+                                    <span aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path d="M10.5 12.6668L5.83333 8.00016L10.5 3.3335" stroke="#B0AFAD"
+                                                stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a
+                                    class="p-0 active page-link d-flex justify-content-center align-items-center"
+                                    href="#">1</a></li>
+                            <li class="page-item"><a
+                                    class="p-0 page-link d-flex justify-content-center align-items-center"
+                                    href="#">2</a></li>
+                            <li class="page-item"><a
+                                    class="p-0 page-link d-flex justify-content-center align-items-center"
+                                    href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="p-0 page-link d-flex justify-content-center align-items-center" href="#"
+                                    aria-label="Next">
+                                    <span aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path d="M6.5 12.6668L11.1667 8.00016L6.5 3.3335" stroke="#323231"
+                                                stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<!-- Footer -->
+<footer class="py-md-4 py-2">
+    <div class="container pt-5">
+        <div class="row newsletter mb-5">
+            <div class="col-12 col-lg mb-4 mb-lg-0">
+                <h5>Restons en contact !</h5>
+                <p>Ne ratez rien des dernières actualités de Cérébro</p>
+            </div>
+            <div class="col">
+                <form>
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+                        <label for="newsletter1" class="visually-hidden">Votre e-mail</label>
+                        <input id="newsletter1" type="email" class="form-control shadow-none"
+                            placeholder="Votre e-mail" />
+                        <button class="btn_green mt-0">
+                            Souscrire à la newsletter
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-lg-4 col-12 mb-lg-3 pb-md-3 mb-3">
+                <a href="#"><img src="./img/logo/logo-cerebro_white.svg" alt="Logo de la société" /></a>
+                <p class="mt-4">
+                    Lorem ipsum dolor sit amet consectetur. In cras pellentesque
+                    suspendisse.
+                </p>
+                <ul class="list-unstyled d-flex gap-3 d-md-none mt-4">
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/instagram.svg"
+                                alt="Redirection vers Intagram" /></a>
+                    </li>
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/linkedin.svg"
+                                alt="Redirection vers Linkedin" /></a>
+                    </li>
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/facebook.svg"
+                                alt="Redirection vers Facebook" /></a>
+                    </li>
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/twitter.svg"
+                                alt="Redirection vers Twitter" /></a>
+                    </li>
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/youtube.svg"
+                                alt="Redirection vers Youtube" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md col-6 mb-3">
+                <h5 class="mb-3 text-uppercase">Applications</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0 text-decoration-none">CérébroLex</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">CérébroVerbs</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">CérébroSyntax</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">Tarifs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md col-6 mb-3">
+                <h5 class="mb-3 text-uppercase">Ressources</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">Matériels</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">Résumés d’articles</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">Tableurs</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">Formations</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md col-6 mb-3">
+                <h5 class="mb-3 text-uppercase">À propos</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">L’équipe</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">FAQ</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md col-6 mb-3">
+                <h5 class="mb-3 text-uppercase">Legal</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">Conditions générales</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">Mentions légales</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a href="#" class="nav-link p-0">Politique de confidentialité</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-4" />
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between pt-3 px-0">
+                <p class="mb-4 mb-md-0">
+                    &copy; 2023 Cérébro. Tous droits reservés
+                </p>
+                <ul class="list-unstyled d-flex gap-3 d-none d-md-flex">
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/instagram.svg"
+                                alt="Redirection vers Intagram" /></a>
+                    </li>
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/linkedin.svg"
+                                alt="Redirection vers Linkedin" /></a>
+                    </li>
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/facebook.svg"
+                                alt="Redirection vers Facebook" /></a>
+                    </li>
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/twitter.svg"
+                                alt="Redirection vers Twitter" /></a>
+                    </li>
+                    <li class="ms-2">
+                        <a class="link-body-emphasis" href="#"><img src="./img/icons/youtube.svg"
+                                alt="Redirection vers Youtube" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./script/index.js"></script>
+<script src="./script/header.js"></script>
+</body>
+
+</html>

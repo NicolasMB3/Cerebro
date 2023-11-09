@@ -171,10 +171,6 @@
         width: 100%;
     }
 
-    .cards-vue {
-        .cards-details {}
-    }
-
     .cards-details {
         padding: 24px;
         height: auto;
@@ -373,6 +369,15 @@
                     background-color: $cbro-green-800;
                     border-radius: 6px;
                 }
+            }
+        }
+
+        .p-light-gray {
+            font-size: 16px !important;
+
+            .p-dark {
+                font-size: 16px !important;
+                font-weight: 500 !important;
             }
         }
     }

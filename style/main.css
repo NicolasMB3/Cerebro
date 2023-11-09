@@ -4875,6 +4875,13 @@ h3 {
   background-color: #396359;
   border-radius: 6px;
 }
+#section_app .container-app .p-light-gray {
+  font-size: 16px !important;
+}
+#section_app .container-app .p-light-gray .p-dark {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
 #section_app .bg-logo-green {
   background: #e9eeed;
   padding: 14px;
