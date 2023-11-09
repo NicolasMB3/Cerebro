@@ -234,6 +234,38 @@
   }
 }
 
+#details-ressource.non-abonne {
+  height: 1050px;
+
+  @include media-breakpoint-down(xl) {
+    height: 1150px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    height: 1600px;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 1450px;
+  }
+}
+
+.bg-gradient-opacity {
+  background: url(../../../img/noise.svg), linear-gradient(to top, rgba($cbro-snow-50, 1) 0%, rgba($cbro-snow-50, 0) 100%);
+  width: 100%;
+  height: 200px;
+
+  top: -200px;
+
+  z-index: 999;
+}
+
+#message-non-abonne {
+  .cta {
+    margin-top: 0;
+  }
+}
+
 #details-ressource {
   padding: 10rem 0 0 0;
   background: url(./../img/noise.svg), $cbro-snow-50;
@@ -294,3 +326,5 @@
     }
   }
 }
+
+#message-non-abonne {}
