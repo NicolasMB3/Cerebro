@@ -319,6 +319,11 @@
     }
   }
 
+  .btn_transparent.disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+
   .list-pages {
     .p-big-gray {
       font-family: "ITCSouvenir-md", sans-serif;

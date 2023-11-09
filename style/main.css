@@ -3356,6 +3356,10 @@ h3 {
     width: 100% !important;
   }
 }
+#details-ressource .btn_transparent.disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
 #details-ressource .list-pages .p-big-gray {
   font-family: "ITCSouvenir-md", sans-serif;
 }
