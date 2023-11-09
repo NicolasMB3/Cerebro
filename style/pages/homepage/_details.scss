@@ -257,6 +257,16 @@
     }
   }
 
+  .img-fluid {
+    width: 100% !important;
+  }
+
+  .btn_transparent {
+    @include media-breakpoint-down(sm) {
+      width: 100% !important;
+    }
+  }
+
   .list-pages {
     .p-big-gray {
       font-family: "ITCSouvenir-md", sans-serif;
@@ -270,6 +280,17 @@
 
     p:last-child {
       @include cbro-paragraphe(400, 16px, 160%, $cbro-gray-600);
+    }
+  }
+
+  #cards-border {
+    @include media-breakpoint-down(xl) {
+      padding: 64px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      display: block;
+      padding: 0;
     }
   }
 }

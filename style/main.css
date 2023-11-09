@@ -3270,6 +3270,14 @@ h3 {
   color: #323231 !important;
   font-weight: 500 !important;
 }
+#details-ressource .img-fluid {
+  width: 100% !important;
+}
+@media (max-width: 575.98px) {
+  #details-ressource .btn_transparent {
+    width: 100% !important;
+  }
+}
 #details-ressource .list-pages .p-big-gray {
   font-family: "ITCSouvenir-md", sans-serif;
 }
@@ -3286,6 +3294,17 @@ h3 {
   font-size: 16px !important;
   line-height: 160% !important;
   color: #656463 !important;
+}
+@media (max-width: 1199.98px) {
+  #details-ressource #cards-border {
+    padding: 64px;
+  }
+}
+@media (max-width: 991.98px) {
+  #details-ressource #cards-border {
+    display: block;
+    padding: 0;
+  }
 }
 
 #listing-hero {
