@@ -4580,6 +4580,11 @@ h3 {
 #section_app .nav-mobile .accordion .accordion-item .accordion-button:not(.collapsed) {
   box-shadow: none;
 }
+#section_app .nav-app .accordion .accordion-item .accordion-button:focus,
+#section_app .nav-mobile .accordion .accordion-item .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
 #section_app .nav-app .accordion .accordion-item .checkbox p,
 #section_app .nav-mobile .accordion .accordion-item .checkbox p {
   font-family: "Instrument Sans", sans-serif;
@@ -4588,6 +4593,10 @@ h3 {
   line-height: 160% !important;
   color: #656463 !important;
   transform: translateY(-2px);
+}
+#section_app .nav-app .accordion .accordion-item:last-child,
+#section_app .nav-mobile .accordion .accordion-item:last-child {
+  border-bottom: none;
 }
 #section_app .illustration {
   height: 200px;
