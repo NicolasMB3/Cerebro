@@ -327,4 +327,12 @@
   }
 }
 
-#message-non-abonne {}
+#message-non-abonne {
+  .cta {
+    a {
+      @include media-breakpoint-down(sm) {
+        width: 100% !important;
+      }
+    }
+  }
+}

@@ -3348,6 +3348,12 @@ h3 {
   }
 }
 
+@media (max-width: 575.98px) {
+  #message-non-abonne .cta a {
+    width: 100% !important;
+  }
+}
+
 #listing-hero {
   padding: 10rem 0 8rem 0;
   background: url(./../img/noise.svg), #fcfaf7;
