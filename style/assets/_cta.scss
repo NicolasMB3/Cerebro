@@ -41,4 +41,12 @@
     top: 0;
     right: 0;
   }
+
+  .font-weight-500 {
+    font-weight: 500 !important;
+  }
+
+  .p-little {
+    @include cbro-paragraphe(400, 14px, 160%, rgba(252, 250, 247, 0.70));
+  }
 }
