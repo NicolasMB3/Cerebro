@@ -1192,6 +1192,13 @@ footer hr {
     color: #323231 !important;
   }
 }
+.p-big-gray {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  color: #656463 !important;
+}
 .p-light-gray {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
@@ -3238,6 +3245,47 @@ h3 {
 }
 #cards-border a {
   color: #656463;
+}
+
+#details-ressource {
+  padding: 10rem 0 0 0;
+  background: url(./../img/noise.svg), #fcfaf7;
+}
+@media (max-width: 991.98px) {
+  #details-ressource {
+    padding: 5rem 0 0 0;
+  }
+}
+#details-ressource .breadcrumb .breadcrumb-item {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #656463 !important;
+}
+#details-ressource .breadcrumb .breadcrumb-item a {
+  color: #656463;
+}
+#details-ressource .breadcrumb .breadcrumb-item.active {
+  color: #323231 !important;
+  font-weight: 500 !important;
+}
+#details-ressource .list-pages .p-big-gray {
+  font-family: "ITCSouvenir-md", sans-serif;
+}
+#details-ressource .table p:first-child {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #323231 !important;
+}
+#details-ressource .table p:last-child {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 160% !important;
+  color: #656463 !important;
 }
 
 #listing-hero {

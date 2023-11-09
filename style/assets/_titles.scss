@@ -141,6 +141,10 @@
     }
   }
 
+  &-big-gray {
+    @include cbro-paragraphe(300, 18px, 150%, $cbro-gray-600);
+  }
+
   &-light-gray {
     @include cbro-paragraphe(400, 18px, 160%, $cbro-gray-600);
   }
