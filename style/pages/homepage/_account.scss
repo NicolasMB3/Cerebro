@@ -409,7 +409,11 @@
             height: 32px;
             width: 32px;
 
-            &:hover {
+            &:active {
+                background-color: $cbro-opacity-50;
+            }
+
+            &.active {
                 background-color: $cbro-opacity-50;
             }
         }

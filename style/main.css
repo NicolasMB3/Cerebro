@@ -3493,8 +3493,27 @@ h3 {
   padding: 9rem 0;
   background: url(./../img/noise.svg), rgba(233, 238, 237, 0.5);
 }
+@media (max-width: 1199.98px) {
+  #details_app_cerebro #details_app_content {
+    padding: 6rem 0;
+  }
+}
+@media (max-width: 991.98px) {
+  #details_app_cerebro #details_app_content {
+    padding: 5rem 0;
+  }
+}
 #details_app_cerebro #details_app_content .btn_white {
   border: 1px solid transparent;
+}
+@media (max-width: 575.98px) {
+  #details_app_cerebro #details_app_content .btn_white,
+  #details_app_cerebro #details_app_content .btn_green,
+  #details_app_cerebro #details_app_content .btn_purple,
+  #details_app_cerebro #details_app_content .btn_blue {
+    font-size: 14px;
+    width: 100%;
+  }
 }
 #details_app_cerebro #details_app_content .card {
   border-radius: 12px;
@@ -3515,6 +3534,16 @@ h3 {
 #details_app_content_2 {
   padding: 8rem 0;
   background: url(./../img/nnnnnoise.svg), #fcfaf7;
+}
+@media (max-width: 1199.98px) {
+  #details_app_content_2 {
+    padding: 6rem 0;
+  }
+}
+@media (max-width: 991.98px) {
+  #details_app_content_2 {
+    padding: 5rem 0;
+  }
 }
 #details_app_content_2 .img-fluid {
   border-radius: 16px;
@@ -3563,6 +3592,16 @@ h3 {
 }
 #details_app_temoignages + .tarif-faq {
   padding: 8rem 0 4.5rem 0 !important;
+}
+@media (max-width: 1199.98px) {
+  #details_app_temoignages + .tarif-faq {
+    padding: 6rem 0 4.5rem 0 !important;
+  }
+}
+@media (max-width: 991.98px) {
+  #details_app_temoignages + .tarif-faq {
+    padding: 5rem 0 4.5rem 0 !important;
+  }
 }
 
 #listing-hero {
@@ -5246,7 +5285,10 @@ h3 {
   height: 32px;
   width: 32px;
 }
-#section_app .container-app .btn-filtre:hover {
+#section_app .container-app .btn-filtre:active {
+  background-color: #e7e6e4;
+}
+#section_app .container-app .btn-filtre.active {
   background-color: #e7e6e4;
 }
 #section_app .bg-logo-green {

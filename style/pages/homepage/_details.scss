@@ -429,8 +429,26 @@
     padding: 9rem 0;
     background: url(./../img/noise.svg), rgba(233, 238, 237, 0.50);
 
+    @include media-breakpoint-down(xl) {
+      padding: 6rem 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 5rem 0;
+    }
+
     .btn_white {
       border: 1px solid transparent;
+    }
+
+    .btn_white,
+    .btn_green,
+    .btn_purple,
+    .btn_blue {
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        width: 100%;
+      }
     }
 
     .card {
@@ -457,6 +475,14 @@
 #details_app_content_2 {
   padding: 8rem 0;
   background: url(./../img/nnnnnoise.svg), $cbro-snow-50;
+
+  @include media-breakpoint-down(xl) {
+    padding: 6rem 0;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 5rem 0;
+  }
 
   .img-fluid {
     border-radius: 16px;
@@ -499,5 +525,13 @@
 
   &+.tarif-faq {
     padding: 8rem 0 4.5rem 0 !important;
+
+    @include media-breakpoint-down(xl) {
+      padding: 6rem 0 4.5rem 0 !important;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 5rem 0 4.5rem 0 !important;
+    }
   }
 }
