@@ -3341,7 +3341,7 @@ h3 {
 }
 @media (max-width: 991.98px) {
   .container.container-litterature {
-    padding: 0 1rem !important;
+    padding: 0 20px !important;
   }
 }
 .container.container-litterature #details-ressource.non-abonne-large {
