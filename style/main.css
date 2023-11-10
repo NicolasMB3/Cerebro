@@ -1,11 +1,9 @@
 @charset "UTF-8";
 /* Assets */
 :root {
-  --bg-beige: linear-gradient(
-      0deg,
+  --bg-beige: linear-gradient(0deg,
       rgba(227, 225, 222, 0.3),
-      rgba(227, 225, 222, 0.3)
-    ),
+      rgba(227, 225, 222, 0.3)),
     rgba(251, 248, 244, 0.6);
 }
 
@@ -1968,11 +1966,9 @@ h3 {
 
 /* Pages */
 :root {
-  --bg-beige: linear-gradient(
-      0deg,
+  --bg-beige: linear-gradient(0deg,
       rgba(227, 225, 222, 0.3),
-      rgba(227, 225, 222, 0.3)
-    ),
+      rgba(227, 225, 222, 0.3)),
     rgba(251, 248, 244, 0.6);
 }
 
@@ -2741,11 +2737,9 @@ h3 {
 }
 
 :root {
-  --bg-beige: linear-gradient(
-      0deg,
+  --bg-beige: linear-gradient(0deg,
       rgba(227, 225, 222, 0.3),
-      rgba(227, 225, 222, 0.3)
-    ),
+      rgba(227, 225, 222, 0.3)),
     rgba(251, 248, 244, 0.6);
 }
 
@@ -5408,11 +5402,15 @@ h3 {
 #section_app .modal .modal-content .modal-footer .btn-secondary {
   background-color: transparent;
   border: none;
+  border-radius: 100px;
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500 !important;
   font-size: 14px !important;
   line-height: 150% !important;
   color: #000 !important;
+}
+#section_app .modal .modal-content .modal-footer .btn-secondary:hover {
+  background-color: #e7e6e4;
 }
 #section_app .modal .modal-content .modal-footer .btn-primary {
   border-radius: 100px;
@@ -5424,6 +5422,9 @@ h3 {
   font-size: 14px !important;
   line-height: 150% !important;
   color: #fff !important;
+}
+#section_app .modal .modal-content .modal-footer .btn-primary:hover {
+  background-color: #C02626;
 }
 
 .notif-dots::after {

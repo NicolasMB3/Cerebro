@@ -557,15 +557,24 @@
                 .btn-secondary {
                     background-color: transparent;
                     border: none;
+                    border-radius: 100px;
                     @include cbro-paragraphe(500, 14px, 150%, $cbro-black);
+
+                    &:hover {
+                        background-color: $cbro-opacity-50;
+                    }
                 }
 
                 .btn-primary {
                     border-radius: 100px;
-                    background-color: #D52A2A;
+                    background-color: $cbro-red-100;
                     border: none;
                     padding: 8px 16px;
                     @include cbro-paragraphe(500, 14px, 150%, $cbro-white);
+
+                    &:hover {
+                        background-color: $cbro-red-200;
+                    }
                 }
             }
         }

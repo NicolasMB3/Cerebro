@@ -1,9 +1,7 @@
 :root {
-  --bg-beige: linear-gradient(
-      0deg,
+  --bg-beige: linear-gradient(0deg,
       rgba(227, 225, 222, 0.3),
-      rgba(227, 225, 222, 0.3)
-    ),
+      rgba(227, 225, 222, 0.3)),
     rgba(251, 248, 244, 0.6);
 }
 
@@ -54,6 +52,8 @@ $cbro-purple-800: #942c5e !default;
 $cbro-purple-900: #88154c !default;
 // scss-docs-end red-color-variables
 $cbro-red-50: #de5757;
+$cbro-red-100: #D52A2A;
+$cbro-red-200: #C02626;
 // Paramètres de valeurs générales
 // paddings
 $cbro-padding-10vh: 10vh;
@@ -87,11 +87,9 @@ $cbro-bull-light-green: #b5ca91;
 $cbro-toasts-green: #288d4e;
 // header
 $bg_white: #fbf8f4;
-$bg_beige: linear-gradient(
-    0deg,
+$bg_beige: linear-gradient(0deg,
     rgba(227, 225, 222, 0.3),
-    rgba(227, 225, 222, 0.3)
-  ),
+    rgba(227, 225, 222, 0.3)),
   rgba(251, 248, 244, 0.6);
 $bg_transparent: rgba(227, 225, 222, 0.25);
 // border
