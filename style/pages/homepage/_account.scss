@@ -528,6 +528,9 @@
 
     .modal {
         .modal-content {
+            max-width: max-content !important;
+            width: auto;
+
             .modal-header {
                 border-bottom: none;
 

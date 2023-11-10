@@ -5378,6 +5378,11 @@ h3 {
   padding: 9px;
   border-radius: 8px;
 }
+#section_app .modal .modal-content {
+  max-width: -moz-max-content !important;
+  max-width: max-content !important;
+  width: auto;
+}
 #section_app .modal .modal-content .modal-header {
   border-bottom: none;
 }
