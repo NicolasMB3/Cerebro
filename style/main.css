@@ -5207,6 +5207,48 @@ h3 {
   font-size: 16px !important;
   font-weight: 500 !important;
 }
+#section_app .container-app .form-control-search {
+  padding: 12px 20px 12px 48px;
+  border-radius: 24px;
+  border: 1px solid #cac8c6;
+  vertical-align: middle;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #4c4b4a !important;
+  font-family: Instrument Sans;
+}
+#section_app .container-app .form-control-search::-moz-placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #b0afad !important;
+}
+#section_app .container-app .form-control-search::placeholder {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #b0afad !important;
+}
+#section_app .container-app .loupe-search {
+  width: 20px;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+#section_app .container-app .btn-filtre {
+  background-color: transparent;
+  border-radius: 100px;
+  transition: all 0.2s;
+  height: 32px;
+  width: 32px;
+}
+#section_app .container-app .btn-filtre:hover {
+  background-color: #e7e6e4;
+}
 #section_app .bg-logo-green {
   background: #e9eeed;
   padding: 14px;

@@ -89,7 +89,7 @@
     <section id="section_app">
         <div class="container">
             <div class="row h-100">
-                <div class="col-3 d-xxl-block d-none">
+                <div class="col-3 d-xl-block d-none">
                     <!-- Barre de navigation Desktop -->
                     <div class="nav-app list-unstyled d-flex flex-column gap-4 p-3">
                         <div class="position-relative">
@@ -526,7 +526,23 @@
                     </div>
                 </div>
                 <!-- Contenu -->
-                <div class="col-xxl-9 col-12 container-app">
+                <div class="col-xl-9 col-12 container-app">
+                    <div class="mb-3 d-xl-none d-flex w-100 justify-content-center align-items-center gap-2">
+                        <div class="position-relative w-100">
+                            <img src="img/icons/loupe.svg" alt="Loupe" class="position-absolute loupe-search">
+                            <input type="text" class="form-control form-control-search white-focus shadow-none"
+                                placeholder="Rechercher..." aria-label=" Recipient's username"
+                                aria-describedby="button-addon2" />
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <button class="btn-filtre border-0 p-1">
+                                <img src="img/icons/funnel.svg" alt="Filtre">
+                            </button>
+                            <button class="btn-filtre border-0 p-1">
+                                <img src="img/icons/FunnelSimple.svg" alt="Filtre">
+                            </button>
+                        </div>
+                    </div>
                     <div class="d-flex flex-column gap-4">
                         <div
                             class="d-flex cards-details nav mx-0 p-3 ps-4 flex-nowrap overflow-x-auto justify-content-between gap-5">
