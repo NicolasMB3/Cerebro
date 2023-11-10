@@ -340,7 +340,8 @@
                         <div class="cards-details">
                             <div class="d-flex justify-content-between mb-4">
                                 <h5 class="h5-subtitle-dark m-0">Connexion et sécurité</h5>
-                                <a href="informations-modif-connexion.html" class="text-decoration-none btn_full_transparent p-1">
+                                <a href="informations-modif-connexion.html"
+                                    class="text-decoration-none btn_full_transparent p-1">
                                     <img src="img/icons/crayon.svg" alt="Modifier">
                                 </a>
                             </div>
@@ -359,11 +360,12 @@
                         <div class="cards-details">
                             <div class="d-flex justify-content-between mb-4">
                                 <h5 class="h5-subtitle-dark m-0">Informations professionnelles</h5>
-                                <a href="informations-account.html"
+                                <button href="informations-account.html" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop"
                                     class="btn_transparent p-0 text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-none d-sm-flex">
                                     <img src="img/icons/check_dark.svg" alt="Sauvegarder">
                                     Sauvegarder
-                                </a>
+                                </button>
                             </div>
                             <div class="d-flex mb-4 gap-3 flex-column flex-sm-row">
                                 <div class="container-info_account d-flex flex-column gap-3">
@@ -396,13 +398,40 @@
                                 </div>
                             </div>
                             <div class="">
-                                <a href="informations-account.html"
+                                <button href="informations-account.html" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop"
                                     class="btn_transparent p-0 text-decoration-none d-flex align-items-center justify-content-center gap-2 py-2 px-3 d-sm-none d-flex">
                                     <img src="img/icons/check_dark.svg" alt="Sauvegarder">
                                     Sauvegarder
-                                </a>
+                                </button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de confirmation de modification -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4 pb-3">
+                    <div class="modal-header p-0 pb-3">
+                        <h1 class="modal-title fs-5 d-flex align-items-start gap-2 p-0 width-max-content"
+                            id="staticBackdropLabel"><img src="img/icons/error_icon.svg" alt="">
+                            <span>Confirmation de changement de statut
+                                professionnel</span>
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <p class="pb-3">Êtes-vous sûr(e) de vouloir changer votre statut professionnel ? Cette action
+                            peut
+                            avoir des
+                            conséquences importantes sur votre profil et vos privilèges. </p>
+                    </div>
+                    <div class="modal-footer p-0 pt-3 justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-primary">Confirmer le changement</button>
                     </div>
                 </div>
             </div>

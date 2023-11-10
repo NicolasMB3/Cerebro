@@ -5356,10 +5356,14 @@ h3 {
     padding: 4px 8px;
   }
 }
-#section_app .table-documents .table-row .container-formations {
+#section_app .table-documents .table-row .long-and-truncated {
+  flex: 1;
+  min-width: 0;
+}
+#section_app .table-documents .table-row .long-and-truncated span {
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 #section_app .table-documents .table-row span.doc-date {
   opacity: 0.8;

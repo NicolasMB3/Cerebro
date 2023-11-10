@@ -489,10 +489,15 @@
                 }
             }
 
-            .container-formations {
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow-y: hidden;
+            .long-and-truncated {
+                flex: 1;
+                min-width: 0;
+
+                span {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
             }
 
             span.doc-date {
