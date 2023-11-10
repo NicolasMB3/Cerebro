@@ -3507,6 +3507,28 @@ h3 {
   color: #323231 !important;
 }
 
+#details_app_temoignages {
+  padding: 4.5rem 0;
+  background: url(./../img/noise.svg), #235247;
+}
+#details_app_temoignages .temoignage-author {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #fcfaf7 !important;
+}
+#details_app_temoignages .temoignage-job {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #e3e1de !important;
+}
+#details_app_temoignages + .tarif-faq {
+  padding: 8rem 0 0 0 !important;
+}
+
 #listing-hero {
   padding: 10rem 0 8rem 0;
   background: url(./../img/noise.svg), #fcfaf7;

@@ -445,3 +445,22 @@
     @include cbro-paragraphe(500, 18px, 160%, $cbro-gray-800)
   }
 }
+
+#details_app_temoignages {
+  padding: 4.5rem 0;
+  background: url(./../img/noise.svg), $cbro-green-900;
+
+  .temoignage {
+    &-author {
+      @include cbro-paragraphe(600, 16px, 24px, $cbro-snow-50);
+    }
+
+    &-job {
+      @include cbro-paragraphe(500, 16px, 24px, $cbro-gray-100);
+    }
+  }
+
+  &+.tarif-faq {
+    padding: 8rem 0 0 0 !important;
+  }
+}
