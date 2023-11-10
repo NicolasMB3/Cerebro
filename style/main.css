@@ -3289,30 +3289,6 @@ h3 {
   }
 }
 
-#details-ressource.non-abonne-large {
-  height: 2200px;
-}
-@media (max-width: 1199.98px) {
-  #details-ressource.non-abonne-large {
-    height: 2250px;
-  }
-}
-@media (max-width: 991.98px) {
-  #details-ressource.non-abonne-large {
-    height: 2400px;
-  }
-}
-@media (max-width: 767.98px) {
-  #details-ressource.non-abonne-large {
-    height: 2600px;
-  }
-}
-@media (max-width: 575.98px) {
-  #details-ressource.non-abonne-large {
-    height: 2700px;
-  }
-}
-
 .bg-gradient-opacity {
   background: url(../../../img/noise.svg), linear-gradient(to top, #fcfaf7 0%, rgba(252, 250, 247, 0) 100%);
   width: 100%;
@@ -3323,6 +3299,48 @@ h3 {
 
 #message-non-abonne .cta {
   margin-top: 0;
+}
+
+.container.container-litterature {
+  padding: 0 15rem !important;
+}
+@media (max-width: 1399.98px) {
+  .container.container-litterature {
+    padding: 0 8rem !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .container.container-litterature {
+    padding: 0 3rem !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .container.container-litterature {
+    padding: 0 1rem !important;
+  }
+}
+.container.container-litterature #details-ressource.non-abonne-large {
+  height: 2300px;
+}
+@media (max-width: 1199.98px) {
+  .container.container-litterature #details-ressource.non-abonne-large {
+    height: 2250px;
+  }
+}
+@media (max-width: 991.98px) {
+  .container.container-litterature #details-ressource.non-abonne-large {
+    height: 2400px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container.container-litterature #details-ressource.non-abonne-large {
+    height: 2600px;
+  }
+}
+@media (max-width: 575.98px) {
+  .container.container-litterature #details-ressource.non-abonne-large {
+    height: 2700px;
+  }
 }
 
 #details-ressource {
@@ -3388,25 +3406,7 @@ h3 {
     padding: 0;
   }
 }
-#details-ressource .container.container-litterature {
-  padding: 0 15rem !important;
-}
-@media (max-width: 1399.98px) {
-  #details-ressource .container.container-litterature {
-    padding: 0 8rem !important;
-  }
-}
-@media (max-width: 1199.98px) {
-  #details-ressource .container.container-litterature {
-    padding: 0 3rem !important;
-  }
-}
-@media (max-width: 991.98px) {
-  #details-ressource .container.container-litterature {
-    padding: 0 1rem !important;
-  }
-}
-#details-ressource .container.container-litterature .p-big-gray {
+#details-ressource .p-big-gray {
   font-family: "ITCSouvenir-md", sans-serif;
 }
 #details-ressource .figure {

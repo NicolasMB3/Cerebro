@@ -250,26 +250,6 @@
   }
 }
 
-#details-ressource.non-abonne-large {
-  height: 2200px;
-
-  @include media-breakpoint-down(xl) {
-    height: 2250px;
-  }
-
-  @include media-breakpoint-down(lg) {
-    height: 2400px;
-  }
-
-  @include media-breakpoint-down(md) {
-    height: 2600px;
-  }
-
-  @include media-breakpoint-down(sm) {
-    height: 2700px;
-  }
-}
-
 .bg-gradient-opacity {
   background: url(../../../img/noise.svg), linear-gradient(to top, rgba($cbro-snow-50, 1) 0%, rgba($cbro-snow-50, 0) 100%);
   width: 100%;
@@ -283,6 +263,42 @@
 #message-non-abonne {
   .cta {
     margin-top: 0;
+  }
+}
+
+.container.container-litterature {
+  padding: 0 15rem !important;
+
+  @include media-breakpoint-down(xxl) {
+    padding: 0 8rem !important;
+  }
+
+  @include media-breakpoint-down(xl) {
+    padding: 0 3rem !important;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 0 1rem !important;
+  }
+
+  #details-ressource.non-abonne-large {
+    height: 2300px;
+
+    @include media-breakpoint-down(xl) {
+      height: 2250px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      height: 2400px;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 2600px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 2700px;
+    }
   }
 }
 
@@ -351,24 +367,8 @@
     }
   }
 
-  .container.container-litterature {
-    padding: 0 15rem !important;
-
-    @include media-breakpoint-down(xxl) {
-      padding: 0 8rem !important;
-    }
-
-    @include media-breakpoint-down(xl) {
-      padding: 0 3rem !important;
-    }
-
-    @include media-breakpoint-down(lg) {
-      padding: 0 1rem !important;
-    }
-
-    .p-big-gray {
-      font-family: "ITCSouvenir-md", sans-serif;
-    }
+  .p-big-gray {
+    font-family: "ITCSouvenir-md", sans-serif;
   }
 
   .figure {
