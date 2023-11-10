@@ -407,6 +407,22 @@
     @include media-breakpoint-down(lg) {
       padding: 8rem 0 0 0;
     }
+
+    .w-50-100 {
+      width: 50% !important;
+
+      @include media-breakpoint-down(lg) {
+        width: 100% !important;
+      }
+    }
+
+    .w-50-75 {
+      width: 50% !important;
+
+      @include media-breakpoint-down(lg) {
+        width: 75% !important;
+      }
+    }
   }
 
   #details_app_content {
@@ -431,6 +447,11 @@
       }
     }
   }
+
+  strong {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+  }
 }
 
 #details_app_content_2 {
@@ -443,6 +464,22 @@
 
   strong {
     @include cbro-paragraphe(500, 18px, 160%, $cbro-gray-800)
+  }
+
+  .w-50-100 {
+    width: 50% !important;
+
+    @include media-breakpoint-down(lg) {
+      width: 100% !important;
+    }
+  }
+
+  .w-50-75 {
+    width: 50% !important;
+
+    @include media-breakpoint-down(lg) {
+      width: 75% !important;
+    }
   }
 }
 

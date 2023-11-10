@@ -3473,6 +3473,22 @@ h3 {
     padding: 8rem 0 0 0;
   }
 }
+#details_app_cerebro #details_app_hero .w-50-100 {
+  width: 50% !important;
+}
+@media (max-width: 991.98px) {
+  #details_app_cerebro #details_app_hero .w-50-100 {
+    width: 100% !important;
+  }
+}
+#details_app_cerebro #details_app_hero .w-50-75 {
+  width: 50% !important;
+}
+@media (max-width: 991.98px) {
+  #details_app_cerebro #details_app_hero .w-50-75 {
+    width: 75% !important;
+  }
+}
 #details_app_cerebro #details_app_content {
   padding: 9rem 0;
   background: url(./../img/noise.svg), rgba(233, 238, 237, 0.5);
@@ -3491,6 +3507,10 @@ h3 {
 #details_app_cerebro #details_app_content .card .subtext {
   font-size: 14px !important;
 }
+#details_app_cerebro strong {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500;
+}
 
 #details_app_content_2 {
   padding: 8rem 0;
@@ -3505,6 +3525,22 @@ h3 {
   font-size: 18px !important;
   line-height: 160% !important;
   color: #323231 !important;
+}
+#details_app_content_2 .w-50-100 {
+  width: 50% !important;
+}
+@media (max-width: 991.98px) {
+  #details_app_content_2 .w-50-100 {
+    width: 100% !important;
+  }
+}
+#details_app_content_2 .w-50-75 {
+  width: 50% !important;
+}
+@media (max-width: 991.98px) {
+  #details_app_content_2 .w-50-75 {
+    width: 75% !important;
+  }
 }
 
 #details_app_temoignages {
