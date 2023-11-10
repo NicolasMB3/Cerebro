@@ -393,3 +393,55 @@
     }
   }
 }
+
+#details_app_cerebro {
+  #details_app_hero {
+    padding: 10rem 0 0 0;
+    background: url(./../img/noise.svg), $cbro-green-900;
+    height: 75vh;
+
+    .img-fluid {
+      border-radius: 16px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 8rem 0 0 0;
+    }
+  }
+
+  #details_app_content {
+    padding: 9rem 0;
+    background: url(./../img/noise.svg), rgba(233, 238, 237, 0.50);
+
+    .btn_white {
+      border: 1px solid transparent;
+    }
+
+    .card {
+      border-radius: 12px;
+      border: 1px solid rgba(202, 200, 198, 0.50);
+      background-color: $cbro-snow-50;
+
+      .text {
+        font-size: 16px !important;
+      }
+
+      .subtext {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+#details_app_content_2 {
+  padding: 8rem 0;
+  background: url(./../img/nnnnnoise.svg), $cbro-snow-50;
+
+  .img-fluid {
+    border-radius: 16px;
+  }
+
+  strong {
+    @include cbro-paragraphe(500, 18px, 160%, $cbro-gray-800)
+  }
+}

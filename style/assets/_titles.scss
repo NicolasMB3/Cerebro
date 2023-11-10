@@ -178,4 +178,9 @@
     @include cbro-paragraphe(600, 14px, 150%, $cbro-gray-500);
     text-transform: uppercase;
   }
+
+  &-light-gray {
+    @include cbro-paragraphe(600, 16px, 150%, #D3DCDA);
+    text-transform: uppercase;
+  }
 }

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cérébro / Détail de la formation</title>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./img/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./img/favicons/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Cérébro" />
+  <meta name="msapplication-TileColor" content="#4F756C" />
+  <meta name="msapplication-TileImage" content="https://www.lecerebro.com/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="https://www.lecerebro.com/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="https://www.lecerebro.com/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="https://www.lecerebro.com/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="https://www.lecerebro.com/mstile-310x310.png" />
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</head>
+
+<body id="details_app_cerebro">
+  <!-- Barre de navigation -->
+  <header class="position-fixed w-100 navbar_s" id="header_beige">
+    <div class="container justify-content-center d-flex gap-3">
+      <nav class="d-flex justify-content-center navbar w-100">
+        <div class="container-fluid px-0">
+          <a class="py-0" href="index.html"><img id="navbar-logo" class="ms-2" src="./img/logo/logo-cerebro.svg"
+              alt="Logo de la société" /></a>
+          <div class="d-flex navbar-link d-none d-xl-flex">
+            <a href="#" class="nav-link">
+              <div class="d-flex flex-row align-items-center">
+                <p>Application</p>
+                <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend" />
+              </div>
+            </a>
+            <a href="#" class="nav-link">
+              <div class="d-flex flex-row align-items-center">
+                <p>Ressources</p>
+                <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend" />
+              </div>
+            </a>
+            <a href="tarifs.html" class="nav-link">
+              <div class="d-flex flex-row align-items-center">
+                <p>Tarifs</p>
+              </div>
+            </a>
+            <a href="#" class="nav-link">
+              <div class="d-flex flex-row align-items-center">
+                <p>À propos</p>
+                <img src="./img/icons/arrow_down.svg" class="ps-2" alt="Flèche qui descend" />
+              </div>
+            </a>
+          </div>
+          <div class="d-flex column-gap-2 align-items-center d-none d-xl-flex">
+            <button class="btn_full_transparent">Se connecter</button>
+            <button class="btn_green">Tester gratuitement</button>
+          </div>
+          <div class="hamburger-menu d-xl-none">
+            <img src="./img/icons/hamburger.svg" alt="Icône pour déployer un menu responsive" />
+          </div>
+        </div>
+      </nav>
+      <button class="h2-dark d-none d-xl-flex panier d-flex justify-content-center align-items-center" data-number="1">
+        <img src="img/icons/shop_dark.svg" alt="Icon Panier" />
+      </button>
+    </div>
+  </header>
+  <!-- Section hero -->
+  <section id="details_app_hero" class="pb-5 pb-5 h-100">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="w-50 d-flex flex-column gap-3">
+        <span class="subtitle-light-gray text-uppercase">Langage oral</span>
+        <h1 class="h1-white m-0 p-0">Repensez la prise en soin de vos patients aphasiques !</h1>
+        <p class="p-white pb-5">Rééduquer les troubles du langage oral chez les personnes aphasiques, c’est l’une de nos
+          nombreuses missions
+          en tant qu’orthophoniste. Pour faciliter votre pratique, nous vous proposons 3 applications de rééducation :
+          CérébroLex, CérébroSyntax ainsi que CérébroVerbs.</p>
+      </div>
+      <div class="w-50 d-flex align-items-center justify-content-end">
+        <img src="img/illustrations/illustration_app.png" alt="Exemple" class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <!-- Renouvelez vos rééducations -->
+  <section id="details_app_content">
+    <div class="container">
+      <div class="d-flex flex-column gap-4">
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="btn_green px-2 py-1 text-decoration-none">CérébroLex</a>
+          <a href="#" class="btn_white px-2 py-1 text-decoration-none">CérébroVerbs</a>
+          <a href="#" class="btn_white px-2 py-1 text-decoration-none">CérébroSyntax</a>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <span class="subtitle-green">Cérébrolex</span>
+          <h2 class="h2-dark m-0 p-0">Renouvelez vos rééducations des troubles de la production lexicale</h2>
+          <p class="p-dark mb-3">CérébroLex est une application de rééducation des troubles de la production lexicale
+            (anomie
+            ou manque du mot) ciblant les noms, et à destination des patients aphasiques. Elle propose 5 thérapies...
+          </p>
+        </div>
+        <div class="row g-4-5">
+          <div class="col-4">
+            <div class="card p-4 d-flex flex-column gap-2">
+              <div>
+                <h5 class="h5-dark">La TAMSE</h5>
+                <p class="p-light-gray text">Une thérapie d'activation multimodale sans erreur s'appuyant sur l'oral et
+                  l'écrit, sur la sémantique et la phonologie.</p>
+              </div>
+              <span class="p-light-gray subtext">Inconnu</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card p-4 d-flex flex-column gap-2">
+              <div>
+                <h5 class="h5-dark">La TAMSE</h5>
+                <p class="p-light-gray text">Une thérapie d'activation multimodale sans erreur s'appuyant sur l'oral et
+                  l'écrit, sur la sémantique et la phonologie.</p>
+              </div>
+              <span class="p-light-gray subtext">Inconnu</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card p-4 d-flex flex-column gap-2">
+              <div>
+                <h5 class="h5-dark">La TAMSE</h5>
+                <p class="p-light-gray text">Une thérapie d'activation multimodale sans erreur s'appuyant sur l'oral et
+                  l'écrit, sur la sémantique et la phonologie.</p>
+              </div>
+              <span class="p-light-gray subtext">Inconnu</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card p-4 d-flex flex-column gap-2">
+              <div>
+                <h5 class="h5-dark">La TAMSE</h5>
+                <p class="p-light-gray text">Une thérapie d'activation multimodale sans erreur s'appuyant sur l'oral et
+                  l'écrit, sur la sémantique et la phonologie.</p>
+              </div>
+              <span class="p-light-gray subtext">Inconnu</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card p-4 d-flex flex-column gap-2">
+              <div>
+                <h5 class="h5-dark">La TAMSE</h5>
+                <p class="p-light-gray text">Une thérapie d'activation multimodale sans erreur s'appuyant sur l'oral et
+                  l'écrit, sur la sémantique et la phonologie.</p>
+              </div>
+              <span class="p-light-gray subtext">Inconnu</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card p-4 d-flex flex-column gap-2">
+              <div>
+                <h5 class="h5-dark">La TAMSE</h5>
+                <p class="p-light-gray text">Une thérapie d'activation multimodale sans erreur s'appuyant sur l'oral et
+                  l'écrit, sur la sémantique et la phonologie.</p>
+              </div>
+              <span class="p-light-gray subtext">Inconnu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Présentation de l'app -->
+  <section id="details_app_content_2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="w-50 d-flex align-items-center justify-content-start">
+        <img src="img/illustrations/illustration_app.png" alt="Exemple" class="img-fluid">
+      </div>
+      <div class="w-50 d-flex flex-column gap-3">
+        <span class="subtitle-green text-uppercase">La science pour tous</span>
+        <h2 class="h2-dark m-0 p-0">Des thérapies probantes et accessibles</h2>
+        <p class="p-dark pb-5">Toutes nos applications reposent sur des fondements scientifiques grâce à la réalisation
+          de revues de littérature. Nous avons soigneusement adapté les thérapies à notre pratique clinique quotidienne.
+          Elles sont utilisables pour tout profil de patient : des troubles les plus sévères aux troubles plus fins.</p>
+      </div>
+    </div>
+  </section>
+  <section id="details_app_content_2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="w-50 d-flex flex-column gap-3">
+        <span class="subtitle-green text-uppercase">Le respect de chacun</span>
+        <h2 class="h2-dark m-0 p-0">Au plus près des besoins de vos patients</h2>
+        <p class="p-dark mb-2 p-0">Simplifiez-vous la vie avec nos listes d’entraînement prédéfinies. Elles permettent
+          de proposer aux patients une progression hiérarchisée de la difficulté en fonction des variables
+          psycholinguistiques.</p>
+        <p class="p-dark m-0 p-0"><strong>Vous souhaitez aller encore plus loin ?</strong> Nos applications offrent
+          la possibilité
+          d’individualiser chaque thérapie aux spécificités du patient grâce à une interface de personnalisation.
+          Ajoutez des items, sélectionnez vos images et distracteurs, créez vos propres lignes de base et listes de
+          mots pour chaque thérapie.</p>
+      </div>
+      <div class="w-50 d-flex align-items-center justify-content-end">
+        <img src="img/illustrations/illustration_app.png" alt="Exemple" class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <section id="details_app_content_2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="w-50 d-flex align-items-center justify-content-start">
+        <img src="img/illustrations/illustration_app.png" alt="Exemple" class="img-fluid">
+      </div>
+      <div class="w-50 d-flex flex-column gap-3">
+        <span class="subtitle-green text-uppercase">Tous efficaces</span>
+        <h2 class="h2-dark m-0 p-0">Des mesures d'efficacité automatisées</h2>
+        <p class="p-dark mb-2 p-0">Nous avons intégré des prises de mesure automatiques, prédéfinies ou à personnaliser,
+          issues des design de recherche (monitoring, lignes de base). Réduisez la charge cognitive et le coût temporel
+          nécessaires au calcul de ces mesures.</p>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section class="tarif-faq pb-0 pb-lg-5 mt-0 pt-0">
+    <div class="container pb-5 pb-lg-5">
+      <div class="pb-md-5 pb-4">
+        <p class="sub-title pb-2">FAQ</p>
+        <h2 class="h2-dark">
+          Une question ? <span>Nous avons la réponse.</span>
+        </h2>
+      </div>
+      <div class="accordion px-0 d-flex flex-column gap-4" id="accordionExample">
+        <div class="accordion-items">
+          <h2 class="accordion-header position-relative">
+            <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Que comprend l’abonnement Cérébro ?
+            </button>
+            <img src="./img/icons/accordion-plus.svg" alt="Ouvrir le menu déroulant" />
+            <img src="./img/icons/accordion-minus.svg" class="d-none" alt="Fermer le menu déroulant" />
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              Souscrire à la licence Cérébro vous permet d'utiliser touts nos
+              applications avec un nombre illimité de patients. Vous aurez
+              également accès à l'ensemble des matériels disponibles sur le
+              site : fichiers PDF et tableurs de suivi téléchargeables, fiches
+              synthèses et résumés d'articles.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-items">
+          <h2 class="accordion-header position-relative">
+            <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Je suis abonné. Je travaille dans un cabinet avec plusieurs
+              orthophonistes. Pouvons-nous utiliser les applications en même
+              temps sur mon compte ?
+            </button>
+            <img src="./img/icons/accordion-plus.svg" alt="Ouvrir le menu déroulant" />
+            <img src="./img/icons/accordion-minus.svg" class="d-none" alt="Fermer le menu déroulant" />
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              En souscrivant à la licence, vous avez accès à l’application
+              CérébroLex avec la possibilité de démarrer autant de prises en
+              charge que vous le souhaitez. Vous avez également accès à
+              l’ensemble du matériel disponible sur le site : fichiers pdf et
+              tableurs de suivi, ainsi qu’aux revues de littérature, fiches
+              synthèses et résumés d’articlecréer autant.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-items">
+          <h2 class="accordion-header position-relative">
+            <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Pourquoi avoir opté pour un abonnement plutôt qu’ un achat à
+              l’unité ?
+            </button>
+            <img src="./img/icons/accordion-plus.svg" alt="Ouvrir le menu déroulant" />
+            <img src="./img/icons/accordion-minus.svg" class="d-none" alt="Fermer le menu déroulant" />
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              Pourquoi avoir opté pour un abonnement plutôt que pour un achat
+              à l’unité ?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Découvrir la licence -->
+  <section class="homepage-licence">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col d-flex flex-column justify-content-center align-items-left">
+          <h2 class="py-2 h2-dark mb-0">
+            Prêt-e à révolutionner votre pratique au quotidien ?
+          </h2>
+          <h5 class="sub-title pb-2">
+            Découvrez notre licence dès maintenant
+          </h5>
+          <div class="mt-3">
+            <button class="btn_green me-md-3 me-0">
+              Tester gratuitement
+            </button>
+            <button class="btn_transparent d-none d-lg-inline-block">
+              Explorer la licence
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="py-md-4 py-2">
+    <div class="container pt-5">
+      <div class="row newsletter mb-5">
+        <div class="col-12 col-lg mb-4 mb-lg-0">
+          <h5>Restons en contact !</h5>
+          <p>Ne ratez rien des dernières actualités de Cérébro</p>
+        </div>
+        <div class="col">
+          <form>
+            <div class="d-flex flex-column flex-sm-row gap-2">
+              <label for="newsletter1" class="visually-hidden">Votre e-mail</label>
+              <input id="newsletter1" type="email" class="form-control shadow-none" placeholder="Votre e-mail" />
+              <button class="btn_green mt-0">
+                Souscrire à la newsletter
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-4 col-12 mb-lg-3 pb-md-3 mb-3">
+          <a href="#"><img src="./img/logo/logo-cerebro_white.svg" alt="Logo de la société" /></a>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur. In cras pellentesque
+            suspendisse.
+          </p>
+          <ul class="list-unstyled d-flex gap-3 d-md-none mt-4">
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/instagram.svg"
+                  alt="Redirection vers Intagram" /></a>
+            </li>
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/linkedin.svg"
+                  alt="Redirection vers Linkedin" /></a>
+            </li>
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/facebook.svg"
+                  alt="Redirection vers Facebook" /></a>
+            </li>
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/twitter.svg"
+                  alt="Redirection vers Twitter" /></a>
+            </li>
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/youtube.svg"
+                  alt="Redirection vers Youtube" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md col-6 mb-3">
+          <h5 class="mb-3 text-uppercase">Applications</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0 text-decoration-none">CérébroLex</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">CérébroVerbs</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">CérébroSyntax</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">Tarifs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md col-6 mb-3">
+          <h5 class="mb-3 text-uppercase">Ressources</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">Matériels</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">Résumés d’articles</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">Tableurs</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">Formations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md col-6 mb-3">
+          <h5 class="mb-3 text-uppercase">À propos</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">L’équipe</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">FAQ</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">Nous contacter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md col-6 mb-3">
+          <h5 class="mb-3 text-uppercase">Legal</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">Conditions générales</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">Mentions légales</a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link p-0">Politique de confidentialité</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-4" />
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between pt-3 px-0">
+          <p class="mb-4 mb-md-0">
+            &copy; 2023 Cérébro. Tous droits reservés
+          </p>
+          <ul class="list-unstyled d-flex gap-3 d-none d-md-flex">
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/instagram.svg"
+                  alt="Redirection vers Intagram" /></a>
+            </li>
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/linkedin.svg"
+                  alt="Redirection vers Linkedin" /></a>
+            </li>
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/facebook.svg"
+                  alt="Redirection vers Facebook" /></a>
+            </li>
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/twitter.svg"
+                  alt="Redirection vers Twitter" /></a>
+            </li>
+            <li class="ms-2">
+              <a class="link-body-emphasis" href="#"><img src="./img/icons/youtube.svg"
+                  alt="Redirection vers Youtube" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./script/tarif.js"></script>
+  <script src="./script/header.js"></script>
+</body>
+
+</html>

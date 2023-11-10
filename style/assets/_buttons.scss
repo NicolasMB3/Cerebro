@@ -1,30 +1,28 @@
 .btn {
+
   // Green button
   &_green {
-    @include cbro-button(
-      500,
+    @include cbro-button(500,
       16px,
       $cbro-green-50,
       $cbro-green-700,
       1px,
-      transparent
-    );
+      transparent);
     transition: 0.25s all ease-in-out;
 
     &:hover {
       filter: brightness(90%);
     }
   }
+
   // Disabled Green button
   &_disabled_green {
-    @include cbro-button(
-      500,
+    @include cbro-button(500,
       16px,
       $cbro-green-50,
       $cbro-green-800,
       1px,
-      transparent
-    );
+      transparent);
     cursor: not-allowed;
     opacity: 0.5;
     transition: 0.25s all ease-in-out;
@@ -33,16 +31,15 @@
       filter: brightness(90%);
     }
   }
+
   // Dark Green button / Bouton de création de compte
   &_dark_green {
-    @include cbro-button(
-      500,
+    @include cbro-button(500,
       16px,
       $cbro-green-50,
       $cbro-green-800,
       1px,
-      transparent
-    );
+      transparent);
     border: 1px solid $cbro-snow-50;
     transition: 0.25s all ease-in-out;
     width: 100%;
@@ -51,48 +48,45 @@
       filter: brightness(90%);
     }
   }
+
   // Transparent button with border
   &_transparent {
-    @include cbro-button(
-      500,
+    @include cbro-button(500,
       16px,
       $cbro-gray-900,
       transparent,
       1px,
-      $cbro-gray-900
-    );
+      $cbro-gray-900 );
     transition: 0.25s all ease-in-out;
 
     &:hover {
       background: #dfdede44;
     }
   }
+
   // Transparent button without border
   &_full_transparent {
-    @include cbro-button(
-      500,
+    @include cbro-button(500,
       16px,
       $cbro-gray-900,
       transparent,
       0px,
-      $cbro-gray-900
-    );
+      $cbro-gray-900 );
     transition: 0.25s all ease-in-out;
 
     &:hover {
       background-color: rgba(25, 25, 25, 0.08);
     }
   }
+
   // Full white button
   &_white {
-    @include cbro-button(
-      500,
+    @include cbro-button(500,
       16px,
       $cbro-gray-900,
       $cbro-white,
       0px,
-      $cbro-gray-900
-    );
+      $cbro-gray-900 );
     text-decoration: none;
     transition: 0.25s all ease-in-out;
 
@@ -100,16 +94,15 @@
       background-color: $cbro-gray-100;
     }
   }
+
   // Full purple button
   &_purple {
-    @include cbro-button(
-      500,
+    @include cbro-button(500,
       16px,
       $cbro-white,
       $cbro-purple-700,
-      0px,
-      $cbro-purple-700
-    );
+      1px,
+      transparent);
     transition: 0.25s all ease-in-out;
 
     &:hover {
@@ -117,16 +110,15 @@
       background-color: $cbro-purple-900;
     }
   }
+
   // Full purple button
   &_dark-purple {
-    @include cbro-button(
-      500,
+    @include cbro-button(500,
       16px,
       $cbro-white,
       $cbro-purple-700,
       0px,
-      $cbro-purple-700
-    );
+      $cbro-purple-700 );
     transition: 0.25s all ease-in-out;
 
     &:hover {
@@ -150,10 +142,24 @@
       border-radius: 0px !important;
     }
   }
+
+  &_blue {
+    border: none;
+    @include cbro-button(500, 16px, $cbro-white, $cbro-blue-700, 1px,
+      transparent);
+    border-bottom: 1px solid transparent !important;
+    padding: 0;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $cbro-blue-900;
+    }
+  }
 }
 
 // Bouton oeil ouvert / fermé pour l'input mot de passe
 .eye {
+
   &_off,
   &_on {
     border: none;

@@ -882,7 +882,7 @@ footer hr {
   color: #fff;
   background: #a04470;
   border-radius: 100px;
-  border: 0px solid #a04470;
+  border: 1px solid transparent;
   padding: 12px 22px;
   transition: 0.25s all ease-in-out;
 }
@@ -927,6 +927,24 @@ footer hr {
 .btn_inline:hover {
   border-bottom: 1px solid #979694 !important;
   border-radius: 0px !important;
+}
+.btn_blue {
+  border: none;
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  background: #33788d;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  padding: 12px 22px;
+  border-bottom: 1px solid transparent !important;
+  padding: 0;
+  transition: all 0.2s;
+}
+.btn_blue:hover {
+  background-color: #005671;
 }
 
 .eye_off, .eye_on {
@@ -1251,6 +1269,14 @@ footer hr {
   font-size: 14px !important;
   line-height: 150% !important;
   color: #7e7d7c !important;
+  text-transform: uppercase;
+}
+.subtitle-light-gray {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #D3DCDA !important;
   text-transform: uppercase;
 }
 
@@ -1586,6 +1612,11 @@ h3 {
   .width-sm-100 {
     width: 100% !important;
   }
+}
+
+.g-4-5 {
+  --bs-gutter-x: 2rem !important;
+  --bs-gutter-y: 2rem !important;
 }
 
 .navbar-transition {
@@ -3427,6 +3458,53 @@ h3 {
   #message-non-abonne .cta a {
     width: 100% !important;
   }
+}
+
+#details_app_cerebro #details_app_hero {
+  padding: 10rem 0 0 0;
+  background: url(./../img/noise.svg), #235247;
+  height: 75vh;
+}
+#details_app_cerebro #details_app_hero .img-fluid {
+  border-radius: 16px;
+}
+@media (max-width: 991.98px) {
+  #details_app_cerebro #details_app_hero {
+    padding: 8rem 0 0 0;
+  }
+}
+#details_app_cerebro #details_app_content {
+  padding: 9rem 0;
+  background: url(./../img/noise.svg), rgba(233, 238, 237, 0.5);
+}
+#details_app_cerebro #details_app_content .btn_white {
+  border: 1px solid transparent;
+}
+#details_app_cerebro #details_app_content .card {
+  border-radius: 12px;
+  border: 1px solid rgba(202, 200, 198, 0.5);
+  background-color: #fcfaf7;
+}
+#details_app_cerebro #details_app_content .card .text {
+  font-size: 16px !important;
+}
+#details_app_cerebro #details_app_content .card .subtext {
+  font-size: 14px !important;
+}
+
+#details_app_content_2 {
+  padding: 8rem 0;
+  background: url(./../img/nnnnnoise.svg), #fcfaf7;
+}
+#details_app_content_2 .img-fluid {
+  border-radius: 16px;
+}
+#details_app_content_2 strong {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 160% !important;
+  color: #323231 !important;
 }
 
 #listing-hero {
