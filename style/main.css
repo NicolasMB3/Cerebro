@@ -5165,15 +5165,15 @@ h3 {
   color: #b0afad !important;
   transform: translateY(20%);
 }
-#section_app .cards-details .form-select.gray::-moz-placeholder, #section_app .cards-details .form-control.gray::-moz-placeholder {
+#section_app .cards-details .form-select::-moz-placeholder, #section_app .cards-details .form-control::-moz-placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: normal !important;
   color: #b0afad !important;
 }
-#section_app .cards-details .form-select.gray::placeholder,
-#section_app .cards-details .form-control.gray::placeholder {
+#section_app .cards-details .form-select::placeholder,
+#section_app .cards-details .form-control::placeholder {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400 !important;
   font-size: 14px !important;

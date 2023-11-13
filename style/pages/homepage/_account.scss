@@ -300,10 +300,8 @@
                 transform: translateY(20%);
             }
 
-            &.gray {
-                &::placeholder {
-                    @include cbro-paragraphe(400, 14px, normal, $cbro-gray-300);
-                }
+            &::placeholder {
+                @include cbro-paragraphe(400, 14px, normal, $cbro-gray-300);
             }
         }
 
