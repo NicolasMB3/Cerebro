@@ -5285,6 +5285,9 @@ h3 {
 #section_app .container-app .btn-filtre.active {
   background-color: #e7e6e4;
 }
+#section_app .container-app .list-formations {
+  color: #656463;
+}
 #section_app .bg-logo-green {
   background: #e9eeed;
   padding: 14px;
